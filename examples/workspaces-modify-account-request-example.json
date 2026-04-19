@@ -1,0 +1,4 @@
+{
+  "DedicatedTenancySupport": "example-value",
+  "DedicatedTenancyManagementCidrRange": "wsid-abc123def456"
+}

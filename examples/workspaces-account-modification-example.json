@@ -1,0 +1,8 @@
+{
+  "ModificationState": "RUNNING",
+  "DedicatedTenancySupport": "example-value",
+  "DedicatedTenancyManagementCidrRange": "wsid-abc123def456",
+  "StartTime": "example-value",
+  "ErrorCode": "example-value",
+  "ErrorMessage": "example-value"
+}

@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "DirectoryId",
+    "GroupIds"
+  ],
+  "name": "AssociateIpGroupsRequest",
+  "properties": {
+    "DirectoryId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The identifier of the directory."
+        }
+      ]
+    },
+    "GroupIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpGroupIdList"
+        },
+        {
+          "description": "The identifiers of one or more IP access control groups."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-associate-ip-groups-request-structure.json",
+  "description": "AssociateIpGroupsRequest schema from Amazon WorkSpaces API"
+}

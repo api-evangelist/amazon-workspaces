@@ -1,0 +1,10 @@
+{
+  "DeviceTypeWindows": "example-value",
+  "DeviceTypeOsx": "example-value",
+  "DeviceTypeWeb": "example-value",
+  "DeviceTypeIos": "example-value",
+  "DeviceTypeAndroid": "wsid-abc123def456",
+  "DeviceTypeChromeOs": "example-value",
+  "DeviceTypeZeroClient": "example-value",
+  "DeviceTypeLinux": "example-value"
+}

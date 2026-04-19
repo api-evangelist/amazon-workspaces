@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "ROOT_VOLUME",
+    "USER_VOLUME",
+    "COMPUTE_TYPE"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ModificationResourceEnum",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-modification-resource-enum-schema.json",
+  "description": "ModificationResourceEnum schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ModifySelfservicePermissionsResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-modify-selfservice-permissions-result-structure.json",
+  "description": "ModifySelfservicePermissionsResult schema from Amazon WorkSpaces API"
+}

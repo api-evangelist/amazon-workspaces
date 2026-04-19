@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ModifySamlPropertiesResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-modify-saml-properties-result-structure.json",
+  "description": "ModifySamlPropertiesResult schema from Amazon WorkSpaces API"
+}

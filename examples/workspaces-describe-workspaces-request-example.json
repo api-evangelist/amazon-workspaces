@@ -1,0 +1,8 @@
+{
+  "WorkspaceIds": "wsid-abc123def456",
+  "DirectoryId": "wsid-abc123def456",
+  "UserName": "Example Workspace",
+  "BundleId": "wsid-abc123def456",
+  "Limit": "example-value",
+  "NextToken": "example-value"
+}

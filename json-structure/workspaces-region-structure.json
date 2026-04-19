@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "^[-0-9a-z]{1,31}$",
+  "minLength": 1,
+  "maxLength": 31,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "Region",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-region-structure.json",
+  "description": "Region schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "StartWorkspaceRequests"
+  ],
+  "name": "StartWorkspacesRequest",
+  "properties": {
+    "StartWorkspaceRequests": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StartWorkspaceRequests"
+        },
+        {
+          "description": "The WorkSpaces to start. You can specify up to 25 WorkSpaces."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-start-workspaces-request-structure.json",
+  "description": "StartWorkspacesRequest schema from Amazon WorkSpaces API"
+}

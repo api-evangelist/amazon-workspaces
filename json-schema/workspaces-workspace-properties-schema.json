@@ -1,0 +1,69 @@
+{
+  "type": "object",
+  "properties": {
+    "RunningMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RunningMode"
+        },
+        {
+          "description": "<p>The running mode. For more information, see <a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/running-mode.html\">Manage the WorkSpace Running Mode</a>.</p> <note> <p>The <code>MANUAL</code> value is only supported by Amazon WorkSpaces Core. Contact your account team to be allow-listed to use this value. For more information, see <a href=\"http://aws.amazon.com/workspaces/core/\">Amazon WorkSpaces Core</a>.</p> </note>"
+        }
+      ]
+    },
+    "RunningModeAutoStopTimeoutInMinutes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RunningModeAutoStopTimeoutInMinutes"
+        },
+        {
+          "description": "The time after a user logs off when WorkSpaces are automatically stopped. Configured in 60-minute intervals."
+        }
+      ]
+    },
+    "RootVolumeSizeGib": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RootVolumeSizeGib"
+        },
+        {
+          "description": "The size of the root volume. For important information about how to modify the size of the root and user volumes, see <a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/modify-workspaces.html\">Modify a WorkSpace</a>."
+        }
+      ]
+    },
+    "UserVolumeSizeGib": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserVolumeSizeGib"
+        },
+        {
+          "description": "The size of the user storage. For important information about how to modify the size of the root and user volumes, see <a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/modify-workspaces.html\">Modify a WorkSpace</a>."
+        }
+      ]
+    },
+    "ComputeTypeName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Compute"
+        },
+        {
+          "description": "The compute type. For more information, see <a href=\"http://aws.amazon.com/workspaces/details/#Amazon_WorkSpaces_Bundles\">Amazon WorkSpaces Bundles</a>."
+        }
+      ]
+    },
+    "Protocols": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ProtocolList"
+        },
+        {
+          "description": "<p>The protocol. For more information, see <a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces-protocols.html\"> Protocols for Amazon WorkSpaces</a>.</p> <note> <ul> <li> <p>Only available for WorkSpaces created with PCoIP bundles.</p> </li> <li> <p>The <code>Protocols</code> property is case sensitive. Ensure you use <code>PCOIP</code> or <code>WSP</code>.</p> </li> <li> <p>Unavailable for Windows 7 WorkSpaces and WorkSpaces using GPU-based bundles (Graphics, GraphicsPro, Graphics.g4dn, and GraphicsPro.g4dn).</p> </li> </ul> </note>"
+        }
+      ]
+    }
+  },
+  "description": "Describes a WorkSpace.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WorkspaceProperties",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-workspace-properties-schema.json"
+}

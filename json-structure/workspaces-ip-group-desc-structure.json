@@ -1,0 +1,7 @@
+{
+  "type": "string",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "IpGroupDesc",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-ip-group-desc-structure.json",
+  "description": "IpGroupDesc schema from Amazon WorkSpaces API"
+}

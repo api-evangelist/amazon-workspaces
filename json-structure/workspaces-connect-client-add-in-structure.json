@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "AddInId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AmazonUuid"
+        },
+        {
+          "description": "The client add-in identifier."
+        }
+      ]
+    },
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The directory identifier for which the client add-in is configured."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AddInName"
+        },
+        {
+          "description": "The name of the client add in."
+        }
+      ]
+    },
+    "URL": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AddInUrl"
+        },
+        {
+          "description": "The endpoint URL of the client add-in."
+        }
+      ]
+    }
+  },
+  "description": "Describes an Amazon Connect client add-in.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ConnectClientAddIn",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-connect-client-add-in-structure.json"
+}

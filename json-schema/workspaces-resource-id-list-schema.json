@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/NonEmptyString"
+  },
+  "minItems": 1,
+  "maxItems": 25,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResourceIdList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-resource-id-list-schema.json",
+  "description": "ResourceIdList schema from Amazon WorkSpaces API"
+}

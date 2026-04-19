@@ -1,0 +1,7 @@
+{
+  "type": "string",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WorkspaceErrorCode",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-workspace-error-code-schema.json",
+  "description": "WorkspaceErrorCode schema from Amazon WorkSpaces API"
+}

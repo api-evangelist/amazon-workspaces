@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/DeletableCertificateBasedAuthProperty"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DeletableCertificateBasedAuthPropertiesList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-deletable-certificate-based-auth-properties-list-structure.json",
+  "description": "DeletableCertificateBasedAuthPropertiesList schema from Amazon WorkSpaces API"
+}

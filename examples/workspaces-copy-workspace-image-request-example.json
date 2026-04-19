@@ -1,0 +1,7 @@
+{
+  "Name": "Example Workspace",
+  "Description": "example-value",
+  "SourceImageId": "wsid-abc123def456",
+  "SourceRegion": "example-value",
+  "Tags": "example-value"
+}

@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "name": "UpdateWorkspaceBundleRequest",
+  "properties": {
+    "BundleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BundleId"
+        },
+        {
+          "description": "The identifier of the bundle."
+        }
+      ]
+    },
+    "ImageId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageId"
+        },
+        {
+          "description": "The identifier of the image."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-update-workspace-bundle-request-structure.json",
+  "description": "UpdateWorkspaceBundleRequest schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,8 @@
+{
+  "EnableWorkDocs": "example-value",
+  "EnableInternetAccess": "example-value",
+  "DefaultOu": "example-value",
+  "CustomSecurityGroupId": "wsid-abc123def456",
+  "UserEnabledAsLocalAdministrator": "example-value",
+  "EnableMaintenanceMode": "example-value"
+}

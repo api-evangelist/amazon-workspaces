@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/IpRule"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IpRevokedRuleList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-ip-revoked-rule-list-schema.json",
+  "description": "IpRevokedRuleList schema from Amazon WorkSpaces API"
+}

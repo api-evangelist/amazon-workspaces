@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/FailedCreateStandbyWorkspacesRequest"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FailedCreateStandbyWorkspacesRequestList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-failed-create-standby-workspaces-request-list-schema.json",
+  "description": "FailedCreateStandbyWorkspacesRequestList schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,5 @@
+{
+  "ResourceId": "wsid-abc123def456",
+  "SamlProperties": "example-value",
+  "PropertiesToDelete": "example-value"
+}

@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "ConnectionAliases": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ConnectionAliasList"
+        },
+        {
+          "description": "Information about the specified connection aliases."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationToken"
+        },
+        {
+          "description": "The token to use to retrieve the next page of results. This value is null when there are no more results to return. "
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DescribeConnectionAliasesResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-describe-connection-aliases-result-structure.json",
+  "description": "DescribeConnectionAliasesResult schema from Amazon WorkSpaces API"
+}

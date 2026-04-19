@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/ConnectionAliasPermission"
+  },
+  "minItems": 1,
+  "maxItems": 25,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ConnectionAliasPermissions",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-connection-alias-permissions-structure.json",
+  "description": "ConnectionAliasPermissions schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,14 @@
+{
+  "BundleId": "wsid-abc123def456",
+  "Name": "Example Workspace",
+  "Owner": "example-value",
+  "Description": "example-value",
+  "ImageId": "wsid-abc123def456",
+  "RootStorage": "example-value",
+  "UserStorage": "example-value",
+  "ComputeType": "example-value",
+  "LastUpdatedTime": "example-value",
+  "CreationTime": "example-value",
+  "State": "RUNNING",
+  "BundleType": "example-value"
+}

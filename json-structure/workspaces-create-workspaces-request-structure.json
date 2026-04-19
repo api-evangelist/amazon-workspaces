@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "Workspaces"
+  ],
+  "name": "CreateWorkspacesRequest",
+  "properties": {
+    "Workspaces": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceRequestList"
+        },
+        {
+          "description": "The WorkSpaces to create. You can specify up to 25 WorkSpaces."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-create-workspaces-request-structure.json",
+  "description": "CreateWorkspacesRequest schema from Amazon WorkSpaces API"
+}

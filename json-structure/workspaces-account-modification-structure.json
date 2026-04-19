@@ -1,0 +1,69 @@
+{
+  "type": "object",
+  "properties": {
+    "ModificationState": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DedicatedTenancyModificationStateEnum"
+        },
+        {
+          "description": "The state of the modification to the configuration of BYOL."
+        }
+      ]
+    },
+    "DedicatedTenancySupport": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DedicatedTenancySupportResultEnum"
+        },
+        {
+          "description": "The status of BYOL (whether BYOL is being enabled or disabled)."
+        }
+      ]
+    },
+    "DedicatedTenancyManagementCidrRange": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DedicatedTenancyManagementCidrRange"
+        },
+        {
+          "description": "The IP address range, specified as an IPv4 CIDR block, for the management network interface used for the account."
+        }
+      ]
+    },
+    "StartTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The timestamp when the modification of the BYOL configuration was started."
+        }
+      ]
+    },
+    "ErrorCode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceErrorCode"
+        },
+        {
+          "description": "The error code that is returned if the configuration of BYOL cannot be modified."
+        }
+      ]
+    },
+    "ErrorMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Description"
+        },
+        {
+          "description": "The text of the error message that is returned if the configuration of BYOL cannot be modified."
+        }
+      ]
+    }
+  },
+  "description": "Describes a modification to the configuration of Bring Your Own License (BYOL) for the specified account. ",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "AccountModification",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-account-modification-structure.json"
+}

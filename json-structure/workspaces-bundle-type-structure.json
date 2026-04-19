@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "REGULAR",
+    "STANDBY"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "BundleType",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-bundle-type-structure.json",
+  "description": "BundleType schema from Amazon WorkSpaces API"
+}

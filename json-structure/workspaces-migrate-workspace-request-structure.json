@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "SourceWorkspaceId",
+    "BundleId"
+  ],
+  "name": "MigrateWorkspaceRequest",
+  "properties": {
+    "SourceWorkspaceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceId"
+        },
+        {
+          "description": "The identifier of the WorkSpace to migrate from."
+        }
+      ]
+    },
+    "BundleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BundleId"
+        },
+        {
+          "description": "The identifier of the target bundle type to migrate the WorkSpace to."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-migrate-workspace-request-structure.json",
+  "description": "MigrateWorkspaceRequest schema from Amazon WorkSpaces API"
+}

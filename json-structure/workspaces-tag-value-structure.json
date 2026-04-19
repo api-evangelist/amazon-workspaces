@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "maxLength": 255,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "TagValue",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-tag-value-structure.json",
+  "description": "TagValue schema from Amazon WorkSpaces API"
+}

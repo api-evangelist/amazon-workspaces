@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "properties": {
+    "RestartWorkspace": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ReconnectEnum"
+        },
+        {
+          "description": "Specifies whether users can restart their WorkSpace."
+        }
+      ]
+    },
+    "IncreaseVolumeSize": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ReconnectEnum"
+        },
+        {
+          "description": "Specifies whether users can increase the volume size of the drives on their WorkSpace."
+        }
+      ]
+    },
+    "ChangeComputeType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ReconnectEnum"
+        },
+        {
+          "description": "Specifies whether users can change the compute type (bundle) for their WorkSpace."
+        }
+      ]
+    },
+    "SwitchRunningMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ReconnectEnum"
+        },
+        {
+          "description": "Specifies whether users can switch the running mode of their WorkSpace."
+        }
+      ]
+    },
+    "RebuildWorkspace": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ReconnectEnum"
+        },
+        {
+          "description": "Specifies whether users can rebuild the operating system of a WorkSpace to its original state."
+        }
+      ]
+    }
+  },
+  "description": "Describes the self-service permissions for a directory. For more information, see <a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/enable-user-self-service-workspace-management.html\">Enable Self-Service WorkSpace Management Capabilities for Your Users</a>.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "SelfservicePermissions",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-selfservice-permissions-structure.json"
+}

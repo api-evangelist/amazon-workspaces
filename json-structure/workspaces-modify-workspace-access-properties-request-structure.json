@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "ResourceId",
+    "WorkspaceAccessProperties"
+  ],
+  "name": "ModifyWorkspaceAccessPropertiesRequest",
+  "properties": {
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The identifier of the directory."
+        }
+      ]
+    },
+    "WorkspaceAccessProperties": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceAccessProperties"
+        },
+        {
+          "description": "The device types and operating systems to enable or disable for access."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-modify-workspace-access-properties-request-structure.json",
+  "description": "ModifyWorkspaceAccessPropertiesRequest schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DeleteWorkspaceBundleResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-delete-workspace-bundle-result-structure.json",
+  "description": "DeleteWorkspaceBundleResult schema from Amazon WorkSpaces API"
+}

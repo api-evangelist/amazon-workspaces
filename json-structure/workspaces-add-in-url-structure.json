@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "^(http|https)\\://\\S+",
+  "minLength": 1,
+  "maxLength": 1024,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "AddInUrl",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-add-in-url-structure.json",
+  "description": "AddInUrl schema from Amazon WorkSpaces API"
+}

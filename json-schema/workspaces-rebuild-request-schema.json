@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "WorkspaceId"
+  ],
+  "properties": {
+    "WorkspaceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceId"
+        },
+        {
+          "description": "The identifier of the WorkSpace."
+        }
+      ]
+    }
+  },
+  "description": "Describes the information used to rebuild a WorkSpace.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RebuildRequest",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-rebuild-request-schema.json"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "AVAILABLE",
+    "ADMIN_MAINTENANCE"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "TargetWorkspaceState",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-target-workspace-state-structure.json",
+  "description": "TargetWorkspaceState schema from Amazon WorkSpaces API"
+}

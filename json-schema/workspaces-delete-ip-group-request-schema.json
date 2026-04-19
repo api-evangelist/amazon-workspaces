@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "GroupId"
+  ],
+  "title": "DeleteIpGroupRequest",
+  "properties": {
+    "GroupId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpGroupId"
+        },
+        {
+          "description": "The identifier of the IP access control group."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-delete-ip-group-request-schema.json",
+  "description": "DeleteIpGroupRequest schema from Amazon WorkSpaces API"
+}

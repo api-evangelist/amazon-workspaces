@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "RebuildWorkspaceRequests"
+  ],
+  "name": "RebuildWorkspacesRequest",
+  "properties": {
+    "RebuildWorkspaceRequests": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RebuildWorkspaceRequests"
+        },
+        {
+          "description": "The WorkSpace to rebuild. You can specify a single WorkSpace."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-rebuild-workspaces-request-structure.json",
+  "description": "RebuildWorkspacesRequest schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "RebootWorkspaceRequests"
+  ],
+  "name": "RebootWorkspacesRequest",
+  "properties": {
+    "RebootWorkspaceRequests": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RebootWorkspaceRequests"
+        },
+        {
+          "description": "The WorkSpaces to reboot. You can specify up to 25 WorkSpaces."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-reboot-workspaces-request-structure.json",
+  "description": "RebootWorkspacesRequest schema from Amazon WorkSpaces API"
+}

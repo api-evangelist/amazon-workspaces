@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "required": [
+    "AddInId",
+    "ResourceId"
+  ],
+  "title": "UpdateConnectClientAddInRequest",
+  "properties": {
+    "AddInId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AmazonUuid"
+        },
+        {
+          "description": "The identifier of the client add-in to update."
+        }
+      ]
+    },
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The directory identifier for which the client add-in is configured."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AddInName"
+        },
+        {
+          "description": "The name of the client add-in."
+        }
+      ]
+    },
+    "URL": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AddInUrl"
+        },
+        {
+          "description": "The endpoint URL of the Amazon Connect client add-in."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-update-connect-client-add-in-request-schema.json",
+  "description": "UpdateConnectClientAddInRequest schema from Amazon WorkSpaces API"
+}

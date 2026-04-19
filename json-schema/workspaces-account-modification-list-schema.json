@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/AccountModification"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AccountModificationList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-account-modification-list-schema.json",
+  "description": "AccountModificationList schema from Amazon WorkSpaces API"
+}

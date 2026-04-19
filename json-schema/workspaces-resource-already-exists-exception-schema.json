@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResourceAlreadyExistsException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-resource-already-exists-exception-schema.json",
+  "description": "ResourceAlreadyExistsException schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/IpAddress"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DnsIpAddresses",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-dns-ip-addresses-structure.json",
+  "description": "DnsIpAddresses schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DeleteConnectClientAddInResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-delete-connect-client-add-in-result-structure.json",
+  "description": "DeleteConnectClientAddInResult schema from Amazon WorkSpaces API"
+}

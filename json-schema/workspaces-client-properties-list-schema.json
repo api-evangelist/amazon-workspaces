@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/ClientPropertiesResult"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ClientPropertiesList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-client-properties-list-schema.json",
+  "description": "ClientPropertiesList schema from Amazon WorkSpaces API"
+}

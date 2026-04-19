@@ -1,0 +1,6 @@
+{
+  "PrimaryWorkspaceId": "wsid-abc123def456",
+  "VolumeEncryptionKey": "example-value",
+  "DirectoryId": "wsid-abc123def456",
+  "Tags": "example-value"
+}

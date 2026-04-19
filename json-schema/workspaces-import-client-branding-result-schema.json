@@ -1,0 +1,69 @@
+{
+  "type": "object",
+  "properties": {
+    "DeviceTypeWindows": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DefaultClientBrandingAttributes"
+        },
+        {
+          "description": "The branding information configured for Windows devices."
+        }
+      ]
+    },
+    "DeviceTypeOsx": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DefaultClientBrandingAttributes"
+        },
+        {
+          "description": "The branding information configured for macOS devices."
+        }
+      ]
+    },
+    "DeviceTypeAndroid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DefaultClientBrandingAttributes"
+        },
+        {
+          "description": "The branding information configured for Android devices."
+        }
+      ]
+    },
+    "DeviceTypeIos": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IosClientBrandingAttributes"
+        },
+        {
+          "description": "The branding information configured for iOS devices."
+        }
+      ]
+    },
+    "DeviceTypeLinux": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DefaultClientBrandingAttributes"
+        },
+        {
+          "description": "The branding information configured for Linux devices."
+        }
+      ]
+    },
+    "DeviceTypeWeb": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DefaultClientBrandingAttributes"
+        },
+        {
+          "description": "The branding information configured for web access."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ImportClientBrandingResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-import-client-branding-result-schema.json",
+  "description": "ImportClientBrandingResult schema from Amazon WorkSpaces API"
+}

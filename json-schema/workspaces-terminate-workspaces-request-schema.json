@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "TerminateWorkspaceRequests"
+  ],
+  "title": "TerminateWorkspacesRequest",
+  "properties": {
+    "TerminateWorkspaceRequests": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TerminateWorkspaceRequests"
+        },
+        {
+          "description": "The WorkSpaces to terminate. You can specify up to 25 WorkSpaces."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-terminate-workspaces-request-schema.json",
+  "description": "TerminateWorkspacesRequest schema from Amazon WorkSpaces API"
+}

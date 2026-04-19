@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "SIMPLE_AD",
+    "AD_CONNECTOR"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "WorkspaceDirectoryType",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-workspace-directory-type-structure.json",
+  "description": "WorkspaceDirectoryType schema from Amazon WorkSpaces API"
+}

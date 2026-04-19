@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "required": [
+    "AliasId"
+  ],
+  "title": "DescribeConnectionAliasPermissionsRequest",
+  "properties": {
+    "AliasId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ConnectionAliasId"
+        },
+        {
+          "description": "The identifier of the connection alias."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationToken"
+        },
+        {
+          "description": "If you received a <code>NextToken</code> from a previous call that was paginated, provide this token to receive the next set of results. "
+        }
+      ]
+    },
+    "MaxResults": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Limit"
+        },
+        {
+          "description": "The maximum number of results to return."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-describe-connection-alias-permissions-request-schema.json",
+  "description": "DescribeConnectionAliasPermissionsRequest schema from Amazon WorkSpaces API"
+}

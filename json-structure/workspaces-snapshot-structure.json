@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "SnapshotTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The time when the snapshot was created."
+        }
+      ]
+    }
+  },
+  "description": "Describes a snapshot.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "Snapshot",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-snapshot-structure.json"
+}

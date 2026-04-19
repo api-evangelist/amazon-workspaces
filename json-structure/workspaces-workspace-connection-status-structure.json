@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "WorkspaceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceId"
+        },
+        {
+          "description": "The identifier of the WorkSpace."
+        }
+      ]
+    },
+    "ConnectionState": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ConnectionState"
+        },
+        {
+          "description": "The connection state of the WorkSpace. The connection state is unknown if the WorkSpace is stopped."
+        }
+      ]
+    },
+    "ConnectionStateCheckTimestamp": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The timestamp of the connection status check."
+        }
+      ]
+    },
+    "LastKnownUserConnectionTimestamp": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The timestamp of the last known user connection."
+        }
+      ]
+    }
+  },
+  "description": "Describes the connection status of a WorkSpace.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "WorkspaceConnectionStatus",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-workspace-connection-status-structure.json"
+}

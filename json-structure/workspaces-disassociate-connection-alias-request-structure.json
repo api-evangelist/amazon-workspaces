@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "AliasId"
+  ],
+  "name": "DisassociateConnectionAliasRequest",
+  "properties": {
+    "AliasId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ConnectionAliasId"
+        },
+        {
+          "description": "The identifier of the connection alias to disassociate."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-disassociate-connection-alias-request-structure.json",
+  "description": "DisassociateConnectionAliasRequest schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+    "WorkspaceBundle": {
+      "$ref": "#/components/schemas/WorkspaceBundle"
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "CreateWorkspaceBundleResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-create-workspace-bundle-result-structure.json",
+  "description": "CreateWorkspaceBundleResult schema from Amazon WorkSpaces API"
+}

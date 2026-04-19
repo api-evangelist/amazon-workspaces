@@ -1,0 +1,26 @@
+{
+  "type": "string",
+  "enum": [
+    "PENDING",
+    "AVAILABLE",
+    "IMPAIRED",
+    "UNHEALTHY",
+    "REBOOTING",
+    "STARTING",
+    "REBUILDING",
+    "RESTORING",
+    "MAINTENANCE",
+    "ADMIN_MAINTENANCE",
+    "TERMINATING",
+    "TERMINATED",
+    "SUSPENDED",
+    "UPDATING",
+    "STOPPING",
+    "STOPPED",
+    "ERROR"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "WorkspaceState",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-workspace-state-structure.json",
+  "description": "WorkspaceState schema from Amazon WorkSpaces API"
+}

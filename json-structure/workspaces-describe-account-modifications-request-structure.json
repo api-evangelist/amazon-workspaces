@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "name": "DescribeAccountModificationsRequest",
+  "properties": {
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationToken"
+        },
+        {
+          "description": "If you received a <code>NextToken</code> from a previous call that was paginated, provide this token to receive the next set of results."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-describe-account-modifications-request-structure.json",
+  "description": "DescribeAccountModificationsRequest schema from Amazon WorkSpaces API"
+}

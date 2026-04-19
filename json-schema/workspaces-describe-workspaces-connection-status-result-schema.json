@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "WorkspacesConnectionStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceConnectionStatusList"
+        },
+        {
+          "description": "Information about the connection status of the WorkSpace."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationToken"
+        },
+        {
+          "description": "The token to use to retrieve the next page of results. This value is null when there are no more results to return. "
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DescribeWorkspacesConnectionStatusResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-describe-workspaces-connection-status-result-schema.json",
+  "description": "DescribeWorkspacesConnectionStatusResult schema from Amazon WorkSpaces API"
+}

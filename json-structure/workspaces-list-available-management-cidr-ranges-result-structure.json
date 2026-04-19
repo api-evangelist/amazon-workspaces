@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "ManagementCidrRanges": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DedicatedTenancyCidrRangeList"
+        },
+        {
+          "description": "The list of available IP address ranges, specified as IPv4 CIDR blocks."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationToken"
+        },
+        {
+          "description": "The token to use to retrieve the next page of results. This value is null when there are no more results to return. "
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ListAvailableManagementCidrRangesResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-list-available-management-cidr-ranges-result-structure.json",
+  "description": "ListAvailableManagementCidrRangesResult schema from Amazon WorkSpaces API"
+}

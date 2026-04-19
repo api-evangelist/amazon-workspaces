@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "AVAILABLE",
+    "PENDING",
+    "ERROR"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "WorkspaceBundleState",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-workspace-bundle-state-structure.json",
+  "description": "WorkspaceBundleState schema from Amazon WorkSpaces API"
+}

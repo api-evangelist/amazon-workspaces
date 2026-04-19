@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ResourceCreationFailedException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-resource-creation-failed-exception-structure.json",
+  "description": "ResourceCreationFailedException schema from Amazon WorkSpaces API"
+}

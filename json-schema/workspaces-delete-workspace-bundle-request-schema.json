@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "title": "DeleteWorkspaceBundleRequest",
+  "properties": {
+    "BundleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BundleId"
+        },
+        {
+          "description": "The identifier of the bundle."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-delete-workspace-bundle-request-schema.json",
+  "description": "DeleteWorkspaceBundleRequest schema from Amazon WorkSpaces API"
+}

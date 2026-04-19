@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "StopWorkspaceRequests"
+  ],
+  "name": "StopWorkspacesRequest",
+  "properties": {
+    "StopWorkspaceRequests": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StopWorkspaceRequests"
+        },
+        {
+          "description": "The WorkSpaces to stop. You can specify up to 25 WorkSpaces."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-stop-workspaces-request-structure.json",
+  "description": "StopWorkspacesRequest schema from Amazon WorkSpaces API"
+}

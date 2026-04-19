@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/IpRuleItem"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "IpRuleList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-ip-rule-list-structure.json",
+  "description": "IpRuleList schema from Amazon WorkSpaces API"
+}

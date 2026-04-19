@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UnsupportedNetworkConfigurationException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-unsupported-network-configuration-exception-schema.json",
+  "description": "UnsupportedNetworkConfigurationException schema from Amazon WorkSpaces API"
+}

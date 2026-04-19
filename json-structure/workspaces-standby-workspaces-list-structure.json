@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/StandbyWorkspace"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "StandbyWorkspacesList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-standby-workspaces-list-structure.json",
+  "description": "StandbyWorkspacesList schema from Amazon WorkSpaces API"
+}

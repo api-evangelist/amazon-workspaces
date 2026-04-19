@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "ResourceId",
+    "Platforms"
+  ],
+  "title": "DeleteClientBrandingRequest",
+  "properties": {
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The directory identifier of the WorkSpace for which you want to delete client branding."
+        }
+      ]
+    },
+    "Platforms": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ClientDeviceTypeList"
+        },
+        {
+          "description": "The device type for which you want to delete client branding."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-delete-client-branding-request-schema.json",
+  "description": "DeleteClientBrandingRequest schema from Amazon WorkSpaces API"
+}

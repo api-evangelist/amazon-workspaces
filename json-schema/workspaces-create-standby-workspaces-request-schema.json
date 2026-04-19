@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "PrimaryRegion",
+    "StandbyWorkspaces"
+  ],
+  "title": "CreateStandbyWorkspacesRequest",
+  "properties": {
+    "PrimaryRegion": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Region"
+        },
+        {
+          "description": "The Region of the primary WorkSpace."
+        }
+      ]
+    },
+    "StandbyWorkspaces": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StandbyWorkspacesList"
+        },
+        {
+          "description": "Information about the standby WorkSpace to be created."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-create-standby-workspaces-request-schema.json",
+  "description": "CreateStandbyWorkspacesRequest schema from Amazon WorkSpaces API"
+}

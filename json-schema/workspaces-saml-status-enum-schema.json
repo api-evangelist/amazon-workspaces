@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "DISABLED",
+    "ENABLED",
+    "ENABLED_WITH_DIRECTORY_LOGIN_FALLBACK"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SamlStatusEnum",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-saml-status-enum-schema.json",
+  "description": "SamlStatusEnum schema from Amazon WorkSpaces API"
+}

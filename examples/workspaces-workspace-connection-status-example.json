@@ -1,0 +1,6 @@
+{
+  "WorkspaceId": "wsid-abc123def456",
+  "ConnectionState": "RUNNING",
+  "ConnectionStateCheckTimestamp": "RUNNING",
+  "LastKnownUserConnectionTimestamp": "example-value"
+}

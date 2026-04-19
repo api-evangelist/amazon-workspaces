@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "Type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OperatingSystemType"
+        },
+        {
+          "description": "The operating system."
+        }
+      ]
+    }
+  },
+  "description": "The operating system that the image is running.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OperatingSystem",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-operating-system-schema.json"
+}

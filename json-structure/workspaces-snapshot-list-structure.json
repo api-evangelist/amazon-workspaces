@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/Snapshot"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "SnapshotList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-snapshot-list-structure.json",
+  "description": "SnapshotList schema from Amazon WorkSpaces API"
+}

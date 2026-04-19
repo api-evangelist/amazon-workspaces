@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "DirectoryId"
+  ],
+  "title": "DeregisterWorkspaceDirectoryRequest",
+  "properties": {
+    "DirectoryId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The identifier of the directory. If any WorkSpaces are registered to this directory, you must remove them before you deregister the directory, or you will receive an OperationNotSupportedException error."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-deregister-workspace-directory-request-schema.json",
+  "description": "DeregisterWorkspaceDirectoryRequest schema from Amazon WorkSpaces API"
+}

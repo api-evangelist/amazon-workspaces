@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "AliasId",
+    "ResourceId"
+  ],
+  "name": "AssociateConnectionAliasRequest",
+  "properties": {
+    "AliasId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ConnectionAliasId"
+        },
+        {
+          "description": "The identifier of the connection alias."
+        }
+      ]
+    },
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NonEmptyString"
+        },
+        {
+          "description": "The identifier of the directory to associate the connection alias with."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-associate-connection-alias-request-structure.json",
+  "description": "AssociateConnectionAliasRequest schema from Amazon WorkSpaces API"
+}

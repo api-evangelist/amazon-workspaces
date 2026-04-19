@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "GroupId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpGroupId"
+        },
+        {
+          "description": "The identifier of the group."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "CreateIpGroupResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-create-ip-group-result-structure.json",
+  "description": "CreateIpGroupResult schema from Amazon WorkSpaces API"
+}

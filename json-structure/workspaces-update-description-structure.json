@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "^[a-zA-Z0-9_./() -]+$",
+  "minLength": 1,
+  "maxLength": 255,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "UpdateDescription",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-update-description-structure.json",
+  "description": "UpdateDescription schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "ConnectionIdentifier": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ConnectionIdentifier"
+        },
+        {
+          "description": "The identifier of the connection alias association. You use the connection identifier in the DNS TXT record when you're configuring your DNS routing policies. "
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AssociateConnectionAliasResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-associate-connection-alias-result-schema.json",
+  "description": "AssociateConnectionAliasResult schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "pattern": "^\\d{12}$",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AwsAccount",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-aws-account-schema.json",
+  "description": "AwsAccount schema from Amazon WorkSpaces API"
+}

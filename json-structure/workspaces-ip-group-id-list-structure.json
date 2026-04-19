@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/IpGroupId"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "IpGroupIdList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-ip-group-id-list-structure.json",
+  "description": "IpGroupIdList schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DisassociateConnectionAliasResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-disassociate-connection-alias-result-structure.json",
+  "description": "DisassociateConnectionAliasResult schema from Amazon WorkSpaces API"
+}

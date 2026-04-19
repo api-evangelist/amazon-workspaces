@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "required": [
+    "BundleName",
+    "BundleDescription",
+    "ImageId",
+    "ComputeType",
+    "UserStorage"
+  ],
+  "title": "CreateWorkspaceBundleRequest",
+  "properties": {
+    "BundleName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceBundleName"
+        },
+        {
+          "description": "The name of the bundle."
+        }
+      ]
+    },
+    "BundleDescription": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceBundleDescription"
+        },
+        {
+          "description": "The description of the bundle."
+        }
+      ]
+    },
+    "ImageId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageId"
+        },
+        {
+          "description": "The identifier of the image that is used to create the bundle."
+        }
+      ]
+    },
+    "ComputeType": {
+      "$ref": "#/components/schemas/ComputeType"
+    },
+    "UserStorage": {
+      "$ref": "#/components/schemas/UserStorage"
+    },
+    "RootStorage": {
+      "$ref": "#/components/schemas/RootStorage"
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagList"
+        },
+        {
+          "description": "<p>The tags associated with the bundle.</p> <note> <p>To add tags at the same time when you're creating the bundle, you must create an IAM policy that grants your IAM user permissions to use <code>workspaces:CreateTags</code>. </p> </note>"
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-create-workspace-bundle-request-schema.json",
+  "description": "CreateWorkspaceBundleRequest schema from Amazon WorkSpaces API"
+}

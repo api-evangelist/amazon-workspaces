@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "SourceWorkspaceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceId"
+        },
+        {
+          "description": "The original identifier of the WorkSpace that is being migrated."
+        }
+      ]
+    },
+    "TargetWorkspaceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceId"
+        },
+        {
+          "description": "The new identifier of the WorkSpace that is being migrated. If the migration does not succeed, the target WorkSpace ID will not be used, and the WorkSpace will still have the original WorkSpace ID."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "MigrateWorkspaceResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-migrate-workspace-result-structure.json",
+  "description": "MigrateWorkspaceResult schema from Amazon WorkSpaces API"
+}

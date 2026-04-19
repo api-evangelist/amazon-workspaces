@@ -1,0 +1,8 @@
+{
+  "DirectoryId": "wsid-abc123def456",
+  "SubnetIds": "wsid-abc123def456",
+  "EnableWorkDocs": "example-value",
+  "EnableSelfService": "example-value",
+  "Tenancy": "example-value",
+  "Tags": "example-value"
+}

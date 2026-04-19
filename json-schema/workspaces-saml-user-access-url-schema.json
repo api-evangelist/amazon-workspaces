@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "^(http|https)\\://\\S+$",
+  "minLength": 8,
+  "maxLength": 200,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SamlUserAccessUrl",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-saml-user-access-url-schema.json",
+  "description": "SamlUserAccessUrl schema from Amazon WorkSpaces API"
+}

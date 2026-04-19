@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "minLength": 1,
+  "maxLength": 1500000,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DefaultLogo",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-default-logo-structure.json",
+  "description": "DefaultLogo schema from Amazon WorkSpaces API"
+}

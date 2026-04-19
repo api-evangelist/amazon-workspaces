@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "pattern": "^wsb-[0-9a-z]{8,63}$",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "BundleId",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-bundle-id-structure.json",
+  "description": "BundleId schema from Amazon WorkSpaces API"
+}

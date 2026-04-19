@@ -1,0 +1,14 @@
+{
+  "type": "string",
+  "enum": [
+    "NOT_ASSOCIATED",
+    "ASSOCIATED_WITH_OWNER_ACCOUNT",
+    "ASSOCIATED_WITH_SHARED_ACCOUNT",
+    "PENDING_ASSOCIATION",
+    "PENDING_DISASSOCIATION"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AssociationStatus",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-association-status-schema.json",
+  "description": "AssociationStatus schema from Amazon WorkSpaces API"
+}

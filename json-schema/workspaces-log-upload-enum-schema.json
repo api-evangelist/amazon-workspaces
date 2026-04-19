@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "ENABLED",
+    "DISABLED"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LogUploadEnum",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-log-upload-enum-schema.json",
+  "description": "LogUploadEnum schema from Amazon WorkSpaces API"
+}

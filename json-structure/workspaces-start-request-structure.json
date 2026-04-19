@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "WorkspaceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceId"
+        },
+        {
+          "description": "The identifier of the WorkSpace."
+        }
+      ]
+    }
+  },
+  "description": "Information used to start a WorkSpace.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "StartRequest",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-start-request-structure.json"
+}

@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "AddInId",
+    "ResourceId"
+  ],
+  "name": "DeleteConnectClientAddInRequest",
+  "properties": {
+    "AddInId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AmazonUuid"
+        },
+        {
+          "description": "The identifier of the client add-in to delete."
+        }
+      ]
+    },
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The directory identifier for which the client add-in is configured."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-delete-connect-client-add-in-request-structure.json",
+  "description": "DeleteConnectClientAddInRequest schema from Amazon WorkSpaces API"
+}

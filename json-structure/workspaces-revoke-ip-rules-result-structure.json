@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "RevokeIpRulesResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-revoke-ip-rules-result-structure.json",
+  "description": "RevokeIpRulesResult schema from Amazon WorkSpaces API"
+}

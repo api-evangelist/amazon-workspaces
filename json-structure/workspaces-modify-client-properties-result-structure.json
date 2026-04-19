@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ModifyClientPropertiesResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-modify-client-properties-result-structure.json",
+  "description": "ModifyClientPropertiesResult schema from Amazon WorkSpaces API"
+}

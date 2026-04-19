@@ -1,0 +1,94 @@
+{
+  "type": "object",
+  "required": [
+    "DirectoryId",
+    "UserName",
+    "BundleId"
+  ],
+  "properties": {
+    "DirectoryId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The identifier of the Directory Service directory for the WorkSpace. You can use <a>DescribeWorkspaceDirectories</a> to list the available directories."
+        }
+      ]
+    },
+    "UserName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserName"
+        },
+        {
+          "description": "The user name of the user for the WorkSpace. This user name must exist in the Directory Service directory for the WorkSpace."
+        }
+      ]
+    },
+    "BundleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BundleId"
+        },
+        {
+          "description": "The identifier of the bundle for the WorkSpace. You can use <a>DescribeWorkspaceBundles</a> to list the available bundles."
+        }
+      ]
+    },
+    "VolumeEncryptionKey": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VolumeEncryptionKey"
+        },
+        {
+          "description": "The ARN of the symmetric KMS key used to encrypt data stored on your WorkSpace. Amazon WorkSpaces does not support asymmetric KMS keys."
+        }
+      ]
+    },
+    "UserVolumeEncryptionEnabled": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BooleanObject"
+        },
+        {
+          "description": "Indicates whether the data stored on the user volume is encrypted."
+        }
+      ]
+    },
+    "RootVolumeEncryptionEnabled": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BooleanObject"
+        },
+        {
+          "description": "Indicates whether the data stored on the root volume is encrypted."
+        }
+      ]
+    },
+    "WorkspaceProperties": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceProperties"
+        },
+        {
+          "description": "The WorkSpace properties."
+        }
+      ]
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagList"
+        },
+        {
+          "description": "The tags for the WorkSpace."
+        }
+      ]
+    }
+  },
+  "description": "Describes the information used to create a WorkSpace.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "WorkspaceRequest",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-workspace-request-structure.json"
+}

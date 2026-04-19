@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "UPDATE_INITIATED",
+    "UPDATE_IN_PROGRESS"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ModificationStateEnum",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-modification-state-enum-schema.json",
+  "description": "ModificationStateEnum schema from Amazon WorkSpaces API"
+}

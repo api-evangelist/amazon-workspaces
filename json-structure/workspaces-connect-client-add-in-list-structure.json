@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/ConnectClientAddIn"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ConnectClientAddInList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-connect-client-add-in-list-structure.json",
+  "description": "ConnectClientAddInList schema from Amazon WorkSpaces API"
+}

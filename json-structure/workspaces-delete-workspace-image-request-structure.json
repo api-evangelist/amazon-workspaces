@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "ImageId"
+  ],
+  "name": "DeleteWorkspaceImageRequest",
+  "properties": {
+    "ImageId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageId"
+        },
+        {
+          "description": "The identifier of the image."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-delete-workspace-image-request-structure.json",
+  "description": "DeleteWorkspaceImageRequest schema from Amazon WorkSpaces API"
+}

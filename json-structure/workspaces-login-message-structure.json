@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/components/schemas/ClientLoginMessage"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "LoginMessage",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-login-message-structure.json",
+  "description": "LoginMessage schema from Amazon WorkSpaces API"
+}

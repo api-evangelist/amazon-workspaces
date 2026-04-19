@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "FailedRequests": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FailedStartWorkspaceRequests"
+        },
+        {
+          "description": "Information about the WorkSpaces that could not be started."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "StartWorkspacesResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-start-workspaces-result-structure.json",
+  "description": "StartWorkspacesResult schema from Amazon WorkSpaces API"
+}

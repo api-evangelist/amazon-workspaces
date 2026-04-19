@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "DedicatedTenancySupport": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DedicatedTenancySupportResultEnum"
+        },
+        {
+          "description": "The status of BYOL (whether BYOL is enabled or disabled)."
+        }
+      ]
+    },
+    "DedicatedTenancyManagementCidrRange": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DedicatedTenancyManagementCidrRange"
+        },
+        {
+          "description": "<p>The IP address range, specified as an IPv4 CIDR block, used for the management network interface.</p> <p>The management network interface is connected to a secure Amazon WorkSpaces management network. It is used for interactive streaming of the WorkSpace desktop to Amazon WorkSpaces clients, and to allow Amazon WorkSpaces to manage the WorkSpace.</p>"
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DescribeAccountResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-describe-account-result-schema.json",
+  "description": "DescribeAccountResult schema from Amazon WorkSpaces API"
+}

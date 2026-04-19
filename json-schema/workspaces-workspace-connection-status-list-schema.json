@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/WorkspaceConnectionStatus"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WorkspaceConnectionStatusList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-workspace-connection-status-list-schema.json",
+  "description": "WorkspaceConnectionStatusList schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/RelatedWorkspaceProperties"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RelatedWorkspaces",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-related-workspaces-schema.json",
+  "description": "RelatedWorkspaces schema from Amazon WorkSpaces API"
+}

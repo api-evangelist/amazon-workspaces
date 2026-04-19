@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}",
+  "minLength": 36,
+  "maxLength": 36,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AmazonUuid",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-amazon-uuid-schema.json",
+  "description": "AmazonUuid schema from Amazon WorkSpaces API"
+}

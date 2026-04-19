@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "RebuildSnapshots": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SnapshotList"
+        },
+        {
+          "description": "Information about the snapshots that can be used to rebuild a WorkSpace. These snapshots include the user volume."
+        }
+      ]
+    },
+    "RestoreSnapshots": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SnapshotList"
+        },
+        {
+          "description": "Information about the snapshots that can be used to restore a WorkSpace. These snapshots include both the root volume and the user volume."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DescribeWorkspaceSnapshotsResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-describe-workspace-snapshots-result-schema.json",
+  "description": "DescribeWorkspaceSnapshotsResult schema from Amazon WorkSpaces API"
+}

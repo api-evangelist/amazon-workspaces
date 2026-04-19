@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/WorkspaceImageId"
+  },
+  "minItems": 1,
+  "maxItems": 25,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "WorkspaceImageIdList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-workspace-image-id-list-structure.json",
+  "description": "WorkspaceImageIdList schema from Amazon WorkSpaces API"
+}

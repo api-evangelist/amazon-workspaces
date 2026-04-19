@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "AssociationStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AssociationStatus"
+        },
+        {
+          "description": "The association status of the connection alias."
+        }
+      ]
+    },
+    "AssociatedAccountId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AwsAccount"
+        },
+        {
+          "description": "The identifier of the Amazon Web Services account that associated the connection alias with a directory."
+        }
+      ]
+    },
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NonEmptyString"
+        },
+        {
+          "description": "The identifier of the directory associated with a connection alias."
+        }
+      ]
+    },
+    "ConnectionIdentifier": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ConnectionIdentifier"
+        },
+        {
+          "description": "The identifier of the connection alias association. You use the connection identifier in the DNS TXT record when you're configuring your DNS routing policies."
+        }
+      ]
+    }
+  },
+  "description": "Describes a connection alias association that is used for cross-Region redirection. For more information, see <a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/cross-region-redirection.html\"> Cross-Region Redirection for Amazon WorkSpaces</a>.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ConnectionAliasAssociation",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-connection-alias-association-structure.json"
+}

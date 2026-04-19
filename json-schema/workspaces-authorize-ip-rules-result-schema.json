@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AuthorizeIpRulesResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-authorize-ip-rules-result-schema.json",
+  "description": "AuthorizeIpRulesResult schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "ImageId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageId"
+        },
+        {
+          "description": "The identifier of the WorkSpace image."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ImportWorkspaceImageResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-import-workspace-image-result-schema.json",
+  "description": "ImportWorkspaceImageResult schema from Amazon WorkSpaces API"
+}

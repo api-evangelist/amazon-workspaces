@@ -1,0 +1,89 @@
+{
+  "type": "object",
+  "properties": {
+    "ImageId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageId"
+        },
+        {
+          "description": "The identifier of the new WorkSpace image."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageName"
+        },
+        {
+          "description": "The name of the image."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageDescription"
+        },
+        {
+          "description": "The description of the image."
+        }
+      ]
+    },
+    "OperatingSystem": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OperatingSystem"
+        },
+        {
+          "description": "The operating system that the image is running."
+        }
+      ]
+    },
+    "State": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageState"
+        },
+        {
+          "description": "The availability status of the image."
+        }
+      ]
+    },
+    "RequiredTenancy": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageRequiredTenancy"
+        },
+        {
+          "description": "Specifies whether the image is running on dedicated hardware. When Bring Your Own License (BYOL) is enabled, this value is set to DEDICATED. For more information, see <a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/byol-windows-images.htm\"> Bring Your Own Windows Desktop Images.</a>."
+        }
+      ]
+    },
+    "Created": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The date when the image was created."
+        }
+      ]
+    },
+    "OwnerAccountId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AwsAccount"
+        },
+        {
+          "description": "The identifier of the Amazon Web Services account that owns the image."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CreateWorkspaceImageResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-create-workspace-image-result-schema.json",
+  "description": "CreateWorkspaceImageResult schema from Amazon WorkSpaces API"
+}

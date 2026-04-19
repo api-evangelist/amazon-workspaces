@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "Capacity": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NonEmptyString"
+        },
+        {
+          "description": "The size of the root volume."
+        }
+      ]
+    }
+  },
+  "description": "Describes the root volume for a WorkSpace bundle.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "RootStorage",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-root-storage-structure.json"
+}

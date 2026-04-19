@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "WorkspaceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceId"
+        },
+        {
+          "description": "The identifier of the related WorkSpace."
+        }
+      ]
+    },
+    "Region": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Region"
+        },
+        {
+          "description": "The Region of the related WorkSpace."
+        }
+      ]
+    },
+    "State": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceState"
+        },
+        {
+          "description": "Indicates the state of the WorkSpace."
+        }
+      ]
+    },
+    "Type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StandbyWorkspaceRelationshipType"
+        },
+        {
+          "description": "Indicates the type of WorkSpace."
+        }
+      ]
+    }
+  },
+  "description": "Describes the related WorkSpace. The related WorkSpace could be a standby WorkSpace or primary WorkSpace related to the specified WorkSpace.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "RelatedWorkspaceProperties",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-related-workspace-properties-structure.json"
+}

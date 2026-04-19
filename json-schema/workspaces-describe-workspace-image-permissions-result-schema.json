@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "ImageId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageId"
+        },
+        {
+          "description": "The identifier of the image."
+        }
+      ]
+    },
+    "ImagePermissions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImagePermissions"
+        },
+        {
+          "description": "The identifiers of the Amazon Web Services accounts that the image has been shared with."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationToken"
+        },
+        {
+          "description": "The token to use to retrieve the next page of results. This value is null when there are no more results to return. "
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DescribeWorkspaceImagePermissionsResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-describe-workspace-image-permissions-result-schema.json",
+  "description": "DescribeWorkspaceImagePermissionsResult schema from Amazon WorkSpaces API"
+}

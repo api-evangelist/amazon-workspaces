@@ -1,0 +1,119 @@
+{
+  "type": "object",
+  "properties": {
+    "ImageId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageId"
+        },
+        {
+          "description": "The identifier of the image."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageName"
+        },
+        {
+          "description": "The name of the image."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageDescription"
+        },
+        {
+          "description": "The description of the image."
+        }
+      ]
+    },
+    "OperatingSystem": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OperatingSystem"
+        },
+        {
+          "description": "The operating system that the image is running. "
+        }
+      ]
+    },
+    "State": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageState"
+        },
+        {
+          "description": "The status of the image."
+        }
+      ]
+    },
+    "RequiredTenancy": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageRequiredTenancy"
+        },
+        {
+          "description": "Specifies whether the image is running on dedicated hardware. When Bring Your Own License (BYOL) is enabled, this value is set to <code>DEDICATED</code>. For more information, see <a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/byol-windows-images.html\">Bring Your Own Windows Desktop Images</a>."
+        }
+      ]
+    },
+    "ErrorCode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageErrorCode"
+        },
+        {
+          "description": "The error code that is returned for the image."
+        }
+      ]
+    },
+    "ErrorMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Description"
+        },
+        {
+          "description": "The text of the error message that is returned for the image."
+        }
+      ]
+    },
+    "Created": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The date when the image was created. If the image has been shared, the Amazon Web Services account that the image has been shared with sees the original creation date of the image."
+        }
+      ]
+    },
+    "OwnerAccountId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AwsAccount"
+        },
+        {
+          "description": "The identifier of the Amazon Web Services account that owns the image."
+        }
+      ]
+    },
+    "Updates": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UpdateResult"
+        },
+        {
+          "description": "The updates (if any) that are available for the specified image."
+        }
+      ]
+    }
+  },
+  "description": "Describes a WorkSpace image.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "WorkspaceImage",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-workspace-image-structure.json"
+}

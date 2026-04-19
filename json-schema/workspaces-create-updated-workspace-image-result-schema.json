@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "ImageId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageId"
+        },
+        {
+          "description": "The identifier of the new updated WorkSpace image."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CreateUpdatedWorkspaceImageResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-create-updated-workspace-image-result-schema.json",
+  "description": "CreateUpdatedWorkspaceImageResult schema from Amazon WorkSpaces API"
+}

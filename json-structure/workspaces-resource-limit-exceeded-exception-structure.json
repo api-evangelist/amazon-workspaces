@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ResourceLimitExceededException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-resource-limit-exceeded-exception-structure.json",
+  "description": "ResourceLimitExceededException schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "GroupId",
+    "UserRules"
+  ],
+  "name": "RevokeIpRulesRequest",
+  "properties": {
+    "GroupId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpGroupId"
+        },
+        {
+          "description": "The identifier of the group."
+        }
+      ]
+    },
+    "UserRules": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpRevokedRuleList"
+        },
+        {
+          "description": "The rules to remove from the group."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-revoke-ip-rules-request-structure.json",
+  "description": "RevokeIpRulesRequest schema from Amazon WorkSpaces API"
+}

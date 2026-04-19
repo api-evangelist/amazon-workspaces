@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "^wsca-[0-9a-z]{8,63}$",
+  "minLength": 13,
+  "maxLength": 68,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ConnectionAliasId",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-connection-alias-id-structure.json",
+  "description": "ConnectionAliasId schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/DeletableSamlProperty"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DeletableSamlPropertiesList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-deletable-saml-properties-list-structure.json",
+  "description": "DeletableSamlPropertiesList schema from Amazon WorkSpaces API"
+}

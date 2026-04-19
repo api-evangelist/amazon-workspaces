@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DeleteWorkspaceImageResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-delete-workspace-image-result-schema.json",
+  "description": "DeleteWorkspaceImageResult schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "integer",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "RunningModeAutoStopTimeoutInMinutes",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-running-mode-auto-stop-timeout-in-minutes-structure.json",
+  "description": "RunningModeAutoStopTimeoutInMinutes schema from Amazon WorkSpaces API"
+}

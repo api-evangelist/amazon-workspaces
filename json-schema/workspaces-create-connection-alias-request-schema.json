@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "required": [
+    "ConnectionString"
+  ],
+  "title": "CreateConnectionAliasRequest",
+  "properties": {
+    "ConnectionString": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ConnectionString"
+        },
+        {
+          "description": "<p>A connection string in the form of a fully qualified domain name (FQDN), such as <code>www.example.com</code>.</p> <important> <p>After you create a connection string, it is always associated to your Amazon Web Services account. You cannot recreate the same connection string with a different account, even if you delete all instances of it from the original account. The connection string is globally reserved for your account.</p> </important>"
+        }
+      ]
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagList"
+        },
+        {
+          "description": "The tags to associate with the connection alias."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-create-connection-alias-request-schema.json",
+  "description": "CreateConnectionAliasRequest schema from Amazon WorkSpaces API"
+}

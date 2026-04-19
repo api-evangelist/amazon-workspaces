@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "^d-[0-9a-f]{8,63}$",
+  "minLength": 10,
+  "maxLength": 65,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DirectoryId",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-directory-id-structure.json",
+  "description": "DirectoryId schema from Amazon WorkSpaces API"
+}

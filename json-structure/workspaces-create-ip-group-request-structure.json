@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "required": [
+    "GroupName"
+  ],
+  "name": "CreateIpGroupRequest",
+  "properties": {
+    "GroupName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpGroupName"
+        },
+        {
+          "description": "The name of the group."
+        }
+      ]
+    },
+    "GroupDesc": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpGroupDesc"
+        },
+        {
+          "description": "The description of the group."
+        }
+      ]
+    },
+    "UserRules": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpRuleList"
+        },
+        {
+          "description": "The rules to add to the group."
+        }
+      ]
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagList"
+        },
+        {
+          "description": "The tags. Each WorkSpaces resource can have a maximum of 50 tags."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-create-ip-group-request-structure.json",
+  "description": "CreateIpGroupRequest schema from Amazon WorkSpaces API"
+}

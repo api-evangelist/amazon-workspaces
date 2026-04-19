@@ -1,0 +1,6 @@
+{
+  "AliasIds": "wsid-abc123def456",
+  "ResourceId": "wsid-abc123def456",
+  "Limit": "example-value",
+  "NextToken": "example-value"
+}

@@ -1,0 +1,9 @@
+{
+  "ResourceId": "wsid-abc123def456",
+  "DeviceTypeWindows": "example-value",
+  "DeviceTypeOsx": "example-value",
+  "DeviceTypeAndroid": "wsid-abc123def456",
+  "DeviceTypeIos": "example-value",
+  "DeviceTypeLinux": "example-value",
+  "DeviceTypeWeb": "example-value"
+}

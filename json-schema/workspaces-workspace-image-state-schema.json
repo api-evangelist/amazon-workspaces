@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "AVAILABLE",
+    "PENDING",
+    "ERROR"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WorkspaceImageState",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-workspace-image-state-schema.json",
+  "description": "WorkspaceImageState schema from Amazon WorkSpaces API"
+}

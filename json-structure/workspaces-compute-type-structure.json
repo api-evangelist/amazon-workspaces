@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Compute"
+        },
+        {
+          "description": "The compute type."
+        }
+      ]
+    }
+  },
+  "description": "Describes the compute type of the bundle.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ComputeType",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-compute-type-structure.json"
+}

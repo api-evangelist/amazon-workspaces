@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/PendingCreateStandbyWorkspacesRequest"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "PendingCreateStandbyWorkspacesRequestList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-pending-create-standby-workspaces-request-list-structure.json",
+  "description": "PendingCreateStandbyWorkspacesRequestList schema from Amazon WorkSpaces API"
+}

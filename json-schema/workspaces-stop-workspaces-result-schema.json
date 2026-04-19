@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "FailedRequests": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FailedStopWorkspaceRequests"
+        },
+        {
+          "description": "Information about the WorkSpaces that could not be stopped."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "StopWorkspacesResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-stop-workspaces-result-schema.json",
+  "description": "StopWorkspacesResult schema from Amazon WorkSpaces API"
+}

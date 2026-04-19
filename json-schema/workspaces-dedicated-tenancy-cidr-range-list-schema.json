@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/DedicatedTenancyManagementCidrRange"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DedicatedTenancyCidrRangeList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-dedicated-tenancy-cidr-range-list-schema.json",
+  "description": "DedicatedTenancyCidrRangeList schema from Amazon WorkSpaces API"
+}

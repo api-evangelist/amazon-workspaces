@@ -1,0 +1,10 @@
+{
+  "DirectoryId": "wsid-abc123def456",
+  "UserName": "Example Workspace",
+  "BundleId": "wsid-abc123def456",
+  "VolumeEncryptionKey": "example-value",
+  "UserVolumeEncryptionEnabled": "example-value",
+  "RootVolumeEncryptionEnabled": "example-value",
+  "WorkspaceProperties": "example-value",
+  "Tags": "example-value"
+}

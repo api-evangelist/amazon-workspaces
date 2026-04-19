@@ -1,0 +1,9 @@
+{
+  "BundleName": "Example Workspace",
+  "BundleDescription": "example-value",
+  "ImageId": "wsid-abc123def456",
+  "ComputeType": "example-value",
+  "UserStorage": "example-value",
+  "RootStorage": "example-value",
+  "Tags": "example-value"
+}

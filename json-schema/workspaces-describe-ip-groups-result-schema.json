@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "Result": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspacesIpGroupsList"
+        },
+        {
+          "description": "Information about the IP access control groups."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationToken"
+        },
+        {
+          "description": "The token to use to retrieve the next page of results. This value is null when there are no more results to return. "
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DescribeIpGroupsResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-describe-ip-groups-result-schema.json",
+  "description": "DescribeIpGroupsResult schema from Amazon WorkSpaces API"
+}

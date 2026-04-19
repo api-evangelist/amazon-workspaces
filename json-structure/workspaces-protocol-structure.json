@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "PCOIP",
+    "WSP"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "Protocol",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-protocol-structure.json",
+  "description": "Protocol schema from Amazon WorkSpaces API"
+}

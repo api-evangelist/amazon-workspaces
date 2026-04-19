@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "InvalidParameterValuesException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-invalid-parameter-values-exception-structure.json",
+  "description": "InvalidParameterValuesException schema from Amazon WorkSpaces API"
+}

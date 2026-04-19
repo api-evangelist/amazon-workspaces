@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "ResourceIds"
+  ],
+  "title": "DescribeClientPropertiesRequest",
+  "properties": {
+    "ResourceIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceIdList"
+        },
+        {
+          "description": "The resource identifier, in the form of directory IDs."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-describe-client-properties-request-schema.json",
+  "description": "DescribeClientPropertiesRequest schema from Amazon WorkSpaces API"
+}

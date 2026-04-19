@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "SAML_PROPERTIES_USER_ACCESS_URL",
+    "SAML_PROPERTIES_RELAY_STATE_PARAMETER_NAME"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DeletableSamlProperty",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-deletable-saml-property-schema.json",
+  "description": "DeletableSamlProperty schema from Amazon WorkSpaces API"
+}

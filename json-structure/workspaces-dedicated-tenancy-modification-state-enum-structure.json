@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "PENDING",
+    "COMPLETED",
+    "FAILED"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DedicatedTenancyModificationStateEnum",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-dedicated-tenancy-modification-state-enum-structure.json",
+  "description": "DedicatedTenancyModificationStateEnum schema from Amazon WorkSpaces API"
+}

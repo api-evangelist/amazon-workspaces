@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "ClientPropertiesList": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ClientPropertiesList"
+        },
+        {
+          "description": "Information about the specified Amazon WorkSpaces clients."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DescribeClientPropertiesResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-describe-client-properties-result-schema.json",
+  "description": "DescribeClientPropertiesResult schema from Amazon WorkSpaces API"
+}

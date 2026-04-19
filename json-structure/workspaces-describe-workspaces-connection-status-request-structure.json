@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "name": "DescribeWorkspacesConnectionStatusRequest",
+  "properties": {
+    "WorkspaceIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceIdList"
+        },
+        {
+          "description": "The identifiers of the WorkSpaces. You can specify up to 25 WorkSpaces."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationToken"
+        },
+        {
+          "description": "If you received a <code>NextToken</code> from a previous call that was paginated, provide this token to receive the next set of results."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-describe-workspaces-connection-status-request-structure.json",
+  "description": "DescribeWorkspacesConnectionStatusRequest schema from Amazon WorkSpaces API"
+}

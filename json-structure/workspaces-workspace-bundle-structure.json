@@ -1,0 +1,129 @@
+{
+  "type": "object",
+  "properties": {
+    "BundleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BundleId"
+        },
+        {
+          "description": "The identifier of the bundle."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NonEmptyString"
+        },
+        {
+          "description": "The name of the bundle."
+        }
+      ]
+    },
+    "Owner": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BundleOwner"
+        },
+        {
+          "description": "The owner of the bundle. This is the account identifier of the owner, or <code>AMAZON</code> if the bundle is provided by Amazon Web Services."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Description"
+        },
+        {
+          "description": "The description of the bundle."
+        }
+      ]
+    },
+    "ImageId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageId"
+        },
+        {
+          "description": "The identifier of the image that was used to create the bundle."
+        }
+      ]
+    },
+    "RootStorage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RootStorage"
+        },
+        {
+          "description": "The size of the root volume."
+        }
+      ]
+    },
+    "UserStorage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserStorage"
+        },
+        {
+          "description": "The size of the user volume."
+        }
+      ]
+    },
+    "ComputeType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ComputeType"
+        },
+        {
+          "description": "The compute type of the bundle. For more information, see <a href=\"http://aws.amazon.com/workspaces/details/#Amazon_WorkSpaces_Bundles\">Amazon WorkSpaces Bundles</a>."
+        }
+      ]
+    },
+    "LastUpdatedTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The last time that the bundle was updated."
+        }
+      ]
+    },
+    "CreationTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The time when the bundle was created."
+        }
+      ]
+    },
+    "State": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceBundleState"
+        },
+        {
+          "description": "The state of the WorkSpace bundle."
+        }
+      ]
+    },
+    "BundleType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BundleType"
+        },
+        {
+          "description": "The type of WorkSpace bundle."
+        }
+      ]
+    }
+  },
+  "description": "Describes a WorkSpace bundle.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "WorkspaceBundle",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-workspace-bundle-structure.json"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/Protocol"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ProtocolList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-protocol-list-structure.json",
+  "description": "ProtocolList schema from Amazon WorkSpaces API"
+}

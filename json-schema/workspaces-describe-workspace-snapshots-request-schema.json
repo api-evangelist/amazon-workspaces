@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "WorkspaceId"
+  ],
+  "title": "DescribeWorkspaceSnapshotsRequest",
+  "properties": {
+    "WorkspaceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceId"
+        },
+        {
+          "description": "The identifier of the WorkSpace."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-describe-workspace-snapshots-request-schema.json",
+  "description": "DescribeWorkspaceSnapshotsRequest schema from Amazon WorkSpaces API"
+}

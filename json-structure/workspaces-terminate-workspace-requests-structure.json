@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/TerminateRequest"
+  },
+  "minItems": 1,
+  "maxItems": 25,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "TerminateWorkspaceRequests",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-terminate-workspace-requests-structure.json",
+  "description": "TerminateWorkspaceRequests schema from Amazon WorkSpaces API"
+}

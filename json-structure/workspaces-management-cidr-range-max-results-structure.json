@@ -1,0 +1,9 @@
+{
+  "type": "integer",
+  "minimum": 1,
+  "maximum": 5,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ManagementCidrRangeMaxResults",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-management-cidr-range-max-results-structure.json",
+  "description": "ManagementCidrRangeMaxResults schema from Amazon WorkSpaces API"
+}

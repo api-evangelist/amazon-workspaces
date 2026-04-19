@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ResourceUnavailableException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-resource-unavailable-exception-structure.json",
+  "description": "ResourceUnavailableException schema from Amazon WorkSpaces API"
+}

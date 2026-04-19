@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "PRIMARY",
+    "STANDBY"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "StandbyWorkspaceRelationshipType",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-standby-workspace-relationship-type-structure.json",
+  "description": "StandbyWorkspaceRelationshipType schema from Amazon WorkSpaces API"
+}

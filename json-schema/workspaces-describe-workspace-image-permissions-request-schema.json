@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "required": [
+    "ImageId"
+  ],
+  "title": "DescribeWorkspaceImagePermissionsRequest",
+  "properties": {
+    "ImageId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageId"
+        },
+        {
+          "description": "The identifier of the image."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationToken"
+        },
+        {
+          "description": "If you received a <code>NextToken</code> from a previous call that was paginated, provide this token to receive the next set of results."
+        }
+      ]
+    },
+    "MaxResults": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Limit"
+        },
+        {
+          "description": "The maximum number of items to return."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-describe-workspace-image-permissions-request-schema.json",
+  "description": "DescribeWorkspaceImagePermissionsRequest schema from Amazon WorkSpaces API"
+}

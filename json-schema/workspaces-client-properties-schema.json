@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "ReconnectEnabled": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ReconnectEnum"
+        },
+        {
+          "description": "Specifies whether users can cache their credentials on the Amazon WorkSpaces client. When enabled, users can choose to reconnect to their WorkSpaces without re-entering their credentials. "
+        }
+      ]
+    },
+    "LogUploadEnabled": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LogUploadEnum"
+        },
+        {
+          "description": "Specifies whether users can upload diagnostic log files of Amazon WorkSpaces client directly to WorkSpaces to troubleshoot issues when using the WorkSpaces client. When enabled, the log files will be sent to WorkSpaces automatically and will be applied to all users in the specified directory."
+        }
+      ]
+    }
+  },
+  "description": "Describes an Amazon WorkSpaces client.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ClientProperties",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-client-properties-schema.json"
+}

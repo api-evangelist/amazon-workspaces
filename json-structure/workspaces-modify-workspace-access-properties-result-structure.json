@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ModifyWorkspaceAccessPropertiesResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-modify-workspace-access-properties-result-structure.json",
+  "description": "ModifyWorkspaceAccessPropertiesResult schema from Amazon WorkSpaces API"
+}

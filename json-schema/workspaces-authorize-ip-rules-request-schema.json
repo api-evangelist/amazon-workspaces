@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "GroupId",
+    "UserRules"
+  ],
+  "title": "AuthorizeIpRulesRequest",
+  "properties": {
+    "GroupId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpGroupId"
+        },
+        {
+          "description": "The identifier of the group."
+        }
+      ]
+    },
+    "UserRules": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpRuleList"
+        },
+        {
+          "description": "The rules to add to the group."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-authorize-ip-rules-request-schema.json",
+  "description": "AuthorizeIpRulesRequest schema from Amazon WorkSpaces API"
+}

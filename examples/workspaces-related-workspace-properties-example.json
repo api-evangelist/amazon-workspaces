@@ -1,0 +1,6 @@
+{
+  "WorkspaceId": "wsid-abc123def456",
+  "Region": "example-value",
+  "State": "RUNNING",
+  "Type": "example-value"
+}

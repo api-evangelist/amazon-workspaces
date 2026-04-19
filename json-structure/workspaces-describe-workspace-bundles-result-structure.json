@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "Bundles": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BundleList"
+        },
+        {
+          "description": "Information about the bundles."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationToken"
+        },
+        {
+          "description": "The token to use to retrieve the next page of results. This value is null when there are no more results to return. This token is valid for one day and must be used within that time frame."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DescribeWorkspaceBundlesResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-describe-workspace-bundles-result-structure.json",
+  "description": "DescribeWorkspaceBundlesResult schema from Amazon WorkSpaces API"
+}

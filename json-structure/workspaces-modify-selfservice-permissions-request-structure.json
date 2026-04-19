@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "ResourceId",
+    "SelfservicePermissions"
+  ],
+  "name": "ModifySelfservicePermissionsRequest",
+  "properties": {
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The identifier of the directory."
+        }
+      ]
+    },
+    "SelfservicePermissions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SelfservicePermissions"
+        },
+        {
+          "description": "The permissions to enable or disable self-service capabilities."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-modify-selfservice-permissions-request-structure.json",
+  "description": "ModifySelfservicePermissionsRequest schema from Amazon WorkSpaces API"
+}

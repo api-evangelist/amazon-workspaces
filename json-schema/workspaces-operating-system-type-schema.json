@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "WINDOWS",
+    "LINUX"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OperatingSystemType",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-operating-system-type-schema.json",
+  "description": "OperatingSystemType schema from Amazon WorkSpaces API"
+}

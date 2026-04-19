@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DeleteConnectionAliasResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-delete-connection-alias-result-structure.json",
+  "description": "DeleteConnectionAliasResult schema from Amazon WorkSpaces API"
+}

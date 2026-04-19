@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "minLength": 1,
+  "maxLength": 63,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "UserName",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-user-name-structure.json",
+  "description": "UserName schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "pattern": "wsipg-[0-9a-z]{8,63}$",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "IpGroupId",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-ip-group-id-structure.json",
+  "description": "IpGroupId schema from Amazon WorkSpaces API"
+}

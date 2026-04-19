@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "minLength": 1,
+  "maxLength": 1770000,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "Ios3XLogo",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-ios3-x-logo-structure.json",
+  "description": "Ios3XLogo schema from Amazon WorkSpaces API"
+}

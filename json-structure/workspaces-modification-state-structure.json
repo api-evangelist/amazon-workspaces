@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "Resource": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ModificationResourceEnum"
+        },
+        {
+          "description": "The resource."
+        }
+      ]
+    },
+    "State": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ModificationStateEnum"
+        },
+        {
+          "description": "The modification state."
+        }
+      ]
+    }
+  },
+  "description": "Describes a WorkSpace modification.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ModificationState",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-modification-state-structure.json"
+}

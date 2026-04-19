@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "required": [
+    "ResourceId",
+    "Name",
+    "URL"
+  ],
+  "title": "CreateConnectClientAddInRequest",
+  "properties": {
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The directory identifier for which to configure the client add-in."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AddInName"
+        },
+        {
+          "description": "The name of the client add-in."
+        }
+      ]
+    },
+    "URL": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AddInUrl"
+        },
+        {
+          "description": "The endpoint URL of the Amazon Connect client add-in."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-create-connect-client-add-in-request-schema.json",
+  "description": "CreateConnectClientAddInRequest schema from Amazon WorkSpaces API"
+}

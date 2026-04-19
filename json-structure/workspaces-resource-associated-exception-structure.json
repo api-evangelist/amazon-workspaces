@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ResourceAssociatedException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-resource-associated-exception-structure.json",
+  "description": "ResourceAssociatedException schema from Amazon WorkSpaces API"
+}

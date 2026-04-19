@@ -1,0 +1,7 @@
+{
+  "ConnectionString": "example-value",
+  "AliasId": "wsid-abc123def456",
+  "State": "RUNNING",
+  "OwnerAccountId": "wsid-abc123def456",
+  "Associations": "example-value"
+}

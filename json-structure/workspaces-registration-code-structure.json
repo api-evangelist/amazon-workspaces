@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "minLength": 1,
+  "maxLength": 20,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "RegistrationCode",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-registration-code-structure.json",
+  "description": "RegistrationCode schema from Amazon WorkSpaces API"
+}

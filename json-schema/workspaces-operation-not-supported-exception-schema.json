@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OperationNotSupportedException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-operation-not-supported-exception-schema.json",
+  "description": "OperationNotSupportedException schema from Amazon WorkSpaces API"
+}

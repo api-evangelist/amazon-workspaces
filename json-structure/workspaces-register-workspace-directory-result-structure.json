@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "RegisterWorkspaceDirectoryResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-register-workspace-directory-result-structure.json",
+  "description": "RegisterWorkspaceDirectoryResult schema from Amazon WorkSpaces API"
+}

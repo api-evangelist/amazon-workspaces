@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/WorkspaceBundle"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BundleList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-bundle-list-schema.json",
+  "description": "BundleList schema from Amazon WorkSpaces API"
+}

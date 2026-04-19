@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "required": [
+    "ResourceId"
+  ],
+  "title": "ModifySamlPropertiesRequest",
+  "properties": {
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The directory identifier for which you want to configure SAML properties."
+        }
+      ]
+    },
+    "SamlProperties": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SamlProperties"
+        },
+        {
+          "description": "The properties for configuring SAML 2.0 authentication."
+        }
+      ]
+    },
+    "PropertiesToDelete": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeletableSamlPropertiesList"
+        },
+        {
+          "description": "<p>The SAML properties to delete as part of your request.</p> <p>Specify one of the following options:</p> <ul> <li> <p> <code>SAML_PROPERTIES_USER_ACCESS_URL</code> to delete the user access URL.</p> </li> <li> <p> <code>SAML_PROPERTIES_RELAY_STATE_PARAMETER_NAME</code> to delete the relay state parameter name.</p> </li> </ul>"
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-modify-saml-properties-request-schema.json",
+  "description": "ModifySamlPropertiesRequest schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "UpdateConnectClientAddInResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-update-connect-client-add-in-result-structure.json",
+  "description": "UpdateConnectClientAddInResult schema from Amazon WorkSpaces API"
+}

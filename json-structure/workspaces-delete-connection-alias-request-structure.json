@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "AliasId"
+  ],
+  "name": "DeleteConnectionAliasRequest",
+  "properties": {
+    "AliasId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ConnectionAliasId"
+        },
+        {
+          "description": "The identifier of the connection alias to delete."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-delete-connection-alias-request-structure.json",
+  "description": "DeleteConnectionAliasRequest schema from Amazon WorkSpaces API"
+}

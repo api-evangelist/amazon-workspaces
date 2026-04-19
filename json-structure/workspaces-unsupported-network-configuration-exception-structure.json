@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "UnsupportedNetworkConfigurationException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-unsupported-network-configuration-exception-structure.json",
+  "description": "UnsupportedNetworkConfigurationException schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "UpdateWorkspaceBundleResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-update-workspace-bundle-result-structure.json",
+  "description": "UpdateWorkspaceBundleResult schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "WorkspaceId",
+    "WorkspaceState"
+  ],
+  "name": "ModifyWorkspaceStateRequest",
+  "properties": {
+    "WorkspaceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceId"
+        },
+        {
+          "description": "The identifier of the WorkSpace."
+        }
+      ]
+    },
+    "WorkspaceState": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TargetWorkspaceState"
+        },
+        {
+          "description": "The WorkSpace state."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-modify-workspace-state-request-structure.json",
+  "description": "ModifyWorkspaceStateRequest schema from Amazon WorkSpaces API"
+}

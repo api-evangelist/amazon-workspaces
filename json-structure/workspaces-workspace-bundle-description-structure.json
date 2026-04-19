@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "^[a-zA-Z0-9_./() -]+$",
+  "minLength": 1,
+  "maxLength": 255,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "WorkspaceBundleDescription",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-workspace-bundle-description-structure.json",
+  "description": "WorkspaceBundleDescription schema from Amazon WorkSpaces API"
+}

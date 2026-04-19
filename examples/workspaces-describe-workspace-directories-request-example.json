@@ -1,0 +1,5 @@
+{
+  "DirectoryIds": "wsid-abc123def456",
+  "Limit": "example-value",
+  "NextToken": "example-value"
+}

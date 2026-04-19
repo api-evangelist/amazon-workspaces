@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "CONNECTED",
+    "DISCONNECTED",
+    "UNKNOWN"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ConnectionState",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-connection-state-structure.json",
+  "description": "ConnectionState schema from Amazon WorkSpaces API"
+}

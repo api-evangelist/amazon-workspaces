@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "InvalidResourceStateException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-invalid-resource-state-exception-structure.json",
+  "description": "InvalidResourceStateException schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/Tag"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TagList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-tag-list-schema.json",
+  "description": "TagList schema from Amazon WorkSpaces API"
+}

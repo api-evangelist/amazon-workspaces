@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "FailedRequests": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FailedCreateWorkspaceRequests"
+        },
+        {
+          "description": "Information about the WorkSpaces that could not be created."
+        }
+      ]
+    },
+    "PendingRequests": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceList"
+        },
+        {
+          "description": "<p>Information about the WorkSpaces that were created.</p> <p>Because this operation is asynchronous, the identifier returned is not immediately available for use with other operations. For example, if you call <a>DescribeWorkspaces</a> before the WorkSpace is created, the information returned can be incomplete.</p>"
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "CreateWorkspacesResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-create-workspaces-result-structure.json",
+  "description": "CreateWorkspacesResult schema from Amazon WorkSpaces API"
+}

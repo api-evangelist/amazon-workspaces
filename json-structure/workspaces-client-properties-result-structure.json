@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NonEmptyString"
+        },
+        {
+          "description": "The resource identifier, in the form of a directory ID."
+        }
+      ]
+    },
+    "ClientProperties": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ClientProperties"
+        },
+        {
+          "description": "Information about the Amazon WorkSpaces client."
+        }
+      ]
+    }
+  },
+  "description": "Information about the Amazon WorkSpaces client.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ClientPropertiesResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-client-properties-result-structure.json"
+}

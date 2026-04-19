@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "required": [
+    "PrimaryWorkspaceId",
+    "DirectoryId"
+  ],
+  "properties": {
+    "PrimaryWorkspaceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceId"
+        },
+        {
+          "description": "The identifier of the standby WorkSpace."
+        }
+      ]
+    },
+    "VolumeEncryptionKey": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VolumeEncryptionKey"
+        },
+        {
+          "description": "The volume encryption key of the standby WorkSpace."
+        }
+      ]
+    },
+    "DirectoryId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The identifier of the directory for the standby WorkSpace."
+        }
+      ]
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagList"
+        },
+        {
+          "description": "The tags associated with the standby WorkSpace."
+        }
+      ]
+    }
+  },
+  "description": "Describes a standby WorkSpace.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "StandbyWorkspace",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-standby-workspace-structure.json"
+}

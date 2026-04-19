@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "UpdateWorkspaceImagePermissionResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-update-workspace-image-permission-result-structure.json",
+  "description": "UpdateWorkspaceImagePermissionResult schema from Amazon WorkSpaces API"
+}

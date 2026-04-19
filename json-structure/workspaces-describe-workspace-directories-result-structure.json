@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "Directories": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryList"
+        },
+        {
+          "description": "Information about the directories."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationToken"
+        },
+        {
+          "description": "The token to use to retrieve the next page of results. This value is null when there are no more results to return. "
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DescribeWorkspaceDirectoriesResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-describe-workspace-directories-result-structure.json",
+  "description": "DescribeWorkspaceDirectoriesResult schema from Amazon WorkSpaces API"
+}

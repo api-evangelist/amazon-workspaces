@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "DISABLED",
+    "ENABLED"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "CertificateBasedAuthStatusEnum",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-certificate-based-auth-status-enum-structure.json",
+  "description": "CertificateBasedAuthStatusEnum schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/ImagePermission"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ImagePermissions",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-image-permissions-structure.json",
+  "description": "ImagePermissions schema from Amazon WorkSpaces API"
+}

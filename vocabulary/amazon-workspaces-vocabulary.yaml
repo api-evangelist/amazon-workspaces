@@ -1,0 +1,168 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: "Amazon WorkSpaces"
+  description: "Vocabulary for Amazon WorkSpaces virtual desktop provisioning and management."
+  created: "2026-04-19"
+  modified: "2026-04-19"
+
+operational:
+  apis:
+    - namespace: workspaces
+      name: Amazon WorkSpaces API
+      version: "2015-04-08"
+      baseUrl: https://workspaces.amazonaws.com
+      status: active
+
+  resources:
+    - name: workspaces
+      api: workspaces
+      actions: [describe, create, modify, terminate, reboot, start, stop, restore]
+    - name: bundles
+      api: workspaces
+      actions: [describe, create, delete, update]
+    - name: directories
+      api: workspaces
+      actions: [describe, register, deregister]
+    - name: images
+      api: workspaces
+      actions: [describe, create, delete, share, unshare, copy, import, export]
+    - name: ip-groups
+      api: workspaces
+      actions: [describe, create, delete, update, associate, disassociate]
+    - name: connection-aliases
+      api: workspaces
+      actions: [describe, create, delete, associate, disassociate]
+
+  actions:
+    - name: describe
+      httpMethods: [POST]
+      pattern: read
+    - name: create
+      httpMethods: [POST]
+      pattern: write
+    - name: modify
+      httpMethods: [POST]
+      pattern: write
+    - name: terminate
+      httpMethods: [POST]
+      pattern: destructive
+    - name: reboot
+      httpMethods: [POST]
+      pattern: write
+    - name: start
+      httpMethods: [POST]
+      pattern: write
+    - name: stop
+      httpMethods: [POST]
+      pattern: write
+    - name: restore
+      httpMethods: [POST]
+      pattern: write
+
+  schemas:
+    core:
+      - name: Workspace
+        description: A virtual desktop instance
+        key_properties: [WorkspaceId, DirectoryId, UserName, BundleId, State, ComputerName]
+      - name: WorkspaceBundle
+        description: A hardware configuration bundle
+        key_properties: [BundleId, Name, Owner, ComputeType, UserStorage, RootStorage]
+      - name: WorkspaceDirectory
+        description: A directory for workspace user authentication
+        key_properties: [DirectoryId, DirectoryType, DirectoryName, State]
+      - name: WorkspaceImage
+        description: A workspace OS image
+        key_properties: [ImageId, Name, Description, OperatingSystem, State]
+
+  enums:
+    workspace-states:
+      - PENDING
+      - AVAILABLE
+      - IMPAIRED
+      - UNHEALTHY
+      - REBOOTING
+      - STARTING
+      - REBUILDING
+      - RESTORING
+      - MAINTENANCE
+      - ADMIN_MAINTENANCE
+      - TERMINATING
+      - TERMINATED
+      - SUSPENDED
+      - UPDATING
+      - STOPPING
+      - STOPPED
+      - ERROR
+    running-modes:
+      - AUTO_STOP
+      - ALWAYS_ON
+
+  authentication:
+    schemes:
+      - name: HMAC
+        type: hmac
+        description: AWS Signature Version 4 signing
+
+capability:
+  workflows:
+    - name: Virtual Desktop Management
+      file: capabilities/virtual-desktop-management.yaml
+      description: >-
+        Workflow for IT administrators to provision and manage Amazon WorkSpaces
+        virtual desktops including lifecycle, bundles, directories, and images.
+      apis: [workspaces]
+      tool_count: 7
+      personas: [IT Administrator, End User Computing Engineer]
+      domains: [Virtual Desktop, End User Computing, Administration]
+
+  personas:
+    - id: it-administrator
+      name: IT Administrator
+      description: Manages WorkSpaces provisioning, lifecycle, and policy.
+      workflows: [virtual-desktop-management]
+    - id: euc-engineer
+      name: End User Computing Engineer
+      description: Designs and operates virtual desktop infrastructure.
+      workflows: [virtual-desktop-management]
+
+  domains:
+    - name: Virtual Desktop
+      description: Cloud-based virtual desktop provisioning and management
+    - name: End User Computing
+      description: Remote work and desktop-as-a-service infrastructure
+    - name: Administration
+      description: IT administration of desktop resources
+
+  namespaces:
+    consumed:
+      - workspaces
+    rest:
+      - name: virtual-desktop-management-api
+        port: 8080
+    mcp:
+      - name: virtual-desktop-management-mcp
+        port: 9090
+
+  binds:
+    - AWS_ACCESS_KEY_ID
+    - AWS_SECRET_ACCESS_KEY
+    - AWS_REGION
+
+crossReference:
+  - resource: workspaces
+    operations: [describe, create, terminate, reboot]
+    workflows: [virtual-desktop-management]
+    personas: [IT Administrator, End User Computing Engineer]
+  - resource: bundles
+    operations: [describe]
+    workflows: [virtual-desktop-management]
+    personas: [IT Administrator]
+  - resource: directories
+    operations: [describe]
+    workflows: [virtual-desktop-management]
+    personas: [IT Administrator]
+  - resource: images
+    operations: [describe]
+    workflows: [virtual-desktop-management]
+    personas: [End User Computing Engineer]

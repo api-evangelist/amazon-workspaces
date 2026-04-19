@@ -1,0 +1,20 @@
+{
+  "DirectoryId": "wsid-abc123def456",
+  "Alias": "example-value",
+  "DirectoryName": "Example Workspace",
+  "RegistrationCode": "example-value",
+  "SubnetIds": "wsid-abc123def456",
+  "DnsIpAddresses": "example-value",
+  "CustomerUserName": "Example Workspace",
+  "IamRoleId": "wsid-abc123def456",
+  "DirectoryType": "example-value",
+  "WorkspaceSecurityGroupId": "wsid-abc123def456",
+  "State": "RUNNING",
+  "WorkspaceCreationProperties": "example-value",
+  "ipGroupIds": "wsid-abc123def456",
+  "WorkspaceAccessProperties": "example-value",
+  "Tenancy": "example-value",
+  "SelfservicePermissions": "example-value",
+  "SamlProperties": "example-value",
+  "CertificateBasedAuthProperties": "example-value"
+}

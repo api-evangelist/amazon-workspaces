@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "ResourceId"
+  ],
+  "name": "DescribeClientBrandingRequest",
+  "properties": {
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The directory identifier of the WorkSpace for which you want to view client branding information."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-describe-client-branding-request-structure.json",
+  "description": "DescribeClientBrandingRequest schema from Amazon WorkSpaces API"
+}

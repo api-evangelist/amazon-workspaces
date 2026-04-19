@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "Microsoft_Office_2016",
+    "Microsoft_Office_2019"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "Application",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-application-structure.json",
+  "description": "Application schema from Amazon WorkSpaces API"
+}

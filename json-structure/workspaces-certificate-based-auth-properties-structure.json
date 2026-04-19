@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "Status": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CertificateBasedAuthStatusEnum"
+        },
+        {
+          "description": "The status of the certificate-based authentication properties."
+        }
+      ]
+    },
+    "CertificateAuthorityArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CertificateAuthorityArn"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the Amazon Web Services Certificate Manager Private CA resource."
+        }
+      ]
+    }
+  },
+  "description": "Describes the properties of the certificate-based authentication you want to use with your WorkSpaces.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "CertificateBasedAuthProperties",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-certificate-based-auth-properties-structure.json"
+}

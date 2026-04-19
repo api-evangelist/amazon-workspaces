@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "groupId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpGroupId"
+        },
+        {
+          "description": "The identifier of the group."
+        }
+      ]
+    },
+    "groupName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpGroupName"
+        },
+        {
+          "description": "The name of the group."
+        }
+      ]
+    },
+    "groupDesc": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpGroupDesc"
+        },
+        {
+          "description": "The description of the group."
+        }
+      ]
+    },
+    "userRules": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpRuleList"
+        },
+        {
+          "description": "The rules."
+        }
+      ]
+    }
+  },
+  "description": "Describes an IP access control group.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WorkspacesIpGroup",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-workspaces-ip-group-schema.json"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "string",
+  "enum": [
+    "REGISTERING",
+    "REGISTERED",
+    "DEREGISTERING",
+    "DEREGISTERED",
+    "ERROR"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "WorkspaceDirectoryState",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-workspace-directory-state-structure.json",
+  "description": "WorkspaceDirectoryState schema from Amazon WorkSpaces API"
+}

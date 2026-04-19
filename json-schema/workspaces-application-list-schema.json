@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/Application"
+  },
+  "minItems": 1,
+  "maxItems": 5,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ApplicationList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-application-list-schema.json",
+  "description": "ApplicationList schema from Amazon WorkSpaces API"
+}

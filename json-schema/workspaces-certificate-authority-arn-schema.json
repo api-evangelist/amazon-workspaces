@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "arn:[\\w+=/,.@-]+:[\\w+=/,.@-]+:[\\w+=/,.@-]*:[0-9]*:[\\w+=,.@-]+(/[\\w+=,.@-]+)*",
+  "minLength": 5,
+  "maxLength": 200,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CertificateAuthorityArn",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-certificate-authority-arn-schema.json",
+  "description": "CertificateAuthorityArn schema from Amazon WorkSpaces API"
+}

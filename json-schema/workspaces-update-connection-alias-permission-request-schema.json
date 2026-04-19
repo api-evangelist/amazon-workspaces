@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "AliasId",
+    "ConnectionAliasPermission"
+  ],
+  "title": "UpdateConnectionAliasPermissionRequest",
+  "properties": {
+    "AliasId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ConnectionAliasId"
+        },
+        {
+          "description": "The identifier of the connection alias that you want to update permissions for."
+        }
+      ]
+    },
+    "ConnectionAliasPermission": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ConnectionAliasPermission"
+        },
+        {
+          "description": "Indicates whether to share or unshare the connection alias with the specified Amazon Web Services account."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-update-connection-alias-permission-request-schema.json",
+  "description": "UpdateConnectionAliasPermissionRequest schema from Amazon WorkSpaces API"
+}

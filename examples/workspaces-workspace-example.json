@@ -1,0 +1,18 @@
+{
+  "WorkspaceId": "wsid-abc123def456",
+  "DirectoryId": "wsid-abc123def456",
+  "UserName": "Example Workspace",
+  "IpAddress": "example-value",
+  "State": "RUNNING",
+  "BundleId": "wsid-abc123def456",
+  "SubnetId": "wsid-abc123def456",
+  "ErrorMessage": "example-value",
+  "ErrorCode": "example-value",
+  "ComputerName": "Example Workspace",
+  "VolumeEncryptionKey": "example-value",
+  "UserVolumeEncryptionEnabled": "example-value",
+  "RootVolumeEncryptionEnabled": "example-value",
+  "WorkspaceProperties": "example-value",
+  "ModificationStates": "RUNNING",
+  "RelatedWorkspaces": "example-value"
+}

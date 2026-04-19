@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "ResourceId",
+    "WorkspaceCreationProperties"
+  ],
+  "name": "ModifyWorkspaceCreationPropertiesRequest",
+  "properties": {
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The identifier of the directory."
+        }
+      ]
+    },
+    "WorkspaceCreationProperties": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceCreationProperties"
+        },
+        {
+          "description": "The default properties for creating WorkSpaces."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-modify-workspace-creation-properties-request-structure.json",
+  "description": "ModifyWorkspaceCreationPropertiesRequest schema from Amazon WorkSpaces API"
+}

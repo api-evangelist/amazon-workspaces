@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "^(http|https)\\://\\S+",
+  "minLength": 1,
+  "maxLength": 200,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ClientUrl",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-client-url-structure.json",
+  "description": "ClientUrl schema from Amazon WorkSpaces API"
+}

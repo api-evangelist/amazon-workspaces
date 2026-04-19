@@ -1,0 +1,11 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/SubnetId"
+  },
+  "maxItems": 2,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "SubnetIds",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-subnet-ids-structure.json",
+  "description": "SubnetIds schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/ClientDeviceType"
+  },
+  "minItems": 1,
+  "maxItems": 6,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ClientDeviceTypeList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-client-device-type-list-schema.json",
+  "description": "ClientDeviceTypeList schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "integer",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "UserVolumeSizeGib",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-user-volume-size-gib-structure.json",
+  "description": "UserVolumeSizeGib schema from Amazon WorkSpaces API"
+}

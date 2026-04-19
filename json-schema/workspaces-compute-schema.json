@@ -1,0 +1,18 @@
+{
+  "type": "string",
+  "enum": [
+    "VALUE",
+    "STANDARD",
+    "PERFORMANCE",
+    "POWER",
+    "GRAPHICS",
+    "POWERPRO",
+    "GRAPHICSPRO",
+    "GRAPHICS_G4DN",
+    "GRAPHICSPRO_G4DN"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Compute",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-compute-schema.json",
+  "description": "Compute schema from Amazon WorkSpaces API"
+}

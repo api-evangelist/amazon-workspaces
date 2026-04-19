@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "enum": [
+    "CERTIFICATE_BASED_AUTH_PROPERTIES_CERTIFICATE_AUTHORITY_ARN"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DeletableCertificateBasedAuthProperty",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-deletable-certificate-based-auth-property-structure.json",
+  "description": "DeletableCertificateBasedAuthProperty schema from Amazon WorkSpaces API"
+}

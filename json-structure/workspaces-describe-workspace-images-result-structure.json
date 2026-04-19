@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "Images": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageList"
+        },
+        {
+          "description": "Information about the images."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationToken"
+        },
+        {
+          "description": "The token to use to retrieve the next page of results. This value is null when there are no more results to return. "
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DescribeWorkspaceImagesResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-describe-workspace-images-result-structure.json",
+  "description": "DescribeWorkspaceImagesResult schema from Amazon WorkSpaces API"
+}

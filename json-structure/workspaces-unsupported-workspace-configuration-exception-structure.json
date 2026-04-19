@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "UnsupportedWorkspaceConfigurationException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-unsupported-workspace-configuration-exception-structure.json",
+  "description": "UnsupportedWorkspaceConfigurationException schema from Amazon WorkSpaces API"
+}

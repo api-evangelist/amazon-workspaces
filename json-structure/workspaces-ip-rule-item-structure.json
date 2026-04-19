@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "ipRule": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpRule"
+        },
+        {
+          "description": "The IP address range, in CIDR notation."
+        }
+      ]
+    },
+    "ruleDesc": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpRuleDesc"
+        },
+        {
+          "description": "The description."
+        }
+      ]
+    }
+  },
+  "description": "Describes a rule for an IP access control group.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "IpRuleItem",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-ip-rule-item-structure.json"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/ConnectionAliasId"
+  },
+  "minItems": 1,
+  "maxItems": 25,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ConnectionAliasIdList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-connection-alias-id-list-schema.json",
+  "description": "ConnectionAliasIdList schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,8 @@
+{
+  "RunningMode": "example-value",
+  "RunningModeAutoStopTimeoutInMinutes": "example-value",
+  "RootVolumeSizeGib": "example-value",
+  "UserVolumeSizeGib": "example-value",
+  "ComputeTypeName": "Example Workspace",
+  "Protocols": "example-value"
+}

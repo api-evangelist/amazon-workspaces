@@ -1,0 +1,7 @@
+{
+  "type": "boolean",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "BooleanObject",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-boolean-object-structure.json",
+  "description": "BooleanObject schema from Amazon WorkSpaces API"
+}

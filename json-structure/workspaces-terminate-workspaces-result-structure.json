@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "FailedRequests": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FailedTerminateWorkspaceRequests"
+        },
+        {
+          "description": "Information about the WorkSpaces that could not be terminated."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "TerminateWorkspacesResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-terminate-workspaces-result-structure.json",
+  "description": "TerminateWorkspacesResult schema from Amazon WorkSpaces API"
+}

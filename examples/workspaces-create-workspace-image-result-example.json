@@ -1,0 +1,10 @@
+{
+  "ImageId": "wsid-abc123def456",
+  "Name": "Example Workspace",
+  "Description": "example-value",
+  "OperatingSystem": "example-value",
+  "State": "RUNNING",
+  "RequiredTenancy": "example-value",
+  "Created": "example-value",
+  "OwnerAccountId": "wsid-abc123def456"
+}

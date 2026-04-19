@@ -1,0 +1,82 @@
+{
+  "type": "object",
+  "required": [
+    "ResourceId"
+  ],
+  "name": "ImportClientBrandingRequest",
+  "properties": {
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The directory identifier of the WorkSpace for which you want to import client branding."
+        }
+      ]
+    },
+    "DeviceTypeWindows": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DefaultImportClientBrandingAttributes"
+        },
+        {
+          "description": "The branding information to import for Windows devices."
+        }
+      ]
+    },
+    "DeviceTypeOsx": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DefaultImportClientBrandingAttributes"
+        },
+        {
+          "description": "The branding information to import for macOS devices."
+        }
+      ]
+    },
+    "DeviceTypeAndroid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DefaultImportClientBrandingAttributes"
+        },
+        {
+          "description": "The branding information to import for Android devices."
+        }
+      ]
+    },
+    "DeviceTypeIos": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IosImportClientBrandingAttributes"
+        },
+        {
+          "description": "The branding information to import for iOS devices."
+        }
+      ]
+    },
+    "DeviceTypeLinux": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DefaultImportClientBrandingAttributes"
+        },
+        {
+          "description": "The branding information to import for Linux devices."
+        }
+      ]
+    },
+    "DeviceTypeWeb": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DefaultImportClientBrandingAttributes"
+        },
+        {
+          "description": "The branding information to import for web access."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-import-client-branding-request-structure.json",
+  "description": "ImportClientBrandingRequest schema from Amazon WorkSpaces API"
+}

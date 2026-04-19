@@ -1,0 +1,169 @@
+{
+  "type": "object",
+  "properties": {
+    "WorkspaceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceId"
+        },
+        {
+          "description": "The identifier of the WorkSpace."
+        }
+      ]
+    },
+    "DirectoryId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The identifier of the Directory Service directory for the WorkSpace."
+        }
+      ]
+    },
+    "UserName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserName"
+        },
+        {
+          "description": "The user for the WorkSpace."
+        }
+      ]
+    },
+    "IpAddress": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpAddress"
+        },
+        {
+          "description": "The IP address of the WorkSpace."
+        }
+      ]
+    },
+    "State": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceState"
+        },
+        {
+          "description": "<p>The operational state of the WorkSpace.</p> <note> <p>After a WorkSpace is terminated, the <code>TERMINATED</code> state is returned only briefly before the WorkSpace directory metadata is cleaned up, so this state is rarely returned. To confirm that a WorkSpace is terminated, check for the WorkSpace ID by using <a href=\"https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeWorkspaces.html\"> DescribeWorkSpaces</a>. If the WorkSpace ID isn't returned, then the WorkSpace has been successfully terminated.</p> </note>"
+        }
+      ]
+    },
+    "BundleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BundleId"
+        },
+        {
+          "description": "The identifier of the bundle used to create the WorkSpace."
+        }
+      ]
+    },
+    "SubnetId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SubnetId"
+        },
+        {
+          "description": "The identifier of the subnet for the WorkSpace."
+        }
+      ]
+    },
+    "ErrorMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Description"
+        },
+        {
+          "description": "The text of the error message that is returned if the WorkSpace cannot be created."
+        }
+      ]
+    },
+    "ErrorCode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceErrorCode"
+        },
+        {
+          "description": "The error code that is returned if the WorkSpace cannot be created."
+        }
+      ]
+    },
+    "ComputerName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ComputerName"
+        },
+        {
+          "description": "The name of the WorkSpace, as seen by the operating system. The format of this name varies. For more information, see <a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/launch-workspaces-tutorials.html\"> Launch a WorkSpace</a>. "
+        }
+      ]
+    },
+    "VolumeEncryptionKey": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VolumeEncryptionKey"
+        },
+        {
+          "description": "The ARN of the symmetric KMS key used to encrypt data stored on your WorkSpace. Amazon WorkSpaces does not support asymmetric KMS keys."
+        }
+      ]
+    },
+    "UserVolumeEncryptionEnabled": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BooleanObject"
+        },
+        {
+          "description": "Indicates whether the data stored on the user volume is encrypted."
+        }
+      ]
+    },
+    "RootVolumeEncryptionEnabled": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BooleanObject"
+        },
+        {
+          "description": "Indicates whether the data stored on the root volume is encrypted."
+        }
+      ]
+    },
+    "WorkspaceProperties": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceProperties"
+        },
+        {
+          "description": "The properties of the WorkSpace."
+        }
+      ]
+    },
+    "ModificationStates": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ModificationStateList"
+        },
+        {
+          "description": "The modification states of the WorkSpace."
+        }
+      ]
+    },
+    "RelatedWorkspaces": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RelatedWorkspaces"
+        },
+        {
+          "description": "The standby WorkSpace or primary WorkSpace related to the specified WorkSpace."
+        }
+      ]
+    }
+  },
+  "description": "Describes a WorkSpace.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "Workspace",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-workspace-structure.json"
+}

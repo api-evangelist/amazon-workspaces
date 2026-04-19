@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "^.*$",
+  "minLength": 0,
+  "maxLength": 2000,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ClientLoginMessage",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-client-login-message-structure.json",
+  "description": "ClientLoginMessage schema from Amazon WorkSpaces API"
+}

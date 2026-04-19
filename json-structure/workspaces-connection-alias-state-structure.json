@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "CREATING",
+    "CREATED",
+    "DELETING"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ConnectionAliasState",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-connection-alias-state-structure.json",
+  "description": "ConnectionAliasState schema from Amazon WorkSpaces API"
+}

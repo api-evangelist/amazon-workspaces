@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "DEFAULT",
+    "DEDICATED"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "WorkspaceImageRequiredTenancy",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-workspace-image-required-tenancy-structure.json",
+  "description": "WorkspaceImageRequiredTenancy schema from Amazon WorkSpaces API"
+}

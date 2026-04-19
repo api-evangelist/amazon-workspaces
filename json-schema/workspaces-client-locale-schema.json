@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "^[a-z]{2}_[A-Z]{2}$",
+  "minLength": 5,
+  "maxLength": 5,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ClientLocale",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-client-locale-schema.json",
+  "description": "ClientLocale schema from Amazon WorkSpaces API"
+}

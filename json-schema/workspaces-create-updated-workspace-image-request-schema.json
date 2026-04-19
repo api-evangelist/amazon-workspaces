@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "required": [
+    "Name",
+    "Description",
+    "SourceImageId"
+  ],
+  "title": "CreateUpdatedWorkspaceImageRequest",
+  "properties": {
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageName"
+        },
+        {
+          "description": "The name of the new updated WorkSpace image."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageDescription"
+        },
+        {
+          "description": "A description of whether updates for the WorkSpace image are available."
+        }
+      ]
+    },
+    "SourceImageId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageId"
+        },
+        {
+          "description": "The identifier of the source WorkSpace image."
+        }
+      ]
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagList"
+        },
+        {
+          "description": "<p>The tags that you want to add to the new updated WorkSpace image.</p> <note> <p>To add tags at the same time when you're creating the updated image, you must create an IAM policy that grants your IAM user permissions to use <code>workspaces:CreateTags</code>. </p> </note>"
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-create-updated-workspace-image-request-schema.json",
+  "description": "CreateUpdatedWorkspaceImageRequest schema from Amazon WorkSpaces API"
+}

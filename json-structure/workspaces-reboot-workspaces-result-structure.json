@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "FailedRequests": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FailedRebootWorkspaceRequests"
+        },
+        {
+          "description": "Information about the WorkSpaces that could not be rebooted."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "RebootWorkspacesResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-reboot-workspaces-result-structure.json",
+  "description": "RebootWorkspacesResult schema from Amazon WorkSpaces API"
+}

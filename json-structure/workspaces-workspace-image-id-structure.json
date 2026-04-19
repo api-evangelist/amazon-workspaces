@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "pattern": "wsi-[0-9a-z]{9,63}$",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "WorkspaceImageId",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-workspace-image-id-structure.json",
+  "description": "WorkspaceImageId schema from Amazon WorkSpaces API"
+}

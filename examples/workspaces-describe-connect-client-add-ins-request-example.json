@@ -1,0 +1,5 @@
+{
+  "ResourceId": "wsid-abc123def456",
+  "NextToken": "example-value",
+  "MaxResults": "example-value"
+}

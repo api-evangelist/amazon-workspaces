@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "required": [
+    "Name",
+    "SourceImageId",
+    "SourceRegion"
+  ],
+  "title": "CopyWorkspaceImageRequest",
+  "properties": {
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageName"
+        },
+        {
+          "description": "The name of the image."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageDescription"
+        },
+        {
+          "description": "A description of the image."
+        }
+      ]
+    },
+    "SourceImageId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageId"
+        },
+        {
+          "description": "The identifier of the source image."
+        }
+      ]
+    },
+    "SourceRegion": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Region"
+        },
+        {
+          "description": "The identifier of the source Region."
+        }
+      ]
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagList"
+        },
+        {
+          "description": "The tags for the image."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-copy-workspace-image-request-schema.json",
+  "description": "CopyWorkspaceImageRequest schema from Amazon WorkSpaces API"
+}

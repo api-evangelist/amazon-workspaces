@@ -1,0 +1,209 @@
+naftiko: "1.0.0-alpha1"
+
+info:
+  label: "Amazon WorkSpaces API"
+  description: "Programmatic access to Amazon WorkSpaces virtual desktop provisioning, management, and lifecycle operations."
+  tags:
+    - AWS
+    - Virtual Desktop
+    - End User Computing
+    - Desktop as a Service
+  created: "2026-04-19"
+  modified: "2026-04-19"
+
+binds:
+  - namespace: env
+    keys:
+      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID
+      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY
+      AWS_REGION: AWS_REGION
+
+capability:
+  consumes:
+    - type: http
+      namespace: workspaces
+      baseUri: https://workspaces.us-east-1.amazonaws.com
+      description: "Amazon WorkSpaces REST API for virtual desktop management."
+      authentication:
+        type: apikey
+        key: Authorization
+        value: "{{AWS_ACCESS_KEY_ID}}"
+        placement: header
+      resources:
+        - name: workspaces
+          path: /workspaces
+          description: "Manage virtual desktop workspaces."
+          operations:
+            - name: describe-workspaces
+              method: POST
+              description: "Describe and list virtual desktops."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+            - name: create-workspaces
+              method: POST
+              description: "Provision new virtual desktops."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+              body:
+                type: json
+                data:
+                  Workspaces: "{{tools.workspaces}}"
+            - name: terminate-workspaces
+              method: POST
+              description: "Terminate virtual desktops."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+            - name: reboot-workspaces
+              method: POST
+              description: "Reboot virtual desktops."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+        - name: bundles
+          path: /workspaces/bundles
+          description: "Manage workspace bundles (hardware configurations)."
+          operations:
+            - name: describe-workspace-bundles
+              method: POST
+              description: "List available workspace hardware bundles."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+        - name: directories
+          path: /workspaces/directories
+          description: "Manage workspace directories."
+          operations:
+            - name: describe-workspace-directories
+              method: POST
+              description: "List registered workspace directories."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+        - name: images
+          path: /workspaces/images
+          description: "Manage workspace images."
+          operations:
+            - name: describe-workspace-images
+              method: POST
+              description: "List available workspace images."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+        - name: ip-groups
+          path: /workspaces/ipgroups
+          description: "Manage IP access control groups."
+          operations:
+            - name: describe-ip-groups
+              method: POST
+              description: "List IP access control groups."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+
+  exposes:
+    - type: rest
+      port: 8100
+      namespace: workspaces-rest
+      resources:
+        - path: /v1/workspaces
+          name: workspaces
+          description: "Virtual desktop management."
+          operations:
+            - method: GET
+              name: describe-workspaces
+              description: "List virtual desktops."
+              call: "workspaces.describe-workspaces"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+
+    - type: mcp
+      port: 9100
+      namespace: workspaces-mcp
+      transport: http
+      tools:
+        - name: describe-workspaces
+          description: "List and describe virtual desktop workspaces."
+          hints:
+            readOnly: true
+            openWorld: true
+          call: "workspaces.describe-workspaces"
+          outputParameters:
+            - type: object
+              mapping: "$."
+        - name: create-workspaces
+          description: "Provision new virtual desktop workspaces."
+          hints:
+            readOnly: false
+            destructive: false
+            idempotent: false
+          call: "workspaces.create-workspaces"
+          outputParameters:
+            - type: object
+              mapping: "$."
+        - name: terminate-workspaces
+          description: "Permanently terminate virtual desktop workspaces."
+          hints:
+            readOnly: false
+            destructive: true
+            idempotent: true
+          call: "workspaces.terminate-workspaces"
+          outputParameters:
+            - type: object
+              mapping: "$."
+        - name: reboot-workspaces
+          description: "Reboot virtual desktop workspaces."
+          hints:
+            readOnly: false
+            destructive: false
+            idempotent: true
+          call: "workspaces.reboot-workspaces"
+          outputParameters:
+            - type: object
+              mapping: "$."
+        - name: describe-workspace-bundles
+          description: "List available hardware bundles for workspace creation."
+          hints:
+            readOnly: true
+            openWorld: true
+          call: "workspaces.describe-workspace-bundles"
+          outputParameters:
+            - type: object
+              mapping: "$."
+        - name: describe-workspace-directories
+          description: "List registered directories for workspace deployment."
+          hints:
+            readOnly: true
+            openWorld: true
+          call: "workspaces.describe-workspace-directories"
+          outputParameters:
+            - type: object
+              mapping: "$."
+        - name: describe-workspace-images
+          description: "List available workspace images."
+          hints:
+            readOnly: true
+            openWorld: true
+          call: "workspaces.describe-workspace-images"
+          outputParameters:
+            - type: object
+              mapping: "$."

@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "AssociateIpGroupsResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-associate-ip-groups-result-structure.json",
+  "description": "AssociateIpGroupsResult schema from Amazon WorkSpaces API"
+}

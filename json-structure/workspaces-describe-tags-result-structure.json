@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "TagList": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagList"
+        },
+        {
+          "description": "The tags."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DescribeTagsResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-describe-tags-result-structure.json",
+  "description": "DescribeTagsResult schema from Amazon WorkSpaces API"
+}

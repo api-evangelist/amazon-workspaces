@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "required": [
+    "ImageId",
+    "AllowCopyImage",
+    "SharedAccountId"
+  ],
+  "name": "UpdateWorkspaceImagePermissionRequest",
+  "properties": {
+    "ImageId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceImageId"
+        },
+        {
+          "description": "The identifier of the image."
+        }
+      ]
+    },
+    "AllowCopyImage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BooleanObject"
+        },
+        {
+          "description": "The permission to copy the image. This permission can be revoked only after an image has been shared."
+        }
+      ]
+    },
+    "SharedAccountId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AwsAccount"
+        },
+        {
+          "description": "<p>The identifier of the Amazon Web Services account to share or unshare the image with.</p> <important> <p>Before sharing the image, confirm that you are sharing to the correct Amazon Web Services account ID.</p> </important>"
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-update-workspace-image-permission-request-structure.json",
+  "description": "UpdateWorkspaceImagePermissionRequest schema from Amazon WorkSpaces API"
+}

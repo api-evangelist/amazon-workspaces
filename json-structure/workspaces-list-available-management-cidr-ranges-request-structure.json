@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "required": [
+    "ManagementCidrRangeConstraint"
+  ],
+  "name": "ListAvailableManagementCidrRangesRequest",
+  "properties": {
+    "ManagementCidrRangeConstraint": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ManagementCidrRangeConstraint"
+        },
+        {
+          "description": "The IP address range to search. Specify an IP address range that is compatible with your network and in CIDR notation (that is, specify the range as an IPv4 CIDR block)."
+        }
+      ]
+    },
+    "MaxResults": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ManagementCidrRangeMaxResults"
+        },
+        {
+          "description": "The maximum number of items to return."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationToken"
+        },
+        {
+          "description": "If you received a <code>NextToken</code> from a previous call that was paginated, provide this token to receive the next set of results."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-list-available-management-cidr-ranges-request-structure.json",
+  "description": "ListAvailableManagementCidrRangesRequest schema from Amazon WorkSpaces API"
+}

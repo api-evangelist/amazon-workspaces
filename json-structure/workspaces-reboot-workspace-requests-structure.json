@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/RebootRequest"
+  },
+  "minItems": 1,
+  "maxItems": 25,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "RebootWorkspaceRequests",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-reboot-workspace-requests-structure.json",
+  "description": "RebootWorkspaceRequests schema from Amazon WorkSpaces API"
+}

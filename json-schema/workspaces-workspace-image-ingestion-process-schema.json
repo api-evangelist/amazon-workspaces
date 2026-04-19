@@ -1,0 +1,16 @@
+{
+  "type": "string",
+  "enum": [
+    "BYOL_REGULAR",
+    "BYOL_GRAPHICS",
+    "BYOL_GRAPHICSPRO",
+    "BYOL_GRAPHICS_G4DN",
+    "BYOL_REGULAR_WSP",
+    "BYOL_REGULAR_BYOP",
+    "BYOL_GRAPHICS_G4DN_BYOP"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WorkspaceImageIngestionProcess",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-workspace-image-ingestion-process-schema.json",
+  "description": "WorkspaceImageIngestionProcess schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "ResourceId",
+    "ClientProperties"
+  ],
+  "title": "ModifyClientPropertiesRequest",
+  "properties": {
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NonEmptyString"
+        },
+        {
+          "description": "The resource identifiers, in the form of directory IDs."
+        }
+      ]
+    },
+    "ClientProperties": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ClientProperties"
+        },
+        {
+          "description": "Information about the Amazon WorkSpaces client."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-modify-client-properties-request-schema.json",
+  "description": "ModifyClientPropertiesRequest schema from Amazon WorkSpaces API"
+}

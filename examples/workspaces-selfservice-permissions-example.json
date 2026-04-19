@@ -1,0 +1,7 @@
+{
+  "RestartWorkspace": "example-value",
+  "IncreaseVolumeSize": "example-value",
+  "ChangeComputeType": "example-value",
+  "SwitchRunningMode": "example-value",
+  "RebuildWorkspace": "example-value"
+}

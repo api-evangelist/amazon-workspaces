@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "pattern": "^arn:aws:[A-Za-z0-9][A-za-z0-9_/.-]{0,62}:[A-za-z0-9_/.-]{0,63}:[A-za-z0-9_/.-]{0,63}:[A-Za-z0-9][A-za-z0-9_/.-]{0,127}$",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ARN",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-arn-schema.json",
+  "description": "ARN schema from Amazon WorkSpaces API"
+}

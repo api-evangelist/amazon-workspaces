@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ModifyWorkspaceCreationPropertiesResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-modify-workspace-creation-properties-result-schema.json",
+  "description": "ModifyWorkspaceCreationPropertiesResult schema from Amazon WorkSpaces API"
+}

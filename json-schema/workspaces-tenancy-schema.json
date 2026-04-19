@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "DEDICATED",
+    "SHARED"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Tenancy",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-tenancy-schema.json",
+  "description": "Tenancy schema from Amazon WorkSpaces API"
+}

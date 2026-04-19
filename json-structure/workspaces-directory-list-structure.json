@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/WorkspaceDirectory"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DirectoryList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-directory-list-structure.json",
+  "description": "DirectoryList schema from Amazon WorkSpaces API"
+}

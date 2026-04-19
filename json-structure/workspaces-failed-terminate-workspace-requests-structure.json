@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/FailedWorkspaceChangeRequest"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "FailedTerminateWorkspaceRequests",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-failed-terminate-workspace-requests-structure.json",
+  "description": "FailedTerminateWorkspaceRequests schema from Amazon WorkSpaces API"
+}

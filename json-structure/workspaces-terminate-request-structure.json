@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "WorkspaceId"
+  ],
+  "properties": {
+    "WorkspaceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceId"
+        },
+        {
+          "description": "The identifier of the WorkSpace."
+        }
+      ]
+    }
+  },
+  "description": "Describes the information used to terminate a WorkSpace.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "TerminateRequest",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-terminate-request-structure.json"
+}

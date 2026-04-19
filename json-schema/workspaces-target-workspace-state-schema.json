@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "AVAILABLE",
+    "ADMIN_MAINTENANCE"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TargetWorkspaceState",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-target-workspace-state-schema.json",
+  "description": "TargetWorkspaceState schema from Amazon WorkSpaces API"
+}

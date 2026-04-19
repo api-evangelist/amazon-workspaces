@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/StopRequest"
+  },
+  "minItems": 1,
+  "maxItems": 25,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "StopWorkspaceRequests",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-stop-workspace-requests-structure.json",
+  "description": "StopWorkspaceRequests schema from Amazon WorkSpaces API"
+}

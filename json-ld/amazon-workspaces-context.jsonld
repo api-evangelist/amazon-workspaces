@@ -1,0 +1,876 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "amz": "https://amazonaws.com/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "AssociateConnectionAliasResult": "amz:AssociateConnectionAliasResult",
+    "ConnectionIdentifier": {
+      "@id": "amz:ConnectionIdentifier",
+      "@type": "xsd:string"
+    },
+    "AssociateConnectionAliasRequest": "amz:AssociateConnectionAliasRequest",
+    "AliasId": {
+      "@id": "amz:AliasId",
+      "@type": "xsd:string"
+    },
+    "ResourceId": {
+      "@id": "amz:ResourceId",
+      "@type": "xsd:string"
+    },
+    "AssociateIpGroupsResult": "amz:AssociateIpGroupsResult",
+    "AssociateIpGroupsRequest": "amz:AssociateIpGroupsRequest",
+    "DirectoryId": {
+      "@id": "amz:DirectoryId",
+      "@type": "xsd:string"
+    },
+    "GroupIds": {
+      "@id": "amz:GroupIds",
+      "@type": "xsd:string"
+    },
+    "AuthorizeIpRulesResult": "amz:AuthorizeIpRulesResult",
+    "AuthorizeIpRulesRequest": "amz:AuthorizeIpRulesRequest",
+    "GroupId": {
+      "@id": "amz:GroupId",
+      "@type": "xsd:string"
+    },
+    "UserRules": {
+      "@id": "amz:UserRules",
+      "@type": "xsd:string"
+    },
+    "CopyWorkspaceImageResult": "amz:CopyWorkspaceImageResult",
+    "ImageId": {
+      "@id": "amz:ImageId",
+      "@type": "xsd:string"
+    },
+    "CopyWorkspaceImageRequest": "amz:CopyWorkspaceImageRequest",
+    "Name": {
+      "@id": "amz:Name",
+      "@type": "xsd:string"
+    },
+    "Description": {
+      "@id": "amz:Description",
+      "@type": "xsd:string"
+    },
+    "SourceImageId": {
+      "@id": "amz:SourceImageId",
+      "@type": "xsd:string"
+    },
+    "SourceRegion": {
+      "@id": "amz:SourceRegion",
+      "@type": "xsd:string"
+    },
+    "Tags": {
+      "@id": "amz:Tags",
+      "@type": "xsd:string"
+    },
+    "CreateConnectClientAddInResult": "amz:CreateConnectClientAddInResult",
+    "AddInId": {
+      "@id": "amz:AddInId",
+      "@type": "xsd:string"
+    },
+    "CreateConnectClientAddInRequest": "amz:CreateConnectClientAddInRequest",
+    "URL": {
+      "@id": "amz:URL",
+      "@type": "xsd:string"
+    },
+    "CreateConnectionAliasResult": "amz:CreateConnectionAliasResult",
+    "CreateConnectionAliasRequest": "amz:CreateConnectionAliasRequest",
+    "ConnectionString": {
+      "@id": "amz:ConnectionString",
+      "@type": "xsd:string"
+    },
+    "CreateIpGroupResult": "amz:CreateIpGroupResult",
+    "CreateIpGroupRequest": "amz:CreateIpGroupRequest",
+    "GroupName": {
+      "@id": "amz:GroupName",
+      "@type": "xsd:string"
+    },
+    "GroupDesc": {
+      "@id": "amz:GroupDesc",
+      "@type": "xsd:string"
+    },
+    "CreateStandbyWorkspacesResult": "amz:CreateStandbyWorkspacesResult",
+    "FailedStandbyRequests": {
+      "@id": "amz:FailedStandbyRequests",
+      "@type": "xsd:string"
+    },
+    "PendingStandbyRequests": {
+      "@id": "amz:PendingStandbyRequests",
+      "@type": "xsd:string"
+    },
+    "CreateStandbyWorkspacesRequest": "amz:CreateStandbyWorkspacesRequest",
+    "PrimaryRegion": {
+      "@id": "amz:PrimaryRegion",
+      "@type": "xsd:string"
+    },
+    "StandbyWorkspaces": {
+      "@id": "amz:StandbyWorkspaces",
+      "@type": "xsd:string"
+    },
+    "CreateTagsResult": "amz:CreateTagsResult",
+    "CreateTagsRequest": "amz:CreateTagsRequest",
+    "CreateUpdatedWorkspaceImageResult": "amz:CreateUpdatedWorkspaceImageResult",
+    "CreateUpdatedWorkspaceImageRequest": "amz:CreateUpdatedWorkspaceImageRequest",
+    "CreateWorkspaceBundleResult": "amz:CreateWorkspaceBundleResult",
+    "WorkspaceBundle": "amz:WorkspaceBundle",
+    "CreateWorkspaceBundleRequest": "amz:CreateWorkspaceBundleRequest",
+    "BundleName": {
+      "@id": "amz:BundleName",
+      "@type": "xsd:string"
+    },
+    "BundleDescription": {
+      "@id": "amz:BundleDescription",
+      "@type": "xsd:string"
+    },
+    "ComputeType": "amz:ComputeType",
+    "UserStorage": "amz:UserStorage",
+    "RootStorage": "amz:RootStorage",
+    "CreateWorkspaceImageResult": "amz:CreateWorkspaceImageResult",
+    "OperatingSystem": "amz:OperatingSystem",
+    "State": {
+      "@id": "amz:State",
+      "@type": "xsd:string"
+    },
+    "RequiredTenancy": {
+      "@id": "amz:RequiredTenancy",
+      "@type": "xsd:string"
+    },
+    "Created": {
+      "@id": "amz:Created",
+      "@type": "xsd:string"
+    },
+    "OwnerAccountId": {
+      "@id": "amz:OwnerAccountId",
+      "@type": "xsd:string"
+    },
+    "CreateWorkspaceImageRequest": "amz:CreateWorkspaceImageRequest",
+    "WorkspaceId": {
+      "@id": "amz:WorkspaceId",
+      "@type": "xsd:string"
+    },
+    "CreateWorkspacesResult": "amz:CreateWorkspacesResult",
+    "FailedRequests": {
+      "@id": "amz:FailedRequests",
+      "@type": "xsd:string"
+    },
+    "PendingRequests": {
+      "@id": "amz:PendingRequests",
+      "@type": "xsd:string"
+    },
+    "CreateWorkspacesRequest": "amz:CreateWorkspacesRequest",
+    "Workspaces": {
+      "@id": "amz:Workspaces",
+      "@type": "xsd:string"
+    },
+    "DeleteClientBrandingResult": "amz:DeleteClientBrandingResult",
+    "DeleteClientBrandingRequest": "amz:DeleteClientBrandingRequest",
+    "Platforms": {
+      "@id": "amz:Platforms",
+      "@type": "xsd:string"
+    },
+    "DeleteConnectClientAddInResult": "amz:DeleteConnectClientAddInResult",
+    "DeleteConnectClientAddInRequest": "amz:DeleteConnectClientAddInRequest",
+    "DeleteConnectionAliasResult": "amz:DeleteConnectionAliasResult",
+    "DeleteConnectionAliasRequest": "amz:DeleteConnectionAliasRequest",
+    "DeleteIpGroupResult": "amz:DeleteIpGroupResult",
+    "DeleteIpGroupRequest": "amz:DeleteIpGroupRequest",
+    "DeleteTagsResult": "amz:DeleteTagsResult",
+    "DeleteTagsRequest": "amz:DeleteTagsRequest",
+    "TagKeys": {
+      "@id": "amz:TagKeys",
+      "@type": "xsd:string"
+    },
+    "DeleteWorkspaceBundleResult": "amz:DeleteWorkspaceBundleResult",
+    "DeleteWorkspaceBundleRequest": "amz:DeleteWorkspaceBundleRequest",
+    "BundleId": {
+      "@id": "amz:BundleId",
+      "@type": "xsd:string"
+    },
+    "DeleteWorkspaceImageResult": "amz:DeleteWorkspaceImageResult",
+    "DeleteWorkspaceImageRequest": "amz:DeleteWorkspaceImageRequest",
+    "DeregisterWorkspaceDirectoryResult": "amz:DeregisterWorkspaceDirectoryResult",
+    "DeregisterWorkspaceDirectoryRequest": "amz:DeregisterWorkspaceDirectoryRequest",
+    "DescribeAccountResult": "amz:DescribeAccountResult",
+    "DedicatedTenancySupport": {
+      "@id": "amz:DedicatedTenancySupport",
+      "@type": "xsd:string"
+    },
+    "DedicatedTenancyManagementCidrRange": {
+      "@id": "amz:DedicatedTenancyManagementCidrRange",
+      "@type": "xsd:string"
+    },
+    "DescribeAccountRequest": "amz:DescribeAccountRequest",
+    "DescribeAccountModificationsResult": "amz:DescribeAccountModificationsResult",
+    "AccountModifications": {
+      "@id": "amz:AccountModifications",
+      "@type": "xsd:string"
+    },
+    "NextToken": {
+      "@id": "amz:NextToken",
+      "@type": "xsd:string"
+    },
+    "DescribeAccountModificationsRequest": "amz:DescribeAccountModificationsRequest",
+    "DescribeClientBrandingResult": "amz:DescribeClientBrandingResult",
+    "DeviceTypeWindows": {
+      "@id": "amz:DeviceTypeWindows",
+      "@type": "xsd:string"
+    },
+    "DeviceTypeOsx": {
+      "@id": "amz:DeviceTypeOsx",
+      "@type": "xsd:string"
+    },
+    "DeviceTypeAndroid": {
+      "@id": "amz:DeviceTypeAndroid",
+      "@type": "xsd:string"
+    },
+    "DeviceTypeIos": {
+      "@id": "amz:DeviceTypeIos",
+      "@type": "xsd:string"
+    },
+    "DeviceTypeLinux": {
+      "@id": "amz:DeviceTypeLinux",
+      "@type": "xsd:string"
+    },
+    "DeviceTypeWeb": {
+      "@id": "amz:DeviceTypeWeb",
+      "@type": "xsd:string"
+    },
+    "DescribeClientBrandingRequest": "amz:DescribeClientBrandingRequest",
+    "DescribeClientPropertiesResult": "amz:DescribeClientPropertiesResult",
+    "ClientPropertiesList": {
+      "@id": "amz:ClientPropertiesList",
+      "@type": "xsd:string"
+    },
+    "DescribeClientPropertiesRequest": "amz:DescribeClientPropertiesRequest",
+    "ResourceIds": {
+      "@id": "amz:ResourceIds",
+      "@type": "xsd:string"
+    },
+    "DescribeConnectClientAddInsResult": "amz:DescribeConnectClientAddInsResult",
+    "AddIns": {
+      "@id": "amz:AddIns",
+      "@type": "xsd:string"
+    },
+    "DescribeConnectClientAddInsRequest": "amz:DescribeConnectClientAddInsRequest",
+    "MaxResults": {
+      "@id": "amz:MaxResults",
+      "@type": "xsd:string"
+    },
+    "DescribeConnectionAliasPermissionsResult": "amz:DescribeConnectionAliasPermissionsResult",
+    "ConnectionAliasPermissions": {
+      "@id": "amz:ConnectionAliasPermissions",
+      "@type": "xsd:string"
+    },
+    "DescribeConnectionAliasPermissionsRequest": "amz:DescribeConnectionAliasPermissionsRequest",
+    "DescribeConnectionAliasesResult": "amz:DescribeConnectionAliasesResult",
+    "ConnectionAliases": {
+      "@id": "amz:ConnectionAliases",
+      "@type": "xsd:string"
+    },
+    "DescribeConnectionAliasesRequest": "amz:DescribeConnectionAliasesRequest",
+    "AliasIds": {
+      "@id": "amz:AliasIds",
+      "@type": "xsd:string"
+    },
+    "Limit": {
+      "@id": "amz:Limit",
+      "@type": "xsd:string"
+    },
+    "DescribeIpGroupsResult": "amz:DescribeIpGroupsResult",
+    "Result": {
+      "@id": "amz:Result",
+      "@type": "xsd:string"
+    },
+    "DescribeIpGroupsRequest": "amz:DescribeIpGroupsRequest",
+    "DescribeTagsResult": "amz:DescribeTagsResult",
+    "TagList": {
+      "@id": "amz:TagList",
+      "@type": "xsd:string"
+    },
+    "DescribeTagsRequest": "amz:DescribeTagsRequest",
+    "DescribeWorkspaceBundlesResult": "amz:DescribeWorkspaceBundlesResult",
+    "Bundles": {
+      "@id": "amz:Bundles",
+      "@type": "xsd:string"
+    },
+    "DescribeWorkspaceBundlesRequest": "amz:DescribeWorkspaceBundlesRequest",
+    "BundleIds": {
+      "@id": "amz:BundleIds",
+      "@type": "xsd:string"
+    },
+    "Owner": {
+      "@id": "amz:Owner",
+      "@type": "xsd:string"
+    },
+    "DescribeWorkspaceDirectoriesResult": "amz:DescribeWorkspaceDirectoriesResult",
+    "Directories": {
+      "@id": "amz:Directories",
+      "@type": "xsd:string"
+    },
+    "DescribeWorkspaceDirectoriesRequest": "amz:DescribeWorkspaceDirectoriesRequest",
+    "DirectoryIds": {
+      "@id": "amz:DirectoryIds",
+      "@type": "xsd:string"
+    },
+    "DescribeWorkspaceImagePermissionsResult": "amz:DescribeWorkspaceImagePermissionsResult",
+    "ImagePermissions": {
+      "@id": "amz:ImagePermissions",
+      "@type": "xsd:string"
+    },
+    "DescribeWorkspaceImagePermissionsRequest": "amz:DescribeWorkspaceImagePermissionsRequest",
+    "DescribeWorkspaceImagesResult": "amz:DescribeWorkspaceImagesResult",
+    "Images": {
+      "@id": "amz:Images",
+      "@type": "xsd:string"
+    },
+    "DescribeWorkspaceImagesRequest": "amz:DescribeWorkspaceImagesRequest",
+    "ImageIds": {
+      "@id": "amz:ImageIds",
+      "@type": "xsd:string"
+    },
+    "ImageType": {
+      "@id": "amz:ImageType",
+      "@type": "xsd:string"
+    },
+    "DescribeWorkspaceSnapshotsResult": "amz:DescribeWorkspaceSnapshotsResult",
+    "RebuildSnapshots": {
+      "@id": "amz:RebuildSnapshots",
+      "@type": "xsd:string"
+    },
+    "RestoreSnapshots": {
+      "@id": "amz:RestoreSnapshots",
+      "@type": "xsd:string"
+    },
+    "DescribeWorkspaceSnapshotsRequest": "amz:DescribeWorkspaceSnapshotsRequest",
+    "DescribeWorkspacesResult": "amz:DescribeWorkspacesResult",
+    "DescribeWorkspacesRequest": "amz:DescribeWorkspacesRequest",
+    "WorkspaceIds": {
+      "@id": "amz:WorkspaceIds",
+      "@type": "xsd:string"
+    },
+    "UserName": {
+      "@id": "amz:UserName",
+      "@type": "xsd:string"
+    },
+    "DescribeWorkspacesConnectionStatusResult": "amz:DescribeWorkspacesConnectionStatusResult",
+    "WorkspacesConnectionStatus": {
+      "@id": "amz:WorkspacesConnectionStatus",
+      "@type": "xsd:string"
+    },
+    "DescribeWorkspacesConnectionStatusRequest": "amz:DescribeWorkspacesConnectionStatusRequest",
+    "DisassociateConnectionAliasResult": "amz:DisassociateConnectionAliasResult",
+    "DisassociateConnectionAliasRequest": "amz:DisassociateConnectionAliasRequest",
+    "DisassociateIpGroupsResult": "amz:DisassociateIpGroupsResult",
+    "DisassociateIpGroupsRequest": "amz:DisassociateIpGroupsRequest",
+    "ImportClientBrandingResult": "amz:ImportClientBrandingResult",
+    "ImportClientBrandingRequest": "amz:ImportClientBrandingRequest",
+    "ImportWorkspaceImageResult": "amz:ImportWorkspaceImageResult",
+    "ImportWorkspaceImageRequest": "amz:ImportWorkspaceImageRequest",
+    "Ec2ImageId": {
+      "@id": "amz:Ec2ImageId",
+      "@type": "xsd:string"
+    },
+    "IngestionProcess": {
+      "@id": "amz:IngestionProcess",
+      "@type": "xsd:string"
+    },
+    "ImageName": {
+      "@id": "amz:ImageName",
+      "@type": "xsd:string"
+    },
+    "ImageDescription": {
+      "@id": "amz:ImageDescription",
+      "@type": "xsd:string"
+    },
+    "Applications": {
+      "@id": "amz:Applications",
+      "@type": "xsd:string"
+    },
+    "ListAvailableManagementCidrRangesResult": "amz:ListAvailableManagementCidrRangesResult",
+    "ManagementCidrRanges": {
+      "@id": "amz:ManagementCidrRanges",
+      "@type": "xsd:string"
+    },
+    "ListAvailableManagementCidrRangesRequest": "amz:ListAvailableManagementCidrRangesRequest",
+    "ManagementCidrRangeConstraint": {
+      "@id": "amz:ManagementCidrRangeConstraint",
+      "@type": "xsd:string"
+    },
+    "MigrateWorkspaceResult": "amz:MigrateWorkspaceResult",
+    "SourceWorkspaceId": {
+      "@id": "amz:SourceWorkspaceId",
+      "@type": "xsd:string"
+    },
+    "TargetWorkspaceId": {
+      "@id": "amz:TargetWorkspaceId",
+      "@type": "xsd:string"
+    },
+    "MigrateWorkspaceRequest": "amz:MigrateWorkspaceRequest",
+    "ModifyAccountResult": "amz:ModifyAccountResult",
+    "ModifyAccountRequest": "amz:ModifyAccountRequest",
+    "ModifyCertificateBasedAuthPropertiesResult": "amz:ModifyCertificateBasedAuthPropertiesResult",
+    "ModifyCertificateBasedAuthPropertiesRequest": "amz:ModifyCertificateBasedAuthPropertiesRequest",
+    "CertificateBasedAuthProperties": "amz:CertificateBasedAuthProperties",
+    "PropertiesToDelete": {
+      "@id": "amz:PropertiesToDelete",
+      "@type": "xsd:string"
+    },
+    "ModifyClientPropertiesResult": "amz:ModifyClientPropertiesResult",
+    "ModifyClientPropertiesRequest": "amz:ModifyClientPropertiesRequest",
+    "ClientProperties": "amz:ClientProperties",
+    "ModifySamlPropertiesResult": "amz:ModifySamlPropertiesResult",
+    "ModifySamlPropertiesRequest": "amz:ModifySamlPropertiesRequest",
+    "SamlProperties": "amz:SamlProperties",
+    "ModifySelfservicePermissionsResult": "amz:ModifySelfservicePermissionsResult",
+    "ModifySelfservicePermissionsRequest": "amz:ModifySelfservicePermissionsRequest",
+    "SelfservicePermissions": "amz:SelfservicePermissions",
+    "ModifyWorkspaceAccessPropertiesResult": "amz:ModifyWorkspaceAccessPropertiesResult",
+    "ModifyWorkspaceAccessPropertiesRequest": "amz:ModifyWorkspaceAccessPropertiesRequest",
+    "WorkspaceAccessProperties": "amz:WorkspaceAccessProperties",
+    "ModifyWorkspaceCreationPropertiesResult": "amz:ModifyWorkspaceCreationPropertiesResult",
+    "ModifyWorkspaceCreationPropertiesRequest": "amz:ModifyWorkspaceCreationPropertiesRequest",
+    "WorkspaceCreationProperties": "amz:WorkspaceCreationProperties",
+    "ModifyWorkspacePropertiesResult": "amz:ModifyWorkspacePropertiesResult",
+    "ModifyWorkspacePropertiesRequest": "amz:ModifyWorkspacePropertiesRequest",
+    "WorkspaceProperties": "amz:WorkspaceProperties",
+    "ModifyWorkspaceStateResult": "amz:ModifyWorkspaceStateResult",
+    "ModifyWorkspaceStateRequest": "amz:ModifyWorkspaceStateRequest",
+    "WorkspaceState": {
+      "@id": "amz:WorkspaceState",
+      "@type": "xsd:string"
+    },
+    "RebootWorkspacesResult": "amz:RebootWorkspacesResult",
+    "RebootWorkspacesRequest": "amz:RebootWorkspacesRequest",
+    "RebootWorkspaceRequests": {
+      "@id": "amz:RebootWorkspaceRequests",
+      "@type": "xsd:string"
+    },
+    "RebuildWorkspacesResult": "amz:RebuildWorkspacesResult",
+    "RebuildWorkspacesRequest": "amz:RebuildWorkspacesRequest",
+    "RebuildWorkspaceRequests": {
+      "@id": "amz:RebuildWorkspaceRequests",
+      "@type": "xsd:string"
+    },
+    "RegisterWorkspaceDirectoryResult": "amz:RegisterWorkspaceDirectoryResult",
+    "RegisterWorkspaceDirectoryRequest": "amz:RegisterWorkspaceDirectoryRequest",
+    "SubnetIds": {
+      "@id": "amz:SubnetIds",
+      "@type": "xsd:string"
+    },
+    "EnableWorkDocs": {
+      "@id": "amz:EnableWorkDocs",
+      "@type": "xsd:string"
+    },
+    "EnableSelfService": {
+      "@id": "amz:EnableSelfService",
+      "@type": "xsd:string"
+    },
+    "Tenancy": {
+      "@id": "amz:Tenancy",
+      "@type": "xsd:string"
+    },
+    "RestoreWorkspaceResult": "amz:RestoreWorkspaceResult",
+    "RestoreWorkspaceRequest": "amz:RestoreWorkspaceRequest",
+    "RevokeIpRulesResult": "amz:RevokeIpRulesResult",
+    "RevokeIpRulesRequest": "amz:RevokeIpRulesRequest",
+    "StartWorkspacesResult": "amz:StartWorkspacesResult",
+    "StartWorkspacesRequest": "amz:StartWorkspacesRequest",
+    "StartWorkspaceRequests": {
+      "@id": "amz:StartWorkspaceRequests",
+      "@type": "xsd:string"
+    },
+    "StopWorkspacesResult": "amz:StopWorkspacesResult",
+    "StopWorkspacesRequest": "amz:StopWorkspacesRequest",
+    "StopWorkspaceRequests": {
+      "@id": "amz:StopWorkspaceRequests",
+      "@type": "xsd:string"
+    },
+    "TerminateWorkspacesResult": "amz:TerminateWorkspacesResult",
+    "TerminateWorkspacesRequest": "amz:TerminateWorkspacesRequest",
+    "TerminateWorkspaceRequests": {
+      "@id": "amz:TerminateWorkspaceRequests",
+      "@type": "xsd:string"
+    },
+    "UpdateConnectClientAddInResult": "amz:UpdateConnectClientAddInResult",
+    "UpdateConnectClientAddInRequest": "amz:UpdateConnectClientAddInRequest",
+    "UpdateConnectionAliasPermissionResult": "amz:UpdateConnectionAliasPermissionResult",
+    "UpdateConnectionAliasPermissionRequest": "amz:UpdateConnectionAliasPermissionRequest",
+    "ConnectionAliasPermission": "amz:ConnectionAliasPermission",
+    "UpdateRulesOfIpGroupResult": "amz:UpdateRulesOfIpGroupResult",
+    "UpdateRulesOfIpGroupRequest": "amz:UpdateRulesOfIpGroupRequest",
+    "UpdateWorkspaceBundleResult": "amz:UpdateWorkspaceBundleResult",
+    "UpdateWorkspaceBundleRequest": "amz:UpdateWorkspaceBundleRequest",
+    "UpdateWorkspaceImagePermissionResult": "amz:UpdateWorkspaceImagePermissionResult",
+    "UpdateWorkspaceImagePermissionRequest": "amz:UpdateWorkspaceImagePermissionRequest",
+    "AllowCopyImage": {
+      "@id": "amz:AllowCopyImage",
+      "@type": "xsd:string"
+    },
+    "SharedAccountId": {
+      "@id": "amz:SharedAccountId",
+      "@type": "xsd:string"
+    },
+    "AccountModification": "amz:AccountModification",
+    "ModificationState": "amz:ModificationState",
+    "StartTime": {
+      "@id": "amz:StartTime",
+      "@type": "xsd:string"
+    },
+    "ErrorCode": {
+      "@id": "amz:ErrorCode",
+      "@type": "xsd:string"
+    },
+    "ErrorMessage": {
+      "@id": "amz:ErrorMessage",
+      "@type": "xsd:string"
+    },
+    "LastUpdatedTime": {
+      "@id": "amz:LastUpdatedTime",
+      "@type": "xsd:string"
+    },
+    "CreationTime": {
+      "@id": "amz:CreationTime",
+      "@type": "xsd:string"
+    },
+    "BundleType": {
+      "@id": "amz:BundleType",
+      "@type": "xsd:string"
+    },
+    "Status": {
+      "@id": "amz:Status",
+      "@type": "xsd:string"
+    },
+    "CertificateAuthorityArn": {
+      "@id": "amz:CertificateAuthorityArn",
+      "@type": "xsd:string"
+    },
+    "ReconnectEnabled": {
+      "@id": "amz:ReconnectEnabled",
+      "@type": "xsd:string"
+    },
+    "LogUploadEnabled": {
+      "@id": "amz:LogUploadEnabled",
+      "@type": "xsd:string"
+    },
+    "ClientPropertiesResult": "amz:ClientPropertiesResult",
+    "ConnectClientAddIn": "amz:ConnectClientAddIn",
+    "ConnectionAlias": "amz:ConnectionAlias",
+    "Associations": {
+      "@id": "amz:Associations",
+      "@type": "xsd:string"
+    },
+    "ConnectionAliasAssociation": "amz:ConnectionAliasAssociation",
+    "AssociationStatus": {
+      "@id": "amz:AssociationStatus",
+      "@type": "xsd:string"
+    },
+    "AssociatedAccountId": {
+      "@id": "amz:AssociatedAccountId",
+      "@type": "xsd:string"
+    },
+    "AllowAssociation": {
+      "@id": "amz:AllowAssociation",
+      "@type": "xsd:string"
+    },
+    "Capacity": {
+      "@id": "amz:Capacity",
+      "@type": "xsd:string"
+    },
+    "Type": {
+      "@id": "amz:Type",
+      "@type": "xsd:string"
+    },
+    "LoginMessage": {
+      "@id": "amz:LoginMessage",
+      "@type": "xsd:string"
+    },
+    "DefaultClientBrandingAttributes": "amz:DefaultClientBrandingAttributes",
+    "LogoUrl": {
+      "@id": "amz:LogoUrl",
+      "@type": "xsd:string"
+    },
+    "SupportEmail": {
+      "@id": "amz:SupportEmail",
+      "@type": "xsd:string"
+    },
+    "SupportLink": {
+      "@id": "amz:SupportLink",
+      "@type": "xsd:string"
+    },
+    "ForgotPasswordLink": {
+      "@id": "amz:ForgotPasswordLink",
+      "@type": "xsd:string"
+    },
+    "DefaultImportClientBrandingAttributes": "amz:DefaultImportClientBrandingAttributes",
+    "Logo": {
+      "@id": "amz:Logo",
+      "@type": "xsd:string"
+    },
+    "DefaultWorkspaceCreationProperties": "amz:DefaultWorkspaceCreationProperties",
+    "EnableInternetAccess": {
+      "@id": "amz:EnableInternetAccess",
+      "@type": "xsd:string"
+    },
+    "DefaultOu": {
+      "@id": "amz:DefaultOu",
+      "@type": "xsd:string"
+    },
+    "CustomSecurityGroupId": {
+      "@id": "amz:CustomSecurityGroupId",
+      "@type": "xsd:string"
+    },
+    "UserEnabledAsLocalAdministrator": {
+      "@id": "amz:UserEnabledAsLocalAdministrator",
+      "@type": "xsd:string"
+    },
+    "EnableMaintenanceMode": {
+      "@id": "amz:EnableMaintenanceMode",
+      "@type": "xsd:string"
+    },
+    "IosClientBrandingAttributes": "amz:IosClientBrandingAttributes",
+    "Logo2xUrl": {
+      "@id": "amz:Logo2xUrl",
+      "@type": "xsd:string"
+    },
+    "Logo3xUrl": {
+      "@id": "amz:Logo3xUrl",
+      "@type": "xsd:string"
+    },
+    "WorkspaceDirectory": "amz:WorkspaceDirectory",
+    "Alias": {
+      "@id": "amz:Alias",
+      "@type": "xsd:string"
+    },
+    "DirectoryName": {
+      "@id": "amz:DirectoryName",
+      "@type": "xsd:string"
+    },
+    "RegistrationCode": {
+      "@id": "amz:RegistrationCode",
+      "@type": "xsd:string"
+    },
+    "DnsIpAddresses": {
+      "@id": "amz:DnsIpAddresses",
+      "@type": "xsd:string"
+    },
+    "CustomerUserName": {
+      "@id": "amz:CustomerUserName",
+      "@type": "xsd:string"
+    },
+    "IamRoleId": {
+      "@id": "amz:IamRoleId",
+      "@type": "xsd:string"
+    },
+    "DirectoryType": {
+      "@id": "amz:DirectoryType",
+      "@type": "xsd:string"
+    },
+    "WorkspaceSecurityGroupId": {
+      "@id": "amz:WorkspaceSecurityGroupId",
+      "@type": "xsd:string"
+    },
+    "ipGroupIds": {
+      "@id": "amz:ipGroupIds",
+      "@type": "xsd:string"
+    },
+    "StandbyWorkspace": "amz:StandbyWorkspace",
+    "PrimaryWorkspaceId": {
+      "@id": "amz:PrimaryWorkspaceId",
+      "@type": "xsd:string"
+    },
+    "VolumeEncryptionKey": {
+      "@id": "amz:VolumeEncryptionKey",
+      "@type": "xsd:string"
+    },
+    "FailedCreateStandbyWorkspacesRequest": "amz:FailedCreateStandbyWorkspacesRequest",
+    "StandbyWorkspaceRequest": {
+      "@id": "amz:StandbyWorkspaceRequest",
+      "@type": "xsd:string"
+    },
+    "WorkspaceRequest": {
+      "@id": "amz:WorkspaceRequest",
+      "@type": "xsd:string"
+    },
+    "UserVolumeEncryptionEnabled": {
+      "@id": "amz:UserVolumeEncryptionEnabled",
+      "@type": "xsd:string"
+    },
+    "RootVolumeEncryptionEnabled": {
+      "@id": "amz:RootVolumeEncryptionEnabled",
+      "@type": "xsd:string"
+    },
+    "FailedCreateWorkspaceRequest": "amz:FailedCreateWorkspaceRequest",
+    "FailedWorkspaceChangeRequest": "amz:FailedWorkspaceChangeRequest",
+    "ImagePermission": "amz:ImagePermission",
+    "IosImportClientBrandingAttributes": "amz:IosImportClientBrandingAttributes",
+    "Logo2x": {
+      "@id": "amz:Logo2x",
+      "@type": "xsd:string"
+    },
+    "Logo3x": {
+      "@id": "amz:Logo3x",
+      "@type": "xsd:string"
+    },
+    "IpRuleItem": "amz:IpRuleItem",
+    "ipRule": {
+      "@id": "amz:ipRule",
+      "@type": "xsd:string"
+    },
+    "ruleDesc": {
+      "@id": "amz:ruleDesc",
+      "@type": "xsd:string"
+    },
+    "Resource": {
+      "@id": "amz:Resource",
+      "@type": "xsd:string"
+    },
+    "UserAccessUrl": {
+      "@id": "amz:UserAccessUrl",
+      "@type": "xsd:string"
+    },
+    "RelayStateParameterName": {
+      "@id": "amz:RelayStateParameterName",
+      "@type": "xsd:string"
+    },
+    "RestartWorkspace": {
+      "@id": "amz:RestartWorkspace",
+      "@type": "xsd:string"
+    },
+    "IncreaseVolumeSize": {
+      "@id": "amz:IncreaseVolumeSize",
+      "@type": "xsd:string"
+    },
+    "ChangeComputeType": {
+      "@id": "amz:ChangeComputeType",
+      "@type": "xsd:string"
+    },
+    "SwitchRunningMode": {
+      "@id": "amz:SwitchRunningMode",
+      "@type": "xsd:string"
+    },
+    "RebuildWorkspace": {
+      "@id": "amz:RebuildWorkspace",
+      "@type": "xsd:string"
+    },
+    "DeviceTypeChromeOs": {
+      "@id": "amz:DeviceTypeChromeOs",
+      "@type": "xsd:string"
+    },
+    "DeviceTypeZeroClient": {
+      "@id": "amz:DeviceTypeZeroClient",
+      "@type": "xsd:string"
+    },
+    "RunningMode": {
+      "@id": "amz:RunningMode",
+      "@type": "xsd:string"
+    },
+    "RunningModeAutoStopTimeoutInMinutes": {
+      "@id": "amz:RunningModeAutoStopTimeoutInMinutes",
+      "@type": "xsd:string"
+    },
+    "RootVolumeSizeGib": {
+      "@id": "amz:RootVolumeSizeGib",
+      "@type": "xsd:string"
+    },
+    "UserVolumeSizeGib": {
+      "@id": "amz:UserVolumeSizeGib",
+      "@type": "xsd:string"
+    },
+    "ComputeTypeName": {
+      "@id": "amz:ComputeTypeName",
+      "@type": "xsd:string"
+    },
+    "Protocols": {
+      "@id": "amz:Protocols",
+      "@type": "xsd:string"
+    },
+    "PendingCreateStandbyWorkspacesRequest": "amz:PendingCreateStandbyWorkspacesRequest",
+    "RebootRequest": "amz:RebootRequest",
+    "RebuildRequest": "amz:RebuildRequest",
+    "RelatedWorkspaceProperties": "amz:RelatedWorkspaceProperties",
+    "Region": {
+      "@id": "amz:Region",
+      "@type": "xsd:string"
+    },
+    "Snapshot": "amz:Snapshot",
+    "SnapshotTime": {
+      "@id": "amz:SnapshotTime",
+      "@type": "xsd:string"
+    },
+    "StartRequest": "amz:StartRequest",
+    "StopRequest": "amz:StopRequest",
+    "Tag": "amz:Tag",
+    "Key": {
+      "@id": "amz:Key",
+      "@type": "xsd:string"
+    },
+    "Value": {
+      "@id": "amz:Value",
+      "@type": "xsd:string"
+    },
+    "TerminateRequest": "amz:TerminateRequest",
+    "UpdateResult": "amz:UpdateResult",
+    "UpdateAvailable": {
+      "@id": "amz:UpdateAvailable",
+      "@type": "xsd:string"
+    },
+    "Workspace": "amz:Workspace",
+    "IpAddress": {
+      "@id": "amz:IpAddress",
+      "@type": "xsd:string"
+    },
+    "SubnetId": {
+      "@id": "amz:SubnetId",
+      "@type": "xsd:string"
+    },
+    "ComputerName": {
+      "@id": "amz:ComputerName",
+      "@type": "xsd:string"
+    },
+    "ModificationStates": {
+      "@id": "amz:ModificationStates",
+      "@type": "xsd:string"
+    },
+    "RelatedWorkspaces": {
+      "@id": "amz:RelatedWorkspaces",
+      "@type": "xsd:string"
+    },
+    "WorkspaceConnectionStatus": "amz:WorkspaceConnectionStatus",
+    "ConnectionState": {
+      "@id": "amz:ConnectionState",
+      "@type": "xsd:string"
+    },
+    "ConnectionStateCheckTimestamp": {
+      "@id": "amz:ConnectionStateCheckTimestamp",
+      "@type": "xsd:string"
+    },
+    "LastKnownUserConnectionTimestamp": {
+      "@id": "amz:LastKnownUserConnectionTimestamp",
+      "@type": "xsd:string"
+    },
+    "WorkspaceImage": "amz:WorkspaceImage",
+    "Updates": {
+      "@id": "amz:Updates",
+      "@type": "xsd:string"
+    },
+    "WorkspacesIpGroup": "amz:WorkspacesIpGroup",
+    "groupId": {
+      "@id": "amz:groupId",
+      "@type": "xsd:string"
+    },
+    "groupName": {
+      "@id": "amz:groupName",
+      "@type": "xsd:string"
+    },
+    "groupDesc": {
+      "@id": "amz:groupDesc",
+      "@type": "xsd:string"
+    },
+    "userRules": {
+      "@id": "amz:userRules",
+      "@type": "xsd:string"
+    }
+  }
+}

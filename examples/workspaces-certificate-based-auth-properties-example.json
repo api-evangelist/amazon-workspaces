@@ -1,0 +1,4 @@
+{
+  "Status": "AVAILABLE",
+  "CertificateAuthorityArn": "arn:aws:workspaces:us-east-1:123456789012:workspace/abc123"
+}

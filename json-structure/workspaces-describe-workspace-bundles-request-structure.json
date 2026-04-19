@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "name": "DescribeWorkspaceBundlesRequest",
+  "properties": {
+    "BundleIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BundleIdList"
+        },
+        {
+          "description": "The identifiers of the bundles. You cannot combine this parameter with any other filter."
+        }
+      ]
+    },
+    "Owner": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BundleOwner"
+        },
+        {
+          "description": "<p>The owner of the bundles. You cannot combine this parameter with any other filter.</p> <p>To describe the bundles provided by Amazon Web Services, specify <code>AMAZON</code>. To describe the bundles that belong to your account, don't specify a value.</p>"
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationToken"
+        },
+        {
+          "description": "The token for the next set of results. (You received this token from a previous call.)"
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-describe-workspace-bundles-request-structure.json",
+  "description": "DescribeWorkspaceBundlesRequest schema from Amazon WorkSpaces API"
+}

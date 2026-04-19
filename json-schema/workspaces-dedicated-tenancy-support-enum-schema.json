@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "enum": [
+    "ENABLED"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DedicatedTenancySupportEnum",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-dedicated-tenancy-support-enum-schema.json",
+  "description": "DedicatedTenancySupportEnum schema from Amazon WorkSpaces API"
+}

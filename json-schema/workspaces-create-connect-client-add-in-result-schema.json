@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "AddInId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AmazonUuid"
+        },
+        {
+          "description": "The client add-in identifier."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CreateConnectClientAddInResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-create-connect-client-add-in-result-schema.json",
+  "description": "CreateConnectClientAddInResult schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "OWNED",
+    "SHARED"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ImageType",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-image-type-structure.json",
+  "description": "ImageType schema from Amazon WorkSpaces API"
+}

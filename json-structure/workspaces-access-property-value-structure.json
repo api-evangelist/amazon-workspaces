@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "ALLOW",
+    "DENY"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "AccessPropertyValue",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-access-property-value-structure.json",
+  "description": "AccessPropertyValue schema from Amazon WorkSpaces API"
+}

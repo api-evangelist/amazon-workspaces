@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "WorkspaceId"
+  ],
+  "name": "RestoreWorkspaceRequest",
+  "properties": {
+    "WorkspaceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkspaceId"
+        },
+        {
+          "description": "The identifier of the WorkSpace."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-restore-workspace-request-structure.json",
+  "description": "RestoreWorkspaceRequest schema from Amazon WorkSpaces API"
+}

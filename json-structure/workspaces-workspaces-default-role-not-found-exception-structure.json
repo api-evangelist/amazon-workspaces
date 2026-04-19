@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "WorkspacesDefaultRoleNotFoundException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-workspaces-default-role-not-found-exception-structure.json",
+  "description": "WorkspacesDefaultRoleNotFoundException schema from Amazon WorkSpaces API"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "^[.0-9a-zA-Z\\-]{1,255}$",
+  "minLength": 1,
+  "maxLength": 255,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ConnectionString",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-connection-string-schema.json",
+  "description": "ConnectionString schema from Amazon WorkSpaces API"
+}

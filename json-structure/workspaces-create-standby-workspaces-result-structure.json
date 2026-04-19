@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "FailedStandbyRequests": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FailedCreateStandbyWorkspacesRequestList"
+        },
+        {
+          "description": "Information about the standby WorkSpace that could not be created. "
+        }
+      ]
+    },
+    "PendingStandbyRequests": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PendingCreateStandbyWorkspacesRequestList"
+        },
+        {
+          "description": "Information about the standby WorkSpace that was created."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "CreateStandbyWorkspacesResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-create-standby-workspaces-result-structure.json",
+  "description": "CreateStandbyWorkspacesResult schema from Amazon WorkSpaces API"
+}

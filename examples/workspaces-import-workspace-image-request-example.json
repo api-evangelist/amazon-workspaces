@@ -1,0 +1,8 @@
+{
+  "Ec2ImageId": "wsid-abc123def456",
+  "IngestionProcess": "example-value",
+  "ImageName": "Example Workspace",
+  "ImageDescription": "example-value",
+  "Tags": "example-value",
+  "Applications": "example-value"
+}

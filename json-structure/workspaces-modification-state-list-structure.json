@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/ModificationState"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ModificationStateList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-modification-state-list-structure.json",
+  "description": "ModificationStateList schema from Amazon WorkSpaces API"
+}

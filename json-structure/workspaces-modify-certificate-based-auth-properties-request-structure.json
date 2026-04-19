@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "required": [
+    "ResourceId"
+  ],
+  "name": "ModifyCertificateBasedAuthPropertiesRequest",
+  "properties": {
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The resource identifiers, in the form of directory IDs."
+        }
+      ]
+    },
+    "CertificateBasedAuthProperties": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CertificateBasedAuthProperties"
+        },
+        {
+          "description": "The properties of the certificate-based authentication."
+        }
+      ]
+    },
+    "PropertiesToDelete": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeletableCertificateBasedAuthPropertiesList"
+        },
+        {
+          "description": "The properties of the certificate-based authentication you want to delete."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-modify-certificate-based-auth-properties-request-structure.json",
+  "description": "ModifyCertificateBasedAuthPropertiesRequest schema from Amazon WorkSpaces API"
+}

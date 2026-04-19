@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "AliasId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ConnectionAliasId"
+        },
+        {
+          "description": "The identifier of the connection alias."
+        }
+      ]
+    },
+    "ConnectionAliasPermissions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ConnectionAliasPermissions"
+        },
+        {
+          "description": "The permissions associated with a connection alias."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationToken"
+        },
+        {
+          "description": "The token to use to retrieve the next page of results. This value is null when there are no more results to return. "
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DescribeConnectionAliasPermissionsResult",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-structure/workspaces-describe-connection-alias-permissions-result-structure.json",
+  "description": "DescribeConnectionAliasPermissionsResult schema from Amazon WorkSpaces API"
+}

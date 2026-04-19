@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "AUTO_STOP",
+    "ALWAYS_ON",
+    "MANUAL"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RunningMode",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/json-schema/workspaces-running-mode-schema.json",
+  "description": "RunningMode schema from Amazon WorkSpaces API"
+}
