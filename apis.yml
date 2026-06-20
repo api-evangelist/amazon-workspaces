@@ -5,7 +5,7 @@ description: Amazon WorkSpaces is a managed, secure Desktop-as-a-Service (DaaS) 
   persistent desktops accessible from various devices with built-in security and management capabilities. The API provides
   65 operations for workspace lifecycle management, bundle and directory management, image management, and IP access control
   groups.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/apis.yml
 created: '2024-01-15'
 modified: '2026-05-19'
