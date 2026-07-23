@@ -1,0 +1,383 @@
+openapi: 3.0.0
+info:
+  version: '2015-04-08'
+  x-release: v4
+  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.DescribeWorkspaceImages API'
+  description: <fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href="https://docs.aws.amazon.com/general/latest/gr/wsp.html">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/userguide/">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href="https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html">WorkSpaces section of the CLI Reference</a>.</p>
+  x-logo:
+    url: https://twitter.com/awscloud/profile_image?size=original
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: workspaces
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/workspaces-2015-04-08.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://workspaces.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon WorkSpaces multi-region endpoint
+- url: https://workspaces.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon WorkSpaces multi-region endpoint
+- url: http://workspaces.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon WorkSpaces endpoint for China (Beijing) and China (Ningxia)
+- url: https://workspaces.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon WorkSpaces endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=WorkspacesService.DescribeWorkspaceImages'
+paths:
+  /#X-Amz-Target=WorkspacesService.DescribeWorkspaceImages:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: DescribeWorkspaceImages
+      description: 'Retrieves a list that describes one or more specified images, if the image identifiers are provided. Otherwise, all images in the account are described. '
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DescribeWorkspaceImagesResult'
+        '480':
+          description: AccessDeniedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccessDeniedException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DescribeWorkspaceImagesRequest'
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - WorkspacesService.DescribeWorkspaceImages
+      summary: Amazon WorkSpaces Describe Workspace Images
+      tags:
+      - '#X Amz Target=WorkspacesService.DescribeWorkspaceImages'
+components:
+  schemas:
+    DescribeWorkspaceImagesRequest:
+      type: object
+      title: DescribeWorkspaceImagesRequest
+      properties:
+        ImageIds:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceImageIdList'
+          - description: The identifier of the image.
+        ImageType:
+          allOf:
+          - $ref: '#/components/schemas/ImageType'
+          - description: The type (owned or shared) of the image.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: If you received a <code>NextToken</code> from a previous call that was paginated, provide this token to receive the next set of results.
+        MaxResults:
+          allOf:
+          - $ref: '#/components/schemas/Limit'
+          - description: The maximum number of items to return.
+    AwsAccount:
+      type: string
+      pattern: ^\d{12}$
+    WorkspaceImageIdList:
+      type: array
+      items:
+        $ref: '#/components/schemas/WorkspaceImageId'
+      minItems: 1
+      maxItems: 25
+    PaginationToken:
+      type: string
+      minLength: 1
+      maxLength: 2048
+    Limit:
+      type: integer
+      minimum: 1
+      maximum: 25
+    WorkspaceImageList:
+      type: array
+      items:
+        $ref: '#/components/schemas/WorkspaceImage'
+    WorkspaceImageState:
+      type: string
+      enum:
+      - AVAILABLE
+      - PENDING
+      - ERROR
+    WorkspaceImageId:
+      type: string
+      pattern: wsi-[0-9a-z]{9,63}$
+    UpdateDescription:
+      type: string
+      pattern: ^[a-zA-Z0-9_./() -]+$
+      minLength: 1
+      maxLength: 255
+    WorkspaceImageName:
+      type: string
+      pattern: ^[a-zA-Z0-9_./()\\-]+$
+      minLength: 1
+      maxLength: 64
+    ImageType:
+      type: string
+      enum:
+      - OWNED
+      - SHARED
+    UpdateResult:
+      type: object
+      properties:
+        UpdateAvailable:
+          allOf:
+          - $ref: '#/components/schemas/BooleanObject'
+          - description: Indicates whether updated drivers or other components are available for the specified WorkSpace image.
+        Description:
+          allOf:
+          - $ref: '#/components/schemas/UpdateDescription'
+          - description: A description of whether updates for the WorkSpace image are pending or available.
+      description: <p>Describes whether a WorkSpace image needs to be updated with the latest drivers and other components required by Amazon WorkSpaces.</p> <note> <p>Only Windows 10 WorkSpace images can be programmatically updated at this time.</p> </note>
+    AccessDeniedException: {}
+    OperatingSystemType:
+      type: string
+      enum:
+      - WINDOWS
+      - LINUX
+    DescribeWorkspaceImagesResult:
+      type: object
+      properties:
+        Images:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceImageList'
+          - description: Information about the images.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: 'The token to use to retrieve the next page of results. This value is null when there are no more results to return. '
+    Description:
+      type: string
+    OperatingSystem:
+      type: object
+      properties:
+        Type:
+          allOf:
+          - $ref: '#/components/schemas/OperatingSystemType'
+          - description: The operating system.
+      description: The operating system that the image is running.
+    Timestamp:
+      type: string
+      format: date-time
+    WorkspaceImageDescription:
+      type: string
+      pattern: ^[a-zA-Z0-9_./() -]+$
+      minLength: 1
+      maxLength: 256
+    BooleanObject:
+      type: boolean
+    WorkspaceImage:
+      type: object
+      properties:
+        ImageId:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceImageId'
+          - description: The identifier of the image.
+        Name:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceImageName'
+          - description: The name of the image.
+        Description:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceImageDescription'
+          - description: The description of the image.
+        OperatingSystem:
+          allOf:
+          - $ref: '#/components/schemas/OperatingSystem'
+          - description: 'The operating system that the image is running. '
+        State:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceImageState'
+          - description: The status of the image.
+        RequiredTenancy:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceImageRequiredTenancy'
+          - description: Specifies whether the image is running on dedicated hardware. When Bring Your Own License (BYOL) is enabled, this value is set to <code>DEDICATED</code>. For more information, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/byol-windows-images.html">Bring Your Own Windows Desktop Images</a>.
+        ErrorCode:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceImageErrorCode'
+          - description: The error code that is returned for the image.
+        ErrorMessage:
+          allOf:
+          - $ref: '#/components/schemas/Description'
+          - description: The text of the error message that is returned for the image.
+        Created:
+          allOf:
+          - $ref: '#/components/schemas/Timestamp'
+          - description: The date when the image was created. If the image has been shared, the Amazon Web Services account that the image has been shared with sees the original creation date of the image.
+        OwnerAccountId:
+          allOf:
+          - $ref: '#/components/schemas/AwsAccount'
+          - description: The identifier of the Amazon Web Services account that owns the image.
+        Updates:
+          allOf:
+          - $ref: '#/components/schemas/UpdateResult'
+          - description: The updates (if any) that are available for the specified image.
+      description: Describes a WorkSpace image.
+    WorkspaceImageRequiredTenancy:
+      type: string
+      enum:
+      - DEFAULT
+      - DEDICATED
+    WorkspaceImageErrorCode:
+      type: string
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/workspaces/
+x-hasEquivalentPaths: true

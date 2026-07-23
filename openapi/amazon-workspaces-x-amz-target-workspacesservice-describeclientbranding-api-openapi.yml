@@ -1,0 +1,346 @@
+openapi: 3.0.0
+info:
+  version: '2015-04-08'
+  x-release: v4
+  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.DescribeClientBranding API'
+  description: <fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href="https://docs.aws.amazon.com/general/latest/gr/wsp.html">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/userguide/">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href="https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html">WorkSpaces section of the CLI Reference</a>.</p>
+  x-logo:
+    url: https://twitter.com/awscloud/profile_image?size=original
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: workspaces
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/workspaces-2015-04-08.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://workspaces.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon WorkSpaces multi-region endpoint
+- url: https://workspaces.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon WorkSpaces multi-region endpoint
+- url: http://workspaces.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon WorkSpaces endpoint for China (Beijing) and China (Ningxia)
+- url: https://workspaces.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon WorkSpaces endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=WorkspacesService.DescribeClientBranding'
+paths:
+  /#X-Amz-Target=WorkspacesService.DescribeClientBranding:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: DescribeClientBranding
+      description: <p>Describes the specified client branding. Client branding allows you to customize the log in page of various device types for your users. You can add your company logo, the support email address, support link, link to reset password, and a custom message for users trying to sign in.</p> <note> <p>Only device types that have branding information configured will be shown in the response.</p> </note>
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DescribeClientBrandingResult'
+        '480':
+          description: InvalidParameterValuesException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterValuesException'
+        '481':
+          description: ResourceNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceNotFoundException'
+        '482':
+          description: AccessDeniedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccessDeniedException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DescribeClientBrandingRequest'
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - WorkspacesService.DescribeClientBranding
+      summary: Amazon WorkSpaces Describe Client Branding
+      tags:
+      - '#X Amz Target=WorkspacesService.DescribeClientBranding'
+components:
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+  schemas:
+    ClientUrl:
+      type: string
+      pattern: ^(http|https)\://\S+
+      minLength: 1
+      maxLength: 200
+    DescribeClientBrandingRequest:
+      type: object
+      required:
+      - ResourceId
+      title: DescribeClientBrandingRequest
+      properties:
+        ResourceId:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryId'
+          - description: The directory identifier of the WorkSpace for which you want to view client branding information.
+    ClientLoginMessage:
+      type: string
+      pattern: ^.*$
+      minLength: 0
+      maxLength: 2000
+    LoginMessage:
+      type: object
+      additionalProperties:
+        $ref: '#/components/schemas/ClientLoginMessage'
+    DirectoryId:
+      type: string
+      pattern: ^d-[0-9a-f]{8,63}$
+      minLength: 10
+      maxLength: 65
+    InvalidParameterValuesException: {}
+    IosClientBrandingAttributes:
+      type: object
+      properties:
+        LogoUrl:
+          allOf:
+          - $ref: '#/components/schemas/ClientUrl'
+          - description: The logo. This is the standard-resolution display that has a 1:1 pixel density (or @1x), where one pixel is equal to one point. The only image format accepted is a binary data object that is converted from a <code>.png</code> file.
+        Logo2xUrl:
+          allOf:
+          - $ref: '#/components/schemas/ClientUrl'
+          - description: <p>The @2x version of the logo. This is the higher resolution display that offers a scale factor of 2.0 (or @2x). The only image format accepted is a binary data object that is converted from a <code>.png</code> file.</p> <note> <p> For more information about iOS image size and resolution, see <a href="https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/image-size-and-resolution/">Image Size and Resolution </a> in the <i>Apple Human Interface Guidelines</i>.</p> </note>
+        Logo3xUrl:
+          allOf:
+          - $ref: '#/components/schemas/ClientUrl'
+          - description: <p>The @3x version of the logo. This is the higher resolution display that offers a scale factor of 3.0 (or @3x).The only image format accepted is a binary data object that is converted from a <code>.png</code> file.</p> <note> <p> For more information about iOS image size and resolution, see <a href="https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/image-size-and-resolution/">Image Size and Resolution </a> in the <i>Apple Human Interface Guidelines</i>.</p> </note>
+        SupportEmail:
+          allOf:
+          - $ref: '#/components/schemas/ClientEmail'
+          - description: <p>The support email. The company's customer support email address.</p> <note> <ul> <li> <p>In each platform type, the <code>SupportEmail</code> and <code>SupportLink</code> parameters are mutually exclusive. You can specify one parameter for each platform type, but not both.</p> </li> <li> <p>The default email is <code>workspaces-feedback@amazon.com</code>.</p> </li> </ul> </note>
+        SupportLink:
+          allOf:
+          - $ref: '#/components/schemas/ClientUrl'
+          - description: <p>The support link. The link for the company's customer support page for their WorkSpace.</p> <note> <ul> <li> <p>In each platform type, the <code>SupportEmail</code> and <code>SupportLink</code> parameters are mutually exclusive. You can specify one parameter for each platform type, but not both.</p> </li> <li> <p>The default support link is <code>workspaces-feedback@amazon.com</code>.</p> </li> </ul> </note>
+        ForgotPasswordLink:
+          allOf:
+          - $ref: '#/components/schemas/ClientUrl'
+          - description: The forgotten password link. This is the web address that users can go to if they forget the password for their WorkSpace.
+        LoginMessage:
+          allOf:
+          - $ref: '#/components/schemas/LoginMessage'
+          - description: 'The login message. Specified as a key value pair, in which the key is a locale and the value is the localized message for that locale. The only key supported is <code>en_US</code>. The HTML tags supported include the following: <code>a, b, blockquote, br, cite, code, dd, dl, dt, div, em, i, li, ol, p, pre, q, small, span, strike, strong, sub, sup, u, ul</code>.'
+      description: <p>The client branding attributes for iOS device types. These attributes are displayed on the iOS client login screen only.</p> <important> <p>Client branding attributes are public facing. Ensure you do not include sensitive information.</p> </important>
+    DefaultClientBrandingAttributes:
+      type: object
+      properties:
+        LogoUrl:
+          allOf:
+          - $ref: '#/components/schemas/ClientUrl'
+          - description: The logo. The only image format accepted is a binary data object that is converted from a <code>.png</code> file.
+        SupportEmail:
+          allOf:
+          - $ref: '#/components/schemas/ClientEmail'
+          - description: <p>The support email. The company's customer support email address.</p> <note> <ul> <li> <p>In each platform type, the <code>SupportEmail</code> and <code>SupportLink</code> parameters are mutually exclusive. You can specify one parameter for each platform type, but not both.</p> </li> <li> <p>The default email is <code>workspaces-feedback@amazon.com</code>.</p> </li> </ul> </note>
+        SupportLink:
+          allOf:
+          - $ref: '#/components/schemas/ClientUrl'
+          - description: <p>The support link. The link for the company's customer support page for their WorkSpace.</p> <note> <ul> <li> <p>In each platform type, the <code>SupportEmail</code> and <code>SupportLink</code> parameters are mutually exclusive.You can specify one parameter for each platform type, but not both.</p> </li> <li> <p>The default support link is <code>workspaces-feedback@amazon.com</code>.</p> </li> </ul> </note>
+        ForgotPasswordLink:
+          allOf:
+          - $ref: '#/components/schemas/ClientUrl'
+          - description: The forgotten password link. This is the web address that users can go to if they forget the password for their WorkSpace.
+        LoginMessage:
+          allOf:
+          - $ref: '#/components/schemas/LoginMessage'
+          - description: 'The login message. Specified as a key value pair, in which the key is a locale and the value is the localized message for that locale. The only key supported is <code>en_US</code>. The HTML tags supported include the following: <code>a, b, blockquote, br, cite, code, dd, dl, dt, div, em, i, li, ol, p, pre, q, small, span, strike, strong, sub, sup, u, ul</code>.'
+      description: <p>Returns default client branding attributes that were imported. These attributes display on the client login screen.</p> <important> <p>Client branding attributes are public facing. Ensure that you don't include sensitive information.</p> </important>
+    ResourceNotFoundException: {}
+    AccessDeniedException: {}
+    DescribeClientBrandingResult:
+      type: object
+      properties:
+        DeviceTypeWindows:
+          allOf:
+          - $ref: '#/components/schemas/DefaultClientBrandingAttributes'
+          - description: The branding information for Windows devices.
+        DeviceTypeOsx:
+          allOf:
+          - $ref: '#/components/schemas/DefaultClientBrandingAttributes'
+          - description: The branding information for macOS devices.
+        DeviceTypeAndroid:
+          allOf:
+          - $ref: '#/components/schemas/DefaultClientBrandingAttributes'
+          - description: The branding information for Android devices.
+        DeviceTypeIos:
+          allOf:
+          - $ref: '#/components/schemas/IosClientBrandingAttributes'
+          - description: The branding information for iOS devices.
+        DeviceTypeLinux:
+          allOf:
+          - $ref: '#/components/schemas/DefaultClientBrandingAttributes'
+          - description: The branding information for Linux devices.
+        DeviceTypeWeb:
+          allOf:
+          - $ref: '#/components/schemas/DefaultClientBrandingAttributes'
+          - description: The branding information for Web access.
+    ClientEmail:
+      type: string
+      pattern: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$
+      minLength: 6
+      maxLength: 64
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/workspaces/
+x-hasEquivalentPaths: true

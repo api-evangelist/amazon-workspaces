@@ -1,0 +1,562 @@
+openapi: 3.0.0
+info:
+  version: '2015-04-08'
+  x-release: v4
+  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.DescribeWorkspaceDirectories API'
+  description: <fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href="https://docs.aws.amazon.com/general/latest/gr/wsp.html">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/userguide/">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href="https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html">WorkSpaces section of the CLI Reference</a>.</p>
+  x-logo:
+    url: https://twitter.com/awscloud/profile_image?size=original
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: workspaces
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/workspaces-2015-04-08.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://workspaces.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon WorkSpaces multi-region endpoint
+- url: https://workspaces.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon WorkSpaces multi-region endpoint
+- url: http://workspaces.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon WorkSpaces endpoint for China (Beijing) and China (Ningxia)
+- url: https://workspaces.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon WorkSpaces endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=WorkspacesService.DescribeWorkspaceDirectories'
+paths:
+  /#X-Amz-Target=WorkspacesService.DescribeWorkspaceDirectories:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: DescribeWorkspaceDirectories
+      description: Describes the available directories that are registered with Amazon WorkSpaces.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DescribeWorkspaceDirectoriesResult'
+        '480':
+          description: InvalidParameterValuesException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterValuesException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DescribeWorkspaceDirectoriesRequest'
+      parameters:
+      - name: NextToken
+        in: query
+        schema:
+          type: string
+        description: Pagination token
+        required: false
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - WorkspacesService.DescribeWorkspaceDirectories
+      summary: Amazon WorkSpaces Describe Workspace Directories
+      tags:
+      - '#X Amz Target=WorkspacesService.DescribeWorkspaceDirectories'
+components:
+  schemas:
+    AccessPropertyValue:
+      type: string
+      enum:
+      - ALLOW
+      - DENY
+    WorkspaceDirectoryState:
+      type: string
+      enum:
+      - REGISTERING
+      - REGISTERED
+      - DEREGISTERING
+      - DEREGISTERED
+      - ERROR
+    DefaultOu:
+      type: string
+    ARN:
+      type: string
+      pattern: ^arn:aws:[A-Za-z0-9][A-za-z0-9_/.-]{0,62}:[A-za-z0-9_/.-]{0,63}:[A-za-z0-9_/.-]{0,63}:[A-Za-z0-9][A-za-z0-9_/.-]{0,127}$
+    IpGroupId:
+      type: string
+      pattern: wsipg-[0-9a-z]{8,63}$
+    CertificateAuthorityArn:
+      type: string
+      pattern: arn:[\w+=/,.@-]+:[\w+=/,.@-]+:[\w+=/,.@-]*:[0-9]*:[\w+=,.@-]+(/[\w+=,.@-]+)*
+      minLength: 5
+      maxLength: 200
+    PaginationToken:
+      type: string
+      minLength: 1
+      maxLength: 2048
+    NonEmptyString:
+      type: string
+      minLength: 1
+    RegistrationCode:
+      type: string
+      minLength: 1
+      maxLength: 20
+    Alias:
+      type: string
+    ReconnectEnum:
+      type: string
+      enum:
+      - ENABLED
+      - DISABLED
+    Limit:
+      type: integer
+      minimum: 1
+      maximum: 25
+    DirectoryName:
+      type: string
+    SubnetId:
+      type: string
+      pattern: ^(subnet-([0-9a-f]{8}|[0-9a-f]{17}))$
+      minLength: 15
+      maxLength: 24
+    SamlProperties:
+      type: object
+      properties:
+        Status:
+          allOf:
+          - $ref: '#/components/schemas/SamlStatusEnum'
+          - description: <p>Indicates the status of SAML 2.0 authentication. These statuses include the following.</p> <ul> <li> <p>If the setting is <code>DISABLED</code>, end users will be directed to login with their directory credentials.</p> </li> <li> <p>If the setting is <code>ENABLED</code>, end users will be directed to login via the user access URL. Users attempting to connect to WorkSpaces from a client application that does not support SAML 2.0 authentication will not be able to connect.</p> </li> <li> <p>If the setting is <code>ENABLED_WITH_DIRECTORY_LOGIN_FALLBACK</code>, end users will be directed to login via the user access URL on supported client applications, but will not prevent clients that do not support SAML 2.0 authentication from connecting as if SAML 2.0 authentication was disabled.</p> </li> </ul>
+        UserAccessUrl:
+          allOf:
+          - $ref: '#/components/schemas/SamlUserAccessUrl'
+          - description: The SAML 2.0 identity provider (IdP) user access URL is the URL a user would navigate to in their web browser in order to federate from the IdP and directly access the application, without any SAML 2.0 service provider (SP) bindings.
+        RelayStateParameterName:
+          allOf:
+          - $ref: '#/components/schemas/NonEmptyString'
+          - description: <p>The relay state parameter name supported by the SAML 2.0 identity provider (IdP). When the end user is redirected to the user access URL from the WorkSpaces client application, this relay state parameter name is appended as a query parameter to the URL along with the relay state endpoint to return the user to the client application session.</p> <p>To use SAML 2.0 authentication with WorkSpaces, the IdP must support IdP-initiated deep linking for the relay state URL. Consult your IdP documentation for more information.</p>
+      description: Describes the enablement status, user access URL, and relay state parameter name that are used for configuring federation with an SAML 2.0 identity provider.
+    DefaultWorkspaceCreationProperties:
+      type: object
+      properties:
+        EnableWorkDocs:
+          allOf:
+          - $ref: '#/components/schemas/BooleanObject'
+          - description: Specifies whether the directory is enabled for Amazon WorkDocs.
+        EnableInternetAccess:
+          allOf:
+          - $ref: '#/components/schemas/BooleanObject'
+          - description: Specifies whether to automatically assign an Elastic public IP address to WorkSpaces in this directory by default. If enabled, the Elastic public IP address allows outbound internet access from your WorkSpaces when you’re using an internet gateway in the Amazon VPC in which your WorkSpaces are located. If you're using a Network Address Translation (NAT) gateway for outbound internet access from your VPC, or if your WorkSpaces are in public subnets and you manually assign them Elastic IP addresses, you should disable this setting. This setting applies to new WorkSpaces that you launch or to existing WorkSpaces that you rebuild. For more information, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces-vpc.html"> Configure a VPC for Amazon WorkSpaces</a>.
+        DefaultOu:
+          allOf:
+          - $ref: '#/components/schemas/DefaultOu'
+          - description: The organizational unit (OU) in the directory for the WorkSpace machine accounts.
+        CustomSecurityGroupId:
+          allOf:
+          - $ref: '#/components/schemas/SecurityGroupId'
+          - description: The identifier of the default security group to apply to WorkSpaces when they are created. For more information, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces-security-groups.html"> Security Groups for Your WorkSpaces</a>.
+        UserEnabledAsLocalAdministrator:
+          allOf:
+          - $ref: '#/components/schemas/BooleanObject'
+          - description: Specifies whether WorkSpace users are local administrators on their WorkSpaces.
+        EnableMaintenanceMode:
+          allOf:
+          - $ref: '#/components/schemas/BooleanObject'
+          - description: Specifies whether maintenance mode is enabled for WorkSpaces. For more information, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/workspace-maintenance.html">WorkSpace Maintenance</a>.
+      description: Describes the default values that are used to create WorkSpaces. For more information, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/update-directory-details.html">Update Directory Details for Your WorkSpaces</a>.
+    WorkspaceDirectory:
+      type: object
+      properties:
+        DirectoryId:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryId'
+          - description: The directory identifier.
+        Alias:
+          allOf:
+          - $ref: '#/components/schemas/Alias'
+          - description: The directory alias.
+        DirectoryName:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryName'
+          - description: The name of the directory.
+        RegistrationCode:
+          allOf:
+          - $ref: '#/components/schemas/RegistrationCode'
+          - description: The registration code for the directory. This is the code that users enter in their Amazon WorkSpaces client application to connect to the directory.
+        SubnetIds:
+          allOf:
+          - $ref: '#/components/schemas/SubnetIds'
+          - description: The identifiers of the subnets used with the directory.
+        DnsIpAddresses:
+          allOf:
+          - $ref: '#/components/schemas/DnsIpAddresses'
+          - description: The IP addresses of the DNS servers for the directory.
+        CustomerUserName:
+          allOf:
+          - $ref: '#/components/schemas/UserName'
+          - description: The user name for the service account.
+        IamRoleId:
+          allOf:
+          - $ref: '#/components/schemas/ARN'
+          - description: The identifier of the IAM role. This is the role that allows Amazon WorkSpaces to make calls to other services, such as Amazon EC2, on your behalf.
+        DirectoryType:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceDirectoryType'
+          - description: The directory type.
+        WorkspaceSecurityGroupId:
+          allOf:
+          - $ref: '#/components/schemas/SecurityGroupId'
+          - description: The identifier of the security group that is assigned to new WorkSpaces.
+        State:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceDirectoryState'
+          - description: The state of the directory's registration with Amazon WorkSpaces. After a directory is deregistered, the <code>DEREGISTERED</code> state is returned very briefly before the directory metadata is cleaned up, so this state is rarely returned. To confirm that a directory is deregistered, check for the directory ID by using <a href="https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeWorkspaceDirectories.html"> DescribeWorkspaceDirectories</a>. If the directory ID isn't returned, then the directory has been successfully deregistered.
+        WorkspaceCreationProperties:
+          allOf:
+          - $ref: '#/components/schemas/DefaultWorkspaceCreationProperties'
+          - description: The default creation properties for all WorkSpaces in the directory.
+        ipGroupIds:
+          allOf:
+          - $ref: '#/components/schemas/IpGroupIdList'
+          - description: The identifiers of the IP access control groups associated with the directory.
+        WorkspaceAccessProperties:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceAccessProperties'
+          - description: The devices and operating systems that users can use to access WorkSpaces.
+        Tenancy:
+          allOf:
+          - $ref: '#/components/schemas/Tenancy'
+          - description: Specifies whether the directory is dedicated or shared. To use Bring Your Own License (BYOL), this value must be set to <code>DEDICATED</code>. For more information, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/byol-windows-images.html">Bring Your Own Windows Desktop Images</a>.
+        SelfservicePermissions:
+          allOf:
+          - $ref: '#/components/schemas/SelfservicePermissions'
+          - description: The default self-service permissions for WorkSpaces in the directory.
+        SamlProperties:
+          allOf:
+          - $ref: '#/components/schemas/SamlProperties'
+          - description: Describes the enablement status, user access URL, and relay state parameter name that are used for configuring federation with an SAML 2.0 identity provider.
+        CertificateBasedAuthProperties:
+          allOf:
+          - $ref: '#/components/schemas/CertificateBasedAuthProperties'
+          - description: The certificate-based authentication properties used to authenticate SAML 2.0 Identity Provider (IdP) user identities to Active Directory for WorkSpaces login.
+      description: Describes a directory that is used with Amazon WorkSpaces.
+    DirectoryId:
+      type: string
+      pattern: ^d-[0-9a-f]{8,63}$
+      minLength: 10
+      maxLength: 65
+    InvalidParameterValuesException: {}
+    DescribeWorkspaceDirectoriesResult:
+      type: object
+      properties:
+        Directories:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryList'
+          - description: Information about the directories.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: 'The token to use to retrieve the next page of results. This value is null when there are no more results to return. '
+    DirectoryIdList:
+      type: array
+      items:
+        $ref: '#/components/schemas/DirectoryId'
+      minItems: 1
+      maxItems: 25
+    CertificateBasedAuthStatusEnum:
+      type: string
+      enum:
+      - DISABLED
+      - ENABLED
+    CertificateBasedAuthProperties:
+      type: object
+      properties:
+        Status:
+          allOf:
+          - $ref: '#/components/schemas/CertificateBasedAuthStatusEnum'
+          - description: The status of the certificate-based authentication properties.
+        CertificateAuthorityArn:
+          allOf:
+          - $ref: '#/components/schemas/CertificateAuthorityArn'
+          - description: The Amazon Resource Name (ARN) of the Amazon Web Services Certificate Manager Private CA resource.
+      description: Describes the properties of the certificate-based authentication you want to use with your WorkSpaces.
+    WorkspaceDirectoryType:
+      type: string
+      enum:
+      - SIMPLE_AD
+      - AD_CONNECTOR
+    SecurityGroupId:
+      type: string
+      pattern: ^(sg-([0-9a-f]{8}|[0-9a-f]{17}))$
+      minLength: 11
+      maxLength: 20
+    DirectoryList:
+      type: array
+      items:
+        $ref: '#/components/schemas/WorkspaceDirectory'
+    IpAddress:
+      type: string
+    SubnetIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/SubnetId'
+      maxItems: 2
+    IpGroupIdList:
+      type: array
+      items:
+        $ref: '#/components/schemas/IpGroupId'
+    DescribeWorkspaceDirectoriesRequest:
+      type: object
+      title: DescribeWorkspaceDirectoriesRequest
+      properties:
+        DirectoryIds:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryIdList'
+          - description: The identifiers of the directories. If the value is null, all directories are retrieved.
+        Limit:
+          allOf:
+          - $ref: '#/components/schemas/Limit'
+          - description: The maximum number of directories to return.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: If you received a <code>NextToken</code> from a previous call that was paginated, provide this token to receive the next set of results.
+    WorkspaceAccessProperties:
+      type: object
+      properties:
+        DeviceTypeWindows:
+          allOf:
+          - $ref: '#/components/schemas/AccessPropertyValue'
+          - description: Indicates whether users can use Windows clients to access their WorkSpaces.
+        DeviceTypeOsx:
+          allOf:
+          - $ref: '#/components/schemas/AccessPropertyValue'
+          - description: Indicates whether users can use macOS clients to access their WorkSpaces.
+        DeviceTypeWeb:
+          allOf:
+          - $ref: '#/components/schemas/AccessPropertyValue'
+          - description: Indicates whether users can access their WorkSpaces through a web browser.
+        DeviceTypeIos:
+          allOf:
+          - $ref: '#/components/schemas/AccessPropertyValue'
+          - description: Indicates whether users can use iOS devices to access their WorkSpaces.
+        DeviceTypeAndroid:
+          allOf:
+          - $ref: '#/components/schemas/AccessPropertyValue'
+          - description: Indicates whether users can use Android and Android-compatible Chrome OS devices to access their WorkSpaces.
+        DeviceTypeChromeOs:
+          allOf:
+          - $ref: '#/components/schemas/AccessPropertyValue'
+          - description: Indicates whether users can use Chromebooks to access their WorkSpaces.
+        DeviceTypeZeroClient:
+          allOf:
+          - $ref: '#/components/schemas/AccessPropertyValue'
+          - description: Indicates whether users can use zero client devices to access their WorkSpaces.
+        DeviceTypeLinux:
+          allOf:
+          - $ref: '#/components/schemas/AccessPropertyValue'
+          - description: Indicates whether users can use Linux clients to access their WorkSpaces.
+      description: The device types and operating systems that can be used to access a WorkSpace. For more information, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-network-requirements.html">Amazon WorkSpaces Client Network Requirements</a>.
+    SelfservicePermissions:
+      type: object
+      properties:
+        RestartWorkspace:
+          allOf:
+          - $ref: '#/components/schemas/ReconnectEnum'
+          - description: Specifies whether users can restart their WorkSpace.
+        IncreaseVolumeSize:
+          allOf:
+          - $ref: '#/components/schemas/ReconnectEnum'
+          - description: Specifies whether users can increase the volume size of the drives on their WorkSpace.
+        ChangeComputeType:
+          allOf:
+          - $ref: '#/components/schemas/ReconnectEnum'
+          - description: Specifies whether users can change the compute type (bundle) for their WorkSpace.
+        SwitchRunningMode:
+          allOf:
+          - $ref: '#/components/schemas/ReconnectEnum'
+          - description: Specifies whether users can switch the running mode of their WorkSpace.
+        RebuildWorkspace:
+          allOf:
+          - $ref: '#/components/schemas/ReconnectEnum'
+          - description: Specifies whether users can rebuild the operating system of a WorkSpace to its original state.
+      description: Describes the self-service permissions for a directory. For more information, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/enable-user-self-service-workspace-management.html">Enable Self-Service WorkSpace Management Capabilities for Your Users</a>.
+    DnsIpAddresses:
+      type: array
+      items:
+        $ref: '#/components/schemas/IpAddress'
+    SamlStatusEnum:
+      type: string
+      enum:
+      - DISABLED
+      - ENABLED
+      - ENABLED_WITH_DIRECTORY_LOGIN_FALLBACK
+    BooleanObject:
+      type: boolean
+    Tenancy:
+      type: string
+      enum:
+      - DEDICATED
+      - SHARED
+    SamlUserAccessUrl:
+      type: string
+      pattern: ^(http|https)\://\S+$
+      minLength: 8
+      maxLength: 200
+    UserName:
+      type: string
+      minLength: 1
+      maxLength: 63
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/workspaces/
+x-hasEquivalentPaths: true

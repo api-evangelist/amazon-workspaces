@@ -1,0 +1,345 @@
+openapi: 3.0.0
+info:
+  version: '2015-04-08'
+  x-release: v4
+  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.RegisterWorkspaceDirectory API'
+  description: <fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href="https://docs.aws.amazon.com/general/latest/gr/wsp.html">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/userguide/">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href="https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html">WorkSpaces section of the CLI Reference</a>.</p>
+  x-logo:
+    url: https://twitter.com/awscloud/profile_image?size=original
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: workspaces
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/workspaces-2015-04-08.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://workspaces.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon WorkSpaces multi-region endpoint
+- url: https://workspaces.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon WorkSpaces multi-region endpoint
+- url: http://workspaces.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon WorkSpaces endpoint for China (Beijing) and China (Ningxia)
+- url: https://workspaces.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon WorkSpaces endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=WorkspacesService.RegisterWorkspaceDirectory'
+paths:
+  /#X-Amz-Target=WorkspacesService.RegisterWorkspaceDirectory:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: RegisterWorkspaceDirectory
+      description: Registers the specified directory. This operation is asynchronous and returns before the WorkSpace directory is registered. If this is the first time you are registering a directory, you will need to create the workspaces_DefaultRole role before you can register a directory. For more information, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-access-control.html#create-default-role"> Creating the workspaces_DefaultRole Role</a>.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RegisterWorkspaceDirectoryResult'
+        '480':
+          description: InvalidParameterValuesException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterValuesException'
+        '481':
+          description: ResourceNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceNotFoundException'
+        '482':
+          description: ResourceLimitExceededException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceLimitExceededException'
+        '483':
+          description: AccessDeniedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccessDeniedException'
+        '484':
+          description: WorkspacesDefaultRoleNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WorkspacesDefaultRoleNotFoundException'
+        '485':
+          description: InvalidResourceStateException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidResourceStateException'
+        '486':
+          description: UnsupportedNetworkConfigurationException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UnsupportedNetworkConfigurationException'
+        '487':
+          description: OperationNotSupportedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OperationNotSupportedException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterWorkspaceDirectoryRequest'
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - WorkspacesService.RegisterWorkspaceDirectory
+      summary: Amazon WorkSpaces Register Workspace Directory
+      tags:
+      - '#X Amz Target=WorkspacesService.RegisterWorkspaceDirectory'
+components:
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+  schemas:
+    ResourceLimitExceededException: {}
+    TagValue:
+      type: string
+      maxLength: 255
+    Tag:
+      type: object
+      required:
+      - Key
+      properties:
+        Key:
+          allOf:
+          - $ref: '#/components/schemas/TagKey'
+          - description: The key of the tag.
+        Value:
+          allOf:
+          - $ref: '#/components/schemas/TagValue'
+          - description: The value of the tag.
+      description: Describes a tag.
+    RegisterWorkspaceDirectoryRequest:
+      type: object
+      required:
+      - DirectoryId
+      - EnableWorkDocs
+      title: RegisterWorkspaceDirectoryRequest
+      properties:
+        DirectoryId:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryId'
+          - description: The identifier of the directory. You cannot register a directory if it does not have a status of Active. If the directory does not have a status of Active, you will receive an InvalidResourceStateException error. If you have already registered the maximum number of directories that you can register with Amazon WorkSpaces, you will receive a ResourceLimitExceededException error. Deregister directories that you are not using for WorkSpaces, and try again.
+        SubnetIds:
+          allOf:
+          - $ref: '#/components/schemas/SubnetIds'
+          - description: The identifiers of the subnets for your virtual private cloud (VPC). Make sure that the subnets are in supported Availability Zones. The subnets must also be in separate Availability Zones. If these conditions are not met, you will receive an OperationNotSupportedException error.
+        EnableWorkDocs:
+          allOf:
+          - $ref: '#/components/schemas/BooleanObject'
+          - description: Indicates whether Amazon WorkDocs is enabled or disabled. If you have enabled this parameter and WorkDocs is not available in the Region, you will receive an OperationNotSupportedException error. Set <code>EnableWorkDocs</code> to disabled, and try again.
+        EnableSelfService:
+          allOf:
+          - $ref: '#/components/schemas/BooleanObject'
+          - description: Indicates whether self-service capabilities are enabled or disabled.
+        Tenancy:
+          allOf:
+          - $ref: '#/components/schemas/Tenancy'
+          - description: Indicates whether your WorkSpace directory is dedicated or shared. To use Bring Your Own License (BYOL) images, this value must be set to <code>DEDICATED</code> and your Amazon Web Services account must be enabled for BYOL. If your account has not been enabled for BYOL, you will receive an InvalidParameterValuesException error. For more information about BYOL images, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/byol-windows-images.html">Bring Your Own Windows Desktop Images</a>.
+        Tags:
+          allOf:
+          - $ref: '#/components/schemas/TagList'
+          - description: The tags associated with the directory.
+    SubnetId:
+      type: string
+      pattern: ^(subnet-([0-9a-f]{8}|[0-9a-f]{17}))$
+      minLength: 15
+      maxLength: 24
+    UnsupportedNetworkConfigurationException: {}
+    DirectoryId:
+      type: string
+      pattern: ^d-[0-9a-f]{8,63}$
+      minLength: 10
+      maxLength: 65
+    InvalidParameterValuesException: {}
+    WorkspacesDefaultRoleNotFoundException: {}
+    RegisterWorkspaceDirectoryResult:
+      type: object
+      properties: {}
+    ResourceNotFoundException: {}
+    SubnetIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/SubnetId'
+      maxItems: 2
+    AccessDeniedException: {}
+    OperationNotSupportedException: {}
+    InvalidResourceStateException: {}
+    TagKey:
+      type: string
+      minLength: 1
+      maxLength: 127
+    BooleanObject:
+      type: boolean
+    Tenancy:
+      type: string
+      enum:
+      - DEDICATED
+      - SHARED
+    TagList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tag'
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/workspaces/
+x-hasEquivalentPaths: true

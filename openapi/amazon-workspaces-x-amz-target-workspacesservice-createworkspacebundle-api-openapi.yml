@@ -1,0 +1,437 @@
+openapi: 3.0.0
+info:
+  version: '2015-04-08'
+  x-release: v4
+  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.CreateWorkspaceBundle API'
+  description: <fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href="https://docs.aws.amazon.com/general/latest/gr/wsp.html">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/userguide/">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href="https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html">WorkSpaces section of the CLI Reference</a>.</p>
+  x-logo:
+    url: https://twitter.com/awscloud/profile_image?size=original
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: workspaces
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/workspaces-2015-04-08.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://workspaces.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon WorkSpaces multi-region endpoint
+- url: https://workspaces.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon WorkSpaces multi-region endpoint
+- url: http://workspaces.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon WorkSpaces endpoint for China (Beijing) and China (Ningxia)
+- url: https://workspaces.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon WorkSpaces endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=WorkspacesService.CreateWorkspaceBundle'
+paths:
+  /#X-Amz-Target=WorkspacesService.CreateWorkspaceBundle:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: CreateWorkspaceBundle
+      description: Creates the specified WorkSpace bundle. For more information about creating WorkSpace bundles, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/create-custom-bundle.html"> Create a Custom WorkSpaces Image and Bundle</a>.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateWorkspaceBundleResult'
+        '480':
+          description: ResourceUnavailableException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceUnavailableException'
+        '481':
+          description: ResourceAlreadyExistsException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceAlreadyExistsException'
+        '482':
+          description: ResourceLimitExceededException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceLimitExceededException'
+        '483':
+          description: InvalidParameterValuesException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterValuesException'
+        '484':
+          description: ResourceNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceNotFoundException'
+        '485':
+          description: AccessDeniedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccessDeniedException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateWorkspaceBundleRequest'
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - WorkspacesService.CreateWorkspaceBundle
+      summary: Amazon WorkSpaces Create Workspace Bundle
+      tags:
+      - '#X Amz Target=WorkspacesService.CreateWorkspaceBundle'
+components:
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+  schemas:
+    ResourceAlreadyExistsException: {}
+    BundleId:
+      type: string
+      pattern: ^wsb-[0-9a-z]{8,63}$
+    ResourceLimitExceededException: {}
+    BundleOwner:
+      type: string
+    ComputeType:
+      type: object
+      properties:
+        Name:
+          allOf:
+          - $ref: '#/components/schemas/Compute'
+          - description: The compute type.
+      description: Describes the compute type of the bundle.
+    TagValue:
+      type: string
+      maxLength: 255
+    NonEmptyString:
+      type: string
+      minLength: 1
+    WorkspaceBundleName:
+      type: string
+      pattern: ^[a-zA-Z0-9_./()\\-]+$
+      minLength: 1
+      maxLength: 64
+    Tag:
+      type: object
+      required:
+      - Key
+      properties:
+        Key:
+          allOf:
+          - $ref: '#/components/schemas/TagKey'
+          - description: The key of the tag.
+        Value:
+          allOf:
+          - $ref: '#/components/schemas/TagValue'
+          - description: The value of the tag.
+      description: Describes a tag.
+    WorkspaceBundle:
+      type: object
+      properties:
+        BundleId:
+          allOf:
+          - $ref: '#/components/schemas/BundleId'
+          - description: The identifier of the bundle.
+        Name:
+          allOf:
+          - $ref: '#/components/schemas/NonEmptyString'
+          - description: The name of the bundle.
+        Owner:
+          allOf:
+          - $ref: '#/components/schemas/BundleOwner'
+          - description: The owner of the bundle. This is the account identifier of the owner, or <code>AMAZON</code> if the bundle is provided by Amazon Web Services.
+        Description:
+          allOf:
+          - $ref: '#/components/schemas/Description'
+          - description: The description of the bundle.
+        ImageId:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceImageId'
+          - description: The identifier of the image that was used to create the bundle.
+        RootStorage:
+          allOf:
+          - $ref: '#/components/schemas/RootStorage'
+          - description: The size of the root volume.
+        UserStorage:
+          allOf:
+          - $ref: '#/components/schemas/UserStorage'
+          - description: The size of the user volume.
+        ComputeType:
+          allOf:
+          - $ref: '#/components/schemas/ComputeType'
+          - description: The compute type of the bundle. For more information, see <a href="http://aws.amazon.com/workspaces/details/#Amazon_WorkSpaces_Bundles">Amazon WorkSpaces Bundles</a>.
+        LastUpdatedTime:
+          allOf:
+          - $ref: '#/components/schemas/Timestamp'
+          - description: The last time that the bundle was updated.
+        CreationTime:
+          allOf:
+          - $ref: '#/components/schemas/Timestamp'
+          - description: The time when the bundle was created.
+        State:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceBundleState'
+          - description: The state of the WorkSpace bundle.
+        BundleType:
+          allOf:
+          - $ref: '#/components/schemas/BundleType'
+          - description: The type of WorkSpace bundle.
+      description: Describes a WorkSpace bundle.
+    WorkspaceBundleState:
+      type: string
+      enum:
+      - AVAILABLE
+      - PENDING
+      - ERROR
+    WorkspaceImageId:
+      type: string
+      pattern: wsi-[0-9a-z]{9,63}$
+    InvalidParameterValuesException: {}
+    RootStorage:
+      type: object
+      properties:
+        Capacity:
+          allOf:
+          - $ref: '#/components/schemas/NonEmptyString'
+          - description: The size of the root volume.
+      description: Describes the root volume for a WorkSpace bundle.
+    Compute:
+      type: string
+      enum:
+      - VALUE
+      - STANDARD
+      - PERFORMANCE
+      - POWER
+      - GRAPHICS
+      - POWERPRO
+      - GRAPHICSPRO
+      - GRAPHICS_G4DN
+      - GRAPHICSPRO_G4DN
+    CreateWorkspaceBundleRequest:
+      type: object
+      required:
+      - BundleName
+      - BundleDescription
+      - ImageId
+      - ComputeType
+      - UserStorage
+      title: CreateWorkspaceBundleRequest
+      properties:
+        BundleName:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceBundleName'
+          - description: The name of the bundle.
+        BundleDescription:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceBundleDescription'
+          - description: The description of the bundle.
+        ImageId:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceImageId'
+          - description: The identifier of the image that is used to create the bundle.
+        ComputeType:
+          $ref: '#/components/schemas/ComputeType'
+        UserStorage:
+          $ref: '#/components/schemas/UserStorage'
+        RootStorage:
+          $ref: '#/components/schemas/RootStorage'
+        Tags:
+          allOf:
+          - $ref: '#/components/schemas/TagList'
+          - description: <p>The tags associated with the bundle.</p> <note> <p>To add tags at the same time when you're creating the bundle, you must create an IAM policy that grants your IAM user permissions to use <code>workspaces:CreateTags</code>. </p> </note>
+    ResourceNotFoundException: {}
+    AccessDeniedException: {}
+    ResourceUnavailableException: {}
+    BundleType:
+      type: string
+      enum:
+      - REGULAR
+      - STANDBY
+    WorkspaceBundleDescription:
+      type: string
+      pattern: ^[a-zA-Z0-9_./() -]+$
+      minLength: 1
+      maxLength: 255
+    Description:
+      type: string
+    CreateWorkspaceBundleResult:
+      type: object
+      properties:
+        WorkspaceBundle:
+          $ref: '#/components/schemas/WorkspaceBundle'
+    Timestamp:
+      type: string
+      format: date-time
+    TagKey:
+      type: string
+      minLength: 1
+      maxLength: 127
+    UserStorage:
+      type: object
+      properties:
+        Capacity:
+          allOf:
+          - $ref: '#/components/schemas/NonEmptyString'
+          - description: The size of the user volume.
+      description: Describes the user volume for a WorkSpace bundle.
+    TagList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tag'
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/workspaces/
+x-hasEquivalentPaths: true
