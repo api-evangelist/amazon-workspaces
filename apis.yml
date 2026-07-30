@@ -5,7 +5,20 @@ description: Amazon WorkSpaces is a managed, secure Desktop-as-a-Service (DaaS) 
   persistent desktops accessible from various devices with built-in security and management capabilities. The API provides
   65 operations for workspace lifecycle management, bundle and directory management, image management, and IP access control
   groups.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-workspaces.png
 url: https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/apis.yml
 created: '2024-01-15'
 modified: '2026-05-19'
@@ -18,24 +31,1915 @@ tags:
 - Virtual Desktop
 - Desktop as a Service
 apis:
-- aid: amazon-workspaces:amazon-workspaces-api
-  name: Amazon WorkSpaces API
-  description: The Amazon WorkSpaces API provides programmatic access to manage cloud-based virtual desktops. It enables developers
-    to create, modify, and terminate WorkSpaces, manage workspace bundles and directories, configure IP access control groups,
-    and automate desktop provisioning and lifecycle management at scale. 65 operations for workspace lifecycle, bundles, directories,
-    images, and access control.
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-associateconnectionalias-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias API'
+  description: >-
+    The #X Amz Target=WorkspacesService.AssociateConnectionAlias API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.associateconnectionalias.
   humanURL: https://aws.amazon.com/workspaces/
   baseURL: https://workspaces.amazonaws.com
   tags:
-  - AWS
-  - Desktop
-  - End User Computing
-  - Virtual Desktop
+  - '#X Amz Target=WorkspacesService.AssociateConnectionAlias'
   properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-associateconnectionalias-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-associateipgroups-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateIpGroups API'
+  description: >-
+    The #X Amz Target=WorkspacesService.AssociateIpGroups API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.associateipgroups.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.AssociateIpGroups'
+  properties:
   - type: OpenAPI
-    url: openapi/amazon-workspaces-openapi-original.yaml
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-associateipgroups-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-authorizeiprules-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AuthorizeIpRules API'
+  description: >-
+    The #X Amz Target=WorkspacesService.AuthorizeIpRules API from Amazon WorkSpaces — 1 operation(s) for
+    #x amz target=workspacesservice.authorizeiprules.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.AuthorizeIpRules'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-authorizeiprules-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-copyworkspaceimage-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CopyWorkspaceImage API'
+  description: >-
+    The #X Amz Target=WorkspacesService.CopyWorkspaceImage API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.copyworkspaceimage.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.CopyWorkspaceImage'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-copyworkspaceimage-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-createconnectclientaddin-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateConnectClientAddIn API'
+  description: >-
+    The #X Amz Target=WorkspacesService.CreateConnectClientAddIn API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.createconnectclientaddin.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.CreateConnectClientAddIn'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-createconnectclientaddin-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-createconnectionalias-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateConnectionAlias API'
+  description: >-
+    The #X Amz Target=WorkspacesService.CreateConnectionAlias API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.createconnectionalias.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.CreateConnectionAlias'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-createconnectionalias-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-createipgroup-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateIpGroup API'
+  description: >-
+    The #X Amz Target=WorkspacesService.CreateIpGroup API from Amazon WorkSpaces — 1 operation(s) for
+    #x amz target=workspacesservice.createipgroup.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.CreateIpGroup'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-x-amz-target-workspacesservice-createipgroup-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-createstandbyworkspaces-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateStandbyWorkspaces API'
+  description: >-
+    The #X Amz Target=WorkspacesService.CreateStandbyWorkspaces API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.createstandbyworkspaces.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.CreateStandbyWorkspaces'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-createstandbyworkspaces-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-createtags-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateTags API'
+  description: >-
+    The #X Amz Target=WorkspacesService.CreateTags API from Amazon WorkSpaces — 1 operation(s) for #x
+    amz target=workspacesservice.createtags.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.CreateTags'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-x-amz-target-workspacesservice-createtags-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-createupdatedworkspaceimage-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateUpdatedWorkspaceImage API'
+  description: >-
+    The #X Amz Target=WorkspacesService.CreateUpdatedWorkspaceImage API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.createupdatedworkspaceimage.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.CreateUpdatedWorkspaceImage'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-createupdatedworkspaceimage-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-createworkspacebundle-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateWorkspaceBundle API'
+  description: >-
+    The #X Amz Target=WorkspacesService.CreateWorkspaceBundle API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.createworkspacebundle.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.CreateWorkspaceBundle'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-createworkspacebundle-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-createworkspaceimage-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateWorkspaceImage API'
+  description: >-
+    The #X Amz Target=WorkspacesService.CreateWorkspaceImage API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.createworkspaceimage.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.CreateWorkspaceImage'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-createworkspaceimage-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-createworkspaces-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateWorkspaces API'
+  description: >-
+    The #X Amz Target=WorkspacesService.CreateWorkspaces API from Amazon WorkSpaces — 1 operation(s) for
+    #x amz target=workspacesservice.createworkspaces.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.CreateWorkspaces'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-createworkspaces-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-deleteclientbranding-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DeleteClientBranding API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DeleteClientBranding API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.deleteclientbranding.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DeleteClientBranding'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteclientbranding-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-deleteconnectclientaddin-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DeleteConnectClientAddIn API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DeleteConnectClientAddIn API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.deleteconnectclientaddin.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DeleteConnectClientAddIn'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteconnectclientaddin-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-deleteconnectionalias-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DeleteConnectionAlias API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DeleteConnectionAlias API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.deleteconnectionalias.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DeleteConnectionAlias'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteconnectionalias-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-deleteipgroup-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DeleteIpGroup API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DeleteIpGroup API from Amazon WorkSpaces — 1 operation(s) for
+    #x amz target=workspacesservice.deleteipgroup.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DeleteIpGroup'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteipgroup-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-deletetags-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DeleteTags API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DeleteTags API from Amazon WorkSpaces — 1 operation(s) for #x
+    amz target=workspacesservice.deletetags.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DeleteTags'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-x-amz-target-workspacesservice-deletetags-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-deleteworkspacebundle-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DeleteWorkspaceBundle API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DeleteWorkspaceBundle API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.deleteworkspacebundle.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DeleteWorkspaceBundle'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteworkspacebundle-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-deleteworkspaceimage-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DeleteWorkspaceImage API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DeleteWorkspaceImage API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.deleteworkspaceimage.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DeleteWorkspaceImage'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteworkspaceimage-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-deregisterworkspacedirectory-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DeregisterWorkspaceDirectory API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DeregisterWorkspaceDirectory API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.deregisterworkspacedirectory.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DeregisterWorkspaceDirectory'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-deregisterworkspacedirectory-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeaccount-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeAccount API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DescribeAccount API from Amazon WorkSpaces — 1 operation(s) for
+    #x amz target=workspacesservice.describeaccount.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DescribeAccount'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeaccount-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeaccountmodifications-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeAccountModifications API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DescribeAccountModifications API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.describeaccountmodifications.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DescribeAccountModifications'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-describeaccountmodifications-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeclientbranding-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeClientBranding API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DescribeClientBranding API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.describeclientbranding.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DescribeClientBranding'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-describeclientbranding-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeclientproperties-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeClientProperties API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DescribeClientProperties API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.describeclientproperties.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DescribeClientProperties'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-describeclientproperties-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeconnectclientaddins-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeConnectClientAddIns API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DescribeConnectClientAddIns API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.describeconnectclientaddins.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DescribeConnectClientAddIns'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-describeconnectclientaddins-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliases-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeConnectionAliases API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DescribeConnectionAliases API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.describeconnectionaliases.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DescribeConnectionAliases'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliases-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliaspermissions-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeConnectionAliasPermissions API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DescribeConnectionAliasPermissions API from Amazon WorkSpaces
+    — 1 operation(s) for #x amz target=workspacesservice.describeconnectionaliaspermissions.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DescribeConnectionAliasPermissions'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliaspermissions-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeipgroups-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeIpGroups API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DescribeIpGroups API from Amazon WorkSpaces — 1 operation(s) for
+    #x amz target=workspacesservice.describeipgroups.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DescribeIpGroups'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-describeipgroups-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describetags-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeTags API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DescribeTags API from Amazon WorkSpaces — 1 operation(s) for #x
+    amz target=workspacesservice.describetags.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DescribeTags'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-x-amz-target-workspacesservice-describetags-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeworkspacebundles-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeWorkspaceBundles API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DescribeWorkspaceBundles API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.describeworkspacebundles.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DescribeWorkspaceBundles'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacebundles-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeworkspacedirectories-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeWorkspaceDirectories API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DescribeWorkspaceDirectories API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.describeworkspacedirectories.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DescribeWorkspaceDirectories'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacedirectories-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimagepermissions-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeWorkspaceImagePermissions API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DescribeWorkspaceImagePermissions API from Amazon WorkSpaces —
+    1 operation(s) for #x amz target=workspacesservice.describeworkspaceimagepermissions.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DescribeWorkspaceImagePermissions'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimagepermissions-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimages-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeWorkspaceImages API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DescribeWorkspaceImages API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.describeworkspaceimages.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DescribeWorkspaceImages'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimages-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeworkspaces-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeWorkspaces API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DescribeWorkspaces API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.describeworkspaces.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DescribeWorkspaces'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaces-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesconnectionstatus-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeWorkspacesConnectionStatus API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DescribeWorkspacesConnectionStatus API from Amazon WorkSpaces
+    — 1 operation(s) for #x amz target=workspacesservice.describeworkspacesconnectionstatus.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DescribeWorkspacesConnectionStatus'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesconnectionstatus-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesnapshots-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeWorkspaceSnapshots API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DescribeWorkspaceSnapshots API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.describeworkspacesnapshots.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DescribeWorkspaceSnapshots'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesnapshots-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-disassociateconnectionalias-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DisassociateConnectionAlias API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DisassociateConnectionAlias API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.disassociateconnectionalias.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DisassociateConnectionAlias'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-disassociateconnectionalias-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-disassociateipgroups-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DisassociateIpGroups API'
+  description: >-
+    The #X Amz Target=WorkspacesService.DisassociateIpGroups API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.disassociateipgroups.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.DisassociateIpGroups'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-disassociateipgroups-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-importclientbranding-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ImportClientBranding API'
+  description: >-
+    The #X Amz Target=WorkspacesService.ImportClientBranding API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.importclientbranding.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.ImportClientBranding'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-importclientbranding-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-importworkspaceimage-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ImportWorkspaceImage API'
+  description: >-
+    The #X Amz Target=WorkspacesService.ImportWorkspaceImage API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.importworkspaceimage.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.ImportWorkspaceImage'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-importworkspaceimage-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-listavailablemanagementcidrranges-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ListAvailableManagementCidrRanges API'
+  description: >-
+    The #X Amz Target=WorkspacesService.ListAvailableManagementCidrRanges API from Amazon WorkSpaces —
+    1 operation(s) for #x amz target=workspacesservice.listavailablemanagementcidrranges.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.ListAvailableManagementCidrRanges'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-listavailablemanagementcidrranges-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-migrateworkspace-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.MigrateWorkspace API'
+  description: >-
+    The #X Amz Target=WorkspacesService.MigrateWorkspace API from Amazon WorkSpaces — 1 operation(s) for
+    #x amz target=workspacesservice.migrateworkspace.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.MigrateWorkspace'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-migrateworkspace-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-modifyaccount-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ModifyAccount API'
+  description: >-
+    The #X Amz Target=WorkspacesService.ModifyAccount API from Amazon WorkSpaces — 1 operation(s) for
+    #x amz target=workspacesservice.modifyaccount.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.ModifyAccount'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyaccount-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-modifycertificatebasedauthproperties-api
+  name: >-
+    Amazon WorkSpaces #X Amz Target=WorkspacesService.ModifyCertificateBasedAuthProperties API
+  description: >-
+    The #X Amz Target=WorkspacesService.ModifyCertificateBasedAuthProperties API from Amazon WorkSpaces
+    — 1 operation(s) for #x amz target=workspacesservice.modifycertificatebasedauthproperties.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.ModifyCertificateBasedAuthProperties'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-modifycertificatebasedauthproperties-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-modifyclientproperties-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ModifyClientProperties API'
+  description: >-
+    The #X Amz Target=WorkspacesService.ModifyClientProperties API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.modifyclientproperties.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.ModifyClientProperties'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyclientproperties-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-modifysamlproperties-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ModifySamlProperties API'
+  description: >-
+    The #X Amz Target=WorkspacesService.ModifySamlProperties API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.modifysamlproperties.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.ModifySamlProperties'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-modifysamlproperties-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-modifyselfservicepermissions-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ModifySelfservicePermissions API'
+  description: >-
+    The #X Amz Target=WorkspacesService.ModifySelfservicePermissions API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.modifyselfservicepermissions.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.ModifySelfservicePermissions'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyselfservicepermissions-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceaccessproperties-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ModifyWorkspaceAccessProperties API'
+  description: >-
+    The #X Amz Target=WorkspacesService.ModifyWorkspaceAccessProperties API from Amazon WorkSpaces — 1
+    operation(s) for #x amz target=workspacesservice.modifyworkspaceaccessproperties.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.ModifyWorkspaceAccessProperties'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceaccessproperties-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacecreationproperties-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ModifyWorkspaceCreationProperties API'
+  description: >-
+    The #X Amz Target=WorkspacesService.ModifyWorkspaceCreationProperties API from Amazon WorkSpaces —
+    1 operation(s) for #x amz target=workspacesservice.modifyworkspacecreationproperties.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.ModifyWorkspaceCreationProperties'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacecreationproperties-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceproperties-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ModifyWorkspaceProperties API'
+  description: >-
+    The #X Amz Target=WorkspacesService.ModifyWorkspaceProperties API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.modifyworkspaceproperties.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.ModifyWorkspaceProperties'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceproperties-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacestate-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ModifyWorkspaceState API'
+  description: >-
+    The #X Amz Target=WorkspacesService.ModifyWorkspaceState API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.modifyworkspacestate.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.ModifyWorkspaceState'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacestate-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-rebootworkspaces-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.RebootWorkspaces API'
+  description: >-
+    The #X Amz Target=WorkspacesService.RebootWorkspaces API from Amazon WorkSpaces — 1 operation(s) for
+    #x amz target=workspacesservice.rebootworkspaces.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.RebootWorkspaces'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-rebootworkspaces-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-rebuildworkspaces-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.RebuildWorkspaces API'
+  description: >-
+    The #X Amz Target=WorkspacesService.RebuildWorkspaces API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.rebuildworkspaces.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.RebuildWorkspaces'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-rebuildworkspaces-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-registerworkspacedirectory-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.RegisterWorkspaceDirectory API'
+  description: >-
+    The #X Amz Target=WorkspacesService.RegisterWorkspaceDirectory API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.registerworkspacedirectory.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.RegisterWorkspaceDirectory'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-registerworkspacedirectory-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-restoreworkspace-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.RestoreWorkspace API'
+  description: >-
+    The #X Amz Target=WorkspacesService.RestoreWorkspace API from Amazon WorkSpaces — 1 operation(s) for
+    #x amz target=workspacesservice.restoreworkspace.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.RestoreWorkspace'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-restoreworkspace-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-revokeiprules-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.RevokeIpRules API'
+  description: >-
+    The #X Amz Target=WorkspacesService.RevokeIpRules API from Amazon WorkSpaces — 1 operation(s) for
+    #x amz target=workspacesservice.revokeiprules.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.RevokeIpRules'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-x-amz-target-workspacesservice-revokeiprules-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-startworkspaces-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.StartWorkspaces API'
+  description: >-
+    The #X Amz Target=WorkspacesService.StartWorkspaces API from Amazon WorkSpaces — 1 operation(s) for
+    #x amz target=workspacesservice.startworkspaces.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.StartWorkspaces'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-x-amz-target-workspacesservice-startworkspaces-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-stopworkspaces-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.StopWorkspaces API'
+  description: >-
+    The #X Amz Target=WorkspacesService.StopWorkspaces API from Amazon WorkSpaces — 1 operation(s) for
+    #x amz target=workspacesservice.stopworkspaces.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.StopWorkspaces'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-x-amz-target-workspacesservice-stopworkspaces-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-terminateworkspaces-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.TerminateWorkspaces API'
+  description: >-
+    The #X Amz Target=WorkspacesService.TerminateWorkspaces API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.terminateworkspaces.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.TerminateWorkspaces'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-terminateworkspaces-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-updateconnectclientaddin-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.UpdateConnectClientAddIn API'
+  description: >-
+    The #X Amz Target=WorkspacesService.UpdateConnectClientAddIn API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.updateconnectclientaddin.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.UpdateConnectClientAddIn'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-updateconnectclientaddin-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-updateconnectionaliaspermission-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.UpdateConnectionAliasPermission API'
+  description: >-
+    The #X Amz Target=WorkspacesService.UpdateConnectionAliasPermission API from Amazon WorkSpaces — 1
+    operation(s) for #x amz target=workspacesservice.updateconnectionaliaspermission.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.UpdateConnectionAliasPermission'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-updateconnectionaliaspermission-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-updaterulesofipgroup-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.UpdateRulesOfIpGroup API'
+  description: >-
+    The #X Amz Target=WorkspacesService.UpdateRulesOfIpGroup API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.updaterulesofipgroup.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.UpdateRulesOfIpGroup'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-updaterulesofipgroup-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-updateworkspacebundle-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.UpdateWorkspaceBundle API'
+  description: >-
+    The #X Amz Target=WorkspacesService.UpdateWorkspaceBundle API from Amazon WorkSpaces — 1 operation(s)
+    for #x amz target=workspacesservice.updateworkspacebundle.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.UpdateWorkspaceBundle'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-updateworkspacebundle-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workspaces.yaml
+- aid: >-
+    amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-updateworkspaceimagepermission-api
+  name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.UpdateWorkspaceImagePermission API'
+  description: >-
+    The #X Amz Target=WorkspacesService.UpdateWorkspaceImagePermission API from Amazon WorkSpaces — 1
+    operation(s) for #x amz target=workspacesservice.updateworkspaceimagepermission.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkspacesService.UpdateWorkspaceImagePermission'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workspaces-x-amz-target-workspacesservice-updateworkspaceimagepermission-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
   - type: Pricing
     url: https://aws.amazon.com/workspaces/pricing/
   - type: GettingStarted
@@ -51,6 +1955,8 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/amazon-workspaces.yaml
 common:
+- type: PostmanWorkspace
+  url: https://www.postman.com/kinlaneapi/amazon-workspaces/overview
 - type: AgenticAccess
   url: agentic-access/amazon-workspaces-agentic-access.yml
 - type: TrustCenter
