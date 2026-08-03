@@ -1,0 +1,331 @@
+{
+  "info": {
+    "_postman_id": "0b28d0b1-4d19-49aa-bd6b-b07b4f0a56fa",
+    "name": "Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.DescribeWorkspaceDirectories API",
+    "description": "<fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href=\"https://docs.aws.amazon.com/general/latest/gr/wsp.html\">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/\">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href=\"https://docs.aws.amazon.com/workspaces/latest/userguide/\">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href=\"https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html\">WorkSpaces section of the CLI Reference</a>.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:51:50.000Z",
+    "updatedAt": "2026-07-28T10:51:50.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-0b28d0b1-4d19-49aa-bd6b-b07b4f0a56fa"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=WorkspacesService.DescribeWorkspaceDirectories",
+      "item": [
+        {
+          "name": "Amazon WorkSpaces Describe Workspace Directories",
+          "id": "d9da4f7b-414e-4b27-8468-4e6978f393a8",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "WorkspacesService.DescribeWorkspaceDirectories"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"DirectoryIds\": [\n    \"d-5b1d993c85b7\"\n  ],\n  \"Limit\": \"<integer>\",\n  \"NextToken\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/?NextToken=<string>#X-Amz-Target=WorkspacesService.DescribeWorkspaceDirectories",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "query": [
+                {
+                  "description": "Pagination token",
+                  "key": "NextToken",
+                  "value": "<string>"
+                }
+              ],
+              "hash": "X-Amz-Target=WorkspacesService.DescribeWorkspaceDirectories"
+            },
+            "description": "Describes the available directories that are registered with Amazon WorkSpaces."
+          },
+          "response": [
+            {
+              "id": "f426425d-64f5-4878-88b8-068f2ec55c1f",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.DescribeWorkspaceDirectories"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"DirectoryIds\": [\n    \"d-5b1d993c85b7\"\n  ],\n  \"Limit\": \"<integer>\",\n  \"NextToken\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?NextToken=<string>#X-Amz-Target=WorkspacesService.DescribeWorkspaceDirectories",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination token",
+                      "key": "NextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.DescribeWorkspaceDirectories"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"Directories\": [\n    {\n      \"DirectoryId\": \"d-1399294cb2b1dd82e7942a85a59086b28a883a4ec96a2264da7bff79ea\",\n      \"Alias\": \"<string>\",\n      \"DirectoryName\": \"<string>\",\n      \"RegistrationCode\": \"<string>\",\n      \"SubnetIds\": [\n        \"subnet-a83a489f\",\n        \"subnet-38372fe9e0a333cbd\"\n      ],\n      \"DnsIpAddresses\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"CustomerUserName\": \"<string>\",\n      \"IamRoleId\": \"arn:aws:LMog8R[W^vC]UKVy7vVh_\\\\UxN^MY:48kXJnNb60mlmcZJ-2[GlrzRAt3U:EoaIvwd3]LYJnyMDJebg2fY5en_Z`Fep[dXvblZ9]I_A`4D:d-EEhQcsmX4xo/67wfc^211/JuKCNRo4AOKCs9KPd8Yh^GU\\\\.t1zkmEVl1j`.MPfFp8e\\\\ixvjNVl0bnztw/tqFsRE/t[2S4FR3jw.Cs\\\\5Y34FKnbyvGHgWqZ0\",\n      \"DirectoryType\": \"SIMPLE_AD\",\n      \"WorkspaceSecurityGroupId\": \"sg-009138666020f168f\",\n      \"State\": \"ERROR\",\n      \"WorkspaceCreationProperties\": {\n        \"EnableWorkDocs\": \"<boolean>\",\n        \"EnableInternetAccess\": \"<boolean>\",\n        \"DefaultOu\": \"<string>\",\n        \"CustomSecurityGroupId\": \"sg-a9c18f2f\",\n        \"UserEnabledAsLocalAdministrator\": \"<boolean>\",\n        \"EnableMaintenanceMode\": \"<boolean>\"\n      },\n      \"ipGroupIds\": [\n        \"wsipg-qaugn05nzbgc4z603dpazaxw0\",\n        \"wsipg-6woljv91ld3so241sgcwfj\"\n      ],\n      \"WorkspaceAccessProperties\": {\n        \"DeviceTypeWindows\": \"ALLOW\",\n        \"DeviceTypeOsx\": \"DENY\",\n        \"DeviceTypeWeb\": \"ALLOW\",\n        \"DeviceTypeIos\": \"ALLOW\",\n        \"DeviceTypeAndroid\": \"DENY\",\n        \"DeviceTypeChromeOs\": \"DENY\",\n        \"DeviceTypeZeroClient\": \"ALLOW\",\n        \"DeviceTypeLinux\": \"DENY\"\n      },\n      \"Tenancy\": \"SHARED\",\n      \"SelfservicePermissions\": {\n        \"RestartWorkspace\": \"DISABLED\",\n        \"IncreaseVolumeSize\": \"DISABLED\",\n        \"ChangeComputeType\": \"ENABLED\",\n        \"SwitchRunningMode\": \"ENABLED\",\n        \"RebuildWorkspace\": \"DISABLED\"\n      },\n      \"SamlProperties\": {\n        \"Status\": \"ENABLED_WITH_DIRECTORY_LOGIN_FALLBACK\",\n        \"UserAccessUrl\": \"http://B8yV7E.\",\n        \"RelayStateParameterName\": \"<string>\"\n      },\n      \"CertificateBasedAuthProperties\": {\n        \"Status\": \"ENABLED\",\n        \"CertificateAuthorityArn\": \"arn:QbPZ2bgUnJ:,Zb76bT2E6K:,355PfrEXe:14342571:D@AT/5lmXJGcC2kY/eu/Z9yPeIXc/NRSy8r/r3TA4WE/L6G/8kSLuTkF9-N/,\"\n      }\n    },\n    {\n      \"DirectoryId\": \"d-a258f23b532168e1c1e5075716715\",\n      \"Alias\": \"<string>\",\n      \"DirectoryName\": \"<string>\",\n      \"RegistrationCode\": \"<string>\",\n      \"SubnetIds\": [\n        \"subnet-9a6f9d89\",\n        \"subnet-4cfb229a\"\n      ],\n      \"DnsIpAddresses\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"CustomerUserName\": \"<string>\",\n      \"IamRoleId\": \"arn:aws:89n1p2G[4HqR]]f6]Ga-bQNnohoT3R0dDr:eN9C63:-EInkHk3xlv\\\\czOt7Ooi^:UdfH9uNwgCWh42Qz5`YQ2/Jjkg[3wxCc.yEZA2h-TzxkiNgLp//lm.Hi9y^n03^RXisB\",\n      \"DirectoryType\": \"SIMPLE_AD\",\n      \"WorkspaceSecurityGroupId\": \"sg-a6d3dfc733e83444b\",\n      \"State\": \"DEREGISTERING\",\n      \"WorkspaceCreationProperties\": {\n        \"EnableWorkDocs\": \"<boolean>\",\n        \"EnableInternetAccess\": \"<boolean>\",\n        \"DefaultOu\": \"<string>\",\n        \"CustomSecurityGroupId\": \"sg-2b1279daacf94bc45\",\n        \"UserEnabledAsLocalAdministrator\": \"<boolean>\",\n        \"EnableMaintenanceMode\": \"<boolean>\"\n      },\n      \"ipGroupIds\": [\n        \"wsipg-jnytmk5k0cdkjwdf9krsa8sgw7vq4rnj8r2qn1ag2mxg0p1h2oo8\",\n        \"wsipg-nhhs5feb55va4tlhrds242wdazlttoonmjs7n9v6xx680cjerqmbk4hf\"\n      ],\n      \"WorkspaceAccessProperties\": {\n        \"DeviceTypeWindows\": \"ALLOW\",\n        \"DeviceTypeOsx\": \"ALLOW\",\n        \"DeviceTypeWeb\": \"ALLOW\",\n        \"DeviceTypeIos\": \"ALLOW\",\n        \"DeviceTypeAndroid\": \"DENY\",\n        \"DeviceTypeChromeOs\": \"DENY\",\n        \"DeviceTypeZeroClient\": \"ALLOW\",\n        \"DeviceTypeLinux\": \"ALLOW\"\n      },\n      \"Tenancy\": \"DEDICATED\",\n      \"SelfservicePermissions\": {\n        \"RestartWorkspace\": \"ENABLED\",\n        \"IncreaseVolumeSize\": \"ENABLED\",\n        \"ChangeComputeType\": \"DISABLED\",\n        \"SwitchRunningMode\": \"DISABLED\",\n        \"RebuildWorkspace\": \"ENABLED\"\n      },\n      \"SamlProperties\": {\n        \"Status\": \"DISABLED\",\n        \"UserAccessUrl\": \"http://okFx,A}.r2\",\n        \"RelayStateParameterName\": \"<string>\"\n      },\n      \"CertificateBasedAuthProperties\": {\n        \"Status\": \"ENABLED\",\n        \"CertificateAuthorityArn\": \"arn:meV:P8:J8VbClJxh:92:0Xd7g.Qp6F/,IQlaa1J/2_kAouAUTW0/l1TNyXAfLS=/ZqnZirmW/j5kXudFBiC/.5pOSYtv/hMhwGr=P/tY/X/sep-o\"\n      }\n    }\n  ],\n  \"NextToken\": \"<string>\"\n}",
+              "createdAt": "2026-07-28T10:51:51.000Z",
+              "updatedAt": "2026-07-28T10:51:51.000Z",
+              "uid": "35240-f426425d-64f5-4878-88b8-068f2ec55c1f"
+            },
+            {
+              "id": "58dca1dc-35e1-4a52-8bc3-be5c7a70a1b0",
+              "name": "InvalidParameterValuesException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.DescribeWorkspaceDirectories"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"DirectoryIds\": [\n    \"d-5b1d993c85b7\"\n  ],\n  \"Limit\": \"<integer>\",\n  \"NextToken\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?NextToken=<string>#X-Amz-Target=WorkspacesService.DescribeWorkspaceDirectories",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination token",
+                      "key": "NextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.DescribeWorkspaceDirectories"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:51:51.000Z",
+              "updatedAt": "2026-07-28T10:51:51.000Z",
+              "uid": "35240-58dca1dc-35e1-4a52-8bc3-be5c7a70a1b0"
+            }
+          ],
+          "createdAt": "2026-07-28T10:51:51.000Z",
+          "updatedAt": "2026-07-28T10:51:51.000Z",
+          "uid": "35240-d9da4f7b-414e-4b27-8468-4e6978f393a8"
+        }
+      ],
+      "id": "f51076bd-246c-4ca1-ba3b-0055ebf1c363",
+      "createdAt": "2026-07-28T10:51:51.000Z",
+      "updatedAt": "2026-07-28T10:51:51.000Z",
+      "uid": "35240-f51076bd-246c-4ca1-ba3b-0055ebf1c363"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://workspaces.{{region}}.amazonaws.com"
+    }
+  ]
+}

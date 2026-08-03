@@ -1,0 +1,398 @@
+{
+  "info": {
+    "_postman_id": "dbfe1707-cf1d-47b6-80f8-6f6686850add",
+    "name": "Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.CreateWorkspaces API",
+    "description": "<fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href=\"https://docs.aws.amazon.com/general/latest/gr/wsp.html\">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/\">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href=\"https://docs.aws.amazon.com/workspaces/latest/userguide/\">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href=\"https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html\">WorkSpaces section of the CLI Reference</a>.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:50:56.000Z",
+    "updatedAt": "2026-07-28T10:50:56.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-dbfe1707-cf1d-47b6-80f8-6f6686850add"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=WorkspacesService.CreateWorkspaces",
+      "item": [
+        {
+          "name": "Amazon WorkSpaces Create Workspaces",
+          "id": "f8134a07-aea3-41ba-b4ec-f11a6678a40d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "WorkspacesService.CreateWorkspaces"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"Workspaces\": [\n    {\n      \"DirectoryId\": \"d-6211906e10881f9f8975003d1442ec74e1ea0e\",\n      \"UserName\": \"<string>\",\n      \"BundleId\": \"wsb-ueq20fx1a2xc5wd6k7h1mq7m8a6zpcjwu5ts97w1pfcb2zn5om3i2j97ynl6e\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"UserVolumeEncryptionEnabled\": \"<boolean>\",\n      \"RootVolumeEncryptionEnabled\": \"<boolean>\",\n      \"WorkspaceProperties\": {\n        \"RunningMode\": \"ALWAYS_ON\",\n        \"RunningModeAutoStopTimeoutInMinutes\": \"<integer>\",\n        \"RootVolumeSizeGib\": \"<integer>\",\n        \"UserVolumeSizeGib\": \"<integer>\",\n        \"ComputeTypeName\": \"POWER\",\n        \"Protocols\": [\n          \"WSP\",\n          \"PCOIP\"\n        ]\n      },\n      \"Tags\": [\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        },\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        }\n      ]\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.CreateWorkspaces",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=WorkspacesService.CreateWorkspaces"
+            },
+            "description": "<p>Creates one or more WorkSpaces.</p> <p>This operation is asynchronous and returns before the WorkSpaces are created.</p> <note> <p>The <code>MANUAL</code> running mode value is only supported by Amazon WorkSpaces Core. Contact your account team to be allow-listed to use this value. For more information, see <a href=\"http://aws.amazon.com/workspaces/core/\">Amazon WorkSpaces Core</a>.</p> </note>"
+          },
+          "response": [
+            {
+              "id": "3dbf891b-c441-461b-99d0-e6e01f95e4a4",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.CreateWorkspaces"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"Workspaces\": [\n    {\n      \"DirectoryId\": \"d-6211906e10881f9f8975003d1442ec74e1ea0e\",\n      \"UserName\": \"<string>\",\n      \"BundleId\": \"wsb-ueq20fx1a2xc5wd6k7h1mq7m8a6zpcjwu5ts97w1pfcb2zn5om3i2j97ynl6e\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"UserVolumeEncryptionEnabled\": \"<boolean>\",\n      \"RootVolumeEncryptionEnabled\": \"<boolean>\",\n      \"WorkspaceProperties\": {\n        \"RunningMode\": \"ALWAYS_ON\",\n        \"RunningModeAutoStopTimeoutInMinutes\": \"<integer>\",\n        \"RootVolumeSizeGib\": \"<integer>\",\n        \"UserVolumeSizeGib\": \"<integer>\",\n        \"ComputeTypeName\": \"POWER\",\n        \"Protocols\": [\n          \"WSP\",\n          \"PCOIP\"\n        ]\n      },\n      \"Tags\": [\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        },\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        }\n      ]\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.CreateWorkspaces",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.CreateWorkspaces"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"FailedRequests\": [\n    {\n      \"WorkspaceRequest\": {\n        \"DirectoryId\": \"d-94aa3631eaad9f9cd75eea780119d0893a5202314e146db31d6bd69226b4\",\n        \"UserName\": \"<string>\",\n        \"BundleId\": \"wsb-4w8wc8ijmcda\",\n        \"VolumeEncryptionKey\": \"<string>\",\n        \"UserVolumeEncryptionEnabled\": \"<boolean>\",\n        \"RootVolumeEncryptionEnabled\": \"<boolean>\",\n        \"WorkspaceProperties\": {\n          \"RunningMode\": \"AUTO_STOP\",\n          \"RunningModeAutoStopTimeoutInMinutes\": \"<integer>\",\n          \"RootVolumeSizeGib\": \"<integer>\",\n          \"UserVolumeSizeGib\": \"<integer>\",\n          \"ComputeTypeName\": \"POWER\",\n          \"Protocols\": [\n            \"WSP\",\n            \"WSP\"\n          ]\n        },\n        \"Tags\": [\n          {\n            \"Key\": \"<string>\",\n            \"Value\": \"<string>\"\n          },\n          {\n            \"Key\": \"<string>\",\n            \"Value\": \"<string>\"\n          }\n        ]\n      },\n      \"ErrorCode\": \"<string>\",\n      \"ErrorMessage\": \"<string>\"\n    },\n    {\n      \"WorkspaceRequest\": {\n        \"DirectoryId\": \"d-f377045c21c04d970664a76b2f19802752ec163c7d\",\n        \"UserName\": \"<string>\",\n        \"BundleId\": \"wsb-ltihs4z8uhi9n8i30grqt6t8kytt4e89733ehvm42gwxbajwyiptk\",\n        \"VolumeEncryptionKey\": \"<string>\",\n        \"UserVolumeEncryptionEnabled\": \"<boolean>\",\n        \"RootVolumeEncryptionEnabled\": \"<boolean>\",\n        \"WorkspaceProperties\": {\n          \"RunningMode\": \"MANUAL\",\n          \"RunningModeAutoStopTimeoutInMinutes\": \"<integer>\",\n          \"RootVolumeSizeGib\": \"<integer>\",\n          \"UserVolumeSizeGib\": \"<integer>\",\n          \"ComputeTypeName\": \"VALUE\",\n          \"Protocols\": [\n            \"WSP\",\n            \"PCOIP\"\n          ]\n        },\n        \"Tags\": [\n          {\n            \"Key\": \"<string>\",\n            \"Value\": \"<string>\"\n          },\n          {\n            \"Key\": \"<string>\",\n            \"Value\": \"<string>\"\n          }\n        ]\n      },\n      \"ErrorCode\": \"<string>\",\n      \"ErrorMessage\": \"<string>\"\n    }\n  ],\n  \"PendingRequests\": [\n    {\n      \"WorkspaceId\": \"ws-wq8d5kx6xqd6f6pih23gypluk2nj03t1p40wfr4cst48d1730ahbddcj0vutz\",\n      \"DirectoryId\": \"d-73a6dac973b514019b4dca2b2eb3a5d7d1ece57a3\",\n      \"UserName\": \"<string>\",\n      \"IpAddress\": \"<string>\",\n      \"State\": \"MAINTENANCE\",\n      \"BundleId\": \"wsb-dsvx4o98x2cqxrcnju9l59d1dpyzswi0jlj9eiyag79qzg382n451\",\n      \"SubnetId\": \"subnet-bbf71a8a985b63ccb\",\n      \"ErrorMessage\": \"<string>\",\n      \"ErrorCode\": \"<string>\",\n      \"ComputerName\": \"<string>\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"UserVolumeEncryptionEnabled\": \"<boolean>\",\n      \"RootVolumeEncryptionEnabled\": \"<boolean>\",\n      \"WorkspaceProperties\": {\n        \"RunningMode\": \"AUTO_STOP\",\n        \"RunningModeAutoStopTimeoutInMinutes\": \"<integer>\",\n        \"RootVolumeSizeGib\": \"<integer>\",\n        \"UserVolumeSizeGib\": \"<integer>\",\n        \"ComputeTypeName\": \"GRAPHICSPRO\",\n        \"Protocols\": [\n          \"WSP\",\n          \"PCOIP\"\n        ]\n      },\n      \"ModificationStates\": [\n        {\n          \"Resource\": \"COMPUTE_TYPE\",\n          \"State\": \"UPDATE_IN_PROGRESS\"\n        },\n        {\n          \"Resource\": \"COMPUTE_TYPE\",\n          \"State\": \"UPDATE_INITIATED\"\n        }\n      ],\n      \"RelatedWorkspaces\": [\n        {\n          \"WorkspaceId\": \"ws-okpws1w2cm5d0vlsuj0yuoa9k5q\",\n          \"Region\": \"8ezirpnv4lgjxvnx8kidtglhy4t0hbe\",\n          \"State\": \"MAINTENANCE\",\n          \"Type\": \"PRIMARY\"\n        },\n        {\n          \"WorkspaceId\": \"ws-3jiqjtbvf36omr52d85dtpr\",\n          \"Region\": \"-85jl53rk\",\n          \"State\": \"SUSPENDED\",\n          \"Type\": \"STANDBY\"\n        }\n      ]\n    },\n    {\n      \"WorkspaceId\": \"ws-d5e38ouigd622txfn0sp82uc6pa84ln0h73knxhx9758\",\n      \"DirectoryId\": \"d-aa34b1b2233d02b4761e62175d7\",\n      \"UserName\": \"<string>\",\n      \"IpAddress\": \"<string>\",\n      \"State\": \"PENDING\",\n      \"BundleId\": \"wsb-x1igyhug9zr2rrz0t3d9eqgu7ohnkn74c9sejhqrp\",\n      \"SubnetId\": \"subnet-3cb4c1ee\",\n      \"ErrorMessage\": \"<string>\",\n      \"ErrorCode\": \"<string>\",\n      \"ComputerName\": \"<string>\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"UserVolumeEncryptionEnabled\": \"<boolean>\",\n      \"RootVolumeEncryptionEnabled\": \"<boolean>\",\n      \"WorkspaceProperties\": {\n        \"RunningMode\": \"AUTO_STOP\",\n        \"RunningModeAutoStopTimeoutInMinutes\": \"<integer>\",\n        \"RootVolumeSizeGib\": \"<integer>\",\n        \"UserVolumeSizeGib\": \"<integer>\",\n        \"ComputeTypeName\": \"GRAPHICSPRO_G4DN\",\n        \"Protocols\": [\n          \"WSP\",\n          \"PCOIP\"\n        ]\n      },\n      \"ModificationStates\": [\n        {\n          \"Resource\": \"ROOT_VOLUME\",\n          \"State\": \"UPDATE_IN_PROGRESS\"\n        },\n        {\n          \"Resource\": \"COMPUTE_TYPE\",\n          \"State\": \"UPDATE_INITIATED\"\n        }\n      ],\n      \"RelatedWorkspaces\": [\n        {\n          \"WorkspaceId\": \"ws-a6r8098emxj60evjliraln698c6g0oqrrb\",\n          \"Region\": \"9i4z1b8bkl3je6bj0m5npg8y\",\n          \"State\": \"TERMINATING\",\n          \"Type\": \"PRIMARY\"\n        },\n        {\n          \"WorkspaceId\": \"ws-x7z4swut45w6dha8gwnlzjrqgapa72mun74t22qn3862fctm6x\",\n          \"Region\": \"qxynk5y4i0m6g7qqnu7infoaxrmi9\",\n          \"State\": \"IMPAIRED\",\n          \"Type\": \"STANDBY\"\n        }\n      ]\n    }\n  ]\n}",
+              "createdAt": "2026-07-28T10:50:56.000Z",
+              "updatedAt": "2026-07-28T10:50:56.000Z",
+              "uid": "35240-3dbf891b-c441-461b-99d0-e6e01f95e4a4"
+            },
+            {
+              "id": "6c1eb640-3cbe-4119-8c28-5d87e91dae1b",
+              "name": "ResourceLimitExceededException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.CreateWorkspaces"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"Workspaces\": [\n    {\n      \"DirectoryId\": \"d-6211906e10881f9f8975003d1442ec74e1ea0e\",\n      \"UserName\": \"<string>\",\n      \"BundleId\": \"wsb-ueq20fx1a2xc5wd6k7h1mq7m8a6zpcjwu5ts97w1pfcb2zn5om3i2j97ynl6e\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"UserVolumeEncryptionEnabled\": \"<boolean>\",\n      \"RootVolumeEncryptionEnabled\": \"<boolean>\",\n      \"WorkspaceProperties\": {\n        \"RunningMode\": \"ALWAYS_ON\",\n        \"RunningModeAutoStopTimeoutInMinutes\": \"<integer>\",\n        \"RootVolumeSizeGib\": \"<integer>\",\n        \"UserVolumeSizeGib\": \"<integer>\",\n        \"ComputeTypeName\": \"POWER\",\n        \"Protocols\": [\n          \"WSP\",\n          \"PCOIP\"\n        ]\n      },\n      \"Tags\": [\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        },\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        }\n      ]\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.CreateWorkspaces",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.CreateWorkspaces"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:50:56.000Z",
+              "updatedAt": "2026-07-28T10:50:56.000Z",
+              "uid": "35240-6c1eb640-3cbe-4119-8c28-5d87e91dae1b"
+            },
+            {
+              "id": "0f50bc3a-cf5d-42ab-9307-93b20448f443",
+              "name": "InvalidParameterValuesException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.CreateWorkspaces"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"Workspaces\": [\n    {\n      \"DirectoryId\": \"d-6211906e10881f9f8975003d1442ec74e1ea0e\",\n      \"UserName\": \"<string>\",\n      \"BundleId\": \"wsb-ueq20fx1a2xc5wd6k7h1mq7m8a6zpcjwu5ts97w1pfcb2zn5om3i2j97ynl6e\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"UserVolumeEncryptionEnabled\": \"<boolean>\",\n      \"RootVolumeEncryptionEnabled\": \"<boolean>\",\n      \"WorkspaceProperties\": {\n        \"RunningMode\": \"ALWAYS_ON\",\n        \"RunningModeAutoStopTimeoutInMinutes\": \"<integer>\",\n        \"RootVolumeSizeGib\": \"<integer>\",\n        \"UserVolumeSizeGib\": \"<integer>\",\n        \"ComputeTypeName\": \"POWER\",\n        \"Protocols\": [\n          \"WSP\",\n          \"PCOIP\"\n        ]\n      },\n      \"Tags\": [\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        },\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        }\n      ]\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.CreateWorkspaces",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.CreateWorkspaces"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:50:56.000Z",
+              "updatedAt": "2026-07-28T10:50:56.000Z",
+              "uid": "35240-0f50bc3a-cf5d-42ab-9307-93b20448f443"
+            }
+          ],
+          "createdAt": "2026-07-28T10:50:56.000Z",
+          "updatedAt": "2026-07-28T10:50:56.000Z",
+          "uid": "35240-f8134a07-aea3-41ba-b4ec-f11a6678a40d"
+        }
+      ],
+      "id": "da19c174-c44d-46ae-a1a3-cc19d967eb33",
+      "createdAt": "2026-07-28T10:50:56.000Z",
+      "updatedAt": "2026-07-28T10:50:56.000Z",
+      "uid": "35240-da19c174-c44d-46ae-a1a3-cc19d967eb33"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://workspaces.{{region}}.amazonaws.com"
+    }
+  ]
+}

@@ -1,0 +1,662 @@
+{
+  "info": {
+    "_postman_id": "5646fecc-7d4f-49cd-a807-020a347c41e3",
+    "name": "Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.CreateStandbyWorkspaces API",
+    "description": "<fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href=\"https://docs.aws.amazon.com/general/latest/gr/wsp.html\">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/\">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href=\"https://docs.aws.amazon.com/workspaces/latest/userguide/\">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href=\"https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html\">WorkSpaces section of the CLI Reference</a>.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:50:50.000Z",
+    "updatedAt": "2026-07-28T10:50:50.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-5646fecc-7d4f-49cd-a807-020a347c41e3"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=WorkspacesService.CreateStandbyWorkspaces",
+      "item": [
+        {
+          "name": "Amazon WorkSpaces Create Standby Workspaces",
+          "id": "02f17e42-f95e-42f9-82c0-194e31cc72db",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "WorkspacesService.CreateStandbyWorkspaces"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"PrimaryRegion\": \"1obhlgzymn\",\n  \"StandbyWorkspaces\": [\n    {\n      \"PrimaryWorkspaceId\": \"ws-e0g4t3uh1iq6wi97yrt5k0k5toabr06pjrxfycwj4g\",\n      \"DirectoryId\": \"d-6d969339e00fc8e72bd57444e9b1a8a16574046f2c6009701\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"Tags\": [\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        },\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        }\n      ]\n    },\n    {\n      \"PrimaryWorkspaceId\": \"ws-o749zuru7i5owumukhps4z2ftazzm4xjrlnwzqdl3yoge2atrf\",\n      \"DirectoryId\": \"d-1f13900b0dce05f43be87f58b\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"Tags\": [\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        },\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        }\n      ]\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.CreateStandbyWorkspaces",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=WorkspacesService.CreateStandbyWorkspaces"
+            },
+            "description": "Creates a standby WorkSpace in a secondary Region."
+          },
+          "response": [
+            {
+              "id": "844bac7e-fed6-4a6a-9e9c-e31ef95bbc6b",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.CreateStandbyWorkspaces"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"PrimaryRegion\": \"1obhlgzymn\",\n  \"StandbyWorkspaces\": [\n    {\n      \"PrimaryWorkspaceId\": \"ws-e0g4t3uh1iq6wi97yrt5k0k5toabr06pjrxfycwj4g\",\n      \"DirectoryId\": \"d-6d969339e00fc8e72bd57444e9b1a8a16574046f2c6009701\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"Tags\": [\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        },\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        }\n      ]\n    },\n    {\n      \"PrimaryWorkspaceId\": \"ws-o749zuru7i5owumukhps4z2ftazzm4xjrlnwzqdl3yoge2atrf\",\n      \"DirectoryId\": \"d-1f13900b0dce05f43be87f58b\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"Tags\": [\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        },\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        }\n      ]\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.CreateStandbyWorkspaces",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.CreateStandbyWorkspaces"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"FailedStandbyRequests\": [\n    {\n      \"StandbyWorkspaceRequest\": {\n        \"PrimaryWorkspaceId\": \"ws-9h82xt0j9k7ff7fgunmmpa5uqa3oarni8zfky5xqkf9bl0arsv2m1lig\",\n        \"DirectoryId\": \"d-b74efe7fb797e896e556bf8\",\n        \"VolumeEncryptionKey\": \"<string>\",\n        \"Tags\": [\n          {\n            \"Key\": \"<string>\",\n            \"Value\": \"<string>\"\n          },\n          {\n            \"Key\": \"<string>\",\n            \"Value\": \"<string>\"\n          }\n        ]\n      },\n      \"ErrorCode\": \"<string>\",\n      \"ErrorMessage\": \"<string>\"\n    },\n    {\n      \"StandbyWorkspaceRequest\": {\n        \"PrimaryWorkspaceId\": \"ws-f40eyg4b06u615pweoq2n1rpxiwofbc567jaq8kp14a77\",\n        \"DirectoryId\": \"d-59afc3f020807432f47eae219d5b60\",\n        \"VolumeEncryptionKey\": \"<string>\",\n        \"Tags\": [\n          {\n            \"Key\": \"<string>\",\n            \"Value\": \"<string>\"\n          },\n          {\n            \"Key\": \"<string>\",\n            \"Value\": \"<string>\"\n          }\n        ]\n      },\n      \"ErrorCode\": \"<string>\",\n      \"ErrorMessage\": \"<string>\"\n    }\n  ],\n  \"PendingStandbyRequests\": [\n    {\n      \"UserName\": \"<string>\",\n      \"DirectoryId\": \"d-be90a3845ba8f5c1fd05fb5c109ab89ad22977041780ad4ee0e400e376e\",\n      \"State\": \"TERMINATING\",\n      \"WorkspaceId\": \"ws-hrrv5663o1iaulpbtitmx\"\n    },\n    {\n      \"UserName\": \"<string>\",\n      \"DirectoryId\": \"d-ad115d4ef5749a61d39a5561\",\n      \"State\": \"RESTORING\",\n      \"WorkspaceId\": \"ws-cj3yhgaszpgeiigemr53gax4qnhhn7aoqnvwh6r9\"\n    }\n  ]\n}",
+              "createdAt": "2026-07-28T10:50:50.000Z",
+              "updatedAt": "2026-07-28T10:50:50.000Z",
+              "uid": "35240-844bac7e-fed6-4a6a-9e9c-e31ef95bbc6b"
+            },
+            {
+              "id": "f58b6a15-908e-4571-9bc4-0e3c3613e9b2",
+              "name": "AccessDeniedException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.CreateStandbyWorkspaces"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"PrimaryRegion\": \"1obhlgzymn\",\n  \"StandbyWorkspaces\": [\n    {\n      \"PrimaryWorkspaceId\": \"ws-e0g4t3uh1iq6wi97yrt5k0k5toabr06pjrxfycwj4g\",\n      \"DirectoryId\": \"d-6d969339e00fc8e72bd57444e9b1a8a16574046f2c6009701\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"Tags\": [\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        },\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        }\n      ]\n    },\n    {\n      \"PrimaryWorkspaceId\": \"ws-o749zuru7i5owumukhps4z2ftazzm4xjrlnwzqdl3yoge2atrf\",\n      \"DirectoryId\": \"d-1f13900b0dce05f43be87f58b\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"Tags\": [\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        },\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        }\n      ]\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.CreateStandbyWorkspaces",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.CreateStandbyWorkspaces"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:50:50.000Z",
+              "updatedAt": "2026-07-28T10:50:50.000Z",
+              "uid": "35240-f58b6a15-908e-4571-9bc4-0e3c3613e9b2"
+            },
+            {
+              "id": "0b692cf5-b11f-41dc-a64d-d883d0c42302",
+              "name": "InvalidParameterValuesException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.CreateStandbyWorkspaces"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"PrimaryRegion\": \"1obhlgzymn\",\n  \"StandbyWorkspaces\": [\n    {\n      \"PrimaryWorkspaceId\": \"ws-e0g4t3uh1iq6wi97yrt5k0k5toabr06pjrxfycwj4g\",\n      \"DirectoryId\": \"d-6d969339e00fc8e72bd57444e9b1a8a16574046f2c6009701\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"Tags\": [\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        },\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        }\n      ]\n    },\n    {\n      \"PrimaryWorkspaceId\": \"ws-o749zuru7i5owumukhps4z2ftazzm4xjrlnwzqdl3yoge2atrf\",\n      \"DirectoryId\": \"d-1f13900b0dce05f43be87f58b\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"Tags\": [\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        },\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        }\n      ]\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.CreateStandbyWorkspaces",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.CreateStandbyWorkspaces"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:50:50.000Z",
+              "updatedAt": "2026-07-28T10:50:50.000Z",
+              "uid": "35240-0b692cf5-b11f-41dc-a64d-d883d0c42302"
+            },
+            {
+              "id": "12d67610-7a5a-4a9c-b424-2519bec48476",
+              "name": "OperationNotSupportedException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.CreateStandbyWorkspaces"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"PrimaryRegion\": \"1obhlgzymn\",\n  \"StandbyWorkspaces\": [\n    {\n      \"PrimaryWorkspaceId\": \"ws-e0g4t3uh1iq6wi97yrt5k0k5toabr06pjrxfycwj4g\",\n      \"DirectoryId\": \"d-6d969339e00fc8e72bd57444e9b1a8a16574046f2c6009701\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"Tags\": [\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        },\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        }\n      ]\n    },\n    {\n      \"PrimaryWorkspaceId\": \"ws-o749zuru7i5owumukhps4z2ftazzm4xjrlnwzqdl3yoge2atrf\",\n      \"DirectoryId\": \"d-1f13900b0dce05f43be87f58b\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"Tags\": [\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        },\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        }\n      ]\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.CreateStandbyWorkspaces",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.CreateStandbyWorkspaces"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:50:50.000Z",
+              "updatedAt": "2026-07-28T10:50:50.000Z",
+              "uid": "35240-12d67610-7a5a-4a9c-b424-2519bec48476"
+            },
+            {
+              "id": "60520370-5b87-4973-aaea-7d73ffbc2fa2",
+              "name": "ResourceNotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.CreateStandbyWorkspaces"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"PrimaryRegion\": \"1obhlgzymn\",\n  \"StandbyWorkspaces\": [\n    {\n      \"PrimaryWorkspaceId\": \"ws-e0g4t3uh1iq6wi97yrt5k0k5toabr06pjrxfycwj4g\",\n      \"DirectoryId\": \"d-6d969339e00fc8e72bd57444e9b1a8a16574046f2c6009701\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"Tags\": [\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        },\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        }\n      ]\n    },\n    {\n      \"PrimaryWorkspaceId\": \"ws-o749zuru7i5owumukhps4z2ftazzm4xjrlnwzqdl3yoge2atrf\",\n      \"DirectoryId\": \"d-1f13900b0dce05f43be87f58b\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"Tags\": [\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        },\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        }\n      ]\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.CreateStandbyWorkspaces",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.CreateStandbyWorkspaces"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:50:50.000Z",
+              "updatedAt": "2026-07-28T10:50:50.000Z",
+              "uid": "35240-60520370-5b87-4973-aaea-7d73ffbc2fa2"
+            },
+            {
+              "id": "86219e17-147f-4369-a27b-f811876a9967",
+              "name": "ResourceLimitExceededException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.CreateStandbyWorkspaces"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"PrimaryRegion\": \"1obhlgzymn\",\n  \"StandbyWorkspaces\": [\n    {\n      \"PrimaryWorkspaceId\": \"ws-e0g4t3uh1iq6wi97yrt5k0k5toabr06pjrxfycwj4g\",\n      \"DirectoryId\": \"d-6d969339e00fc8e72bd57444e9b1a8a16574046f2c6009701\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"Tags\": [\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        },\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        }\n      ]\n    },\n    {\n      \"PrimaryWorkspaceId\": \"ws-o749zuru7i5owumukhps4z2ftazzm4xjrlnwzqdl3yoge2atrf\",\n      \"DirectoryId\": \"d-1f13900b0dce05f43be87f58b\",\n      \"VolumeEncryptionKey\": \"<string>\",\n      \"Tags\": [\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        },\n        {\n          \"Key\": \"<string>\",\n          \"Value\": \"<string>\"\n        }\n      ]\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.CreateStandbyWorkspaces",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.CreateStandbyWorkspaces"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:50:50.000Z",
+              "updatedAt": "2026-07-28T10:50:50.000Z",
+              "uid": "35240-86219e17-147f-4369-a27b-f811876a9967"
+            }
+          ],
+          "createdAt": "2026-07-28T10:50:50.000Z",
+          "updatedAt": "2026-07-28T10:50:50.000Z",
+          "uid": "35240-02f17e42-f95e-42f9-82c0-194e31cc72db"
+        }
+      ],
+      "id": "52056074-9bad-49f7-ab9f-d568052390ec",
+      "createdAt": "2026-07-28T10:50:50.000Z",
+      "updatedAt": "2026-07-28T10:50:50.000Z",
+      "uid": "35240-52056074-9bad-49f7-ab9f-d568052390ec"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://workspaces.{{region}}.amazonaws.com"
+    }
+  ]
+}

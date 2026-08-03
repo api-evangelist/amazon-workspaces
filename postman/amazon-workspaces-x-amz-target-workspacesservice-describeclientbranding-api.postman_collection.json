@@ -1,0 +1,486 @@
+{
+  "info": {
+    "_postman_id": "07d670ac-bda0-44c4-b54e-b5aa56ca8a22",
+    "name": "Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.DescribeClientBranding API",
+    "description": "<fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href=\"https://docs.aws.amazon.com/general/latest/gr/wsp.html\">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/\">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href=\"https://docs.aws.amazon.com/workspaces/latest/userguide/\">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href=\"https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html\">WorkSpaces section of the CLI Reference</a>.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:51:24.000Z",
+    "updatedAt": "2026-07-28T10:51:24.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-07d670ac-bda0-44c4-b54e-b5aa56ca8a22"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=WorkspacesService.DescribeClientBranding",
+      "item": [
+        {
+          "name": "Amazon WorkSpaces Describe Client Branding",
+          "id": "ffdcc3f0-15e4-4b53-8146-3f8435d2f962",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "WorkspacesService.DescribeClientBranding"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"ResourceId\": \"d-27f0920c040295\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.DescribeClientBranding",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=WorkspacesService.DescribeClientBranding"
+            },
+            "description": "<p>Describes the specified client branding. Client branding allows you to customize the log in page of various device types for your users. You can add your company logo, the support email address, support link, link to reset password, and a custom message for users trying to sign in.</p> <note> <p>Only device types that have branding information configured will be shown in the response.</p> </note>"
+          },
+          "response": [
+            {
+              "id": "8993a97c-e451-4f2f-be88-cdc8c11f3194",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.DescribeClientBranding"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ResourceId\": \"d-27f0920c040295\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.DescribeClientBranding",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.DescribeClientBranding"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"DeviceTypeWindows\": {\n    \"LogoUrl\": \"http://snKm'\",\n    \"SupportEmail\": \"p9i@HriKy0.vjP\",\n    \"SupportLink\": \"https://D4<c.Wg\\\\qx\",\n    \"ForgotPasswordLink\": \"http://e\",\n    \"LoginMessage\": {\n      \"cillumea2\": \"[*$EV~A\\\\e9\"\n    }\n  },\n  \"DeviceTypeOsx\": {\n    \"LogoUrl\": \"https://Wqk(zFCh\",\n    \"SupportEmail\": \"5eKwhs-Lfvx@KGY2tD.UoK\",\n    \"SupportLink\": \"http://V7|2(q@t\",\n    \"ForgotPasswordLink\": \"https://cN}p_iF\",\n    \"LoginMessage\": {\n      \"irure_f78\": \"x5fQg-\",\n      \"Lorem43\": \"lW=A.e\"\n    }\n  },\n  \"DeviceTypeAndroid\": {\n    \"LogoUrl\": \"http://BhgIM%Z2j~\",\n    \"SupportEmail\": \"mZnvCGX6J@n.nhx\",\n    \"SupportLink\": \"http://(fd?Ar\",\n    \"ForgotPasswordLink\": \"https://OmT\",\n    \"LoginMessage\": {\n      \"consectetur_165\": \")*\"\n    }\n  },\n  \"DeviceTypeIos\": {\n    \"LogoUrl\": \"https://G/\",\n    \"Logo2xUrl\": \"http://2\",\n    \"Logo3xUrl\": \"https://ykjuk3dh\",\n    \"SupportEmail\": \"3bf8c%s@m63vGUaM.Rhb\",\n    \"SupportLink\": \"http://>\",\n    \"ForgotPasswordLink\": \"http://hFmO\",\n    \"LoginMessage\": {\n      \"dolore_ff\": \"0d_Q{\"\n    }\n  },\n  \"DeviceTypeLinux\": {\n    \"LogoUrl\": \"https://?\",\n    \"SupportEmail\": \"3VQUaKU@6cK.JfTp\",\n    \"SupportLink\": \"https://\\\\cZ(LmFle{\",\n    \"ForgotPasswordLink\": \"http://EHjI\\\\Zd5\",\n    \"LoginMessage\": {\n      \"laborum_902\": \"qd\\\"\"\n    }\n  },\n  \"DeviceTypeWeb\": {\n    \"LogoUrl\": \"https://<H\",\n    \"SupportEmail\": \"m-1LsGQ@9Ar00qQjHHY.TG\",\n    \"SupportLink\": \"http://WU@Cz<r8<T\",\n    \"ForgotPasswordLink\": \"http://(P0\",\n    \"LoginMessage\": {\n      \"exercitation_b6\": \"+R}`}`r)Y \",\n      \"pariatur_3\": \"(|8=u\"\n    }\n  }\n}",
+              "createdAt": "2026-07-28T10:51:25.000Z",
+              "updatedAt": "2026-07-28T10:51:25.000Z",
+              "uid": "35240-8993a97c-e451-4f2f-be88-cdc8c11f3194"
+            },
+            {
+              "id": "10f05892-00a4-4651-965f-0f7e2ee78e89",
+              "name": "InvalidParameterValuesException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.DescribeClientBranding"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ResourceId\": \"d-27f0920c040295\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.DescribeClientBranding",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.DescribeClientBranding"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:51:25.000Z",
+              "updatedAt": "2026-07-28T10:51:25.000Z",
+              "uid": "35240-10f05892-00a4-4651-965f-0f7e2ee78e89"
+            },
+            {
+              "id": "aa9ca2c0-daf0-42fb-b263-7eb1a4ebd97f",
+              "name": "ResourceNotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.DescribeClientBranding"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ResourceId\": \"d-27f0920c040295\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.DescribeClientBranding",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.DescribeClientBranding"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:51:25.000Z",
+              "updatedAt": "2026-07-28T10:51:25.000Z",
+              "uid": "35240-aa9ca2c0-daf0-42fb-b263-7eb1a4ebd97f"
+            },
+            {
+              "id": "c1506242-72b5-42fd-8df6-e9a4ecfa77b4",
+              "name": "AccessDeniedException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.DescribeClientBranding"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ResourceId\": \"d-27f0920c040295\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.DescribeClientBranding",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.DescribeClientBranding"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:51:25.000Z",
+              "updatedAt": "2026-07-28T10:51:25.000Z",
+              "uid": "35240-c1506242-72b5-42fd-8df6-e9a4ecfa77b4"
+            }
+          ],
+          "createdAt": "2026-07-28T10:51:25.000Z",
+          "updatedAt": "2026-07-28T10:51:25.000Z",
+          "uid": "35240-ffdcc3f0-15e4-4b53-8146-3f8435d2f962"
+        }
+      ],
+      "id": "ad54b4d6-0d67-425f-87a2-2bf889f24f0d",
+      "createdAt": "2026-07-28T10:51:25.000Z",
+      "updatedAt": "2026-07-28T10:51:25.000Z",
+      "uid": "35240-ad54b4d6-0d67-425f-87a2-2bf889f24f0d"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://workspaces.{{region}}.amazonaws.com"
+    }
+  ]
+}

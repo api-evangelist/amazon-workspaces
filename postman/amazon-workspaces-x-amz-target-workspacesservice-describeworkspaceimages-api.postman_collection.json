@@ -1,0 +1,310 @@
+{
+  "info": {
+    "_postman_id": "4d5512a6-22af-454d-a0d7-aa97827f0aa1",
+    "name": "Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.DescribeWorkspaceImages API",
+    "description": "<fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href=\"https://docs.aws.amazon.com/general/latest/gr/wsp.html\">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/\">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href=\"https://docs.aws.amazon.com/workspaces/latest/userguide/\">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href=\"https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html\">WorkSpaces section of the CLI Reference</a>.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:51:52.000Z",
+    "updatedAt": "2026-07-28T10:51:53.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-4d5512a6-22af-454d-a0d7-aa97827f0aa1"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=WorkspacesService.DescribeWorkspaceImages",
+      "item": [
+        {
+          "name": "Amazon WorkSpaces Describe Workspace Images",
+          "id": "03248568-37e4-45af-b6c8-b50215ef1f20",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "WorkspacesService.DescribeWorkspaceImages"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"ImageIds\": [\n    \"wsi-xulsxyrcfh9yg22ka\"\n  ],\n  \"ImageType\": \"SHARED\",\n  \"NextToken\": \"<string>\",\n  \"MaxResults\": \"<integer>\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.DescribeWorkspaceImages",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=WorkspacesService.DescribeWorkspaceImages"
+            },
+            "description": "Retrieves a list that describes one or more specified images, if the image identifiers are provided. Otherwise, all images in the account are described. "
+          },
+          "response": [
+            {
+              "id": "d3cf9a6e-9f9a-4303-9bb9-479e5b814c11",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.DescribeWorkspaceImages"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ImageIds\": [\n    \"wsi-xulsxyrcfh9yg22ka\"\n  ],\n  \"ImageType\": \"SHARED\",\n  \"NextToken\": \"<string>\",\n  \"MaxResults\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.DescribeWorkspaceImages",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.DescribeWorkspaceImages"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"Images\": [\n    {\n      \"ImageId\": \"wsi-q3yuozo6q0y3n1283cp8qr687ub94j417xq2ja2awszvo7gof3dlh9hi\",\n      \"Name\": \"4\",\n      \"Description\": \"h)x\",\n      \"OperatingSystem\": {\n        \"Type\": \"LINUX\"\n      },\n      \"State\": \"AVAILABLE\",\n      \"RequiredTenancy\": \"DEDICATED\",\n      \"ErrorCode\": \"<string>\",\n      \"ErrorMessage\": \"<string>\",\n      \"Created\": \"<dateTime>\",\n      \"OwnerAccountId\": \"427471081069\",\n      \"Updates\": {\n        \"UpdateAvailable\": \"<boolean>\",\n        \"Description\": \"QxIZ_jnA6Y\"\n      }\n    },\n    {\n      \"ImageId\": \"wsi-g7tvarxsu21h4ydix7vtz5s33b\",\n      \"Name\": \"z(.WqDOk\",\n      \"Description\": \"xEj9YsIw\",\n      \"OperatingSystem\": {\n        \"Type\": \"LINUX\"\n      },\n      \"State\": \"ERROR\",\n      \"RequiredTenancy\": \"DEFAULT\",\n      \"ErrorCode\": \"<string>\",\n      \"ErrorMessage\": \"<string>\",\n      \"Created\": \"<dateTime>\",\n      \"OwnerAccountId\": \"336272246608\",\n      \"Updates\": {\n        \"UpdateAvailable\": \"<boolean>\",\n        \"Description\": \"O\"\n      }\n    }\n  ],\n  \"NextToken\": \"<string>\"\n}",
+              "createdAt": "2026-07-28T10:51:53.000Z",
+              "updatedAt": "2026-07-28T10:51:53.000Z",
+              "uid": "35240-d3cf9a6e-9f9a-4303-9bb9-479e5b814c11"
+            },
+            {
+              "id": "b67c0a9c-27cf-41c6-8767-785fc3d3d46f",
+              "name": "AccessDeniedException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.DescribeWorkspaceImages"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ImageIds\": [\n    \"wsi-xulsxyrcfh9yg22ka\"\n  ],\n  \"ImageType\": \"SHARED\",\n  \"NextToken\": \"<string>\",\n  \"MaxResults\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.DescribeWorkspaceImages",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.DescribeWorkspaceImages"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:51:53.000Z",
+              "updatedAt": "2026-07-28T10:51:53.000Z",
+              "uid": "35240-b67c0a9c-27cf-41c6-8767-785fc3d3d46f"
+            }
+          ],
+          "createdAt": "2026-07-28T10:51:53.000Z",
+          "updatedAt": "2026-07-28T10:51:53.000Z",
+          "uid": "35240-03248568-37e4-45af-b6c8-b50215ef1f20"
+        }
+      ],
+      "id": "b1328697-1fbe-43d2-9486-153d6cfb6f80",
+      "createdAt": "2026-07-28T10:51:53.000Z",
+      "updatedAt": "2026-07-28T10:51:53.000Z",
+      "uid": "35240-b1328697-1fbe-43d2-9486-153d6cfb6f80"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://workspaces.{{region}}.amazonaws.com"
+    }
+  ]
+}

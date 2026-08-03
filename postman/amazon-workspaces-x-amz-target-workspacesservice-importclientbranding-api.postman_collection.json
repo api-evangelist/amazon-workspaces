@@ -1,0 +1,574 @@
+{
+  "info": {
+    "_postman_id": "1b5d85a5-7d1b-4077-a09a-4ac78ff7fc3e",
+    "name": "Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.ImportClientBranding API",
+    "description": "<fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href=\"https://docs.aws.amazon.com/general/latest/gr/wsp.html\">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/\">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href=\"https://docs.aws.amazon.com/workspaces/latest/userguide/\">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href=\"https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html\">WorkSpaces section of the CLI Reference</a>.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:51:58.000Z",
+    "updatedAt": "2026-07-28T10:51:58.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-1b5d85a5-7d1b-4077-a09a-4ac78ff7fc3e"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=WorkspacesService.ImportClientBranding",
+      "item": [
+        {
+          "name": "Amazon WorkSpaces Import Client Branding",
+          "id": "49fddc8b-d5c9-4a53-adf8-724923fcdd59",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "WorkspacesService.ImportClientBranding"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"ResourceId\": \"d-d744e062e85a62772920e61a6b8d1161ff2ae42c9c\",\n  \"DeviceTypeWindows\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"i-CUOCcP@I9Egn.eBRK\",\n    \"SupportLink\": \"http://Jrh\",\n    \"ForgotPasswordLink\": \"http://$3\",\n    \"LoginMessage\": {\n      \"dolore_35\": \"{vo\"\n    }\n  },\n  \"DeviceTypeOsx\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"7W1AH4s3c@TbS6AY3d8Oe.cT\",\n    \"SupportLink\": \"https://Plj\",\n    \"ForgotPasswordLink\": \"http://>M6d\\\"_\",\n    \"LoginMessage\": {\n      \"exercitation_fc\": \"\\\"`\"\n    }\n  },\n  \"DeviceTypeAndroid\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"P77Htu@jI.nmW\",\n    \"SupportLink\": \"http://<'rq&T\",\n    \"ForgotPasswordLink\": \"http://xR)MB9~R&v\",\n    \"LoginMessage\": {\n      \"este7\": \"4t\"\n    }\n  },\n  \"DeviceTypeIos\": {\n    \"Logo\": \"<string>\",\n    \"Logo2x\": \"<string>\",\n    \"Logo3x\": \"<string>\",\n    \"SupportEmail\": \"-rA@iv.i5HRz.mzj\",\n    \"SupportLink\": \"https://_UX\\\"0?H5q_?\",\n    \"ForgotPasswordLink\": \"http://jS_N?\",\n    \"LoginMessage\": {\n      \"occaecat_6e\": \"G`7\"\n    }\n  },\n  \"DeviceTypeLinux\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"l2@Q.XPE\",\n    \"SupportLink\": \"https://x6\",\n    \"ForgotPasswordLink\": \"http://whT/i\",\n    \"LoginMessage\": {\n      \"in2c9\": \"\",\n      \"ullamco_0a\": \"\",\n      \"culpacf0\": \"GwMM^$7a_9\"\n    }\n  },\n  \"DeviceTypeWeb\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"bip@PU2tkB5y.scO\",\n    \"SupportLink\": \"http://.mb>JHfpeW\",\n    \"ForgotPasswordLink\": \"https://vTvtmQ!,\",\n    \"LoginMessage\": {\n      \"deseruntb\": \"F$?<\",\n      \"ut_df9\": \"F'}`8H }\"\n    }\n  }\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.ImportClientBranding",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=WorkspacesService.ImportClientBranding"
+            },
+            "description": "<p>Imports client branding. Client branding allows you to customize your WorkSpace's client login portal. You can tailor your login portal company logo, the support email address, support link, link to reset password, and a custom message for users trying to sign in.</p> <p>After you import client branding, the default branding experience for the specified platform type is replaced with the imported experience</p> <note> <ul> <li> <p>You must specify at least one platform type when importing client branding.</p> </li> <li> <p>You can import up to 6 MB of data with each request. If your request exceeds this limit, you can import client branding for different platform types using separate requests.</p> </li> <li> <p>In each platform type, the <code>SupportEmail</code> and <code>SupportLink</code> parameters are mutually exclusive. You can specify only one parameter for each platform type, but not both.</p> </li> <li> <p>Imported data can take up to a minute to appear in the WorkSpaces client.</p> </li> </ul> </note>"
+          },
+          "response": [
+            {
+              "id": "44457ad3-1234-4cd5-8a52-33413a532a89",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.ImportClientBranding"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ResourceId\": \"d-d744e062e85a62772920e61a6b8d1161ff2ae42c9c\",\n  \"DeviceTypeWindows\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"i-CUOCcP@I9Egn.eBRK\",\n    \"SupportLink\": \"http://Jrh\",\n    \"ForgotPasswordLink\": \"http://$3\",\n    \"LoginMessage\": {\n      \"dolore_35\": \"{vo\"\n    }\n  },\n  \"DeviceTypeOsx\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"7W1AH4s3c@TbS6AY3d8Oe.cT\",\n    \"SupportLink\": \"https://Plj\",\n    \"ForgotPasswordLink\": \"http://>M6d\\\"_\",\n    \"LoginMessage\": {\n      \"exercitation_fc\": \"\\\"`\"\n    }\n  },\n  \"DeviceTypeAndroid\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"P77Htu@jI.nmW\",\n    \"SupportLink\": \"http://<'rq&T\",\n    \"ForgotPasswordLink\": \"http://xR)MB9~R&v\",\n    \"LoginMessage\": {\n      \"este7\": \"4t\"\n    }\n  },\n  \"DeviceTypeIos\": {\n    \"Logo\": \"<string>\",\n    \"Logo2x\": \"<string>\",\n    \"Logo3x\": \"<string>\",\n    \"SupportEmail\": \"-rA@iv.i5HRz.mzj\",\n    \"SupportLink\": \"https://_UX\\\"0?H5q_?\",\n    \"ForgotPasswordLink\": \"http://jS_N?\",\n    \"LoginMessage\": {\n      \"occaecat_6e\": \"G`7\"\n    }\n  },\n  \"DeviceTypeLinux\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"l2@Q.XPE\",\n    \"SupportLink\": \"https://x6\",\n    \"ForgotPasswordLink\": \"http://whT/i\",\n    \"LoginMessage\": {\n      \"in2c9\": \"\",\n      \"ullamco_0a\": \"\",\n      \"culpacf0\": \"GwMM^$7a_9\"\n    }\n  },\n  \"DeviceTypeWeb\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"bip@PU2tkB5y.scO\",\n    \"SupportLink\": \"http://.mb>JHfpeW\",\n    \"ForgotPasswordLink\": \"https://vTvtmQ!,\",\n    \"LoginMessage\": {\n      \"deseruntb\": \"F$?<\",\n      \"ut_df9\": \"F'}`8H }\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.ImportClientBranding",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.ImportClientBranding"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"DeviceTypeWindows\": {\n    \"LogoUrl\": \"http://L]\",\n    \"SupportEmail\": \"ul-4TBuF@9B8.ox\",\n    \"SupportLink\": \"http://XdQ+\\\\u<F\",\n    \"ForgotPasswordLink\": \"http://I4RwA=6:gX[\",\n    \"LoginMessage\": {\n      \"incididunt_a6b\": \"F$DyqVM~\"\n    }\n  },\n  \"DeviceTypeOsx\": {\n    \"LogoUrl\": \"https://UsA^ftkuo7\",\n    \"SupportEmail\": \"iNlEnbKC@-um2jdIEyj.tLko\",\n    \"SupportLink\": \"https://r(MnI9H+)\",\n    \"ForgotPasswordLink\": \"https://s|ZMvNz\",\n    \"LoginMessage\": {\n      \"in_7\": \"yAi\",\n      \"quis41\": \"[j\",\n      \"qui_c3f\": \"vW\"\n    }\n  },\n  \"DeviceTypeAndroid\": {\n    \"LogoUrl\": \"https://kU+Q:6Au_3\",\n    \"SupportEmail\": \"QV85HZR-9-.@T.zD\",\n    \"SupportLink\": \"http://M\",\n    \"ForgotPasswordLink\": \"http://nI3:2Pn*!\",\n    \"LoginMessage\": {\n      \"voluptate32\": \"0hGGb&0Q\",\n      \"irure_30\": \"['^>\"\n    }\n  },\n  \"DeviceTypeIos\": {\n    \"LogoUrl\": \"http://q1<!G/\\\\D\",\n    \"Logo2xUrl\": \"https://0\",\n    \"Logo3xUrl\": \"https://Gj82?$;\",\n    \"SupportEmail\": \"TKE7@IPJU0T.CGGF\",\n    \"SupportLink\": \"https://nL6!mP:6I\",\n    \"ForgotPasswordLink\": \"https://%u<S\",\n    \"LoginMessage\": {\n      \"quic89\": \"*,N0E6@$\",\n      \"laborum815\": \"|';\",\n      \"ad_395\": \"hQ|bu+uM\"\n    }\n  },\n  \"DeviceTypeLinux\": {\n    \"LogoUrl\": \"https://sz\",\n    \"SupportEmail\": \"-c@q..uV\",\n    \"SupportLink\": \"https://~\\\\9\\\"@j99>\",\n    \"ForgotPasswordLink\": \"http://2\",\n    \"LoginMessage\": {\n      \"enim_6\": \"91\"\n    }\n  },\n  \"DeviceTypeWeb\": {\n    \"LogoUrl\": \"https://iaM1\",\n    \"SupportEmail\": \"Ah8B@Ad25Hz5c.mtW\",\n    \"SupportLink\": \"https://3*V&oH\",\n    \"ForgotPasswordLink\": \"https://}\",\n    \"LoginMessage\": {\n      \"in_6d4\": \"C+5P\",\n      \"elit1\": \"X 7'@8\",\n      \"Duis7\": \"!cW8B g&%o\",\n      \"exercitation5\": \"A,b'@\",\n      \"nisi_93c\": \"i'K>\"\n    }\n  }\n}",
+              "createdAt": "2026-07-28T10:51:59.000Z",
+              "updatedAt": "2026-07-28T10:51:59.000Z",
+              "uid": "35240-44457ad3-1234-4cd5-8a52-33413a532a89"
+            },
+            {
+              "id": "41d26d80-9252-48a4-a437-5c31cc5f631a",
+              "name": "InvalidParameterValuesException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.ImportClientBranding"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ResourceId\": \"d-d744e062e85a62772920e61a6b8d1161ff2ae42c9c\",\n  \"DeviceTypeWindows\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"i-CUOCcP@I9Egn.eBRK\",\n    \"SupportLink\": \"http://Jrh\",\n    \"ForgotPasswordLink\": \"http://$3\",\n    \"LoginMessage\": {\n      \"dolore_35\": \"{vo\"\n    }\n  },\n  \"DeviceTypeOsx\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"7W1AH4s3c@TbS6AY3d8Oe.cT\",\n    \"SupportLink\": \"https://Plj\",\n    \"ForgotPasswordLink\": \"http://>M6d\\\"_\",\n    \"LoginMessage\": {\n      \"exercitation_fc\": \"\\\"`\"\n    }\n  },\n  \"DeviceTypeAndroid\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"P77Htu@jI.nmW\",\n    \"SupportLink\": \"http://<'rq&T\",\n    \"ForgotPasswordLink\": \"http://xR)MB9~R&v\",\n    \"LoginMessage\": {\n      \"este7\": \"4t\"\n    }\n  },\n  \"DeviceTypeIos\": {\n    \"Logo\": \"<string>\",\n    \"Logo2x\": \"<string>\",\n    \"Logo3x\": \"<string>\",\n    \"SupportEmail\": \"-rA@iv.i5HRz.mzj\",\n    \"SupportLink\": \"https://_UX\\\"0?H5q_?\",\n    \"ForgotPasswordLink\": \"http://jS_N?\",\n    \"LoginMessage\": {\n      \"occaecat_6e\": \"G`7\"\n    }\n  },\n  \"DeviceTypeLinux\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"l2@Q.XPE\",\n    \"SupportLink\": \"https://x6\",\n    \"ForgotPasswordLink\": \"http://whT/i\",\n    \"LoginMessage\": {\n      \"in2c9\": \"\",\n      \"ullamco_0a\": \"\",\n      \"culpacf0\": \"GwMM^$7a_9\"\n    }\n  },\n  \"DeviceTypeWeb\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"bip@PU2tkB5y.scO\",\n    \"SupportLink\": \"http://.mb>JHfpeW\",\n    \"ForgotPasswordLink\": \"https://vTvtmQ!,\",\n    \"LoginMessage\": {\n      \"deseruntb\": \"F$?<\",\n      \"ut_df9\": \"F'}`8H }\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.ImportClientBranding",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.ImportClientBranding"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:51:59.000Z",
+              "updatedAt": "2026-07-28T10:51:59.000Z",
+              "uid": "35240-41d26d80-9252-48a4-a437-5c31cc5f631a"
+            },
+            {
+              "id": "0a5c1693-5b3d-4140-9a8d-26376c9db748",
+              "name": "ResourceLimitExceededException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.ImportClientBranding"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ResourceId\": \"d-d744e062e85a62772920e61a6b8d1161ff2ae42c9c\",\n  \"DeviceTypeWindows\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"i-CUOCcP@I9Egn.eBRK\",\n    \"SupportLink\": \"http://Jrh\",\n    \"ForgotPasswordLink\": \"http://$3\",\n    \"LoginMessage\": {\n      \"dolore_35\": \"{vo\"\n    }\n  },\n  \"DeviceTypeOsx\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"7W1AH4s3c@TbS6AY3d8Oe.cT\",\n    \"SupportLink\": \"https://Plj\",\n    \"ForgotPasswordLink\": \"http://>M6d\\\"_\",\n    \"LoginMessage\": {\n      \"exercitation_fc\": \"\\\"`\"\n    }\n  },\n  \"DeviceTypeAndroid\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"P77Htu@jI.nmW\",\n    \"SupportLink\": \"http://<'rq&T\",\n    \"ForgotPasswordLink\": \"http://xR)MB9~R&v\",\n    \"LoginMessage\": {\n      \"este7\": \"4t\"\n    }\n  },\n  \"DeviceTypeIos\": {\n    \"Logo\": \"<string>\",\n    \"Logo2x\": \"<string>\",\n    \"Logo3x\": \"<string>\",\n    \"SupportEmail\": \"-rA@iv.i5HRz.mzj\",\n    \"SupportLink\": \"https://_UX\\\"0?H5q_?\",\n    \"ForgotPasswordLink\": \"http://jS_N?\",\n    \"LoginMessage\": {\n      \"occaecat_6e\": \"G`7\"\n    }\n  },\n  \"DeviceTypeLinux\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"l2@Q.XPE\",\n    \"SupportLink\": \"https://x6\",\n    \"ForgotPasswordLink\": \"http://whT/i\",\n    \"LoginMessage\": {\n      \"in2c9\": \"\",\n      \"ullamco_0a\": \"\",\n      \"culpacf0\": \"GwMM^$7a_9\"\n    }\n  },\n  \"DeviceTypeWeb\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"bip@PU2tkB5y.scO\",\n    \"SupportLink\": \"http://.mb>JHfpeW\",\n    \"ForgotPasswordLink\": \"https://vTvtmQ!,\",\n    \"LoginMessage\": {\n      \"deseruntb\": \"F$?<\",\n      \"ut_df9\": \"F'}`8H }\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.ImportClientBranding",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.ImportClientBranding"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:51:59.000Z",
+              "updatedAt": "2026-07-28T10:51:59.000Z",
+              "uid": "35240-0a5c1693-5b3d-4140-9a8d-26376c9db748"
+            },
+            {
+              "id": "ed5c1df6-956c-439f-b282-4e7fe97ca146",
+              "name": "ResourceNotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.ImportClientBranding"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ResourceId\": \"d-d744e062e85a62772920e61a6b8d1161ff2ae42c9c\",\n  \"DeviceTypeWindows\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"i-CUOCcP@I9Egn.eBRK\",\n    \"SupportLink\": \"http://Jrh\",\n    \"ForgotPasswordLink\": \"http://$3\",\n    \"LoginMessage\": {\n      \"dolore_35\": \"{vo\"\n    }\n  },\n  \"DeviceTypeOsx\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"7W1AH4s3c@TbS6AY3d8Oe.cT\",\n    \"SupportLink\": \"https://Plj\",\n    \"ForgotPasswordLink\": \"http://>M6d\\\"_\",\n    \"LoginMessage\": {\n      \"exercitation_fc\": \"\\\"`\"\n    }\n  },\n  \"DeviceTypeAndroid\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"P77Htu@jI.nmW\",\n    \"SupportLink\": \"http://<'rq&T\",\n    \"ForgotPasswordLink\": \"http://xR)MB9~R&v\",\n    \"LoginMessage\": {\n      \"este7\": \"4t\"\n    }\n  },\n  \"DeviceTypeIos\": {\n    \"Logo\": \"<string>\",\n    \"Logo2x\": \"<string>\",\n    \"Logo3x\": \"<string>\",\n    \"SupportEmail\": \"-rA@iv.i5HRz.mzj\",\n    \"SupportLink\": \"https://_UX\\\"0?H5q_?\",\n    \"ForgotPasswordLink\": \"http://jS_N?\",\n    \"LoginMessage\": {\n      \"occaecat_6e\": \"G`7\"\n    }\n  },\n  \"DeviceTypeLinux\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"l2@Q.XPE\",\n    \"SupportLink\": \"https://x6\",\n    \"ForgotPasswordLink\": \"http://whT/i\",\n    \"LoginMessage\": {\n      \"in2c9\": \"\",\n      \"ullamco_0a\": \"\",\n      \"culpacf0\": \"GwMM^$7a_9\"\n    }\n  },\n  \"DeviceTypeWeb\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"bip@PU2tkB5y.scO\",\n    \"SupportLink\": \"http://.mb>JHfpeW\",\n    \"ForgotPasswordLink\": \"https://vTvtmQ!,\",\n    \"LoginMessage\": {\n      \"deseruntb\": \"F$?<\",\n      \"ut_df9\": \"F'}`8H }\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.ImportClientBranding",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.ImportClientBranding"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:51:59.000Z",
+              "updatedAt": "2026-07-28T10:51:59.000Z",
+              "uid": "35240-ed5c1df6-956c-439f-b282-4e7fe97ca146"
+            },
+            {
+              "id": "74d03c19-1158-4dd6-8c0b-232815940107",
+              "name": "AccessDeniedException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkspacesService.ImportClientBranding"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ResourceId\": \"d-d744e062e85a62772920e61a6b8d1161ff2ae42c9c\",\n  \"DeviceTypeWindows\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"i-CUOCcP@I9Egn.eBRK\",\n    \"SupportLink\": \"http://Jrh\",\n    \"ForgotPasswordLink\": \"http://$3\",\n    \"LoginMessage\": {\n      \"dolore_35\": \"{vo\"\n    }\n  },\n  \"DeviceTypeOsx\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"7W1AH4s3c@TbS6AY3d8Oe.cT\",\n    \"SupportLink\": \"https://Plj\",\n    \"ForgotPasswordLink\": \"http://>M6d\\\"_\",\n    \"LoginMessage\": {\n      \"exercitation_fc\": \"\\\"`\"\n    }\n  },\n  \"DeviceTypeAndroid\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"P77Htu@jI.nmW\",\n    \"SupportLink\": \"http://<'rq&T\",\n    \"ForgotPasswordLink\": \"http://xR)MB9~R&v\",\n    \"LoginMessage\": {\n      \"este7\": \"4t\"\n    }\n  },\n  \"DeviceTypeIos\": {\n    \"Logo\": \"<string>\",\n    \"Logo2x\": \"<string>\",\n    \"Logo3x\": \"<string>\",\n    \"SupportEmail\": \"-rA@iv.i5HRz.mzj\",\n    \"SupportLink\": \"https://_UX\\\"0?H5q_?\",\n    \"ForgotPasswordLink\": \"http://jS_N?\",\n    \"LoginMessage\": {\n      \"occaecat_6e\": \"G`7\"\n    }\n  },\n  \"DeviceTypeLinux\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"l2@Q.XPE\",\n    \"SupportLink\": \"https://x6\",\n    \"ForgotPasswordLink\": \"http://whT/i\",\n    \"LoginMessage\": {\n      \"in2c9\": \"\",\n      \"ullamco_0a\": \"\",\n      \"culpacf0\": \"GwMM^$7a_9\"\n    }\n  },\n  \"DeviceTypeWeb\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"bip@PU2tkB5y.scO\",\n    \"SupportLink\": \"http://.mb>JHfpeW\",\n    \"ForgotPasswordLink\": \"https://vTvtmQ!,\",\n    \"LoginMessage\": {\n      \"deseruntb\": \"F$?<\",\n      \"ut_df9\": \"F'}`8H }\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkspacesService.ImportClientBranding",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.ImportClientBranding"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:51:59.000Z",
+              "updatedAt": "2026-07-28T10:51:59.000Z",
+              "uid": "35240-74d03c19-1158-4dd6-8c0b-232815940107"
+            }
+          ],
+          "createdAt": "2026-07-28T10:51:59.000Z",
+          "updatedAt": "2026-07-28T10:51:59.000Z",
+          "uid": "35240-49fddc8b-d5c9-4a53-adf8-724923fcdd59"
+        }
+      ],
+      "id": "314971a2-0572-4b16-988c-3d7702d6b205",
+      "createdAt": "2026-07-28T10:51:59.000Z",
+      "updatedAt": "2026-07-28T10:51:59.000Z",
+      "uid": "35240-314971a2-0572-4b16-988c-3d7702d6b205"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://workspaces.{{region}}.amazonaws.com"
+    }
+  ]
+}
