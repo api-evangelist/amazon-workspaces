@@ -59,8 +59,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-associateipgroups-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateIpGroups API'
   description: >-
@@ -88,8 +86,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-authorizeiprules-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AuthorizeIpRules API'
   description: >-
@@ -117,8 +113,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-copyworkspaceimage-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CopyWorkspaceImage API'
@@ -147,8 +141,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-createconnectclientaddin-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateConnectClientAddIn API'
@@ -177,8 +169,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-createconnectionalias-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateConnectionAlias API'
@@ -207,8 +197,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-createipgroup-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateIpGroup API'
   description: >-
@@ -235,8 +223,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-createstandbyworkspaces-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateStandbyWorkspaces API'
@@ -265,8 +251,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-createtags-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateTags API'
   description: >-
@@ -293,8 +277,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-createupdatedworkspaceimage-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateUpdatedWorkspaceImage API'
@@ -323,8 +305,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-createworkspacebundle-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateWorkspaceBundle API'
@@ -353,8 +333,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-createworkspaceimage-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateWorkspaceImage API'
@@ -383,8 +361,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-createworkspaces-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateWorkspaces API'
   description: >-
@@ -412,8 +388,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-deleteclientbranding-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DeleteClientBranding API'
@@ -442,8 +416,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-deleteconnectclientaddin-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DeleteConnectClientAddIn API'
@@ -472,8 +444,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-deleteconnectionalias-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DeleteConnectionAlias API'
@@ -502,8 +472,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-deleteipgroup-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DeleteIpGroup API'
   description: >-
@@ -530,8 +498,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-deletetags-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DeleteTags API'
   description: >-
@@ -558,8 +524,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-deleteworkspacebundle-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DeleteWorkspaceBundle API'
@@ -588,8 +552,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-deleteworkspaceimage-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DeleteWorkspaceImage API'
@@ -618,8 +580,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-deregisterworkspacedirectory-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DeregisterWorkspaceDirectory API'
@@ -648,8 +608,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeaccount-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeAccount API'
   description: >-
@@ -676,8 +634,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeaccountmodifications-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeAccountModifications API'
@@ -706,8 +662,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeclientbranding-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeClientBranding API'
@@ -736,8 +690,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeclientproperties-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeClientProperties API'
@@ -766,8 +718,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeconnectclientaddins-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeConnectClientAddIns API'
@@ -796,8 +746,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliases-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeConnectionAliases API'
@@ -826,8 +774,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliaspermissions-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeConnectionAliasPermissions API'
@@ -856,8 +802,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeipgroups-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeIpGroups API'
   description: >-
@@ -885,8 +829,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describetags-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeTags API'
   description: >-
@@ -913,8 +855,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeworkspacebundles-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeWorkspaceBundles API'
@@ -943,8 +883,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeworkspacedirectories-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeWorkspaceDirectories API'
@@ -973,8 +911,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimagepermissions-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeWorkspaceImagePermissions API'
@@ -1003,8 +939,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimages-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeWorkspaceImages API'
@@ -1033,8 +967,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeworkspaces-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeWorkspaces API'
@@ -1063,8 +995,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesconnectionstatus-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeWorkspacesConnectionStatus API'
@@ -1093,8 +1023,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesnapshots-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeWorkspaceSnapshots API'
@@ -1123,8 +1051,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-disassociateconnectionalias-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DisassociateConnectionAlias API'
@@ -1153,8 +1079,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-disassociateipgroups-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DisassociateIpGroups API'
@@ -1183,8 +1107,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-importclientbranding-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ImportClientBranding API'
@@ -1213,8 +1135,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-importworkspaceimage-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ImportWorkspaceImage API'
@@ -1243,8 +1163,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-listavailablemanagementcidrranges-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ListAvailableManagementCidrRanges API'
@@ -1273,8 +1191,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-migrateworkspace-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.MigrateWorkspace API'
   description: >-
@@ -1302,8 +1218,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-modifyaccount-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ModifyAccount API'
   description: >-
@@ -1330,8 +1244,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-modifycertificatebasedauthproperties-api
   name: >-
@@ -1361,8 +1273,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-modifyclientproperties-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ModifyClientProperties API'
@@ -1391,8 +1301,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-modifysamlproperties-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ModifySamlProperties API'
@@ -1421,8 +1329,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-modifyselfservicepermissions-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ModifySelfservicePermissions API'
@@ -1451,8 +1357,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceaccessproperties-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ModifyWorkspaceAccessProperties API'
@@ -1481,8 +1385,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacecreationproperties-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ModifyWorkspaceCreationProperties API'
@@ -1511,8 +1413,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceproperties-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ModifyWorkspaceProperties API'
@@ -1541,8 +1441,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacestate-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.ModifyWorkspaceState API'
@@ -1571,8 +1469,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-rebootworkspaces-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.RebootWorkspaces API'
   description: >-
@@ -1600,8 +1496,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-rebuildworkspaces-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.RebuildWorkspaces API'
   description: >-
@@ -1629,8 +1523,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-registerworkspacedirectory-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.RegisterWorkspaceDirectory API'
@@ -1659,8 +1551,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-restoreworkspace-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.RestoreWorkspace API'
   description: >-
@@ -1688,8 +1578,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-revokeiprules-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.RevokeIpRules API'
   description: >-
@@ -1716,8 +1604,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-startworkspaces-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.StartWorkspaces API'
   description: >-
@@ -1744,8 +1630,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-stopworkspaces-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.StopWorkspaces API'
   description: >-
@@ -1772,8 +1656,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-terminateworkspaces-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.TerminateWorkspaces API'
@@ -1802,8 +1684,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-updateconnectclientaddin-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.UpdateConnectClientAddIn API'
@@ -1832,8 +1712,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-updateconnectionaliaspermission-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.UpdateConnectionAliasPermission API'
@@ -1862,8 +1740,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-updaterulesofipgroup-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.UpdateRulesOfIpGroup API'
@@ -1892,8 +1768,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-updateworkspacebundle-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.UpdateWorkspaceBundle API'
@@ -1922,8 +1796,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 - aid: >-
     amazon-workspaces:amazon-workspaces-x-amz-target-workspacesservice-updateworkspaceimagepermission-api
   name: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.UpdateWorkspaceImagePermission API'
@@ -1952,8 +1824,6 @@ apis:
     url: json-schema/workspaces-workspace-schema.json
   - type: JSONLD
     url: json-ld/amazon-workspaces-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-workspaces.yaml
 common:
 - type: PostmanWorkspace
   url: https://www.postman.com/kinlaneapi/amazon-workspaces/overview
