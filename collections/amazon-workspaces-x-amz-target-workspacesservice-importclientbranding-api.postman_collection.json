@@ -1,0 +1,693 @@
+{
+  "item": [
+    {
+      "id": "58964463-5341-4e8e-b914-b7e86396c0cf",
+      "name": "#X Amz Target=WorkspacesService.ImportClientBranding",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "8de241e9-ca8f-49d6-8d0f-36ba474c9a61",
+          "name": "Amazon WorkSpaces Import Client Branding",
+          "request": {
+            "name": "Amazon WorkSpaces Import Client Branding",
+            "description": {
+              "content": "<p>Imports client branding. Client branding allows you to customize your WorkSpace's client login portal. You can tailor your login portal company logo, the support email address, support link, link to reset password, and a custom message for users trying to sign in.</p> <p>After you import client branding, the default branding experience for the specified platform type is replaced with the imported experience</p> <note> <ul> <li> <p>You must specify at least one platform type when importing client branding.</p> </li> <li> <p>You can import up to 6 MB of data with each request. If your request exceeds this limit, you can import client branding for different platform types using separate requests.</p> </li> <li> <p>In each platform type, the <code>SupportEmail</code> and <code>SupportLink</code> parameters are mutually exclusive. You can specify only one parameter for each platform type, but not both.</p> </li> <li> <p>Imported data can take up to a minute to appear in the WorkSpaces client.</p> </li> </ul> </note>",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=WorkspacesService.ImportClientBranding",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                  "type": "any",
+                  "value": "{{region}}",
+                  "key": "region"
+                }
+              ]
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "<string>"
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Date",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Algorithm",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Credential",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Security-Token",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Signature",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"ResourceId\": \"<string>\",\n  \"DeviceTypeWindows\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\",\n      \"key_3\": \"<string>\"\n    }\n  },\n  \"DeviceTypeOsx\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\",\n      \"key_3\": \"<string>\"\n    }\n  },\n  \"DeviceTypeAndroid\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\"\n    }\n  },\n  \"DeviceTypeIos\": {\n    \"Logo\": \"<string>\",\n    \"Logo2x\": \"<string>\",\n    \"Logo3x\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\"\n    }\n  },\n  \"DeviceTypeLinux\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\"\n    }\n  },\n  \"DeviceTypeWeb\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\"\n    }\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "dc4228f5-01c8-49c0-8437-e0360728ef2f",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.ImportClientBranding",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ResourceId\": \"<string>\",\n  \"DeviceTypeWindows\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\"\n    }\n  },\n  \"DeviceTypeOsx\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\"\n    }\n  },\n  \"DeviceTypeAndroid\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\",\n      \"key_3\": \"<string>\"\n    }\n  },\n  \"DeviceTypeIos\": {\n    \"Logo\": \"<string>\",\n    \"Logo2x\": \"<string>\",\n    \"Logo3x\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\"\n    }\n  },\n  \"DeviceTypeLinux\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\",\n      \"key_3\": \"<string>\"\n    }\n  },\n  \"DeviceTypeWeb\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"DeviceTypeWindows\": {\n    \"LogoUrl\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\"\n    }\n  },\n  \"DeviceTypeOsx\": {\n    \"LogoUrl\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\"\n    }\n  },\n  \"DeviceTypeAndroid\": {\n    \"LogoUrl\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\",\n      \"key_3\": \"<string>\",\n      \"key_4\": \"<string>\"\n    }\n  },\n  \"DeviceTypeIos\": {\n    \"LogoUrl\": \"<string>\",\n    \"Logo2xUrl\": \"<string>\",\n    \"Logo3xUrl\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\"\n    }\n  },\n  \"DeviceTypeLinux\": {\n    \"LogoUrl\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\"\n    }\n  },\n  \"DeviceTypeWeb\": {\n    \"LogoUrl\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\"\n    }\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "00f67894-c534-46eb-8e70-6c737f036979",
+              "name": "InvalidParameterValuesException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.ImportClientBranding",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ResourceId\": \"<string>\",\n  \"DeviceTypeWindows\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\"\n    }\n  },\n  \"DeviceTypeOsx\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\"\n    }\n  },\n  \"DeviceTypeAndroid\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\",\n      \"key_3\": \"<string>\"\n    }\n  },\n  \"DeviceTypeIos\": {\n    \"Logo\": \"<string>\",\n    \"Logo2x\": \"<string>\",\n    \"Logo3x\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\"\n    }\n  },\n  \"DeviceTypeLinux\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\",\n      \"key_3\": \"<string>\"\n    }\n  },\n  \"DeviceTypeWeb\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 480,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7add9015-2322-449d-89ff-af89c23b01ae",
+              "name": "ResourceLimitExceededException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.ImportClientBranding",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ResourceId\": \"<string>\",\n  \"DeviceTypeWindows\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\"\n    }\n  },\n  \"DeviceTypeOsx\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\"\n    }\n  },\n  \"DeviceTypeAndroid\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\",\n      \"key_3\": \"<string>\"\n    }\n  },\n  \"DeviceTypeIos\": {\n    \"Logo\": \"<string>\",\n    \"Logo2x\": \"<string>\",\n    \"Logo3x\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\"\n    }\n  },\n  \"DeviceTypeLinux\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\",\n      \"key_3\": \"<string>\"\n    }\n  },\n  \"DeviceTypeWeb\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 481,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "96450983-c183-4653-8ad1-ae2ea7d8197e",
+              "name": "ResourceNotFoundException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.ImportClientBranding",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ResourceId\": \"<string>\",\n  \"DeviceTypeWindows\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\"\n    }\n  },\n  \"DeviceTypeOsx\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\"\n    }\n  },\n  \"DeviceTypeAndroid\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\",\n      \"key_3\": \"<string>\"\n    }\n  },\n  \"DeviceTypeIos\": {\n    \"Logo\": \"<string>\",\n    \"Logo2x\": \"<string>\",\n    \"Logo3x\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\"\n    }\n  },\n  \"DeviceTypeLinux\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\",\n      \"key_3\": \"<string>\"\n    }\n  },\n  \"DeviceTypeWeb\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 482,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b97c3bb5-d815-4826-a6e3-3c76bb8f9c2e",
+              "name": "AccessDeniedException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkspacesService.ImportClientBranding",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ResourceId\": \"<string>\",\n  \"DeviceTypeWindows\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\"\n    }\n  },\n  \"DeviceTypeOsx\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\"\n    }\n  },\n  \"DeviceTypeAndroid\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\",\n      \"key_3\": \"<string>\"\n    }\n  },\n  \"DeviceTypeIos\": {\n    \"Logo\": \"<string>\",\n    \"Logo2x\": \"<string>\",\n    \"Logo3x\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\"\n    }\n  },\n  \"DeviceTypeLinux\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\",\n      \"key_3\": \"<string>\"\n    }\n  },\n  \"DeviceTypeWeb\": {\n    \"Logo\": \"<string>\",\n    \"SupportEmail\": \"<string>\",\n    \"SupportLink\": \"<string>\",\n    \"ForgotPasswordLink\": \"<string>\",\n    \"LoginMessage\": {\n      \"key_0\": \"<string>\",\n      \"key_1\": \"<string>\",\n      \"key_2\": \"<string>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 483,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "us-east-1",
+      "key": "region"
+    },
+    {
+      "type": "string",
+      "value": "http://workspaces.{{region}}.amazonaws.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "d0bc7fd0-c519-4a8f-b83d-b3e75982d4d8",
+    "name": "Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.ImportClientBranding API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "<fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href=\"https://docs.aws.amazon.com/general/latest/gr/wsp.html\">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/\">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href=\"https://docs.aws.amazon.com/workspaces/latest/userguide/\">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href=\"https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html\">WorkSpaces section of the CLI Reference</a>.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+      "type": "text/plain"
+    }
+  }
+}
