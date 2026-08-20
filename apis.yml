@@ -782,7 +782,8 @@ apis:
     — 1 operation(s) for #x amz target=workspacesservice.describeconnectionaliaspermissions.
   humanURL: https://aws.amazon.com/workspaces/
   baseURL: https://workspaces.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=WorkspacesService.DescribeConnectionAliasPermissions'
   properties:
   - type: OpenAPI
@@ -919,7 +920,8 @@ apis:
     1 operation(s) for #x amz target=workspacesservice.describeworkspaceimagepermissions.
   humanURL: https://aws.amazon.com/workspaces/
   baseURL: https://workspaces.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=WorkspacesService.DescribeWorkspaceImagePermissions'
   properties:
   - type: OpenAPI
@@ -1003,7 +1005,8 @@ apis:
     — 1 operation(s) for #x amz target=workspacesservice.describeworkspacesconnectionstatus.
   humanURL: https://aws.amazon.com/workspaces/
   baseURL: https://workspaces.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=WorkspacesService.DescribeWorkspacesConnectionStatus'
   properties:
   - type: OpenAPI
@@ -1171,7 +1174,8 @@ apis:
     1 operation(s) for #x amz target=workspacesservice.listavailablemanagementcidrranges.
   humanURL: https://aws.amazon.com/workspaces/
   baseURL: https://workspaces.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=WorkspacesService.ListAvailableManagementCidrRanges'
   properties:
   - type: OpenAPI
@@ -1253,7 +1257,8 @@ apis:
     — 1 operation(s) for #x amz target=workspacesservice.modifycertificatebasedauthproperties.
   humanURL: https://aws.amazon.com/workspaces/
   baseURL: https://workspaces.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=WorkspacesService.ModifyCertificateBasedAuthProperties'
   properties:
   - type: OpenAPI
@@ -1365,7 +1370,8 @@ apis:
     operation(s) for #x amz target=workspacesservice.modifyworkspaceaccessproperties.
   humanURL: https://aws.amazon.com/workspaces/
   baseURL: https://workspaces.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=WorkspacesService.ModifyWorkspaceAccessProperties'
   properties:
   - type: OpenAPI
@@ -1393,7 +1399,8 @@ apis:
     1 operation(s) for #x amz target=workspacesservice.modifyworkspacecreationproperties.
   humanURL: https://aws.amazon.com/workspaces/
   baseURL: https://workspaces.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=WorkspacesService.ModifyWorkspaceCreationProperties'
   properties:
   - type: OpenAPI
@@ -1720,7 +1727,8 @@ apis:
     operation(s) for #x amz target=workspacesservice.updateconnectionaliaspermission.
   humanURL: https://aws.amazon.com/workspaces/
   baseURL: https://workspaces.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=WorkspacesService.UpdateConnectionAliasPermission'
   properties:
   - type: OpenAPI
@@ -1804,7 +1812,8 @@ apis:
     operation(s) for #x amz target=workspacesservice.updateworkspaceimagepermission.
   humanURL: https://aws.amazon.com/workspaces/
   baseURL: https://workspaces.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=WorkspacesService.UpdateWorkspaceImagePermission'
   properties:
   - type: OpenAPI
