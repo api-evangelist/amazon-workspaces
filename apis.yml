@@ -5,6 +5,18 @@ description: Amazon WorkSpaces is a managed, secure Desktop-as-a-Service (DaaS) 
   persistent desktops accessible from various devices with built-in security and management capabilities. The API provides
   65 operations for workspace lifecycle management, bundle and directory management, image management, and IP access control
   groups.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-serve
