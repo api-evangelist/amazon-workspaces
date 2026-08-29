@@ -1,0 +1,169 @@
+slug: amazon-workspaces
+provider: Amazon WorkSpaces
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 17
+edges:
+- tag: '#X Amz Target=WorkspacesService.ModifyWorkspaceProperties'
+  spec_file: amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceproperties-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.8
+  evidence: 'ModifyWorkspaceProperties ... schemas: RootVolumeSizeGib, Compute, RunningMode, UserVolumeSizeGib'
+  reason: Alters compute size, volume sizes and running mode of provisioned virtual desktops — direct
+    management of cloud compute/storage infrastructure.
+- tag: '#X Amz Target=WorkspacesService.RebuildWorkspaces'
+  spec_file: amazon-workspaces-x-amz-target-workspacesservice-rebuildworkspaces-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.78
+  evidence: RebuildWorkspaces  Amazon WorkSpaces Rebuild Workspaces — "provision virtual, cloud-based
+    Microsoft Windows or Amazon Linux desktops"
+  reason: Rebuilding cloud virtual desktops is lifecycle operation on cloud compute resources — IT infrastructure
+    management, not any industry business capability.
+- tag: '#X Amz Target=WorkspacesService.StartWorkspaces'
+  spec_file: amazon-workspaces-x-amz-target-workspacesservice-startworkspaces-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.78
+  evidence: StartWorkspaces  Amazon WorkSpaces Start Workspaces
+  reason: Starting cloud virtual desktop instances is routine cloud compute infrastructure operation.
+- tag: '#X Amz Target=WorkspacesService.StopWorkspaces'
+  spec_file: amazon-workspaces-x-amz-target-workspacesservice-stopworkspaces-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.78
+  evidence: StopWorkspaces  Amazon WorkSpaces Stop Workspaces
+  reason: Stopping cloud virtual desktop instances is cloud compute infrastructure operation.
+- tag: '#X Amz Target=WorkspacesService.TerminateWorkspaces'
+  spec_file: amazon-workspaces-x-amz-target-workspacesservice-terminateworkspaces-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.78
+  evidence: TerminateWorkspaces  Amazon WorkSpaces Terminate Workspaces
+  reason: Decommissioning virtual desktop resources — cloud infrastructure lifecycle, not tenant/subscription
+    business capability.
+- tag: '#X Amz Target=WorkspacesService.CreateWorkspaces'
+  spec_file: amazon-workspaces-x-amz-target-workspacesservice-createworkspaces-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: CreateWorkspaces — 'provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops
+    for your users'; schemas 'WorkspaceProperties', 'ComputerName', 'SubnetId'
+  reason: Provisioning of end-user virtual desktop compute resources is squarely cloud/compute infrastructure
+    management for the IT function.
+- tag: '#X Amz Target=WorkspacesService.DescribeWorkspaces'
+  spec_file: amazon-workspaces-x-amz-target-workspacesservice-describeworkspaces-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: DescribeWorkspaces ... WorkspaceProperties, RootVolumeSizeGib, Compute, SubnetId
+  reason: Enumerates provisioned cloud virtual desktops and their compute/volume properties — management
+    of end-user compute infrastructure.
+- tag: '#X Amz Target=WorkspacesService.MigrateWorkspace'
+  spec_file: amazon-workspaces-x-amz-target-workspacesservice-migrateworkspace-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: 'MigrateWorkspace  Amazon WorkSpaces Migrate Workspace ... schemas: WorkspaceId, BundleId'
+  reason: Migrates a provisioned virtual desktop to a new bundle/image — management of cloud compute infrastructure
+    (DaaS estate).
+- tag: '#X Amz Target=WorkspacesService.ModifyWorkspaceCreationProperties'
+  spec_file: amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacecreationproperties-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: 'ModifyWorkspaceCreationProperties ... schemas: SecurityGroupId, DefaultOu, WorkspaceCreationProperties'
+  reason: Sets default provisioning parameters (security group, OU) for new virtual desktops — cloud infrastructure
+    provisioning configuration.
+- tag: '#X Amz Target=WorkspacesService.CopyWorkspaceImage'
+  spec_file: amazon-workspaces-x-amz-target-workspacesservice-copyworkspaceimage-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.7
+  evidence: CopyWorkspaceImage; schemas WorkspaceImageId, WorkspaceImageName, WorkspaceImageDescription,
+    Region
+  reason: Copying virtual-desktop images across regions is management of managed compute/desktop infrastructure
+    assets, squarely IT Infrastructure Management for the buying organisation.
+- tag: '#X Amz Target=WorkspacesService.DescribeWorkspaceBundles'
+  spec_file: amazon-workspaces-x-amz-target-workspacesservice-describeworkspacebundles-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.7
+  evidence: 'DescribeWorkspaceBundles ... schemas: ComputeType, UserStorage, RootStorage, WorkspaceBundle'
+  reason: Lists virtual-desktop bundles defining compute and storage configurations — provisioning catalogue
+    for end-user compute infrastructure, i.e. IT infrastructure management.
+- tag: '#X Amz Target=WorkspacesService.DescribeWorkspaceImages'
+  spec_file: amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimages-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.7
+  evidence: DescribeWorkspaceImages ... OperatingSystem, WorkspaceImageState, WorkspaceImage
+  reason: Inventory of virtual desktop OS images used to provision WorkSpaces — end-user compute infrastructure
+    management.
+- tag: '#X Amz Target=WorkspacesService.ImportWorkspaceImage'
+  spec_file: amazon-workspaces-x-amz-target-workspacesservice-importworkspaceimage-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.7
+  evidence: ImportWorkspaceImage ... Ec2ImageId, WorkspaceImageName, WorkspaceImageIngestionProcess
+  reason: Imports an EC2 image as a virtual-desktop image for provisioning — cloud/end-user compute infrastructure
+    management.
+- tag: '#X Amz Target=WorkspacesService.ListAvailableManagementCidrRanges'
+  spec_file: amazon-workspaces-x-amz-target-workspacesservice-listavailablemanagementcidrranges-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.7
+  evidence: 'ListAvailableManagementCidrRanges ... schemas: DedicatedTenancyCidrRangeList, DedicatedTenancyManagementCidrRange'
+  reason: Lists available IP CIDR ranges for dedicated-tenancy virtual desktop infrastructure — cloud/network
+    infrastructure administration, not a business-domain capability.
+- tag: '#X Amz Target=WorkspacesService.ModifySamlProperties'
+  spec_file: amazon-workspaces-x-amz-target-workspacesservice-modifysamlproperties-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.7
+  evidence: 'ModifySamlProperties ... schemas: SamlUserAccessUrl, SamlProperties, SamlStatusEnum, DirectoryId'
+  reason: Configures SAML single sign-on properties for directory-based user access to virtual desktops
+    — federation/IAM configuration.
+- tag: '#X Amz Target=WorkspacesService.RebootWorkspaces'
+  spec_file: amazon-workspaces-x-amz-target-workspacesservice-rebootworkspaces-api-openapi.yml
+  capability_id: BC-600.40
+  capability_id_l1: BC-600
+  capability_name: IT Operations Management
+  confidence: 0.7
+  evidence: 'RebootWorkspaces  Amazon WorkSpaces Reboot Workspaces ... schemas: FailedRebootWorkspaceRequests,
+    RebootRequest'
+  reason: Performs bulk reboot of virtual desktops — routine day-to-day IT operations activity on cloud
+    desktop resources.
+- tag: '#X Amz Target=WorkspacesService.RestoreWorkspace'
+  spec_file: amazon-workspaces-x-amz-target-workspacesservice-restoreworkspace-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.7
+  evidence: RestoreWorkspace  Amazon WorkSpaces Restore Workspace
+  reason: Restoring a virtual desktop instance is operational management of cloud compute infrastructure.
