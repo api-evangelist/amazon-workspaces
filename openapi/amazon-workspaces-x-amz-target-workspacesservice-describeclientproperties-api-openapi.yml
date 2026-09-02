@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.DescribeClientProperties API'
+  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.DescribeClientProperties #X Amz Target=WorkspacesService.DescribeClientProperties API'
   description: <fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href="https://docs.aws.amazon.com/general/latest/gr/wsp.html">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/userguide/">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href="https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html">WorkSpaces section of the CLI Reference</a>.</p>
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -181,8 +181,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
+    X-Amz-Signature:
+      name: X-Amz-Signature
       in: header
       schema:
         type: string
@@ -193,49 +193,38 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Date:
       name: X-Amz-Date
       in: header
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
       required: false
   schemas:
-    LogUploadEnum:
-      type: string
-      enum:
-      - ENABLED
-      - DISABLED
-    ResourceIdList:
+    DescribeClientPropertiesResult:
+      type: object
+      properties:
+        ClientPropertiesList:
+          allOf:
+          - $ref: '#/components/schemas/ClientPropertiesList'
+          - description: Information about the specified Amazon WorkSpaces clients.
+    AccessDeniedException: {}
+    ClientPropertiesList:
       type: array
       items:
-        $ref: '#/components/schemas/NonEmptyString'
-      minItems: 1
-      maxItems: 25
-    NonEmptyString:
-      type: string
-      minLength: 1
-    DescribeClientPropertiesRequest:
-      type: object
-      required:
-      - ResourceIds
-      title: DescribeClientPropertiesRequest
-      properties:
-        ResourceIds:
-          allOf:
-          - $ref: '#/components/schemas/ResourceIdList'
-          - description: The resource identifier, in the form of directory IDs.
+        $ref: '#/components/schemas/ClientPropertiesResult'
+    InvalidParameterValuesException: {}
     ReconnectEnum:
       type: string
       enum:
@@ -253,20 +242,31 @@ components:
           - $ref: '#/components/schemas/ClientProperties'
           - description: Information about the Amazon WorkSpaces client.
       description: Information about the Amazon WorkSpaces client.
-    ClientPropertiesList:
+    LogUploadEnum:
+      type: string
+      enum:
+      - ENABLED
+      - DISABLED
+    DescribeClientPropertiesRequest:
+      type: object
+      required:
+      - ResourceIds
+      title: DescribeClientPropertiesRequest
+      properties:
+        ResourceIds:
+          allOf:
+          - $ref: '#/components/schemas/ResourceIdList'
+          - description: The resource identifier, in the form of directory IDs.
+    ResourceIdList:
       type: array
       items:
-        $ref: '#/components/schemas/ClientPropertiesResult'
-    InvalidParameterValuesException: {}
+        $ref: '#/components/schemas/NonEmptyString'
+      minItems: 1
+      maxItems: 25
+    NonEmptyString:
+      type: string
+      minLength: 1
     ResourceNotFoundException: {}
-    DescribeClientPropertiesResult:
-      type: object
-      properties:
-        ClientPropertiesList:
-          allOf:
-          - $ref: '#/components/schemas/ClientPropertiesList'
-          - description: Information about the specified Amazon WorkSpaces clients.
-    AccessDeniedException: {}
     ClientProperties:
       type: object
       properties:

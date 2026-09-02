@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.DescribeWorkspaceDirectories API'
+  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.DescribeWorkspaceDirectories #X Amz Target=WorkspacesService.DescribeWorkspaceDirectories API'
   description: <fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href="https://docs.aws.amazon.com/general/latest/gr/wsp.html">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/userguide/">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href="https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html">WorkSpaces section of the CLI Reference</a>.</p>
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -163,77 +163,38 @@ paths:
       - '#X Amz Target=WorkspacesService.DescribeWorkspaceDirectories'
 components:
   schemas:
-    AccessPropertyValue:
+    DescribeWorkspaceDirectoriesRequest:
+      type: object
+      title: DescribeWorkspaceDirectoriesRequest
+      properties:
+        DirectoryIds:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryIdList'
+          - description: The identifiers of the directories. If the value is null, all directories are retrieved.
+        Limit:
+          allOf:
+          - $ref: '#/components/schemas/Limit'
+          - description: The maximum number of directories to return.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: If you received a <code>NextToken</code> from a previous call that was paginated, provide this token to receive the next set of results.
+    Alias:
       type: string
-      enum:
-      - ALLOW
-      - DENY
-    WorkspaceDirectoryState:
-      type: string
-      enum:
-      - REGISTERING
-      - REGISTERED
-      - DEREGISTERING
-      - DEREGISTERED
-      - ERROR
+    SubnetIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/SubnetId'
+      maxItems: 2
     DefaultOu:
       type: string
-    ARN:
-      type: string
-      pattern: ^arn:aws:[A-Za-z0-9][A-za-z0-9_/.-]{0,62}:[A-za-z0-9_/.-]{0,63}:[A-za-z0-9_/.-]{0,63}:[A-Za-z0-9][A-za-z0-9_/.-]{0,127}$
-    IpGroupId:
-      type: string
-      pattern: wsipg-[0-9a-z]{8,63}$
     CertificateAuthorityArn:
       type: string
       pattern: arn:[\w+=/,.@-]+:[\w+=/,.@-]+:[\w+=/,.@-]*:[0-9]*:[\w+=,.@-]+(/[\w+=,.@-]+)*
       minLength: 5
       maxLength: 200
-    PaginationToken:
-      type: string
-      minLength: 1
-      maxLength: 2048
-    NonEmptyString:
-      type: string
-      minLength: 1
-    RegistrationCode:
-      type: string
-      minLength: 1
-      maxLength: 20
-    Alias:
-      type: string
-    ReconnectEnum:
-      type: string
-      enum:
-      - ENABLED
-      - DISABLED
-    Limit:
-      type: integer
-      minimum: 1
-      maximum: 25
     DirectoryName:
       type: string
-    SubnetId:
-      type: string
-      pattern: ^(subnet-([0-9a-f]{8}|[0-9a-f]{17}))$
-      minLength: 15
-      maxLength: 24
-    SamlProperties:
-      type: object
-      properties:
-        Status:
-          allOf:
-          - $ref: '#/components/schemas/SamlStatusEnum'
-          - description: <p>Indicates the status of SAML 2.0 authentication. These statuses include the following.</p> <ul> <li> <p>If the setting is <code>DISABLED</code>, end users will be directed to login with their directory credentials.</p> </li> <li> <p>If the setting is <code>ENABLED</code>, end users will be directed to login via the user access URL. Users attempting to connect to WorkSpaces from a client application that does not support SAML 2.0 authentication will not be able to connect.</p> </li> <li> <p>If the setting is <code>ENABLED_WITH_DIRECTORY_LOGIN_FALLBACK</code>, end users will be directed to login via the user access URL on supported client applications, but will not prevent clients that do not support SAML 2.0 authentication from connecting as if SAML 2.0 authentication was disabled.</p> </li> </ul>
-        UserAccessUrl:
-          allOf:
-          - $ref: '#/components/schemas/SamlUserAccessUrl'
-          - description: The SAML 2.0 identity provider (IdP) user access URL is the URL a user would navigate to in their web browser in order to federate from the IdP and directly access the application, without any SAML 2.0 service provider (SP) bindings.
-        RelayStateParameterName:
-          allOf:
-          - $ref: '#/components/schemas/NonEmptyString'
-          - description: <p>The relay state parameter name supported by the SAML 2.0 identity provider (IdP). When the end user is redirected to the user access URL from the WorkSpaces client application, this relay state parameter name is appended as a query parameter to the URL along with the relay state endpoint to return the user to the client application session.</p> <p>To use SAML 2.0 authentication with WorkSpaces, the IdP must support IdP-initiated deep linking for the relay state URL. Consult your IdP documentation for more information.</p>
-      description: Describes the enablement status, user access URL, and relay state parameter name that are used for configuring federation with an SAML 2.0 identity provider.
     DefaultWorkspaceCreationProperties:
       type: object
       properties:
@@ -262,6 +223,127 @@ components:
           - $ref: '#/components/schemas/BooleanObject'
           - description: Specifies whether maintenance mode is enabled for WorkSpaces. For more information, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/workspace-maintenance.html">WorkSpace Maintenance</a>.
       description: Describes the default values that are used to create WorkSpaces. For more information, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/update-directory-details.html">Update Directory Details for Your WorkSpaces</a>.
+    SamlUserAccessUrl:
+      type: string
+      pattern: ^(http|https)\://\S+$
+      minLength: 8
+      maxLength: 200
+    DirectoryList:
+      type: array
+      items:
+        $ref: '#/components/schemas/WorkspaceDirectory'
+    UserName:
+      type: string
+      minLength: 1
+      maxLength: 63
+    SamlProperties:
+      type: object
+      properties:
+        Status:
+          allOf:
+          - $ref: '#/components/schemas/SamlStatusEnum'
+          - description: <p>Indicates the status of SAML 2.0 authentication. These statuses include the following.</p> <ul> <li> <p>If the setting is <code>DISABLED</code>, end users will be directed to login with their directory credentials.</p> </li> <li> <p>If the setting is <code>ENABLED</code>, end users will be directed to login via the user access URL. Users attempting to connect to WorkSpaces from a client application that does not support SAML 2.0 authentication will not be able to connect.</p> </li> <li> <p>If the setting is <code>ENABLED_WITH_DIRECTORY_LOGIN_FALLBACK</code>, end users will be directed to login via the user access URL on supported client applications, but will not prevent clients that do not support SAML 2.0 authentication from connecting as if SAML 2.0 authentication was disabled.</p> </li> </ul>
+        UserAccessUrl:
+          allOf:
+          - $ref: '#/components/schemas/SamlUserAccessUrl'
+          - description: The SAML 2.0 identity provider (IdP) user access URL is the URL a user would navigate to in their web browser in order to federate from the IdP and directly access the application, without any SAML 2.0 service provider (SP) bindings.
+        RelayStateParameterName:
+          allOf:
+          - $ref: '#/components/schemas/NonEmptyString'
+          - description: <p>The relay state parameter name supported by the SAML 2.0 identity provider (IdP). When the end user is redirected to the user access URL from the WorkSpaces client application, this relay state parameter name is appended as a query parameter to the URL along with the relay state endpoint to return the user to the client application session.</p> <p>To use SAML 2.0 authentication with WorkSpaces, the IdP must support IdP-initiated deep linking for the relay state URL. Consult your IdP documentation for more information.</p>
+      description: Describes the enablement status, user access URL, and relay state parameter name that are used for configuring federation with an SAML 2.0 identity provider.
+    IpAddress:
+      type: string
+    SecurityGroupId:
+      type: string
+      pattern: ^(sg-([0-9a-f]{8}|[0-9a-f]{17}))$
+      minLength: 11
+      maxLength: 20
+    RegistrationCode:
+      type: string
+      minLength: 1
+      maxLength: 20
+    InvalidParameterValuesException: {}
+    PaginationToken:
+      type: string
+      minLength: 1
+      maxLength: 2048
+    ReconnectEnum:
+      type: string
+      enum:
+      - ENABLED
+      - DISABLED
+    AccessPropertyValue:
+      type: string
+      enum:
+      - ALLOW
+      - DENY
+    IpGroupId:
+      type: string
+      pattern: wsipg-[0-9a-z]{8,63}$
+    DirectoryIdList:
+      type: array
+      items:
+        $ref: '#/components/schemas/DirectoryId'
+      minItems: 1
+      maxItems: 25
+    SubnetId:
+      type: string
+      pattern: ^(subnet-([0-9a-f]{8}|[0-9a-f]{17}))$
+      minLength: 15
+      maxLength: 24
+    DescribeWorkspaceDirectoriesResult:
+      type: object
+      properties:
+        Directories:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryList'
+          - description: Information about the directories.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: 'The token to use to retrieve the next page of results. This value is null when there are no more results to return. '
+    BooleanObject:
+      type: boolean
+    CertificateBasedAuthStatusEnum:
+      type: string
+      enum:
+      - DISABLED
+      - ENABLED
+    IpGroupIdList:
+      type: array
+      items:
+        $ref: '#/components/schemas/IpGroupId'
+    WorkspaceDirectoryType:
+      type: string
+      enum:
+      - SIMPLE_AD
+      - AD_CONNECTOR
+    SamlStatusEnum:
+      type: string
+      enum:
+      - DISABLED
+      - ENABLED
+      - ENABLED_WITH_DIRECTORY_LOGIN_FALLBACK
+    DnsIpAddresses:
+      type: array
+      items:
+        $ref: '#/components/schemas/IpAddress'
+    NonEmptyString:
+      type: string
+      minLength: 1
+    CertificateBasedAuthProperties:
+      type: object
+      properties:
+        Status:
+          allOf:
+          - $ref: '#/components/schemas/CertificateBasedAuthStatusEnum'
+          - description: The status of the certificate-based authentication properties.
+        CertificateAuthorityArn:
+          allOf:
+          - $ref: '#/components/schemas/CertificateAuthorityArn'
+          - description: The Amazon Resource Name (ARN) of the Amazon Web Services Certificate Manager Private CA resource.
+      description: Describes the properties of the certificate-based authentication you want to use with your WorkSpaces.
     WorkspaceDirectory:
       type: object
       properties:
@@ -338,87 +420,37 @@ components:
           - $ref: '#/components/schemas/CertificateBasedAuthProperties'
           - description: The certificate-based authentication properties used to authenticate SAML 2.0 Identity Provider (IdP) user identities to Active Directory for WorkSpaces login.
       description: Describes a directory that is used with Amazon WorkSpaces.
-    DirectoryId:
+    Limit:
+      type: integer
+      minimum: 1
+      maximum: 25
+    ARN:
       type: string
-      pattern: ^d-[0-9a-f]{8,63}$
-      minLength: 10
-      maxLength: 65
-    InvalidParameterValuesException: {}
-    DescribeWorkspaceDirectoriesResult:
+      pattern: ^arn:aws:[A-Za-z0-9][A-za-z0-9_/.-]{0,62}:[A-za-z0-9_/.-]{0,63}:[A-za-z0-9_/.-]{0,63}:[A-Za-z0-9][A-za-z0-9_/.-]{0,127}$
+    SelfservicePermissions:
       type: object
       properties:
-        Directories:
+        RestartWorkspace:
           allOf:
-          - $ref: '#/components/schemas/DirectoryList'
-          - description: Information about the directories.
-        NextToken:
+          - $ref: '#/components/schemas/ReconnectEnum'
+          - description: Specifies whether users can restart their WorkSpace.
+        IncreaseVolumeSize:
           allOf:
-          - $ref: '#/components/schemas/PaginationToken'
-          - description: 'The token to use to retrieve the next page of results. This value is null when there are no more results to return. '
-    DirectoryIdList:
-      type: array
-      items:
-        $ref: '#/components/schemas/DirectoryId'
-      minItems: 1
-      maxItems: 25
-    CertificateBasedAuthStatusEnum:
-      type: string
-      enum:
-      - DISABLED
-      - ENABLED
-    CertificateBasedAuthProperties:
-      type: object
-      properties:
-        Status:
+          - $ref: '#/components/schemas/ReconnectEnum'
+          - description: Specifies whether users can increase the volume size of the drives on their WorkSpace.
+        ChangeComputeType:
           allOf:
-          - $ref: '#/components/schemas/CertificateBasedAuthStatusEnum'
-          - description: The status of the certificate-based authentication properties.
-        CertificateAuthorityArn:
+          - $ref: '#/components/schemas/ReconnectEnum'
+          - description: Specifies whether users can change the compute type (bundle) for their WorkSpace.
+        SwitchRunningMode:
           allOf:
-          - $ref: '#/components/schemas/CertificateAuthorityArn'
-          - description: The Amazon Resource Name (ARN) of the Amazon Web Services Certificate Manager Private CA resource.
-      description: Describes the properties of the certificate-based authentication you want to use with your WorkSpaces.
-    WorkspaceDirectoryType:
-      type: string
-      enum:
-      - SIMPLE_AD
-      - AD_CONNECTOR
-    SecurityGroupId:
-      type: string
-      pattern: ^(sg-([0-9a-f]{8}|[0-9a-f]{17}))$
-      minLength: 11
-      maxLength: 20
-    DirectoryList:
-      type: array
-      items:
-        $ref: '#/components/schemas/WorkspaceDirectory'
-    IpAddress:
-      type: string
-    SubnetIds:
-      type: array
-      items:
-        $ref: '#/components/schemas/SubnetId'
-      maxItems: 2
-    IpGroupIdList:
-      type: array
-      items:
-        $ref: '#/components/schemas/IpGroupId'
-    DescribeWorkspaceDirectoriesRequest:
-      type: object
-      title: DescribeWorkspaceDirectoriesRequest
-      properties:
-        DirectoryIds:
+          - $ref: '#/components/schemas/ReconnectEnum'
+          - description: Specifies whether users can switch the running mode of their WorkSpace.
+        RebuildWorkspace:
           allOf:
-          - $ref: '#/components/schemas/DirectoryIdList'
-          - description: The identifiers of the directories. If the value is null, all directories are retrieved.
-        Limit:
-          allOf:
-          - $ref: '#/components/schemas/Limit'
-          - description: The maximum number of directories to return.
-        NextToken:
-          allOf:
-          - $ref: '#/components/schemas/PaginationToken'
-          - description: If you received a <code>NextToken</code> from a previous call that was paginated, provide this token to receive the next set of results.
+          - $ref: '#/components/schemas/ReconnectEnum'
+          - description: Specifies whether users can rebuild the operating system of a WorkSpace to its original state.
+      description: Describes the self-service permissions for a directory. For more information, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/enable-user-self-service-workspace-management.html">Enable Self-Service WorkSpace Management Capabilities for Your Users</a>.
     WorkspaceAccessProperties:
       type: object
       properties:
@@ -455,56 +487,24 @@ components:
           - $ref: '#/components/schemas/AccessPropertyValue'
           - description: Indicates whether users can use Linux clients to access their WorkSpaces.
       description: The device types and operating systems that can be used to access a WorkSpace. For more information, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-network-requirements.html">Amazon WorkSpaces Client Network Requirements</a>.
-    SelfservicePermissions:
-      type: object
-      properties:
-        RestartWorkspace:
-          allOf:
-          - $ref: '#/components/schemas/ReconnectEnum'
-          - description: Specifies whether users can restart their WorkSpace.
-        IncreaseVolumeSize:
-          allOf:
-          - $ref: '#/components/schemas/ReconnectEnum'
-          - description: Specifies whether users can increase the volume size of the drives on their WorkSpace.
-        ChangeComputeType:
-          allOf:
-          - $ref: '#/components/schemas/ReconnectEnum'
-          - description: Specifies whether users can change the compute type (bundle) for their WorkSpace.
-        SwitchRunningMode:
-          allOf:
-          - $ref: '#/components/schemas/ReconnectEnum'
-          - description: Specifies whether users can switch the running mode of their WorkSpace.
-        RebuildWorkspace:
-          allOf:
-          - $ref: '#/components/schemas/ReconnectEnum'
-          - description: Specifies whether users can rebuild the operating system of a WorkSpace to its original state.
-      description: Describes the self-service permissions for a directory. For more information, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/enable-user-self-service-workspace-management.html">Enable Self-Service WorkSpace Management Capabilities for Your Users</a>.
-    DnsIpAddresses:
-      type: array
-      items:
-        $ref: '#/components/schemas/IpAddress'
-    SamlStatusEnum:
-      type: string
-      enum:
-      - DISABLED
-      - ENABLED
-      - ENABLED_WITH_DIRECTORY_LOGIN_FALLBACK
-    BooleanObject:
-      type: boolean
     Tenancy:
       type: string
       enum:
       - DEDICATED
       - SHARED
-    SamlUserAccessUrl:
+    WorkspaceDirectoryState:
       type: string
-      pattern: ^(http|https)\://\S+$
-      minLength: 8
-      maxLength: 200
-    UserName:
+      enum:
+      - REGISTERING
+      - REGISTERED
+      - DEREGISTERING
+      - DEREGISTERED
+      - ERROR
+    DirectoryId:
       type: string
-      minLength: 1
-      maxLength: 63
+      pattern: ^d-[0-9a-f]{8,63}$
+      minLength: 10
+      maxLength: 65
   parameters:
     X-Amz-Credential:
       name: X-Amz-Credential
@@ -518,8 +518,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
+    X-Amz-Signature:
+      name: X-Amz-Signature
       in: header
       schema:
         type: string
@@ -530,20 +530,20 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Date:
       name: X-Amz-Date
       in: header
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string

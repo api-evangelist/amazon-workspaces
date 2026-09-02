@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.DescribeConnectClientAddIns API'
+  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.DescribeConnectClientAddIns #X Amz Target=WorkspacesService.DescribeConnectClientAddIns API'
   description: <fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href="https://docs.aws.amazon.com/general/latest/gr/wsp.html">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/userguide/">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href="https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html">WorkSpaces section of the CLI Reference</a>.</p>
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -168,80 +168,7 @@ paths:
       tags:
       - '#X Amz Target=WorkspacesService.DescribeConnectClientAddIns'
 components:
-  parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
   schemas:
-    DescribeConnectClientAddInsResult:
-      type: object
-      properties:
-        AddIns:
-          allOf:
-          - $ref: '#/components/schemas/ConnectClientAddInList'
-          - description: Information about client add-ins.
-        NextToken:
-          allOf:
-          - $ref: '#/components/schemas/PaginationToken'
-          - description: 'The token to use to retrieve the next page of results. This value is null when there are no more results to return. '
-    PaginationToken:
-      type: string
-      minLength: 1
-      maxLength: 2048
-    Limit:
-      type: integer
-      minimum: 1
-      maximum: 25
-    AddInName:
-      type: string
-      pattern: ^.*$
-      minLength: 1
-      maxLength: 64
-    DirectoryId:
-      type: string
-      pattern: ^d-[0-9a-f]{8,63}$
-      minLength: 10
-      maxLength: 65
-    InvalidParameterValuesException: {}
     AddInUrl:
       type: string
       pattern: ^(http|https)\://\S+
@@ -265,13 +192,12 @@ components:
           allOf:
           - $ref: '#/components/schemas/Limit'
           - description: The maximum number of items to return.
-    ResourceNotFoundException: {}
     AccessDeniedException: {}
-    AmazonUuid:
+    PaginationToken:
       type: string
-      pattern: '[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}'
-      minLength: 36
-      maxLength: 36
+      minLength: 1
+      maxLength: 2048
+    InvalidParameterValuesException: {}
     ConnectClientAddInList:
       type: array
       items:
@@ -296,6 +222,80 @@ components:
           - $ref: '#/components/schemas/AddInUrl'
           - description: The endpoint URL of the client add-in.
       description: Describes an Amazon Connect client add-in.
+    AddInName:
+      type: string
+      pattern: ^.*$
+      minLength: 1
+      maxLength: 64
+    Limit:
+      type: integer
+      minimum: 1
+      maximum: 25
+    DescribeConnectClientAddInsResult:
+      type: object
+      properties:
+        AddIns:
+          allOf:
+          - $ref: '#/components/schemas/ConnectClientAddInList'
+          - description: Information about client add-ins.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: 'The token to use to retrieve the next page of results. This value is null when there are no more results to return. '
+    ResourceNotFoundException: {}
+    DirectoryId:
+      type: string
+      pattern: ^d-[0-9a-f]{8,63}$
+      minLength: 10
+      maxLength: 65
+    AmazonUuid:
+      type: string
+      pattern: '[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}'
+      minLength: 36
+      maxLength: 36
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
   securitySchemes:
     hmac:
       type: apiKey

@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.ModifySamlProperties API'
+  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.ModifySamlProperties #X Amz Target=WorkspacesService.ModifySamlProperties API'
   description: <fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href="https://docs.aws.amazon.com/general/latest/gr/wsp.html">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/userguide/">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href="https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html">WorkSpaces section of the CLI Reference</a>.</p>
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -174,53 +174,17 @@ paths:
       tags:
       - '#X Amz Target=WorkspacesService.ModifySamlProperties'
 components:
-  parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
   schemas:
-    NonEmptyString:
+    SamlUserAccessUrl:
       type: string
-      minLength: 1
+      pattern: ^(http|https)\://\S+$
+      minLength: 8
+      maxLength: 200
+    DeletableSamlPropertiesList:
+      type: array
+      items:
+        $ref: '#/components/schemas/DeletableSamlProperty'
+    AccessDeniedException: {}
     SamlProperties:
       type: object
       properties:
@@ -237,33 +201,12 @@ components:
           - $ref: '#/components/schemas/NonEmptyString'
           - description: <p>The relay state parameter name supported by the SAML 2.0 identity provider (IdP). When the end user is redirected to the user access URL from the WorkSpaces client application, this relay state parameter name is appended as a query parameter to the URL along with the relay state endpoint to return the user to the client application session.</p> <p>To use SAML 2.0 authentication with WorkSpaces, the IdP must support IdP-initiated deep linking for the relay state URL. Consult your IdP documentation for more information.</p>
       description: Describes the enablement status, user access URL, and relay state parameter name that are used for configuring federation with an SAML 2.0 identity provider.
-    DirectoryId:
-      type: string
-      pattern: ^d-[0-9a-f]{8,63}$
-      minLength: 10
-      maxLength: 65
-    InvalidParameterValuesException: {}
-    DeletableSamlPropertiesList:
-      type: array
-      items:
-        $ref: '#/components/schemas/DeletableSamlProperty'
-    ResourceNotFoundException: {}
-    AccessDeniedException: {}
-    OperationNotSupportedException: {}
-    ModifySamlPropertiesResult:
-      type: object
-      properties: {}
     DeletableSamlProperty:
       type: string
       enum:
       - SAML_PROPERTIES_USER_ACCESS_URL
       - SAML_PROPERTIES_RELAY_STATE_PARAMETER_NAME
-    SamlStatusEnum:
-      type: string
-      enum:
-      - DISABLED
-      - ENABLED
-      - ENABLED_WITH_DIRECTORY_LOGIN_FALLBACK
+    InvalidParameterValuesException: {}
     ModifySamlPropertiesRequest:
       type: object
       required:
@@ -282,11 +225,68 @@ components:
           allOf:
           - $ref: '#/components/schemas/DeletableSamlPropertiesList'
           - description: <p>The SAML properties to delete as part of your request.</p> <p>Specify one of the following options:</p> <ul> <li> <p> <code>SAML_PROPERTIES_USER_ACCESS_URL</code> to delete the user access URL.</p> </li> <li> <p> <code>SAML_PROPERTIES_RELAY_STATE_PARAMETER_NAME</code> to delete the relay state parameter name.</p> </li> </ul>
-    SamlUserAccessUrl:
+    SamlStatusEnum:
       type: string
-      pattern: ^(http|https)\://\S+$
-      minLength: 8
-      maxLength: 200
+      enum:
+      - DISABLED
+      - ENABLED
+      - ENABLED_WITH_DIRECTORY_LOGIN_FALLBACK
+    NonEmptyString:
+      type: string
+      minLength: 1
+    OperationNotSupportedException: {}
+    ResourceNotFoundException: {}
+    ModifySamlPropertiesResult:
+      type: object
+      properties: {}
+    DirectoryId:
+      type: string
+      pattern: ^d-[0-9a-f]{8,63}$
+      minLength: 10
+      maxLength: 65
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
   securitySchemes:
     hmac:
       type: apiKey

@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.ImportWorkspaceImage API'
+  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.ImportWorkspaceImage #X Amz Target=WorkspacesService.ImportWorkspaceImage API'
   description: <fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href="https://docs.aws.amazon.com/general/latest/gr/wsp.html">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/userguide/">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href="https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html">WorkSpaces section of the CLI Reference</a>.</p>
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -199,8 +199,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
+    X-Amz-Signature:
+      name: X-Amz-Signature
       in: header
       schema:
         type: string
@@ -211,50 +211,26 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Date:
       name: X-Amz-Date
       in: header
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
       required: false
   schemas:
-    ResourceAlreadyExistsException: {}
     ResourceLimitExceededException: {}
-    TagValue:
-      type: string
-      maxLength: 255
-    Tag:
-      type: object
-      required:
-      - Key
-      properties:
-        Key:
-          allOf:
-          - $ref: '#/components/schemas/TagKey'
-          - description: The key of the tag.
-        Value:
-          allOf:
-          - $ref: '#/components/schemas/TagValue'
-          - description: The value of the tag.
-      description: Describes a tag.
-    ApplicationList:
-      type: array
-      items:
-        $ref: '#/components/schemas/Application'
-      minItems: 1
-      maxItems: 5
     ImportWorkspaceImageRequest:
       type: object
       required:
@@ -288,16 +264,24 @@ components:
           allOf:
           - $ref: '#/components/schemas/ApplicationList'
           - description: <p>If specified, the version of Microsoft Office to subscribe to. Valid only for Windows 10 and 11 BYOL images. For more information about subscribing to Office for BYOL images, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/byol-windows-images.html"> Bring Your Own Windows Desktop Licenses</a>.</p> <note> <ul> <li> <p>Although this parameter is an array, only one item is allowed at this time.</p> </li> <li> <p>Windows 11 only supports <code>Microsoft_Office_2019</code>.</p> </li> </ul> </note>
-    WorkspaceImageId:
-      type: string
-      pattern: wsi-[0-9a-z]{9,63}$
-    InvalidParameterValuesException: {}
     WorkspaceImageName:
       type: string
       pattern: ^[a-zA-Z0-9_./()\\-]+$
       minLength: 1
       maxLength: 64
-    ResourceNotFoundException: {}
+    ResourceAlreadyExistsException: {}
+    AccessDeniedException: {}
+    Application:
+      type: string
+      enum:
+      - Microsoft_Office_2016
+      - Microsoft_Office_2019
+    InvalidParameterValuesException: {}
+    WorkspaceImageDescription:
+      type: string
+      pattern: ^[a-zA-Z0-9_./() -]+$
+      minLength: 1
+      maxLength: 256
     WorkspaceImageIngestionProcess:
       type: string
       enum:
@@ -308,13 +292,23 @@ components:
       - BYOL_REGULAR_WSP
       - BYOL_REGULAR_BYOP
       - BYOL_GRAPHICS_G4DN_BYOP
-    AccessDeniedException: {}
-    Application:
+    TagValue:
       type: string
-      enum:
-      - Microsoft_Office_2016
-      - Microsoft_Office_2019
-    OperationNotSupportedException: {}
+      maxLength: 255
+    Tag:
+      type: object
+      required:
+      - Key
+      properties:
+        Key:
+          allOf:
+          - $ref: '#/components/schemas/TagKey'
+          - description: The key of the tag.
+        Value:
+          allOf:
+          - $ref: '#/components/schemas/TagValue'
+          - description: The value of the tag.
+      description: Describes a tag.
     ImportWorkspaceImageResult:
       type: object
       properties:
@@ -322,22 +316,28 @@ components:
           allOf:
           - $ref: '#/components/schemas/WorkspaceImageId'
           - description: The identifier of the WorkSpace image.
-    Ec2ImageId:
-      type: string
-      pattern: ^ami\-([a-f0-9]{8}|[a-f0-9]{17})$
     TagKey:
       type: string
       minLength: 1
       maxLength: 127
-    WorkspaceImageDescription:
+    Ec2ImageId:
       type: string
-      pattern: ^[a-zA-Z0-9_./() -]+$
-      minLength: 1
-      maxLength: 256
+      pattern: ^ami\-([a-f0-9]{8}|[a-f0-9]{17})$
     TagList:
       type: array
       items:
         $ref: '#/components/schemas/Tag'
+    OperationNotSupportedException: {}
+    ResourceNotFoundException: {}
+    ApplicationList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Application'
+      minItems: 1
+      maxItems: 5
+    WorkspaceImageId:
+      type: string
+      pattern: wsi-[0-9a-z]{9,63}$
   securitySchemes:
     hmac:
       type: apiKey

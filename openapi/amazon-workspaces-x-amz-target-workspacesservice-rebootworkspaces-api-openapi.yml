@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.RebootWorkspaces API'
+  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.RebootWorkspaces #X Amz Target=WorkspacesService.RebootWorkspaces API'
   description: <fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href="https://docs.aws.amazon.com/general/latest/gr/wsp.html">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/userguide/">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href="https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html">WorkSpaces section of the CLI Reference</a>.</p>
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -156,77 +156,27 @@ paths:
       tags:
       - '#X Amz Target=WorkspacesService.RebootWorkspaces'
 components:
-  schemas:
-    WorkspaceId:
-      type: string
-      pattern: ^ws-[0-9a-z]{8,63}$
-    FailedRebootWorkspaceRequests:
-      type: array
-      items:
-        $ref: '#/components/schemas/FailedWorkspaceChangeRequest'
-    FailedWorkspaceChangeRequest:
-      type: object
-      properties:
-        WorkspaceId:
-          allOf:
-          - $ref: '#/components/schemas/WorkspaceId'
-          - description: The identifier of the WorkSpace.
-        ErrorCode:
-          allOf:
-          - $ref: '#/components/schemas/ErrorType'
-          - description: The error code that is returned if the WorkSpace cannot be rebooted.
-        ErrorMessage:
-          allOf:
-          - $ref: '#/components/schemas/Description'
-          - description: The text of the error message that is returned if the WorkSpace cannot be rebooted.
-      description: Describes a WorkSpace that could not be rebooted. (<a>RebootWorkspaces</a>), rebuilt (<a>RebuildWorkspaces</a>), restored (<a>RestoreWorkspace</a>), terminated (<a>TerminateWorkspaces</a>), started (<a>StartWorkspaces</a>), or stopped (<a>StopWorkspaces</a>).
-    Description:
-      type: string
-    OperationNotSupportedException: {}
-    RebootWorkspacesResult:
-      type: object
-      properties:
-        FailedRequests:
-          allOf:
-          - $ref: '#/components/schemas/FailedRebootWorkspaceRequests'
-          - description: Information about the WorkSpaces that could not be rebooted.
-    ErrorType:
-      type: string
-    RebootWorkspaceRequests:
-      type: array
-      items:
-        $ref: '#/components/schemas/RebootRequest'
-      minItems: 1
-      maxItems: 25
-    RebootWorkspacesRequest:
-      type: object
-      required:
-      - RebootWorkspaceRequests
-      title: RebootWorkspacesRequest
-      properties:
-        RebootWorkspaceRequests:
-          allOf:
-          - $ref: '#/components/schemas/RebootWorkspaceRequests'
-          - description: The WorkSpaces to reboot. You can specify up to 25 WorkSpaces.
-    RebootRequest:
-      type: object
-      required:
-      - WorkspaceId
-      properties:
-        WorkspaceId:
-          allOf:
-          - $ref: '#/components/schemas/WorkspaceId'
-          - description: The identifier of the WorkSpace.
-      description: Describes the information used to reboot a WorkSpace.
   parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
       in: header
       schema:
         type: string
       required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
       in: header
       schema:
         type: string
@@ -249,18 +199,68 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
+  schemas:
+    Description:
+      type: string
+    RebootWorkspaceRequests:
+      type: array
+      items:
+        $ref: '#/components/schemas/RebootRequest'
+      minItems: 1
+      maxItems: 25
+    FailedWorkspaceChangeRequest:
+      type: object
+      properties:
+        WorkspaceId:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceId'
+          - description: The identifier of the WorkSpace.
+        ErrorCode:
+          allOf:
+          - $ref: '#/components/schemas/ErrorType'
+          - description: The error code that is returned if the WorkSpace cannot be rebooted.
+        ErrorMessage:
+          allOf:
+          - $ref: '#/components/schemas/Description'
+          - description: The text of the error message that is returned if the WorkSpace cannot be rebooted.
+      description: Describes a WorkSpace that could not be rebooted. (<a>RebootWorkspaces</a>), rebuilt (<a>RebuildWorkspaces</a>), restored (<a>RestoreWorkspace</a>), terminated (<a>TerminateWorkspaces</a>), started (<a>StartWorkspaces</a>), or stopped (<a>StopWorkspaces</a>).
+    OperationNotSupportedException: {}
+    WorkspaceId:
+      type: string
+      pattern: ^ws-[0-9a-z]{8,63}$
+    ErrorType:
+      type: string
+    RebootWorkspacesRequest:
+      type: object
+      required:
+      - RebootWorkspaceRequests
+      title: RebootWorkspacesRequest
+      properties:
+        RebootWorkspaceRequests:
+          allOf:
+          - $ref: '#/components/schemas/RebootWorkspaceRequests'
+          - description: The WorkSpaces to reboot. You can specify up to 25 WorkSpaces.
+    FailedRebootWorkspaceRequests:
+      type: array
+      items:
+        $ref: '#/components/schemas/FailedWorkspaceChangeRequest'
+    RebootRequest:
+      type: object
+      required:
+      - WorkspaceId
+      properties:
+        WorkspaceId:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceId'
+          - description: The identifier of the WorkSpace.
+      description: Describes the information used to reboot a WorkSpace.
+    RebootWorkspacesResult:
+      type: object
+      properties:
+        FailedRequests:
+          allOf:
+          - $ref: '#/components/schemas/FailedRebootWorkspaceRequests'
+          - description: Information about the WorkSpaces that could not be rebooted.
   securitySchemes:
     hmac:
       type: apiKey

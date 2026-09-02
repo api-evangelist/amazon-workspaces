@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.DescribeWorkspaceImages API'
+  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.DescribeWorkspaceImages #X Amz Target=WorkspacesService.DescribeWorkspaceImages API'
   description: <fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href="https://docs.aws.amazon.com/general/latest/gr/wsp.html">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/userguide/">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href="https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html">WorkSpaces section of the CLI Reference</a>.</p>
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -177,51 +177,6 @@ components:
           allOf:
           - $ref: '#/components/schemas/Limit'
           - description: The maximum number of items to return.
-    AwsAccount:
-      type: string
-      pattern: ^\d{12}$
-    WorkspaceImageIdList:
-      type: array
-      items:
-        $ref: '#/components/schemas/WorkspaceImageId'
-      minItems: 1
-      maxItems: 25
-    PaginationToken:
-      type: string
-      minLength: 1
-      maxLength: 2048
-    Limit:
-      type: integer
-      minimum: 1
-      maximum: 25
-    WorkspaceImageList:
-      type: array
-      items:
-        $ref: '#/components/schemas/WorkspaceImage'
-    WorkspaceImageState:
-      type: string
-      enum:
-      - AVAILABLE
-      - PENDING
-      - ERROR
-    WorkspaceImageId:
-      type: string
-      pattern: wsi-[0-9a-z]{9,63}$
-    UpdateDescription:
-      type: string
-      pattern: ^[a-zA-Z0-9_./() -]+$
-      minLength: 1
-      maxLength: 255
-    WorkspaceImageName:
-      type: string
-      pattern: ^[a-zA-Z0-9_./()\\-]+$
-      minLength: 1
-      maxLength: 64
-    ImageType:
-      type: string
-      enum:
-      - OWNED
-      - SHARED
     UpdateResult:
       type: object
       properties:
@@ -234,12 +189,46 @@ components:
           - $ref: '#/components/schemas/UpdateDescription'
           - description: A description of whether updates for the WorkSpace image are pending or available.
       description: <p>Describes whether a WorkSpace image needs to be updated with the latest drivers and other components required by Amazon WorkSpaces.</p> <note> <p>Only Windows 10 WorkSpace images can be programmatically updated at this time.</p> </note>
+    OperatingSystem:
+      type: object
+      properties:
+        Type:
+          allOf:
+          - $ref: '#/components/schemas/OperatingSystemType'
+          - description: The operating system.
+      description: The operating system that the image is running.
+    WorkspaceImageName:
+      type: string
+      pattern: ^[a-zA-Z0-9_./()\\-]+$
+      minLength: 1
+      maxLength: 64
+    ImageType:
+      type: string
+      enum:
+      - OWNED
+      - SHARED
     AccessDeniedException: {}
+    WorkspaceImageList:
+      type: array
+      items:
+        $ref: '#/components/schemas/WorkspaceImage'
+    Description:
+      type: string
+    WorkspaceImageState:
+      type: string
+      enum:
+      - AVAILABLE
+      - PENDING
+      - ERROR
     OperatingSystemType:
       type: string
       enum:
       - WINDOWS
       - LINUX
+    PaginationToken:
+      type: string
+      minLength: 1
+      maxLength: 2048
     DescribeWorkspaceImagesResult:
       type: object
       properties:
@@ -251,26 +240,27 @@ components:
           allOf:
           - $ref: '#/components/schemas/PaginationToken'
           - description: 'The token to use to retrieve the next page of results. This value is null when there are no more results to return. '
-    Description:
+    UpdateDescription:
       type: string
-    OperatingSystem:
-      type: object
-      properties:
-        Type:
-          allOf:
-          - $ref: '#/components/schemas/OperatingSystemType'
-          - description: The operating system.
-      description: The operating system that the image is running.
-    Timestamp:
-      type: string
-      format: date-time
+      pattern: ^[a-zA-Z0-9_./() -]+$
+      minLength: 1
+      maxLength: 255
     WorkspaceImageDescription:
       type: string
       pattern: ^[a-zA-Z0-9_./() -]+$
       minLength: 1
       maxLength: 256
+    AwsAccount:
+      type: string
+      pattern: ^\d{12}$
     BooleanObject:
       type: boolean
+    WorkspaceImageIdList:
+      type: array
+      items:
+        $ref: '#/components/schemas/WorkspaceImageId'
+      minItems: 1
+      maxItems: 25
     WorkspaceImage:
       type: object
       properties:
@@ -319,13 +309,23 @@ components:
           - $ref: '#/components/schemas/UpdateResult'
           - description: The updates (if any) that are available for the specified image.
       description: Describes a WorkSpace image.
+    Timestamp:
+      type: string
+      format: date-time
+    Limit:
+      type: integer
+      minimum: 1
+      maximum: 25
+    WorkspaceImageErrorCode:
+      type: string
     WorkspaceImageRequiredTenancy:
       type: string
       enum:
       - DEFAULT
       - DEDICATED
-    WorkspaceImageErrorCode:
+    WorkspaceImageId:
       type: string
+      pattern: wsi-[0-9a-z]{9,63}$
   parameters:
     X-Amz-Credential:
       name: X-Amz-Credential
@@ -339,8 +339,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
+    X-Amz-Signature:
+      name: X-Amz-Signature
       in: header
       schema:
         type: string
@@ -351,20 +351,20 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Date:
       name: X-Amz-Date
       in: header
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string

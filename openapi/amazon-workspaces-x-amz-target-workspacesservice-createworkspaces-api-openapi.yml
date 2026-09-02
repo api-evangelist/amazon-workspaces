@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.CreateWorkspaces API'
+  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.CreateWorkspaces #X Amz Target=WorkspacesService.CreateWorkspaces API'
   description: <fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href="https://docs.aws.amazon.com/general/latest/gr/wsp.html">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/userguide/">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href="https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html">WorkSpaces section of the CLI Reference</a>.</p>
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -163,6 +163,29 @@ paths:
       - '#X Amz Target=WorkspacesService.CreateWorkspaces'
 components:
   schemas:
+    RootVolumeSizeGib:
+      type: integer
+    ModificationStateList:
+      type: array
+      items:
+        $ref: '#/components/schemas/ModificationState'
+    WorkspaceErrorCode:
+      type: string
+    ResourceLimitExceededException: {}
+    ModificationResourceEnum:
+      type: string
+      enum:
+      - ROOT_VOLUME
+      - USER_VOLUME
+      - COMPUTE_TYPE
+    UserName:
+      type: string
+      minLength: 1
+      maxLength: 63
+    IpAddress:
+      type: string
+    Description:
+      type: string
     WorkspaceProperties:
       type: object
       properties:
@@ -191,17 +214,65 @@ components:
           - $ref: '#/components/schemas/ProtocolList'
           - description: <p>The protocol. For more information, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces-protocols.html"> Protocols for Amazon WorkSpaces</a>.</p> <note> <ul> <li> <p>Only available for WorkSpaces created with PCoIP bundles.</p> </li> <li> <p>The <code>Protocols</code> property is case sensitive. Ensure you use <code>PCOIP</code> or <code>WSP</code>.</p> </li> <li> <p>Unavailable for Windows 7 WorkSpaces and WorkSpaces using GPU-based bundles (Graphics, GraphicsPro, Graphics.g4dn, and GraphicsPro.g4dn).</p> </li> </ul> </note>
       description: Describes a WorkSpace.
-    UserVolumeSizeGib:
-      type: integer
+    InvalidParameterValuesException: {}
+    ComputerName:
+      type: string
+    StandbyWorkspaceRelationshipType:
+      type: string
+      enum:
+      - PRIMARY
+      - STANDBY
+    SubnetId:
+      type: string
+      pattern: ^(subnet-([0-9a-f]{8}|[0-9a-f]{17}))$
+      minLength: 15
+      maxLength: 24
     BundleId:
       type: string
       pattern: ^wsb-[0-9a-z]{8,63}$
-    ResourceLimitExceededException: {}
+    RelatedWorkspaces:
+      type: array
+      items:
+        $ref: '#/components/schemas/RelatedWorkspaceProperties'
     Protocol:
       type: string
       enum:
       - PCOIP
       - WSP
+    TagValue:
+      type: string
+      maxLength: 255
+    Compute:
+      type: string
+      enum:
+      - VALUE
+      - STANDARD
+      - PERFORMANCE
+      - POWER
+      - GRAPHICS
+      - POWERPRO
+      - GRAPHICSPRO
+      - GRAPHICS_G4DN
+      - GRAPHICSPRO_G4DN
+    BooleanObject:
+      type: boolean
+    Tag:
+      type: object
+      required:
+      - Key
+      properties:
+        Key:
+          allOf:
+          - $ref: '#/components/schemas/TagKey'
+          - description: The key of the tag.
+        Value:
+          allOf:
+          - $ref: '#/components/schemas/TagValue'
+          - description: The value of the tag.
+      description: Describes a tag.
+    WorkspaceId:
+      type: string
+      pattern: ^ws-[0-9a-z]{8,63}$
     ModificationState:
       type: object
       properties:
@@ -214,53 +285,6 @@ components:
           - $ref: '#/components/schemas/ModificationStateEnum'
           - description: The modification state.
       description: Describes a WorkSpace modification.
-    WorkspaceRequest:
-      type: object
-      required:
-      - DirectoryId
-      - UserName
-      - BundleId
-      properties:
-        DirectoryId:
-          allOf:
-          - $ref: '#/components/schemas/DirectoryId'
-          - description: The identifier of the Directory Service directory for the WorkSpace. You can use <a>DescribeWorkspaceDirectories</a> to list the available directories.
-        UserName:
-          allOf:
-          - $ref: '#/components/schemas/UserName'
-          - description: The user name of the user for the WorkSpace. This user name must exist in the Directory Service directory for the WorkSpace.
-        BundleId:
-          allOf:
-          - $ref: '#/components/schemas/BundleId'
-          - description: The identifier of the bundle for the WorkSpace. You can use <a>DescribeWorkspaceBundles</a> to list the available bundles.
-        VolumeEncryptionKey:
-          allOf:
-          - $ref: '#/components/schemas/VolumeEncryptionKey'
-          - description: The ARN of the symmetric KMS key used to encrypt data stored on your WorkSpace. Amazon WorkSpaces does not support asymmetric KMS keys.
-        UserVolumeEncryptionEnabled:
-          allOf:
-          - $ref: '#/components/schemas/BooleanObject'
-          - description: Indicates whether the data stored on the user volume is encrypted.
-        RootVolumeEncryptionEnabled:
-          allOf:
-          - $ref: '#/components/schemas/BooleanObject'
-          - description: Indicates whether the data stored on the root volume is encrypted.
-        WorkspaceProperties:
-          allOf:
-          - $ref: '#/components/schemas/WorkspaceProperties'
-          - description: The WorkSpace properties.
-        Tags:
-          allOf:
-          - $ref: '#/components/schemas/TagList'
-          - description: The tags for the WorkSpace.
-      description: Describes the information used to create a WorkSpace.
-    WorkspaceList:
-      type: array
-      items:
-        $ref: '#/components/schemas/Workspace'
-    TagValue:
-      type: string
-      maxLength: 255
     Workspace:
       type: object
       properties:
@@ -329,33 +353,35 @@ components:
           - $ref: '#/components/schemas/RelatedWorkspaces'
           - description: The standby WorkSpace or primary WorkSpace related to the specified WorkSpace.
       description: Describes a WorkSpace.
-    Region:
-      type: string
-      pattern: ^[-0-9a-z]{1,31}$
-      minLength: 1
-      maxLength: 31
-    StandbyWorkspaceRelationshipType:
+    ModificationStateEnum:
       type: string
       enum:
-      - PRIMARY
-      - STANDBY
-    Tag:
-      type: object
-      required:
-      - Key
-      properties:
-        Key:
-          allOf:
-          - $ref: '#/components/schemas/TagKey'
-          - description: The key of the tag.
-        Value:
-          allOf:
-          - $ref: '#/components/schemas/TagValue'
-          - description: The value of the tag.
-      description: Describes a tag.
-    WorkspaceId:
+      - UPDATE_INITIATED
+      - UPDATE_IN_PROGRESS
+    FailedCreateWorkspaceRequests:
+      type: array
+      items:
+        $ref: '#/components/schemas/FailedCreateWorkspaceRequest'
+    TagKey:
       type: string
-      pattern: ^ws-[0-9a-z]{8,63}$
+      minLength: 1
+      maxLength: 127
+    FailedCreateWorkspaceRequest:
+      type: object
+      properties:
+        WorkspaceRequest:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceRequest'
+          - description: Information about the WorkSpace.
+        ErrorCode:
+          allOf:
+          - $ref: '#/components/schemas/ErrorType'
+          - description: The error code that is returned if the WorkSpace cannot be created.
+        ErrorMessage:
+          allOf:
+          - $ref: '#/components/schemas/Description'
+          - description: The text of the error message that is returned if the WorkSpace cannot be created.
+      description: Describes a WorkSpace that cannot be created.
     RelatedWorkspaceProperties:
       type: object
       properties:
@@ -376,6 +402,31 @@ components:
           - $ref: '#/components/schemas/StandbyWorkspaceRelationshipType'
           - description: Indicates the type of WorkSpace.
       description: Describes the related WorkSpace. The related WorkSpace could be a standby WorkSpace or primary WorkSpace related to the specified WorkSpace.
+    Region:
+      type: string
+      pattern: ^[-0-9a-z]{1,31}$
+      minLength: 1
+      maxLength: 31
+    WorkspaceList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Workspace'
+    RunningMode:
+      type: string
+      enum:
+      - AUTO_STOP
+      - ALWAYS_ON
+      - MANUAL
+    RunningModeAutoStopTimeoutInMinutes:
+      type: integer
+    ProtocolList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Protocol'
+    TagList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tag'
     WorkspaceState:
       type: string
       enum:
@@ -396,29 +447,48 @@ components:
       - STOPPING
       - STOPPED
       - ERROR
-    ProtocolList:
-      type: array
-      items:
-        $ref: '#/components/schemas/Protocol'
-    SubnetId:
+    ErrorType:
       type: string
-      pattern: ^(subnet-([0-9a-f]{8}|[0-9a-f]{17}))$
-      minLength: 15
-      maxLength: 24
-    VolumeEncryptionKey:
-      type: string
-    DirectoryId:
-      type: string
-      pattern: ^d-[0-9a-f]{8,63}$
-      minLength: 10
-      maxLength: 65
-    ModificationResourceEnum:
-      type: string
-      enum:
-      - ROOT_VOLUME
-      - USER_VOLUME
-      - COMPUTE_TYPE
-    InvalidParameterValuesException: {}
+    WorkspaceRequest:
+      type: object
+      required:
+      - DirectoryId
+      - UserName
+      - BundleId
+      properties:
+        DirectoryId:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryId'
+          - description: The identifier of the Directory Service directory for the WorkSpace. You can use <a>DescribeWorkspaceDirectories</a> to list the available directories.
+        UserName:
+          allOf:
+          - $ref: '#/components/schemas/UserName'
+          - description: The user name of the user for the WorkSpace. This user name must exist in the Directory Service directory for the WorkSpace.
+        BundleId:
+          allOf:
+          - $ref: '#/components/schemas/BundleId'
+          - description: The identifier of the bundle for the WorkSpace. You can use <a>DescribeWorkspaceBundles</a> to list the available bundles.
+        VolumeEncryptionKey:
+          allOf:
+          - $ref: '#/components/schemas/VolumeEncryptionKey'
+          - description: The ARN of the symmetric KMS key used to encrypt data stored on your WorkSpace. Amazon WorkSpaces does not support asymmetric KMS keys.
+        UserVolumeEncryptionEnabled:
+          allOf:
+          - $ref: '#/components/schemas/BooleanObject'
+          - description: Indicates whether the data stored on the user volume is encrypted.
+        RootVolumeEncryptionEnabled:
+          allOf:
+          - $ref: '#/components/schemas/BooleanObject'
+          - description: Indicates whether the data stored on the root volume is encrypted.
+        WorkspaceProperties:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceProperties'
+          - description: The WorkSpace properties.
+        Tags:
+          allOf:
+          - $ref: '#/components/schemas/TagList'
+          - description: The tags for the WorkSpace.
+      description: Describes the information used to create a WorkSpace.
     CreateWorkspacesResult:
       type: object
       properties:
@@ -430,53 +500,6 @@ components:
           allOf:
           - $ref: '#/components/schemas/WorkspaceList'
           - description: <p>Information about the WorkSpaces that were created.</p> <p>Because this operation is asynchronous, the identifier returned is not immediately available for use with other operations. For example, if you call <a>DescribeWorkspaces</a> before the WorkSpace is created, the information returned can be incomplete.</p>
-    Compute:
-      type: string
-      enum:
-      - VALUE
-      - STANDARD
-      - PERFORMANCE
-      - POWER
-      - GRAPHICS
-      - POWERPRO
-      - GRAPHICSPRO
-      - GRAPHICS_G4DN
-      - GRAPHICSPRO_G4DN
-    WorkspaceErrorCode:
-      type: string
-    WorkspaceRequestList:
-      type: array
-      items:
-        $ref: '#/components/schemas/WorkspaceRequest'
-      minItems: 1
-      maxItems: 25
-    ModificationStateEnum:
-      type: string
-      enum:
-      - UPDATE_INITIATED
-      - UPDATE_IN_PROGRESS
-    ErrorType:
-      type: string
-    FailedCreateWorkspaceRequest:
-      type: object
-      properties:
-        WorkspaceRequest:
-          allOf:
-          - $ref: '#/components/schemas/WorkspaceRequest'
-          - description: Information about the WorkSpace.
-        ErrorCode:
-          allOf:
-          - $ref: '#/components/schemas/ErrorType'
-          - description: The error code that is returned if the WorkSpace cannot be created.
-        ErrorMessage:
-          allOf:
-          - $ref: '#/components/schemas/Description'
-          - description: The text of the error message that is returned if the WorkSpace cannot be created.
-      description: Describes a WorkSpace that cannot be created.
-    RootVolumeSizeGib:
-      type: integer
-    IpAddress:
-      type: string
     CreateWorkspacesRequest:
       type: object
       required:
@@ -487,44 +510,21 @@ components:
           allOf:
           - $ref: '#/components/schemas/WorkspaceRequestList'
           - description: The WorkSpaces to create. You can specify up to 25 WorkSpaces.
-    RelatedWorkspaces:
-      type: array
-      items:
-        $ref: '#/components/schemas/RelatedWorkspaceProperties'
-    RunningMode:
-      type: string
-      enum:
-      - AUTO_STOP
-      - ALWAYS_ON
-      - MANUAL
-    RunningModeAutoStopTimeoutInMinutes:
+    UserVolumeSizeGib:
       type: integer
-    Description:
+    DirectoryId:
       type: string
-    ModificationStateList:
+      pattern: ^d-[0-9a-f]{8,63}$
+      minLength: 10
+      maxLength: 65
+    WorkspaceRequestList:
       type: array
       items:
-        $ref: '#/components/schemas/ModificationState'
-    FailedCreateWorkspaceRequests:
-      type: array
-      items:
-        $ref: '#/components/schemas/FailedCreateWorkspaceRequest'
-    ComputerName:
+        $ref: '#/components/schemas/WorkspaceRequest'
+      minItems: 1
+      maxItems: 25
+    VolumeEncryptionKey:
       type: string
-    TagKey:
-      type: string
-      minLength: 1
-      maxLength: 127
-    BooleanObject:
-      type: boolean
-    TagList:
-      type: array
-      items:
-        $ref: '#/components/schemas/Tag'
-    UserName:
-      type: string
-      minLength: 1
-      maxLength: 63
   parameters:
     X-Amz-Credential:
       name: X-Amz-Credential
@@ -538,8 +538,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
+    X-Amz-Signature:
+      name: X-Amz-Signature
       in: header
       schema:
         type: string
@@ -550,20 +550,20 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Date:
       name: X-Amz-Date
       in: header
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string

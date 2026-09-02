@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.CreateConnectionAlias API'
+  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.CreateConnectionAlias #X Amz Target=WorkspacesService.CreateConnectionAlias API'
   description: <fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href="https://docs.aws.amazon.com/general/latest/gr/wsp.html">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/userguide/">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href="https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html">WorkSpaces section of the CLI Reference</a>.</p>
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -186,52 +186,37 @@ paths:
       tags:
       - '#X Amz Target=WorkspacesService.CreateConnectionAlias'
 components:
-  parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
   schemas:
-    ResourceAlreadyExistsException: {}
+    CreateConnectionAliasResult:
+      type: object
+      properties:
+        AliasId:
+          allOf:
+          - $ref: '#/components/schemas/ConnectionAliasId'
+          - description: The identifier of the connection alias.
     ResourceLimitExceededException: {}
+    ResourceAlreadyExistsException: {}
+    AccessDeniedException: {}
+    InvalidParameterValuesException: {}
+    CreateConnectionAliasRequest:
+      type: object
+      required:
+      - ConnectionString
+      title: CreateConnectionAliasRequest
+      properties:
+        ConnectionString:
+          allOf:
+          - $ref: '#/components/schemas/ConnectionString'
+          - description: <p>A connection string in the form of a fully qualified domain name (FQDN), such as <code>www.example.com</code>.</p> <important> <p>After you create a connection string, it is always associated to your Amazon Web Services account. You cannot recreate the same connection string with a different account, even if you delete all instances of it from the original account. The connection string is globally reserved for your account.</p> </important>
+        Tags:
+          allOf:
+          - $ref: '#/components/schemas/TagList'
+          - description: The tags to associate with the connection alias.
+    ConnectionAliasId:
+      type: string
+      pattern: ^wsca-[0-9a-z]{8,63}$
+      minLength: 13
+      maxLength: 68
     TagValue:
       type: string
       maxLength: 255
@@ -249,41 +234,11 @@ components:
           - $ref: '#/components/schemas/TagValue'
           - description: The value of the tag.
       description: Describes a tag.
-    ConnectionAliasId:
-      type: string
-      pattern: ^wsca-[0-9a-z]{8,63}$
-      minLength: 13
-      maxLength: 68
-    InvalidParameterValuesException: {}
-    CreateConnectionAliasRequest:
-      type: object
-      required:
-      - ConnectionString
-      title: CreateConnectionAliasRequest
-      properties:
-        ConnectionString:
-          allOf:
-          - $ref: '#/components/schemas/ConnectionString'
-          - description: <p>A connection string in the form of a fully qualified domain name (FQDN), such as <code>www.example.com</code>.</p> <important> <p>After you create a connection string, it is always associated to your Amazon Web Services account. You cannot recreate the same connection string with a different account, even if you delete all instances of it from the original account. The connection string is globally reserved for your account.</p> </important>
-        Tags:
-          allOf:
-          - $ref: '#/components/schemas/TagList'
-          - description: The tags to associate with the connection alias.
     ConnectionString:
       type: string
       pattern: ^[.0-9a-zA-Z\-]{1,255}$
       minLength: 1
       maxLength: 255
-    CreateConnectionAliasResult:
-      type: object
-      properties:
-        AliasId:
-          allOf:
-          - $ref: '#/components/schemas/ConnectionAliasId'
-          - description: The identifier of the connection alias.
-    AccessDeniedException: {}
-    OperationNotSupportedException: {}
-    InvalidResourceStateException: {}
     TagKey:
       type: string
       minLength: 1
@@ -292,6 +247,51 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Tag'
+    OperationNotSupportedException: {}
+    InvalidResourceStateException: {}
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
   securitySchemes:
     hmac:
       type: apiKey
