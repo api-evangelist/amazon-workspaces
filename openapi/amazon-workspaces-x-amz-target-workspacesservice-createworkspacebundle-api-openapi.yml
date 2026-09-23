@@ -1,9 +1,11 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: '2015-04-08'
   x-release: v4
-  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.CreateWorkspaceBundle #X Amz Target=WorkspacesService.CreateWorkspaceBundle API'
-  description: <fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href="https://docs.aws.amazon.com/general/latest/gr/wsp.html">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/userguide/">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href="https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html">WorkSpaces section of the CLI Reference</a>.</p>
+  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateWork…'
+  description: 'Amazon WorkSpaces Service
+
+    Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as WorkSpaces.'
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
     backgroundColor: '#FFFFFF'
@@ -23,6 +25,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/workspaces-2015-04-08.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -124,7 +127,7 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: CreateWorkspaceBundle
-      description: Creates the specified WorkSpace bundle. For more information about creating WorkSpace bundles, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/create-custom-bundle.html"> Create a Custom WorkSpaces Image and Bundle</a>.
+      description: Creates the specified WorkSpace bundle. For more information about creating WorkSpace bundles, see Create a Custom WorkSpaces Image and Bundle.
       responses:
         '200':
           description: Success
@@ -186,61 +189,64 @@ paths:
       tags:
       - '#X Amz Target=WorkspacesService.CreateWorkspaceBundle'
 components:
+  parameters:
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
   schemas:
-    ComputeType:
-      type: object
-      properties:
-        Name:
-          allOf:
-          - $ref: '#/components/schemas/Compute'
-          - description: The compute type.
-      description: Describes the compute type of the bundle.
-    UserStorage:
-      type: object
-      properties:
-        Capacity:
-          allOf:
-          - $ref: '#/components/schemas/NonEmptyString'
-          - description: The size of the user volume.
-      description: Describes the user volume for a WorkSpace bundle.
-    ResourceLimitExceededException: {}
-    ResourceUnavailableException: {}
-    ResourceAlreadyExistsException: {}
-    AccessDeniedException: {}
-    BundleOwner:
+    WorkspaceBundleState:
       type: string
-    CreateWorkspaceBundleRequest:
+      enum:
+      - AVAILABLE
+      - PENDING
+      - ERROR
+    Description:
+      type: string
+    ResourceAlreadyExistsException: {}
+    CreateWorkspaceBundleResult:
       type: object
-      required:
-      - BundleName
-      - BundleDescription
-      - ImageId
-      - ComputeType
-      - UserStorage
-      title: CreateWorkspaceBundleRequest
       properties:
-        BundleName:
-          allOf:
-          - $ref: '#/components/schemas/WorkspaceBundleName'
-          - description: The name of the bundle.
-        BundleDescription:
-          allOf:
-          - $ref: '#/components/schemas/WorkspaceBundleDescription'
-          - description: The description of the bundle.
-        ImageId:
-          allOf:
-          - $ref: '#/components/schemas/WorkspaceImageId'
-          - description: The identifier of the image that is used to create the bundle.
-        ComputeType:
-          $ref: '#/components/schemas/ComputeType'
-        UserStorage:
-          $ref: '#/components/schemas/UserStorage'
-        RootStorage:
-          $ref: '#/components/schemas/RootStorage'
-        Tags:
-          allOf:
-          - $ref: '#/components/schemas/TagList'
-          - description: <p>The tags associated with the bundle.</p> <note> <p>To add tags at the same time when you're creating the bundle, you must create an IAM policy that grants your IAM user permissions to use <code>workspaces:CreateTags</code>. </p> </note>
+        WorkspaceBundle:
+          $ref: '#/components/schemas/WorkspaceBundle'
     WorkspaceBundle:
       type: object
       properties:
@@ -293,43 +299,50 @@ components:
           - $ref: '#/components/schemas/BundleType'
           - description: The type of WorkSpace bundle.
       description: Describes a WorkSpace bundle.
-    BundleType:
+    TagList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tag'
+    TagKey:
       type: string
-      enum:
-      - REGULAR
-      - STANDBY
-    WorkspaceBundleState:
-      type: string
-      enum:
-      - AVAILABLE
-      - PENDING
-      - ERROR
-    CreateWorkspaceBundleResult:
+      minLength: 1
+      maxLength: 127
+    CreateWorkspaceBundleRequest:
       type: object
+      required:
+      - BundleName
+      - BundleDescription
+      - ImageId
+      - ComputeType
+      - UserStorage
+      title: CreateWorkspaceBundleRequest
       properties:
-        WorkspaceBundle:
-          $ref: '#/components/schemas/WorkspaceBundle'
-    Description:
+        BundleName:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceBundleName'
+          - description: The name of the bundle.
+        BundleDescription:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceBundleDescription'
+          - description: The description of the bundle.
+        ImageId:
+          allOf:
+          - $ref: '#/components/schemas/WorkspaceImageId'
+          - description: The identifier of the image that is used to create the bundle.
+        ComputeType:
+          $ref: '#/components/schemas/ComputeType'
+        UserStorage:
+          $ref: '#/components/schemas/UserStorage'
+        RootStorage:
+          $ref: '#/components/schemas/RootStorage'
+        Tags:
+          allOf:
+          - $ref: '#/components/schemas/TagList'
+          - description: <p>The tags associated with the bundle.</p> <note> <p>To add tags at the same time when you're creating the bundle, you must create an IAM policy that grants your IAM user permissions to use <code>workspaces:CreateTags</code>. </p> </note>
+    WorkspaceImageId:
       type: string
-    InvalidParameterValuesException: {}
-    BundleId:
-      type: string
-      pattern: ^wsb-[0-9a-z]{8,63}$
-    TagValue:
-      type: string
-      maxLength: 255
-    Compute:
-      type: string
-      enum:
-      - VALUE
-      - STANDARD
-      - PERFORMANCE
-      - POWER
-      - GRAPHICS
-      - POWERPRO
-      - GRAPHICSPRO
-      - GRAPHICS_G4DN
-      - GRAPHICSPRO_G4DN
+      pattern: wsi-[0-9a-z]{9,63}$
+    ResourceLimitExceededException: {}
     Tag:
       type: object
       required:
@@ -344,31 +357,18 @@ components:
           - $ref: '#/components/schemas/TagValue'
           - description: The value of the tag.
       description: Describes a tag.
-    WorkspaceBundleName:
+    Compute:
       type: string
-      pattern: ^[a-zA-Z0-9_./()\\-]+$
-      minLength: 1
-      maxLength: 64
-    Timestamp:
-      type: string
-      format: date-time
-    TagKey:
-      type: string
-      minLength: 1
-      maxLength: 127
-    NonEmptyString:
-      type: string
-      minLength: 1
-    WorkspaceBundleDescription:
-      type: string
-      pattern: ^[a-zA-Z0-9_./() -]+$
-      minLength: 1
-      maxLength: 255
-    TagList:
-      type: array
-      items:
-        $ref: '#/components/schemas/Tag'
-    ResourceNotFoundException: {}
+      enum:
+      - VALUE
+      - STANDARD
+      - PERFORMANCE
+      - POWER
+      - GRAPHICS
+      - POWERPRO
+      - GRAPHICSPRO
+      - GRAPHICS_G4DN
+      - GRAPHICSPRO_G4DN
     RootStorage:
       type: object
       properties:
@@ -377,52 +377,55 @@ components:
           - $ref: '#/components/schemas/NonEmptyString'
           - description: The size of the root volume.
       description: Describes the root volume for a WorkSpace bundle.
-    WorkspaceImageId:
+    WorkspaceBundleName:
       type: string
-      pattern: wsi-[0-9a-z]{9,63}$
-  parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
+      pattern: ^[a-zA-Z0-9_./()\\-]+$
+      minLength: 1
+      maxLength: 64
+    ResourceUnavailableException: {}
+    TagValue:
+      type: string
+      maxLength: 255
+    Timestamp:
+      type: string
+      format: date-time
+    BundleId:
+      type: string
+      pattern: ^wsb-[0-9a-z]{8,63}$
+    BundleOwner:
+      type: string
+    ResourceNotFoundException: {}
+    UserStorage:
+      type: object
+      properties:
+        Capacity:
+          allOf:
+          - $ref: '#/components/schemas/NonEmptyString'
+          - description: The size of the user volume.
+      description: Describes the user volume for a WorkSpace bundle.
+    InvalidParameterValuesException: {}
+    AccessDeniedException: {}
+    WorkspaceBundleDescription:
+      type: string
+      pattern: ^[a-zA-Z0-9_./() -]+$
+      minLength: 1
+      maxLength: 255
+    ComputeType:
+      type: object
+      properties:
+        Name:
+          allOf:
+          - $ref: '#/components/schemas/Compute'
+          - description: The compute type.
+      description: Describes the compute type of the bundle.
+    BundleType:
+      type: string
+      enum:
+      - REGULAR
+      - STANDBY
+    NonEmptyString:
+      type: string
+      minLength: 1
   securitySchemes:
     hmac:
       type: apiKey

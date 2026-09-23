@@ -1,9 +1,11 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: '2015-04-08'
   x-release: v4
-  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.DescribeIpGroups #X Amz Target=WorkspacesService.DescribeIpGroups API'
-  description: <fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href="https://docs.aws.amazon.com/general/latest/gr/wsp.html">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/userguide/">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href="https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html">WorkSpaces section of the CLI Reference</a>.</p>
+  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.DescribeIp…'
+  description: 'Amazon WorkSpaces Service
+
+    Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as WorkSpaces.'
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
     backgroundColor: '#FFFFFF'
@@ -23,6 +25,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/workspaces-2015-04-08.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -163,6 +166,35 @@ paths:
       - '#X Amz Target=WorkspacesService.DescribeIpGroups'
 components:
   schemas:
+    IpRuleItem:
+      type: object
+      properties:
+        ipRule:
+          allOf:
+          - $ref: '#/components/schemas/IpRule'
+          - description: The IP address range, in CIDR notation.
+        ruleDesc:
+          allOf:
+          - $ref: '#/components/schemas/IpRuleDesc'
+          - description: The description.
+      description: Describes a rule for an IP access control group.
+    IpGroupName:
+      type: string
+    WorkspacesIpGroupsList:
+      type: array
+      items:
+        $ref: '#/components/schemas/WorkspacesIpGroup'
+    DescribeIpGroupsResult:
+      type: object
+      properties:
+        Result:
+          allOf:
+          - $ref: '#/components/schemas/WorkspacesIpGroupsList'
+          - description: Information about the IP access control groups.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: 'The token to use to retrieve the next page of results. This value is null when there are no more results to return. '
     WorkspacesIpGroup:
       type: object
       properties:
@@ -183,29 +215,24 @@ components:
           - $ref: '#/components/schemas/IpRuleList'
           - description: The rules.
       description: Describes an IP access control group.
-    IpRuleList:
-      type: array
-      items:
-        $ref: '#/components/schemas/IpRuleItem'
-    WorkspacesIpGroupsList:
-      type: array
-      items:
-        $ref: '#/components/schemas/WorkspacesIpGroup'
-    IpGroupDesc:
-      type: string
-    AccessDeniedException: {}
     IpRule:
-      type: string
-    IpRuleDesc:
       type: string
     PaginationToken:
       type: string
       minLength: 1
       maxLength: 2048
-    InvalidParameterValuesException: {}
-    IpGroupId:
+    IpRuleList:
+      type: array
+      items:
+        $ref: '#/components/schemas/IpRuleItem'
+    IpGroupIdList:
+      type: array
+      items:
+        $ref: '#/components/schemas/IpGroupId'
+    IpGroupDesc:
       type: string
-      pattern: wsipg-[0-9a-z]{8,63}$
+    InvalidParameterValuesException: {}
+    AccessDeniedException: {}
     DescribeIpGroupsRequest:
       type: object
       title: DescribeIpGroupsRequest
@@ -222,52 +249,16 @@ components:
           allOf:
           - $ref: '#/components/schemas/Limit'
           - description: The maximum number of items to return.
-    DescribeIpGroupsResult:
-      type: object
-      properties:
-        Result:
-          allOf:
-          - $ref: '#/components/schemas/WorkspacesIpGroupsList'
-          - description: Information about the IP access control groups.
-        NextToken:
-          allOf:
-          - $ref: '#/components/schemas/PaginationToken'
-          - description: 'The token to use to retrieve the next page of results. This value is null when there are no more results to return. '
-    IpGroupIdList:
-      type: array
-      items:
-        $ref: '#/components/schemas/IpGroupId'
-    IpGroupName:
-      type: string
     Limit:
       type: integer
       minimum: 1
       maximum: 25
-    IpRuleItem:
-      type: object
-      properties:
-        ipRule:
-          allOf:
-          - $ref: '#/components/schemas/IpRule'
-          - description: The IP address range, in CIDR notation.
-        ruleDesc:
-          allOf:
-          - $ref: '#/components/schemas/IpRuleDesc'
-          - description: The description.
-      description: Describes a rule for an IP access control group.
+    IpGroupId:
+      type: string
+      pattern: wsipg-[0-9a-z]{8,63}$
+    IpRuleDesc:
+      type: string
   parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Signature:
       name: X-Amz-Signature
       in: header
@@ -280,8 +271,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Date:
-      name: X-Amz-Date
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
       in: header
       schema:
         type: string
@@ -294,6 +285,18 @@ components:
       required: false
     X-Amz-Content-Sha256:
       name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
       in: header
       schema:
         type: string

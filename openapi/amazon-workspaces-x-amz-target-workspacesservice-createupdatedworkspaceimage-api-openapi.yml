@@ -1,9 +1,11 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: '2015-04-08'
   x-release: v4
-  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.AssociateConnectionAlias #X Amz Target=WorkspacesService.CreateUpdatedWorkspaceImage #X Amz Target=WorkspacesService.CreateUpdatedWorkspaceImage API'
-  description: <fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p> <p>This API Reference provides detailed information about the actions, data types, parameters, and errors of the WorkSpaces service. For more information about the supported Amazon Web Services Regions, endpoints, and service quotas of the Amazon WorkSpaces service, see <a href="https://docs.aws.amazon.com/general/latest/gr/wsp.html">WorkSpaces endpoints and quotas</a> in the <i>Amazon Web Services General Reference</i>.</p> <p>You can also manage your WorkSpaces resources using the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more information about administering WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/">Amazon WorkSpaces Administration Guide</a>. For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the <a href="https://docs.aws.amazon.com/workspaces/latest/userguide/">Amazon WorkSpaces User Guide</a>. For more information about using the CLI to manage your WorkSpaces resources, see the <a href="https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html">WorkSpaces section of the CLI Reference</a>.</p>
+  title: 'Amazon WorkSpaces #X Amz Target=WorkspacesService.CreateUpda…'
+  description: 'Amazon WorkSpaces Service
+
+    Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as WorkSpaces.'
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
     backgroundColor: '#FFFFFF'
@@ -23,6 +25,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/workspaces-2015-04-08.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -124,7 +127,19 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: CreateUpdatedWorkspaceImage
-      description: <p>Creates a new updated WorkSpace image based on the specified source image. The new updated WorkSpace image has the latest drivers and other updates required by the Amazon WorkSpaces components.</p> <p>To determine which WorkSpace images need to be updated with the latest Amazon WorkSpaces requirements, use <a href="https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeWorkspaceImages.html"> DescribeWorkspaceImages</a>.</p> <note> <ul> <li> <p>Only Windows 10, Windows Server 2016, and Windows Server 2019 WorkSpace images can be programmatically updated at this time.</p> </li> <li> <p>Microsoft Windows updates and other application updates are not included in the update process.</p> </li> <li> <p>The source WorkSpace image is not deleted. You can delete the source image after you've verified your new updated image and created a new bundle. </p> </li> </ul> </note>
+      description: 'Creates a new updated WorkSpace image based on the specified source image. The new updated WorkSpace image has the latest drivers and other updates required by the Amazon WorkSpaces components.
+
+
+        To determine which WorkSpace images need to be updated with the latest Amazon WorkSpaces requirements, use DescribeWorkspaceImages.
+
+
+        Only Windows 10, Windows Server 2016, and Windows Server 2019 WorkSpace images can be programmatically updated at this time.
+
+
+        Microsoft Windows updates and other application updates are not included in the update process.
+
+
+        The source WorkSpace image is not deleted. You can delete the source image after you''ve verified your new updated image and created a new bundle.'
       responses:
         '200':
           description: Success
@@ -192,7 +207,51 @@ paths:
       tags:
       - '#X Amz Target=WorkspacesService.CreateUpdatedWorkspaceImage'
 components:
+  parameters:
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
   schemas:
+    ResourceAlreadyExistsException: {}
     CreateUpdatedWorkspaceImageResult:
       type: object
       properties:
@@ -200,20 +259,6 @@ components:
           allOf:
           - $ref: '#/components/schemas/WorkspaceImageId'
           - description: The identifier of the new updated WorkSpace image.
-    ResourceLimitExceededException: {}
-    WorkspaceImageName:
-      type: string
-      pattern: ^[a-zA-Z0-9_./()\\-]+$
-      minLength: 1
-      maxLength: 64
-    ResourceAlreadyExistsException: {}
-    AccessDeniedException: {}
-    InvalidParameterValuesException: {}
-    WorkspaceImageDescription:
-      type: string
-      pattern: ^[a-zA-Z0-9_./() -]+$
-      minLength: 1
-      maxLength: 256
     CreateUpdatedWorkspaceImageRequest:
       type: object
       required:
@@ -238,9 +283,23 @@ components:
           allOf:
           - $ref: '#/components/schemas/TagList'
           - description: <p>The tags that you want to add to the new updated WorkSpace image.</p> <note> <p>To add tags at the same time when you're creating the updated image, you must create an IAM policy that grants your IAM user permissions to use <code>workspaces:CreateTags</code>. </p> </note>
-    TagValue:
+    WorkspaceImageName:
       type: string
-      maxLength: 255
+      pattern: ^[a-zA-Z0-9_./()\\-]+$
+      minLength: 1
+      maxLength: 64
+    TagKey:
+      type: string
+      minLength: 1
+      maxLength: 127
+    TagList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tag'
+    WorkspaceImageId:
+      type: string
+      pattern: wsi-[0-9a-z]{9,63}$
+    ResourceLimitExceededException: {}
     Tag:
       type: object
       required:
@@ -255,63 +314,19 @@ components:
           - $ref: '#/components/schemas/TagValue'
           - description: The value of the tag.
       description: Describes a tag.
-    TagKey:
+    TagValue:
       type: string
-      minLength: 1
-      maxLength: 127
-    TagList:
-      type: array
-      items:
-        $ref: '#/components/schemas/Tag'
+      maxLength: 255
     OperationNotSupportedException: {}
-    ResourceNotFoundException: {}
     InvalidResourceStateException: {}
-    WorkspaceImageId:
+    ResourceNotFoundException: {}
+    InvalidParameterValuesException: {}
+    WorkspaceImageDescription:
       type: string
-      pattern: wsi-[0-9a-z]{9,63}$
-  parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
+      pattern: ^[a-zA-Z0-9_./() -]+$
+      minLength: 1
+      maxLength: 256
+    AccessDeniedException: {}
   securitySchemes:
     hmac:
       type: apiKey
