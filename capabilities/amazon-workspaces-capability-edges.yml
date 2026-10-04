@@ -11,7 +11,7 @@ capability_model:
   attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
     CC BY 4.0
   notice: NOTICE
-edge_count: 17
+edge_count: 18
 edges:
 - tag: '#X Amz Target=WorkspacesService.ModifyWorkspaceProperties'
   spec_file: amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceproperties-api-openapi.yml
@@ -22,6 +22,16 @@ edges:
   evidence: 'ModifyWorkspaceProperties ... schemas: RootVolumeSizeGib, Compute, RunningMode, UserVolumeSizeGib'
   reason: Alters compute size, volume sizes and running mode of provisioned virtual desktops — direct
     management of cloud compute/storage infrastructure.
+- tag: Amazon WorkSpaces
+  spec_file: amazon-workspaces-amazon-workspaces-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.8
+  evidence: CreateWorkspaceImage, CreateWorkspaceBundle, CreateStandbyWorkspaces — 'provision virtual,
+    cloud-based Microsoft Windows or Amazon Linux desktops for your users'
+  reason: Provisioning and lifecycle management of cloud virtual desktops, images and bundles is IT infrastructure
+    (compute) management.
 - tag: '#X Amz Target=WorkspacesService.RebuildWorkspaces'
   spec_file: amazon-workspaces-x-amz-target-workspacesservice-rebuildworkspaces-api-openapi.yml
   capability_id: BC-600.50
