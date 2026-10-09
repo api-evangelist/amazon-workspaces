@@ -1,15 +1,74 @@
-generated: '2026-07-15'
+generated: '2026-09-23'
 method: generated
-source: openapi/amazon-workspaces-openapi-original.yaml
+source: openapi/amazon-workspaces-x-amz-target-workspacesservice-associateconnectionalias-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-associateipgroups-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-authorizeiprules-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-copyworkspaceimage-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-createconnectclientaddin-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-createconnectionalias-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-createipgroup-api-openapi.yml, openapi/amazon-workspaces-x-amz-target-workspacesservice-createstandbyworkspaces-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-createtags-api-openapi.yml, openapi/amazon-workspaces-x-amz-target-workspacesservice-createupdatedworkspaceimage-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-createworkspacebundle-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-createworkspaceimage-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-createworkspaces-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteclientbranding-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteconnectclientaddin-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteconnectionalias-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteipgroup-api-openapi.yml, openapi/amazon-workspaces-x-amz-target-workspacesservice-deletetags-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteworkspacebundle-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteworkspaceimage-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-deregisterworkspacedirectory-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeaccount-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeaccountmodifications-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeclientbranding-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeclientproperties-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeconnectclientaddins-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliases-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliaspermissions-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeipgroups-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-describetags-api-openapi.yml, openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacebundles-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacedirectories-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimagepermissions-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimages-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaces-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesconnectionstatus-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesnapshots-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-disassociateconnectionalias-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-disassociateipgroups-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-importclientbranding-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-importworkspaceimage-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-listavailablemanagementcidrranges-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-migrateworkspace-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyaccount-api-openapi.yml, openapi/amazon-workspaces-x-amz-target-workspacesservice-modifycertificatebasedauthproperties-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyclientproperties-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-modifysamlproperties-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyselfservicepermissions-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceaccessproperties-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacecreationproperties-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceproperties-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacestate-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-rebootworkspaces-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-rebuildworkspaces-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-registerworkspacedirectory-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-restoreworkspace-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-revokeiprules-api-openapi.yml, openapi/amazon-workspaces-x-amz-target-workspacesservice-startworkspaces-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-stopworkspaces-api-openapi.yml, openapi/amazon-workspaces-x-amz-target-workspacesservice-terminateworkspaces-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-updateconnectclientaddin-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-updateconnectionaliaspermission-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-updaterulesofipgroup-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-updateworkspacebundle-api-openapi.yml,
+  openapi/amazon-workspaces-x-amz-target-workspacesservice-updateworkspaceimagepermission-api-openapi.yml
 description: Recommended x-agentic-access execution contracts, classified heuristically from
   the OpenAPI. A governance starting point for exposing this API to AI agents — review and bind
   audience per deployment. See research/curity/agentic-governance/.
 summary:
   operations: 65
   by_action_class:
-    acting: 65
+    acting: 64
+    connected: 1
   by_consequence:
-    write: 61
+    write: 60
+    read: 1
     safety-critical: 4
   human_in_the_loop_required: 4
 operations:
@@ -429,9 +488,9 @@ operations:
       - abnormal
       - high-value
     audit: required
-- path: /#X-Amz-Target=WorkspacesService.DescribeConnectionAliasPermissions
+- path: /#X-Amz-Target=WorkspacesService.DescribeConnectionAliases
   method: post
-  operationId: DescribeConnectionAliasPermissions
+  operationId: DescribeConnectionAliases
   x-agentic-access:
     action-class: acting
     consequence: write
@@ -445,9 +504,9 @@ operations:
       - abnormal
       - high-value
     audit: required
-- path: /#X-Amz-Target=WorkspacesService.DescribeConnectionAliases
+- path: /#X-Amz-Target=WorkspacesService.DescribeConnectionAliasPermissions
   method: post
-  operationId: DescribeConnectionAliases
+  operationId: DescribeConnectionAliasPermissions
   x-agentic-access:
     action-class: acting
     consequence: write
@@ -557,22 +616,6 @@ operations:
       - abnormal
       - high-value
     audit: required
-- path: /#X-Amz-Target=WorkspacesService.DescribeWorkspaceSnapshots
-  method: post
-  operationId: DescribeWorkspaceSnapshots
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
 - path: /#X-Amz-Target=WorkspacesService.DescribeWorkspaces
   method: post
   operationId: DescribeWorkspaces
@@ -592,6 +635,22 @@ operations:
 - path: /#X-Amz-Target=WorkspacesService.DescribeWorkspacesConnectionStatus
   method: post
   operationId: DescribeWorkspacesConnectionStatus
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=WorkspacesService.DescribeWorkspaceSnapshots
+  method: post
+  operationId: DescribeWorkspaceSnapshots
   x-agentic-access:
     action-class: acting
     consequence: write
@@ -673,18 +732,12 @@ operations:
   method: post
   operationId: ListAvailableManagementCidrRanges
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkspacesService.MigrateWorkspace
   method: post
   operationId: MigrateWorkspace
