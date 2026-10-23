@@ -13,395 +13,395 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-associateconnectionalias-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-associateconnectionalias-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-associateconnectionalias-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-associateconnectionalias-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-associateipgroups-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-associateipgroups-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-associateipgroups-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-associateipgroups-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-authorizeiprules-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-authorizeiprules-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-authorizeiprules-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-authorizeiprules-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-copyworkspaceimage-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-copyworkspaceimage-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-copyworkspaceimage-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-copyworkspaceimage-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-createconnectclientaddin-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createconnectclientaddin-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-createconnectclientaddin-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createconnectclientaddin-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-createconnectionalias-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createconnectionalias-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-createconnectionalias-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createconnectionalias-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-createipgroup-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createipgroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-createipgroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createipgroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-createstandbyworkspaces-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createstandbyworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-createstandbyworkspaces-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createstandbyworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-createtags-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createtags-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-createtags-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createtags-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-createupdatedworkspaceimage-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createupdatedworkspaceimage-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-createupdatedworkspaceimage-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createupdatedworkspaceimage-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-createworkspacebundle-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createworkspacebundle-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-createworkspacebundle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createworkspacebundle-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-createworkspaceimage-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createworkspaceimage-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-createworkspaceimage-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createworkspaceimage-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-createworkspaces-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-createworkspaces-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-deleteclientbranding-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteclientbranding-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-deleteclientbranding-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteclientbranding-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-deleteconnectclientaddin-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteconnectclientaddin-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-deleteconnectclientaddin-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteconnectclientaddin-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-deleteconnectionalias-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteconnectionalias-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-deleteconnectionalias-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteconnectionalias-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-deleteipgroup-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteipgroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-deleteipgroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteipgroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-deletetags-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deletetags-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-deletetags-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deletetags-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-deleteworkspacebundle-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteworkspacebundle-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-deleteworkspacebundle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteworkspacebundle-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-deleteworkspaceimage-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteworkspaceimage-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-deleteworkspaceimage-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteworkspaceimage-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-deregisterworkspacedirectory-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deregisterworkspacedirectory-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-deregisterworkspacedirectory-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deregisterworkspacedirectory-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeaccount-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeaccount-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeaccount-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeaccount-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeaccountmodifications-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeaccountmodifications-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeaccountmodifications-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeaccountmodifications-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeclientbranding-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeclientbranding-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeclientbranding-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeclientbranding-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeclientproperties-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeclientproperties-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeclientproperties-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeclientproperties-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeconnectclientaddins-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeconnectclientaddins-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeconnectclientaddins-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeconnectclientaddins-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliases-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliases-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliases-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliases-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliaspermissions-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliaspermissions-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliaspermissions-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliaspermissions-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeipgroups-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeipgroups-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeipgroups-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeipgroups-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describetags-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describetags-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describetags-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describetags-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacebundles-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacebundles-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacebundles-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacebundles-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacedirectories-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacedirectories-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacedirectories-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacedirectories-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimagepermissions-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimagepermissions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimagepermissions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimagepermissions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimages-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimages-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimages-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimages-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaces-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaces-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesconnectionstatus-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesconnectionstatus-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesconnectionstatus-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesconnectionstatus-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesnapshots-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesnapshots-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesnapshots-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesnapshots-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-disassociateconnectionalias-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-disassociateconnectionalias-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-disassociateconnectionalias-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-disassociateconnectionalias-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-disassociateipgroups-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-disassociateipgroups-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-disassociateipgroups-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-disassociateipgroups-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-importclientbranding-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-importclientbranding-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-importclientbranding-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-importclientbranding-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-importworkspaceimage-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-importworkspaceimage-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-importworkspaceimage-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-importworkspaceimage-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-listavailablemanagementcidrranges-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-listavailablemanagementcidrranges-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-listavailablemanagementcidrranges-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-listavailablemanagementcidrranges-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-migrateworkspace-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-migrateworkspace-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-migrateworkspace-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-migrateworkspace-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-modifyaccount-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyaccount-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-modifyaccount-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyaccount-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-modifycertificatebasedauthproperties-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifycertificatebasedauthproperties-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-workspaces-x-amz-target-workspacesservice-modifycertificatebasedauthproperties-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifycertificatebasedauthproperties-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-modifyclientproperties-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyclientproperties-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-modifyclientproperties-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyclientproperties-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-modifysamlproperties-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifysamlproperties-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-modifysamlproperties-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifysamlproperties-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-modifyselfservicepermissions-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyselfservicepermissions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-modifyselfservicepermissions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyselfservicepermissions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceaccessproperties-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceaccessproperties-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceaccessproperties-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceaccessproperties-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacecreationproperties-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacecreationproperties-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacecreationproperties-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacecreationproperties-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceproperties-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceproperties-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceproperties-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceproperties-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacestate-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacestate-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacestate-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacestate-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-rebootworkspaces-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-rebootworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-rebootworkspaces-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-rebootworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-rebuildworkspaces-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-rebuildworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-rebuildworkspaces-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-rebuildworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-registerworkspacedirectory-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-registerworkspacedirectory-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-registerworkspacedirectory-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-registerworkspacedirectory-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-restoreworkspace-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-restoreworkspace-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-restoreworkspace-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-restoreworkspace-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-revokeiprules-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-revokeiprules-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-revokeiprules-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-revokeiprules-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-startworkspaces-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-startworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-startworkspaces-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-startworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-stopworkspaces-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-stopworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-stopworkspaces-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-stopworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-terminateworkspaces-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-terminateworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-terminateworkspaces-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-terminateworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-updateconnectclientaddin-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-updateconnectclientaddin-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-updateconnectclientaddin-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-updateconnectclientaddin-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-updateconnectionaliaspermission-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-updateconnectionaliaspermission-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-updateconnectionaliaspermission-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-updateconnectionaliaspermission-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-updaterulesofipgroup-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-updaterulesofipgroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-updaterulesofipgroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-updaterulesofipgroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-updateworkspacebundle-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-updateworkspacebundle-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-updateworkspacebundle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-updateworkspacebundle-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-updateworkspaceimagepermission-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-updateworkspaceimagepermission-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-workspaces-x-amz-target-workspacesservice-updateworkspaceimagepermission-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-updateworkspaceimagepermission-api
+    method: unknown
+    evidence: no authorship recorded
   examples/workspaces-account-modification-example.json:
     method: unknown
     evidence: no authorship recorded
@@ -2862,127 +2862,7 @@ artifacts:
   json-structure/workspaces-workspaces-ip-groups-list-structure.json:
     method: unknown
     evidence: no authorship recorded
-  kin/checks-2026-09-24T161608.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T125852.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T133943.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T143147.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T154045.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-26T215308.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T094438.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T103455.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T123021.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T132314.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T140727.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-28T221322.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T213958.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T230545.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T203505.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T220315.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-31T223420.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T063623.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T210448.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T222808.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T224043.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T161828.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T174231.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T062714.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T212454.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T224856.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T055819.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T072335.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T144739.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T195450.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T211839.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T011047.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T224210.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T200636.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T213054.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T214843.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T232836.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T204815.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T222408.yml:
+  kin/checks-2026-10-11T110117.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-12T062655.yml:
@@ -3066,403 +2946,226 @@ artifacts:
   kin/score-2026-09-24T161608.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T210408.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T232841.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T000835.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T024842.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-11T110117.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   openapi/_original/amazon-workspaces-openapi-original.yaml:
     method: harvested
     evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
       to the provider's source is unverified
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-associateconnectionalias-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-associateipgroups-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-authorizeiprules-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-copyworkspaceimage-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-createconnectclientaddin-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-createconnectionalias-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-createipgroup-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-createstandbyworkspaces-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-createtags-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-createupdatedworkspaceimage-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-createworkspacebundle-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-createworkspaceimage-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-createworkspaces-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteclientbranding-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteconnectclientaddin-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteconnectionalias-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteipgroup-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-deletetags-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteworkspacebundle-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteworkspaceimage-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-deregisterworkspacedirectory-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeaccount-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeaccountmodifications-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeclientbranding-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeclientproperties-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeconnectclientaddins-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliases-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliaspermissions-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeipgroups-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-describetags-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacebundles-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacedirectories-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimagepermissions-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimages-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaces-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesconnectionstatus-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesnapshots-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-disassociateconnectionalias-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-disassociateipgroups-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-importclientbranding-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-importworkspaceimage-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-listavailablemanagementcidrranges-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-migrateworkspace-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyaccount-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-modifycertificatebasedauthproperties-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyclientproperties-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-modifysamlproperties-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyselfservicepermissions-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceaccessproperties-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacecreationproperties-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceproperties-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacestate-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-rebootworkspaces-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-rebuildworkspaces-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-registerworkspacedirectory-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-restoreworkspace-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-revokeiprules-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-startworkspaces-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-stopworkspaces-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-terminateworkspaces-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-updateconnectclientaddin-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-updateconnectionaliaspermission-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-updaterulesofipgroup-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-updateworkspacebundle-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-workspaces-x-amz-target-workspacesservice-updateworkspaceimagepermission-api-openapi.yml:
+  openapi/amazon-workspaces-amazon-workspaces-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   plans/amazon-workspaces-plans-pricing.yml:
     method: searched
     evidence: declared in the artifact
   postman/amazon-workspaces-x-amz-target-workspacesservice-associateconnectionalias-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-associateconnectionalias-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-associateipgroups-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-associateipgroups-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-authorizeiprules-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-authorizeiprules-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-copyworkspaceimage-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-copyworkspaceimage-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-createconnectclientaddin-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createconnectclientaddin-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-createconnectionalias-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createconnectionalias-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-createipgroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createipgroup-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-createstandbyworkspaces-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createstandbyworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-createtags-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createtags-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-createupdatedworkspaceimage-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createupdatedworkspaceimage-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-createworkspacebundle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createworkspacebundle-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-createworkspaceimage-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createworkspaceimage-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-createworkspaces-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-createworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-deleteclientbranding-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteclientbranding-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-deleteconnectclientaddin-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteconnectclientaddin-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-deleteconnectionalias-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteconnectionalias-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-deleteipgroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteipgroup-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-deletetags-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deletetags-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-deleteworkspacebundle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteworkspacebundle-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-deleteworkspaceimage-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deleteworkspaceimage-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-deregisterworkspacedirectory-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-deregisterworkspacedirectory-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-describeaccount-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeaccount-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-describeaccountmodifications-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeaccountmodifications-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-describeclientbranding-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeclientbranding-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-describeclientproperties-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeclientproperties-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-describeconnectclientaddins-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeconnectclientaddins-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliases-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliases-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliaspermissions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeconnectionaliaspermissions-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-describeipgroups-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeipgroups-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-describetags-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describetags-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacebundles-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacebundles-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacedirectories-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacedirectories-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimagepermissions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimagepermissions-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimages-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaceimages-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaces-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesconnectionstatus-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesconnectionstatus-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesnapshots-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-describeworkspacesnapshots-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-disassociateconnectionalias-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-disassociateconnectionalias-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-disassociateipgroups-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-disassociateipgroups-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-importclientbranding-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-importclientbranding-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-importworkspaceimage-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-importworkspaceimage-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-listavailablemanagementcidrranges-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-listavailablemanagementcidrranges-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-migrateworkspace-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-migrateworkspace-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-modifyaccount-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyaccount-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-modifycertificatebasedauthproperties-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifycertificatebasedauthproperties-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-modifyclientproperties-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyclientproperties-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-modifysamlproperties-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifysamlproperties-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-modifyselfservicepermissions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyselfservicepermissions-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceaccessproperties-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceaccessproperties-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacecreationproperties-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacecreationproperties-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceproperties-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspaceproperties-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacestate-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-modifyworkspacestate-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-rebootworkspaces-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-rebootworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-rebuildworkspaces-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-rebuildworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-registerworkspacedirectory-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-registerworkspacedirectory-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-restoreworkspace-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-restoreworkspace-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-revokeiprules-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-revokeiprules-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-startworkspaces-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-startworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-stopworkspaces-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-stopworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-terminateworkspaces-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-terminateworkspaces-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-updateconnectclientaddin-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-updateconnectclientaddin-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-updateconnectionaliaspermission-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-updateconnectionaliaspermission-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-updaterulesofipgroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-updaterulesofipgroup-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-updateworkspacebundle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-updateworkspacebundle-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-workspaces-x-amz-target-workspacesservice-updateworkspaceimagepermission-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-workspaces-x-amz-target-workspacesservice-updateworkspaceimagepermission-api
+    method: unknown
+    evidence: no authorship recorded
   rate-limits/amazon-workspaces-rate-limits.yml:
     method: generated
     evidence: declared in the artifact
