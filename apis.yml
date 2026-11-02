@@ -1,0 +1,225 @@
+aid: amazon-workspaces
+name: Amazon WorkSpaces
+description: Amazon WorkSpaces is a managed, secure Desktop-as-a-Service (DaaS) solution that enables you to provision cloud-based
+  virtual desktops for your users. It eliminates the need to procure and deploy hardware or install complex software, providing
+  persistent desktops accessible from various devices with built-in security and management capabilities. The API provides
+  65 operations for workspace lifecycle management, bundle and directory management, image management, and IP access control
+  groups.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: medium
+  source:
+  - plans
+  - authentication
+  - security
+  generated: '2026-09-03'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-workspaces.png
+url: https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/apis.yml
+created: '2024-01-15'
+modified: '2026-05-19'
+specificationVersion: '0.23'
+type: Index
+tags:
+- Amazon Web Services
+- Desktop
+- End User Computing
+- Virtual Desktop
+- Desktop as a Service
+tags_raw:
+- AWS
+- Desktop
+- End User Computing
+- Virtual Desktop
+- Desktop as a Service
+apis:
+- aid: amazon-workspaces:amazon-workspaces-amazon-workspaces-api
+  name: Amazon WorkSpaces Amazon WorkSpaces API
+  description: >-
+    The Amazon WorkSpaces API from Amazon WorkSpaces — 65 operation(s) for amazon workspaces.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - Amazon WorkSpaces
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-amazon-workspaces-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+- aid: amazon-workspaces:amazon-workspaces-account-link-invitation-api
+  name: Amazon WorkSpaces Workspaces Account Link Invitation API
+  description: >-
+    The Workspaces Account Link Invitation API from Amazon WorkSpaces — 4 operation(s) for workspaces
+    account link invitation.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - Workspaces Account Link Invitation
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-account-link-invitation-api-openapi.yml
+- aid: amazon-workspaces:amazon-workspaces-operations-api
+  name: Amazon WorkSpaces Workspaces Operations API
+  description: >-
+    The Workspaces Operations API from Amazon WorkSpaces — 17 operation(s) for workspaces operations.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - Workspaces Operations
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-operations-api-openapi.yml
+- aid: amazon-workspaces:amazon-workspaces-workspaces-pool-api
+  name: Amazon WorkSpaces Workspaces Workspaces Pool API
+  description: >-
+    The Workspaces Workspaces Pool API from Amazon WorkSpaces — 5 operation(s) for workspaces workspaces
+    pool.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - Workspaces Workspaces Pool
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-workspaces-pool-api-openapi.yml
+common:
+- type: RateLimits
+  url: rate-limits/amazon-workspaces-rate-limits.yml
+- type: FinOps
+  url: finops/amazon-workspaces-finops.yml
+- type: Plans
+  url: plans/amazon-workspaces-plans-pricing.yml
+- type: CapabilityMap
+  url: capabilities/amazon-workspaces-capability-edges.yml
+  name: Amazon WorkSpaces Business Capability Map
+- type: PostmanWorkspace
+  url: https://www.postman.com/kinlaneapi/amazon-workspaces/overview
+- type: AgenticAccess
+  url: agentic-access/amazon-workspaces-agentic-access.yml
+- type: TrustCenter
+  url: security/amazon-workspaces-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/amazon-workspaces-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/amazon-workspaces-domain-security.yml
+- type: Authentication
+  url: authentication/amazon-workspaces-authentication.yml
+- type: Blog
+  url: https://aws.amazon.com/blogs/desktop-and-application-streaming/feed/
+- type: Portal
+  url: https://aws.amazon.com/
+- type: Website
+  url: https://aws.amazon.com/workspaces/
+- type: Documentation
+  url: https://docs.aws.amazon.com/workspaces/
+- type: TermsOfService
+  url: https://aws.amazon.com/service-terms/
+- type: PrivacyPolicy
+  url: https://aws.amazon.com/privacy/
+- type: Support
+  url: https://aws.amazon.com/premiumsupport/
+- type: GitHubOrganization
+  url: https://github.com/aws
+- type: Console
+  url: https://console.aws.amazon.com/workspaces/
+- type: Signup
+  url: https://signin.aws.amazon.com/signup?request_type=register
+- type: Login
+  url: https://aws.amazon.com/console/
+- type: StatusPage
+  url: https://health.aws.amazon.com/health/status
+- type: Contact
+  url: https://aws.amazon.com/contact-us/
+- type: SpectralRules
+  url: rules/amazon-workspaces-spectral-rules.yml
+- type: Vocabulary
+  url: vocabulary/amazon-workspaces-vocabulary.yaml
+- type: Features
+  data:
+  - name: Persistent Virtual Desktops
+    description: Cloud-based Windows or Linux desktops with persistent storage that users can access from any device or location.
+  - name: Desktop Bundle Catalog
+    description: Configurable compute bundles ranging from Value to Graphics.g4dn to match workload requirements and cost
+      targets.
+  - name: Active Directory Integration
+    description: Integration with AWS Managed Microsoft AD and AD Connector for user authentication and policy management.
+  - name: Application Management
+    description: Deploy and manage applications across WorkSpaces using application assignment and streaming capabilities.
+  - name: IP Access Control Groups
+    description: Restrict workspace access by IP address ranges to enforce network-based access controls.
+  - name: Running Mode Flexibility
+    description: AlwaysOn mode for power users and AutoStop mode for cost optimization of occasional-use desktops.
+  - name: BYOD Support
+    description: Thin client, web browser, iOS, Android, Linux, macOS, and Windows client access for bring-your-own-device
+      scenarios.
+  - name: Workspace Snapshots and Restore
+    description: Automated snapshots enable restoring workspaces to previous states for disaster recovery and user error correction.
+- type: UseCases
+  data:
+  - name: Remote Work Enablement
+    description: Provide secure cloud desktops to remote and distributed employees without managing physical hardware.
+  - name: Contractor and Temporary Worker Access
+    description: Quickly provision and terminate secure desktops for contractors with time-limited access needs.
+  - name: Desktop Refresh and Modernization
+    description: Replace aging desktop hardware with cloud-based virtual desktops to reduce capital expenditure.
+  - name: BYOD Security
+    description: Enable personal device usage while keeping corporate data and applications in the secure cloud environment.
+  - name: Regulated Industry Compliance
+    description: Maintain data residency and security compliance in regulated industries like healthcare and finance.
+- type: Integrations
+  data:
+  - name: AWS Directory Service
+    description: Managed Microsoft AD and AD Connector for user authentication and group policy management.
+  - name: AWS IAM
+    description: IAM-based access control for WorkSpaces API operations and resource-level permissions.
+  - name: Amazon S3
+    description: User storage and workspace image storage backed by Amazon S3.
+  - name: AWS CloudTrail
+    description: Audit logging of all WorkSpaces API calls for compliance and security monitoring.
+  - name: Amazon CloudWatch
+    description: Metrics and monitoring for workspace performance, connectivity, and health status.
+- type: Integrations
+  url: https://aws.amazon.com/marketplace/
+integrations:
+- name: Sign in
+- name: Agent Mode
+- name: Why AWS Marketplace?
+- name: Get started in AWS Marketplace
+- name: Industry
+- name: Resources
+- name: Become a Channel Partner
+- name: Sell in AWS Marketplace
+- name: Manage Your Account
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+x-parent: amazon-web-services
+x-relationship: product
