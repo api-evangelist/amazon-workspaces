@@ -1,10 +1,12 @@
 aid: amazon-workspaces
+
 name: Amazon WorkSpaces
-description: Amazon WorkSpaces is a managed, secure Desktop-as-a-Service (DaaS) solution that enables you to provision cloud-based
-  virtual desktops for your users. It eliminates the need to procure and deploy hardware or install complex software, providing
-  persistent desktops accessible from various devices with built-in security and management capabilities. The API provides
-  65 operations for workspace lifecycle management, bundle and directory management, image management, and IP access control
-  groups.
+
+description: Amazon WorkSpaces is a managed, secure Desktop-as-a-Service (DaaS) solution that enables you to provision cloud-based virtual desktops
+  for your users. It eliminates the need to procure and deploy hardware or install complex software, providing persistent desktops accessible
+  from various devices with built-in security and management capabilities. The API provides 65 operations for workspace lifecycle management,
+  bundle and directory management, image management, and IP access control groups.
+
 deliveryModel:
   model: saas
   open_source: false
@@ -17,6 +19,7 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -28,14 +31,20 @@ accessModel:
   source:
   - authentication
   - security
-  generated: '2026-11-06'
+  generated: '2026-11-13'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-workspaces.png
+
 url: https://raw.githubusercontent.com/api-evangelist/amazon-workspaces/refs/heads/main/apis.yml
+
 created: '2024-01-15'
+
 modified: '2026-05-19'
+
 specificationVersion: '0.23'
+
 type: Index
+
 tags:
 - Amazon Web Services
 - Desktop
@@ -48,68 +57,56 @@ tags_raw:
 - End User Computing
 - Virtual Desktop
 - Desktop as a Service
-apis:
-- aid: amazon-workspaces:amazon-workspaces-amazon-workspaces-api
-  name: Amazon WorkSpaces Amazon WorkSpaces API
-  description: >-
-    The Amazon WorkSpaces API from Amazon WorkSpaces — 65 operation(s) for amazon workspaces.
-  humanURL: https://aws.amazon.com/workspaces/
-  baseURL: https://workspaces.amazonaws.com
-  tags:
-  - Amazon WorkSpaces
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-workspaces-amazon-workspaces-api-openapi.yml
-  - type: Documentation
-    url: https://docs.aws.amazon.com/workspaces/
-  - type: Pricing
-    url: https://aws.amazon.com/workspaces/pricing/
-  - type: GettingStarted
-    url: https://aws.amazon.com/workspaces/getting-started/
-  - type: FAQ
-    url: https://aws.amazon.com/workspaces/faqs/
-  - type: APIReference
-    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
-  - type: JSONSchema
-    url: json-schema/workspaces-workspace-schema.json
-  - type: JSONLD
-    url: json-ld/amazon-workspaces-context.jsonld
-- aid: amazon-workspaces:amazon-workspaces-account-link-invitation-api
-  name: Amazon WorkSpaces Workspaces Account Link Invitation API
-  description: >-
-    The Workspaces Account Link Invitation API from Amazon WorkSpaces — 4 operation(s) for workspaces
-    account link invitation.
-  humanURL: https://aws.amazon.com/workspaces/
-  baseURL: https://workspaces.amazonaws.com
-  tags:
-  - Workspaces Account Link Invitation
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-workspaces-account-link-invitation-api-openapi.yml
-- aid: amazon-workspaces:amazon-workspaces-operations-api
-  name: Amazon WorkSpaces Workspaces Operations API
-  description: >-
-    The Workspaces Operations API from Amazon WorkSpaces — 17 operation(s) for workspaces operations.
-  humanURL: https://aws.amazon.com/workspaces/
-  baseURL: https://workspaces.amazonaws.com
-  tags:
-  - Workspaces Operations
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-workspaces-operations-api-openapi.yml
-- aid: amazon-workspaces:amazon-workspaces-workspaces-pool-api
-  name: Amazon WorkSpaces Workspaces Workspaces Pool API
-  description: >-
-    The Workspaces Workspaces Pool API from Amazon WorkSpaces — 5 operation(s) for workspaces workspaces
-    pool.
-  humanURL: https://aws.amazon.com/workspaces/
-  baseURL: https://workspaces.amazonaws.com
-  tags:
-  - Workspaces Workspaces Pool
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-workspaces-workspaces-pool-api-openapi.yml
+
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+
 common:
+- type: Sandbox
+  url: https://console.aws.amazon.com/console/home/?nc2=h_si&src=header-signin
+- type: Spectral
+  url: rules/amazon-workspaces-spectral-rules.yml
+- type: Spectral
+  url: rules/amazon-workspaces-rules.yml
+- type: Spectral
+  url: rules/amazon-workspaces-jsonschema-spectral-rules.yml
+- type: Vocabulary
+  url: vocabulary/amazon-workspaces-vocabulary.yml
+- type: DataModel
+  url: data-model/amazon-workspaces-data-model.yml
+- type: Idempotency
+  url: conventions/amazon-workspaces-conventions.yml
+- type: Conventions
+  url: conventions/amazon-workspaces-conventions.yml
+- type: Compliance
+  url: https://aws.amazon.com/compliance/
+- type: Lifecycle
+  url: lifecycle/amazon-workspaces-lifecycle.yml
+- type: ErrorCatalog
+  url: errors/amazon-workspaces-problem-types.yml
+- type: Conformance
+  url: conformance/amazon-workspaces-conformance.yml
+- type: LLMsTxt
+  url: llms/amazon-workspaces-llms.txt
+- type: SecurityTxt
+  url: well-known/amazon-workspaces-security.txt
+- type: WellKnown
+  url: well-known/amazon-workspaces-well-known.yml
+- type: Hosts
+  url: hosts/amazon-workspaces-hosts.yml
+- type: Vendors
+  url: vendors/amazon-workspaces-vendors.yml
+- type: SDKs
+  url: packages/amazon-workspaces-packages.yml
+- type: Packages
+  url: packages/amazon-workspaces-packages.yml
+- type: Security
+  url: https://aws.amazon.com/security/?nc2=h_dsc_aa_sec
+- type: Newsroom
+  url: https://aws.amazon.com/media/?nc2=h_sol_ind_med
+- type: GettingStarted
+  url: https://developer.amazon.com/frustration-free-setup
 - type: RateLimits
   url: rate-limits/amazon-workspaces-rate-limits.yml
 - type: FinOps
@@ -147,8 +144,6 @@ common:
   url: https://aws.amazon.com/premiumsupport/
 - type: GitHubOrganization
   url: https://github.com/aws
-- type: Console
-  url: https://console.aws.amazon.com/workspaces/
 - type: Signup
   url: https://signin.aws.amazon.com/signup?request_type=register
 - type: Login
@@ -166,8 +161,7 @@ common:
   - name: Persistent Virtual Desktops
     description: Cloud-based Windows or Linux desktops with persistent storage that users can access from any device or location.
   - name: Desktop Bundle Catalog
-    description: Configurable compute bundles ranging from Value to Graphics.g4dn to match workload requirements and cost
-      targets.
+    description: Configurable compute bundles ranging from Value to Graphics.g4dn to match workload requirements and cost targets.
   - name: Active Directory Integration
     description: Integration with AWS Managed Microsoft AD and AD Connector for user authentication and policy management.
   - name: Application Management
@@ -177,8 +171,7 @@ common:
   - name: Running Mode Flexibility
     description: AlwaysOn mode for power users and AutoStop mode for cost optimization of occasional-use desktops.
   - name: BYOD Support
-    description: Thin client, web browser, iOS, Android, Linux, macOS, and Windows client access for bring-your-own-device
-      scenarios.
+    description: Thin client, web browser, iOS, Android, Linux, macOS, and Windows client access for bring-your-own-device scenarios.
   - name: Workspace Snapshots and Restore
     description: Automated snapshots enable restoring workspaces to previous states for disaster recovery and user error correction.
 - type: UseCases
@@ -207,6 +200,233 @@ common:
     description: Metrics and monitoring for workspace performance, connectivity, and health status.
 - type: Integrations
   url: https://aws.amazon.com/marketplace/
+- type: UsageTerms
+  url: terms/amazon-workspaces-terms-of-service.yml
+
+apis:
+- aid: amazon-workspaces:amazon-workspaces-amazon-workspaces-api
+  name: Amazon WorkSpaces Amazon WorkSpaces API
+  description: The Amazon WorkSpaces API from Amazon WorkSpaces — 65 operation(s) for amazon workspaces.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - Amazon WorkSpaces
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-amazon-workspaces-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workspaces/
+  - type: Pricing
+    url: https://aws.amazon.com/workspaces/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/workspaces/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/workspaces/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workspaces/latest/api/welcome.html
+  - type: JSONSchema
+    url: json-schema/workspaces-workspace-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workspaces-context.jsonld
+- aid: amazon-workspaces:amazon-workspaces-account-link-invitation-api
+  name: Amazon WorkSpaces Workspaces Account Link Invitation API
+  description: The Workspaces Account Link Invitation API from Amazon WorkSpaces — 4 operation(s) for workspaces account link invitation.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - Workspaces Account Link Invitation
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-account-link-invitation-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-create-account-link-invitation-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-accept-account-link-invitation-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-delete-account-link-invitation-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-reject-account-link-invitation-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-accept-account-link-invitation-result-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-create-account-link-invitation-result-schema.json
+- aid: amazon-workspaces:amazon-workspaces-operations-api
+  name: Amazon WorkSpaces Workspaces Operations API
+  description: The Workspaces Operations API from Amazon WorkSpaces — 17 operation(s) for workspaces operations.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - Workspaces Operations
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-operations-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-describe-applications-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-describe-custom-workspace-image-import-result-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-import-custom-workspace-image-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-deregister-device-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-describe-application-associations-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-list-account-links-request-schema.json
+- aid: amazon-workspaces:amazon-workspaces-workspaces-pool-api
+  name: Amazon WorkSpaces Workspaces Workspaces Pool API
+  description: The Workspaces Workspaces Pool API from Amazon WorkSpaces — 5 operation(s) for workspaces workspaces pool.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - Workspaces Workspaces Pool
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-workspaces-pool-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-create-workspaces-pool-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-update-workspaces-pool-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-describe-workspaces-pools-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-describe-workspaces-pools-result-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-start-workspaces-pool-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-stop-workspaces-pool-request-schema.json
+- aid: amazon-workspaces:amazon-workspaces-devices-api
+  name: Amazon WorkSpaces Workspaces Devices API
+  description: The Workspaces Devices API from Amazon WorkSpaces — 2 operation(s) for workspaces devices.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - Workspaces Devices
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-devices-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-delete-device-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-list-devices-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-list-devices-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-update-device-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-get-device-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-update-device-response-schema.json
+- aid: amazon-workspaces:amazon-workspaces-environments-api
+  name: Amazon WorkSpaces Workspaces Environments API
+  description: The Workspaces Environments API from Amazon WorkSpaces — 2 operation(s) for workspaces environments.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - Workspaces Environments
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-environments-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-create-environment-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-update-environment-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-delete-environment-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-list-environments-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-list-environments-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-get-environment-request-schema.json
+- aid: amazon-workspaces:amazon-workspaces-softwaresets-api
+  name: Amazon WorkSpaces Workspaces Softwaresets API
+  description: The Workspaces Softwaresets API from Amazon WorkSpaces — 2 operation(s) for workspaces softwaresets.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - Workspaces Softwaresets
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-softwaresets-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-list-software-sets-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-list-software-sets-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-update-software-set-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-get-software-set-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-get-software-set-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-update-software-set-response-schema.json
+- aid: amazon-workspaces:amazon-workspaces-tags-api
+  name: Amazon WorkSpaces Workspaces Tags API
+  description: The Workspaces Tags API from Amazon WorkSpaces — 1 operation(s) for workspaces tags.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - Workspaces Tags
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-tags-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-thinclient-untag-resource-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-thinclient-tag-resource-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-thinclient-list-tags-for-resource-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-thinclient-list-tags-for-resource-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-tag-resource-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-untag-resource-response-schema.json
+- aid: amazon-workspaces:amazon-workspaces-volume-api
+  name: Amazon WorkSpaces Workspaces Volume API
+  description: The Workspaces Volume API from Amazon WorkSpaces — 5 operation(s) for workspaces volume.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - Workspaces Volume
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-volume-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-modify-volume-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-create-volume-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-modify-volume-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-disassociate-volume-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-associate-volume-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-delete-volume-request-schema.json
+- aid: amazon-workspaces:amazon-workspaces-workspace-instance-api
+  name: Amazon WorkSpaces Workspaces Workspace Instance API
+  description: The Workspaces Workspace Instance API from Amazon WorkSpaces — 4 operation(s) for workspaces workspace instance.
+  humanURL: https://aws.amazon.com/workspaces/
+  baseURL: https://workspaces.amazonaws.com
+  tags:
+  - Workspaces Workspace Instance
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workspaces-workspace-instance-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-get-workspace-instance-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-create-workspace-instance-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-list-workspace-instances-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-list-workspace-instances-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-delete-workspace-instance-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workspaces-get-workspace-instance-request-schema.json
+
 integrations:
 - name: Sign in
 - name: Agent Mode
@@ -217,8 +437,12 @@ integrations:
 - name: Become a Channel Partner
 - name: Sell in AWS Marketplace
 - name: Manage Your Account
-maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+
 x-parent: amazon-web-services
+
 x-relationship: product
+x-enrichment:
+  date: '2026-11-11'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v6
